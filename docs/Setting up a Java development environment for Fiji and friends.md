@@ -64,6 +64,23 @@ Then check that everything was properly recorded:
 
 ## Maven - the build automation tool.
 
+Maven is the tool Fiji uses to build the code into an executable Java program. It does much more than simply compiling java files: it takes care of the dependencies of your software in an automated manner, but we have to comply to a certain organisation of the code. 
+
+Maven is a software written in Java, so the installation procedure changes a little from what we are used to on our respective platforms. First go to the [download page of Maven](https://maven.apache.org/download.cgi) and pick one of the binary distribution (_e.g._ `apache-maven-x.y.z-bin.zip`). 
+
+Unzip it and copy the whole ``apache-maven-x.y.z` folder somewhere convenient. For instance, I recommend creating a `Development` folder in your `home` that we will use as workspace for software development. We can put the Maven folder there.
+
+We will use Maven from the command line, so we must add its executable to the shell path. Also, since Maven uses Java, we must properly declare where is the Java Development Kit we installed above. This requires some manipulation of the shell environment of your OS. In case of doubts, follow the instructions from the [Maven installation page](https://maven.apache.org/install.html). Here are some tips for common platforms.
+
+### Maven on Mac-OS-X.
+
+We will use the Mac-OS-X terminal, and the shell defaults to bash normally. Adding to the shell path can be done in the `.bash_profile` file in your home. To edit it, do something like this in a terminal:
+
+	cd # move to your home folder
+	vim .bash_profile # open an editor for bash_profile
+
+Of course, the editor we use here is Vim, you might not like it. Any text editor will make it.
+
 
 ----------
 
