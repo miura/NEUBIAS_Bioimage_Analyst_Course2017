@@ -115,8 +115,60 @@ After doing so, log out and re-log in to your windows account to ensure the vari
 
 ## Installing Fiji for development.
 
+We typically develop Fiji plugins as a single code base, and have Fiji components as dependencies. For the test and deployment of the plugin, it is a good idea to have a functional Fiji installation that will 'receive' the new plugin. We can then test it in an environment identical to what the user will have. 
 
+Maven does this for you, provided you give it some small configuration tweaks and a Fiji installation somewhere sensible. 
 
+For instance, here is an excerpt of my (JYT) `Development` folder (I am on a Mac):
+```
+tinevez@lilium:~/Development$ ls -1
+	Fiji.app
+	TrackMate
+```
+
+`TrackMate` is a folder containing the TrackMate code: 
+```
+tinevez@lilium:~/Development$ ls TrackMate
+README.md pom.xml   samples   scripts   src       target
+```
+and `Fiji.app` is the folder of a normal Fiji Mac installation:
+```
+tinevez@lilium:~/Development$ ls Fiji.app/
+Contents   WELCOME.md images     java       macros     retro
+README.md  db.xml.gz  jars       luts       plugins    scripts
+```
+
+In my TrackMate `pom.xml` file (and in almost all of my plugins, and most of the Fiji plugins made by others), I specify that the parent pom is the Fiji pom:
+```
+<parent>
+	<groupId>sc.fiji</groupId>
+	<artifactId>pom-fiji</artifactId>
+	<version>24.3.0</version>
+	<relativePath />
+</parent>
+```
+This brings plenty of very useful defaults and managed dependencies version. There is also a small section that tells where to copy the plugin jar once it has been compiled:
+```
+<properties>
+	<!-- Target Fiji dir for clean upload. -->
+	<imagej.app.directory>../Fiji.app/</imagej.app.directory>
+</properties>
+```
+This tells Maven to install the compiled TrackMate version in the Fiji app in the `Development` folder. For instance, after compiling TrackMate with Maven, I get (amongst other things) the following message:
+```
+[INFO] --- imagej-maven-plugin:0.6.0:copy-jars (copy-jars) @ TrackMate_ ---
+[INFO] Copying TrackMate_-3.4.3-SNAPSHOT.jar to ../Fiji.app/plugins
+[INFO] Deleted overridden TrackMate_-3.4.2.jar
+```
+and the same for all TrackMate dependencies. 
+
+We will see the structure of a sensible `pom.xml` file for a Fiji plugin later. Right now, we just have to prepare a development workspace and put a clean Fiji installation on it. I suggest emulating the example we just surveyed: 
+
+- Have a `Development` folder in your home. 
+- Unzip a clean installation of Fiji in it. 
+- Run it to make sure it works.
+
+We will use this setup later.
 
 ----------
 
