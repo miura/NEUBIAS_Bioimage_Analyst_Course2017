@@ -51,14 +51,15 @@ Open a terminal and check that Git is properly installed with the paths set by t
 
 It is a good idea to perform its basic configuration now. We want to tell it who we are and what is our email for instance. This is done with the `git config --global XXX` command:
 
-	git config --global user.email "you@yourdomain.com"
-	git config --global user.name "Your Name"
-	git config --global color.ui true
-
+```
+git config --global user.email "you@yourdomain.com"
+git config --global user.name "Your Name"
+git config --global color.ui true
+```
 Then check that everything was properly recorded:
-
-	git config --list
-
+```
+git config --list
+```
 ----------
 
 
@@ -76,16 +77,45 @@ We will use Maven from the command line, so we must add its executable to the sh
 
 We will use the Mac-OS-X terminal, and the shell defaults to bash normally. Adding to the shell path can be done in the `.bash_profile` file in your home. To edit it, do something like this in a terminal:
 
-	cd # move to your home folder
-	vim .bash_profile # open an editor for bash_profile
+```
+cd # move to your home folder
+vim .bash_profile # open an editor for bash_profile
+```
+Of course, the editor we use here is Vim, you might not like it. Any text editor will work. The important lines to add in the file are:
 
-Of course, the editor we use here is Vim, you might not like it. Any text editor will make it.
+```
+export PATH="$PATH:~/Development/Apache-maven-x.y.z/bin/"
+```
+this add the Maven `bin` folder to the shell path (or course, be mindful of the actual path to Maven and of the `x.y.z`), and:
 
+```
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/
+```
+This creates a `JAVA_HOME` environment variable in the shell that points to the JDK home. This variable is used by Maven to run and compile Java programs. 
+
+Once you did all of this, save the file and relaunch a terminal (so that the changes you made are read). In the new terminal, type `mvn -v`. You should get something like this:
+
+```
+Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T17:41:47+01:00)
+Maven home: /Users/tinevez/Development/Apache-maven-3.3.9
+Java version: 1.8.0_111, vendor: Oracle Corporation
+Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "mac os x", version: "10.11.6", arch: "x86_64", family: "mac"
+```
+
+### Maven on Windows.
+
+On Windows, setting up properly the environment variables and the path is a little bit less simple. Depending on the version of Windows, the way to edit these changes. Here is a [useful tutorial](http://www.computerhope.com/issues/ch000549.htm) on who to do so. Then, please follow the instructions made by [Mkyong](https://www.mkyong.com/maven/how-to-install-maven-in-windows/) for the windows platform.
+
+After doing so, log out and re-log in to your windows account to ensure the variable are sourced. Open the Git-BASH terminal provided by the Git for Windows tool we installed before, and type `mvn -v` to check that the Maven installation is correct.
 
 ----------
 
 
 ## Installing Fiji for development.
+
+
 
 
 ----------
