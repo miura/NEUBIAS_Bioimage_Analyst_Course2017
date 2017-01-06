@@ -31,7 +31,9 @@ We now need a tool to fetch and manage the code as files, and track the edits we
 
 A version control system allows us to fetch a codebase we want to work on. When you edit a file, or create a new one (corresponding to a Java class, a Java interface, an icon file, _etc._), the *changes* you made are recorded and logged by the VCS. It is a great tool if you need to undo a change you made, or to branch the code to experiment with it, or to properly communicate to other what you did. It is so useful that we (the Fiji community) do not develop out of a VCS.
 
-There are many of them, and in the Fiji ecosystem we use [Git](https://git-scm.com/) quasi exclusively. How to get it strongly depends on your platform.
+There are many of them, and in the Fiji ecosystem we use [Git](https://git-scm.com/) quasi exclusively. Its proper use is so important for plugin developers that several pages on the ImageJ website are dedicated to Git. They are linked from the main [Git page on ImageJ.net](http://imagej.net/Git).
+
+How to get it strongly depends on your platform.
 
 ### Git for Windows.
 
@@ -110,6 +112,12 @@ On Windows, setting up properly the environment variables and the path is a litt
 
 After doing so, log out and re-log in to your windows account to ensure the variable are sourced. Open the Git-BASH terminal provided by the Git for Windows tool we installed before, and type `mvn -v` to check that the Maven installation is correct.
 
+
+### More on Maven.
+
+The ImageJ website has a [page](http://imagej.net/Maven) that explains how we use it in the context of Fiji and friends, and have some useful links to explain how it works.
+
+
 ----------
 
 
@@ -175,9 +183,24 @@ We will use this setup later.
 
 ## Eclipse - integrated development environment.
 
+If you want to develop Java plugins (whether for Fiji or Icy or most of the open-source software for biological-imaging), it is likely that you will do so by spending 90% of your time in an integrated development environment (IDE). 
+
+They are several of them out there, and most of them are very good and well supported. For this course we default to Eclipse, but if you use another one that you favor, simply skip this paragraph. 
+
+Eclipse can do much more than just Java development, so we have to pick the right installer for us. Go on the [Eclipse download page](https://www.eclipse.org/downloads/) and pick the 64-bit installer package. This is just the Eclipse installer, not the software itself. 
+
+Unzip it and run it. You are presented with a series of flavours of Eclipse. Pick *Eclipse IDE for Java Developers* (the first one), and select a sensible installation folder. Depending on the speed of transfer, installation may take several minutes.
+
+When the installation is done, the installer shows a *LAUNCH* button. Click it. You are then asked for the location of the *workspace*. This is the folder on your hard-drive where all your Java projects (or other languages) are to be placed. With our convention, we decided to go for the `Development` folder mentioned above, where a `Fiji.app` already lives.
+
+The [Eclipse page](http://imagej.net/Developing_ImageJ_in_Eclipse) on the ImageJ website recapitulates what we just saw and will help you getting started.
+
 
 ----------
 
 
 ## GitHub - Git repository hosting.
 
+[GitHub](https://github.com/) is the online tool we use to host the code we generate. The whole stack of projects belonging to the ImageJ ecosystem lives there, and all Fiji developers have an account on GitHub.  Moving the source code there allowed us not only to have a decentralised hosting of the code, but also offered fantastic collaborative features such as _forks_, _pull requests_, _issue management_, _etc._
+
+If you are considering developing code for the ImageJ ecosystem, it is a good idea to create an account on GitHub. We will use it during the course.
