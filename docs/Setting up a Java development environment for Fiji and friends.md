@@ -204,3 +204,9 @@ The [Eclipse page](http://imagej.net/Developing_ImageJ_in_Eclipse) on the ImageJ
 [GitHub](https://github.com/) is the online tool we use to host the code we generate. The whole stack of projects belonging to the ImageJ ecosystem lives there, and all Fiji developers have an account on GitHub.  Moving the source code there allowed us not only to have a decentralised hosting of the code, but also offered fantastic collaborative features such as _forks_, _pull requests_, _issue management_, _etc._
 
 If you are considering developing code for the ImageJ ecosystem, it is a good idea to create an account on GitHub. We will use it during the course.
+
+--------
+
+## Wrapping up.
+
+Please make sure you have all these tools installed, as we really need to use the time of the course to use them instead of installing them. It is likely that this guide is incomplete or does not work as expected. In that case contact Jean-Yves (jeanyves.tinevez@gmail.com) to get help.
