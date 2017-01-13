@@ -1,6 +1,9 @@
-# Bioimage Analyst School: Program
+# NEUBIAS Bioimage Analyst School 2017: Program
 
-Kota & Jean-Yves
+Feb 12 - 15, 2017  
+Oeiras, Portugal  
+
+Organizers: Kota & Jean-Yves
 
 ## Aim
 
@@ -83,7 +86,9 @@ Please complete the homework in another document **"Setting up a Java developmen
 
 ## Coding & Libraries, Feb 12 (Sun) - 13 (Mon)
 
-### ImageJ Ops 16:30 - 20:00
+### ImageJ Ops: 16:30 - 20:00
+
+**Curtis Ruden, asisted by Jan Eglinger, Stefan Helfrich**
 
 The second generation ImageJ uses ImgLib2 as the core of image processing algorithms and Ops framework provides casual access to use them in bioimage analysis workflows. 
 
@@ -95,9 +100,9 @@ Curtis will also showcase ImageJ2 in the symposium.
 
 Please complete the homework in another document **"Preparation steps for the ImageJ2 workshop.md"**.
 
-### Overview of Visualization Libraries 9:00 - 10:30
+### Talk: Overview of Visualization Libraries 9:00 - 10:30
 
-Florian Jug will give one hour lecture overviewing visualization libraries. He is the developer of ClearVolume, which he will showcase in the symposium later. 
+**Florian Jug** will give one hour lecture overviewing visualization libraries. He is the developer of ClearVolume, which he will showcase in the symposium later. 
 
 
 ## Designing Workflows, Feb 13 (Mon) - 14 (Tue)
@@ -106,25 +111,35 @@ How do we design bioimage analysis workflows? Rather then being constrained to o
 
 ### KNIME workflows Feb 13 (Mon) 10:30 - 12:30
 
+**Martin Horn, assisted by Jürgen Rymann**
+
 KNIME is a tool for integrating wide range of resources into a bioimage analysis workflow. e.g combining ImageJ and R. This short tutorial aims at experiencing such integration process. 
 
 **HOMEWORK**
 
 Please complete the homework in another document **"Preparation steps for the KNIME workshop.md"**
 
-### Imaris XT 1 Feb 13 (Mon) 4:00 - 17:00
+### Imaris XT 1 Feb 13 (Mon) 14:00 - 17:00
+
+**Igor Beati**
 
 Accessing Imaris XT by Matlab scripting. 
 
+**HOMEWORK**
+
+TBA
 
 ### ICY scripting and development  Feb 13 (Mon) 17:00 - 20:00
 
 ICY allows various ways to construct workflow. After overviewing those capabilities, a short tutorials on the actual construction of workflows is shown, using some of image processing components not available in other libraries (e.g. 3D active contour to segment and track single cell migration)
 
+**HOMEWORK**
+
+TBA
+
 ## Benchmarking & Algorithms, Feb 14 (Tue) - 15 (Wed)
 
 Both for its components and the workflow itself, we need to know how to evaluate them. This module aims at learning the process of benchmarking and evaluating components and workflows in objective ways.
-
 
 See following document for more details about benchmarking: 
 
@@ -133,19 +148,34 @@ See following document for more details about benchmarking:
 
 ### Image Analysis of Point Clouds + Practicals Feb 14 (Tue) 9:00 - 13:00
 
-JB Baptiste will give a talk on "image processing of point clouds".  
+**JB Baptiste & Florian Levet**
+
+JB Baptiste will give a talk on "image processing of point clouds" (9:00 - 10:00, + 30 minutes interactions) and Florian Levet gives tutorial of SR_Tesseler usages in analysis workflow.
+
+**HOMEWORK**
+
+TBA  
 
 ### Benchmarking Introduction  Feb 14 (Tue) 14:00 - 15:00
+
+**Daniel Sage and Michal Kozubek**
 
 Daniel Sage and Michal Kozubek will give talks on benchmarking process and metrics that are used for benchmarking. 
 
 ### Benchmarking Implementation Feb 14 (Tue) 15:00 - 20:00
 
+**Daniel Sage, Michal Kozubek, Volker Bäcker**  
+...assisted by all available instructors. 
+
 Students will be separated into several groups and work together. Using some sample images and example components / workflows, each group will implementing benchmarking of those examples. Students basically work freely, and instructors assists upon requests. 
 
-### Advanced Algorithms: Denoising Feb 15 (Wed) 9:00 - 10:30
+**HOMEWORK**
 
-Sebastien Tosi will give a talk on denoising algorithms. 
+TBA
+
+### Talk: Advanced Algorithms: Denoising Feb 15 (Wed) 9:00 - 10:30
+
+**Sebastien Tosi** will give a talk on denoising algorithms. 
 
 ### Benchmarking Presentation Feb 15 (Wed) 10:30 - 12:00
 
@@ -153,7 +183,7 @@ Students present their benchmarking results and explain their implementations.
 
 ## Concluding Remarks
 
-Jean Yves closes the school. 
+Jean-Yves closes the school. 
 
 
 
