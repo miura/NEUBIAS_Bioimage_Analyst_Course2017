@@ -4,7 +4,7 @@ Kota & Jean-Yves
 
 ## Aim
 
-The school aims at providing bioimage analysts with practical access to the latest technological advances in bioimage analysis. Many software packages are updated and new ones are appearing on daily basis, but analysts tends to be constrained to what one knows already due to limitations in time to expand their scope. They are too busy. We hope that this school will become a good chance for analysts to be exposed to the latest scene in the bioimage analysis to broaden their skills. 
+**The school aims at providing bioimage analysts with practical access to the latest technological advances in bioimage analysis.** Many software packages are updated and new ones are appearing on daily basis, but analysts tends to be constrained to what one knows already due to limitations in time to expand their scope. They are too busy. We hope that this school will become a good chance for analysts to be exposed to the latest scene in the bioimage analysis to broaden their skills. 
 
 For this aim the program flows through four parts. 
 
@@ -40,13 +40,19 @@ Kota will explain the above aim and set the agenda of the course. Then there wil
 
 Several instructors (maybe all available) present workflow tools that they are using in their daily coding. Examples could be like
 
-- Vim, Emacs, Atom
-- Fiji script editor
-- Eclipse, IntelliJ, ...
-- Python notebook (Jupyter)
-- PyCharm
-- RStudio, Knitr, Notebook
+- Text Editor
+  - Vim, Emacs, Atom
+  - Fiji script editor
+- IDE
+  - Eclipse, IntelliJ, ...
+  - PyCharm
+  - RStudio
+  - Matlab
+- Notebooks
+  - Jupyter (Python notebook)
+  - Knitr, Notebook
 
+Note: Eclipse will be presented in more detail by JY later. 
 
 *Please propose your workflow tool, so that I can be a bit more detailed here.*
 
@@ -65,10 +71,15 @@ e.g.
 * Stack Overflow
 * "Learn Python"
 
+*Please also propose more workflow tools*
 
 #### Code management, deployment, collaborations 15:30 - 16:00 
 
 JY will outline coding environments. How to manage one's own code; how to deploy, make it into public (probably several different channels); advantage of open source development; how to collaborate with other analysts / developers with similar interests. 
+
+**HOMEWORK** 
+
+Please complete the homework in another document **"Setting up a Java development environment for Fiji and friends.md"**
 
 ## Coding & Libraries, Feb 12 (Sun) - 13 (Mon)
 
@@ -80,18 +91,26 @@ Curtis Ruden will lead the introduction to ImageJ Ops. We expect some explanatio
 
 Curtis will also showcase ImageJ2 in the symposium. 
 
+**HOMEWORK**
+
+Please complete the homework in another document **"Preparation steps for the ImageJ2 workshop.md"**.
+
 ### Overview of Visualization Libraries 9:00 - 10:30
 
 Florian Jug will give one hour lecture overviewing visualization libraries. He is the developer of ClearVolume, which he will showcase in the symposium later. 
 
 
-## Designing Workflows
+## Designing Workflows, Feb 13 (Mon) - 14 (Tue)
 
 How do we design bioimage analysis workflows? Rather then being constrained to one single library, it's always better to open our eyes to broader range of resources and integrate them into workflows. This module aims at expanding our scope. 
 
 ### KNIME workflows Feb 13 (Mon) 10:30 - 12:30
 
 KNIME is a tool for integrating wide range of resources into a bioimage analysis workflow. e.g combining ImageJ and R. This short tutorial aims at experiencing such integration process. 
+
+**HOMEWORK**
+
+Please complete the homework in another document **"Preparation steps for the KNIME workshop.md"**
 
 ### Imaris XT 1 Feb 13 (Mon) 4:00 - 17:00
 
@@ -102,7 +121,7 @@ Accessing Imaris XT by Matlab scripting.
 
 ICY allows various ways to construct workflow. After overviewing those capabilities, a short tutorials on the actual construction of workflows is shown, using some of image processing components not available in other libraries (e.g. 3D active contour to segment and track single cell migration)
 
-## Benchmarking & Algorithms
+## Benchmarking & Algorithms, Feb 14 (Tue) - 15 (Wed)
 
 Both for its components and the workflow itself, we need to know how to evaluate them. This module aims at learning the process of benchmarking and evaluating components and workflows in objective ways.
 
@@ -116,7 +135,7 @@ See following document for more details about benchmarking:
 
 JB Baptiste will give a talk on "image processing of point clouds".  
 
-### Benchmarking Introduction  Feb 14 (Tue) !4:00 - 15:00
+### Benchmarking Introduction  Feb 14 (Tue) 14:00 - 15:00
 
 Daniel Sage and Michal Kozubek will give talks on benchmarking process and metrics that are used for benchmarking. 
 
