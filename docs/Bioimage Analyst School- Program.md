@@ -150,9 +150,9 @@ See following document for more details about benchmarking:
 
 ### Image Analysis of Point Clouds + Practicals Feb 14 (Tue) 9:00 - 13:00
 
-**JB Baptiste & Florian Levet**
+**Jean-Baptiste Sibarita & Florian Levet**
 
-JB Baptiste will give a talk on "image processing of point clouds" (9:00 - 10:00, + 30 minutes interactions) and Florian Levet gives tutorial of SR_Tesseler usages in analysis workflow.
+JB Sibarita will give a talk on "image processing of point clouds" (9:00 - 10:00, + 30 minutes interactions) and Florian Levet gives tutorial of SR_Tesseler usages in analysis workflow.
 
 **HOMEWORK**
 
