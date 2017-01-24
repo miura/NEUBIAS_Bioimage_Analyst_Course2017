@@ -131,13 +131,13 @@ TBA
 
 ### ICY scripting and development  Feb 13 (Mon) 17:00 - 20:00
 
-**Alexandre Dufour **
+**Alexandre Dufour**
 
 ICY allows various ways to construct workflow. After overviewing those capabilities, a short tutorials on the actual construction of workflows is shown, using some of image processing components not available in other libraries (e.g. 3D active contour to segment and track single cell migration)
 
 **HOMEWORK**
 
-TBA
+Please follow instructions in the document "ICY\_Installation\_notes.md". 
 
 ## Benchmarking & Algorithms, Feb 14 (Tue) - 15 (Wed)
 
