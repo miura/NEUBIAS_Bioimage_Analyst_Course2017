@@ -88,11 +88,11 @@ Please complete the homework in another document **"Setting up a Java developmen
 
 ### ImageJ Ops: 16:30 - 20:00
 
-**Curtis Ruden, asisted by Jan Eglinger, Stefan Helfrich**
+**Curtis Ruden, assisted by Jan Eglinger, Stefan Helfrich**
 
 The second generation ImageJ uses ImgLib2 as the core of image processing algorithms and Ops framework provides casual access to use them in bioimage analysis workflows. 
 
-Curtis Ruden will lead the introduction to ImageJ Ops. We expect some explanation of ImgLib2 working in behind and then practical tutorials on Ops: how to use them, where to find the desired class, how to look up fields and methods of each class and use it in a script. Martin Horn, Jan Eglinger and Stefan Helflich (He is a student but volunteered to help) will assist these practicals. 
+Curtis Ruden will lead the introduction to ImageJ Ops. We expect some explanation of ImgLib2 working in behind and then practical tutorials on Ops: how to use them, where to find the desired class, how to look up fields and methods of each class and use it in a script. Martin Horn, Jan Eglinger and Stefan Helfrich (He is a student but volunteered to help) will assist these practicals. 
 
 Curtis will also showcase ImageJ2 in the symposium. 
 
@@ -150,9 +150,9 @@ See following document for more details about benchmarking:
 
 ### Image Analysis of Point Clouds + Practicals Feb 14 (Tue) 9:00 - 13:00
 
-**JB Baptiste & Florian Levet**
+**Jean-Baptiste Sibarita & Florian Levet**
 
-JB Baptiste will give a talk on "image processing of point clouds" (9:00 - 10:00, + 30 minutes interactions) and Florian Levet gives tutorial of SR_Tesseler usages in analysis workflow.
+JB Sibarita will give a talk on "image processing of point clouds" (9:00 - 10:00, + 30 minutes interactions) and Florian Levet gives tutorial of SR_Tesseler usages in analysis workflow.
 
 **HOMEWORK**
 
