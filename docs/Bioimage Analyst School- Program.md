@@ -158,11 +158,11 @@ JB Sibarita will give a talk on "image processing of point clouds" (9:00 - 10:00
 
 TBA  
 
-### Benchmarking Module: The Aim  Feb 14 (Tue) 14:00 - 14:10
+### Benchmarking Module: The Aim
 
-Kota
+Kota (14:00 - 14:10)
 
-### Overview of Metrics for Benchmarking
+### Overview of Metrics for Benchmarking (14:10 - 15:30)
 
 Daniel and Michal will give talks on benchmarking procedures and metrics . 
 
