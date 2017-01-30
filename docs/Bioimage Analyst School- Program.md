@@ -174,8 +174,6 @@ Based on the benchmarking session Michal organized in [ISBI 2016] (http://biomed
 
 From the experiences of tracking challenges, presenting a list of benchmarking methods to evaluate tracking algorithms and implementations. 
 
-### Benchmarking of Tracking Tools  (Daniel, , 30 minutes + 10min interaction)
-
 ### Benchmarking Implementation Feb 14 (Tue) 15:30 - 20:00
 
 **Daniel Sage, Michal Kozubek, Volker Bäcker**  
