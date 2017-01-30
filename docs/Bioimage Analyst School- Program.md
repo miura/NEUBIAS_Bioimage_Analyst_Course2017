@@ -158,13 +158,18 @@ JB Sibarita will give a talk on "image processing of point clouds" (9:00 - 10:00
 
 TBA  
 
-### Benchmarking Introduction  Feb 14 (Tue) 14:00 - 15:00
+### Benchmarking Module: The Aim  Feb 14 (Tue) 14:00 - 14:10
 
-**Daniel Sage and Michal Kozubek**
+Kota
 
-Daniel Sage and Michal Kozubek will give talks on benchmarking process and metrics that are used for benchmarking. 
+### Overview of Metrics for Benchmarking
 
-### Benchmarking Implementation Feb 14 (Tue) 15:00 - 20:00
+
+**Daniel Sage (14:10 - 14:50) and Michal Kozubek (14:50 - 15:30)**
+
+Daniel Sage and Michal Kozubek will give talks on benchmarking procedures and metrics . 
+
+### Benchmarking Implementation Feb 14 (Tue) 15:30 - 20:00
 
 **Daniel Sage, Michal Kozubek, Volker Bäcker**  
 ...assisted by all available instructors. 
