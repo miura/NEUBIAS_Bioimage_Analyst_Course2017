@@ -164,10 +164,17 @@ Kota
 
 ### Overview of Metrics for Benchmarking
 
+Daniel and Michal will give talks on benchmarking procedures and metrics . 
 
-**Daniel Sage (14:10 - 14:50) and Michal Kozubek (14:50 - 15:30)**
+#### Overview of Metrics for Benchmarking (Michal, 30 minutes + 10min interaction)
 
-Daniel Sage and Michal Kozubek will give talks on benchmarking procedures and metrics . 
+Based on the benchmarking session Michal organized in [ISBI 2016] (http://biomedicalimaging.org/2016/?page_id=573), and also from his research, Michal provides an overview of various benchmarking metrics. 
+
+#### Benchmarking of Tracking Tools  (Daniel, , 30 minutes + 10min interaction)
+
+From the experiences of tracking challenges, presenting a list of benchmarking methods to evaluate tracking algorithms and implementations. 
+
+### Benchmarking of Tracking Tools  (Daniel, , 30 minutes + 10min interaction)
 
 ### Benchmarking Implementation Feb 14 (Tue) 15:30 - 20:00
 
