@@ -1,4 +1,4 @@
-# NEUBIAS Bioimage Analyst School 2017: Program
+# NEUBIAS Bioimage Analyst School 2017: The Program
 
 Feb 12 - 15, 2017  
 Oeiras, Portugal  
