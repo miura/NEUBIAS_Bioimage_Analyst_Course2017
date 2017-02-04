@@ -3,7 +3,7 @@
 Feb 12 - 15, 2017  
 Oeiras, Portugal  
 
-Organizers: Kota & Jean-Yves
+Organizers: Kota Miura & Jean-Yves Tinevez
 
 ## Aim
 
@@ -27,20 +27,24 @@ Students bring their own laptops, and we ask students to install tools required 
 ### A note on the ability of students
 
 Majority of students are professional bioimage analysts, coding at least with one programming language in their daily life. We do not need to give basic tutorials for the scripting, and professional tips on accessing API should be enough. 
+
+### Schedule
+
+<https://goo.gl/cORj4J>
  
 
-## Tools & Spirit, Feb 12 (Sun) 13:00 - 
+## Tools & Spirit
 
 In this first part of the school we start with an introduction explaining the aim and scope of the school (the spirit). Especially we emphasize that the goal of this school is not to transform bioimage analysts to a talented programmer or guide them to implement a specific algorithm, but to enable them to measure various aspects of biological systems via multidimensional image data using cutting edge tools and implementations. This is like a training for DJs to mix better tracks, and not a training for DJs to become music composers.  
 
 Towards this goal we need to know how to efficiently access various libraries and fully utilize those components and assemble them into bioimage analysis workflow. We then need to know the design of various image processing libraries (API), good tools for writing scripts, location of learning resources and how to manage codes that you have written. 
 
-#### Introduction 13:00 - 14:00
+### Introduction 
+**Feb 12, 13:00 - 14:00**  
+**Kota Miura** explains the above aim and set the agenda of the course. Then there will be self-introductions by each participants, briefly explaining where they came from, their work and their hobby. 
 
-Kota will explain the above aim and set the agenda of the course. Then there will be self-introductions by each participants, briefly explaining where they came from, their work and their hobby. 
-
-#### Workflow tools 14:00 - 15:00 
-
+### Workflow tools
+**Feb 12, 14:00 - 15:00**  moderator: Kota Miura   
 Several instructors (maybe all available) present workflow tools that they are using in their daily coding. Examples could be like
 
 - Text Editor
@@ -57,13 +61,9 @@ Several instructors (maybe all available) present workflow tools that they are u
 
 Note: Eclipse will be presented in more detail by JY later. 
 
-*Please propose your workflow tool, so that I can be a bit more detailed here.*
-
-#### Learning resources 15:00- 15:30
-
-(Currently no one is assigned as moderator)
-
-Where we could learn certain scripting language? What would be the most efficient way? ... We will try to overview currently available learning resources for various workflow scripting environments. As just listing various resources will be boring, we also ask participants to raise their hand, tell others about resources they know and their comments.  
+### Learning resources 
+**Feb. 12, 15:00- 15:30** moderator: Kota Miura   
+Where could we learn scripting language? What would be the most efficient way? ... We will try to overview currently available learning resources for various workflow scripting environments. As just listing various resources will be boring, we also ask participants to raise their hand, tell others about resources they know and their comments.  
 
 e.g.
 
@@ -74,97 +74,101 @@ e.g.
 * Stack Overflow
 * "Learn Python"
 
-*Please also propose more workflow tools*
-
-#### Code management, deployment, collaborations 15:30 - 16:00 
-
-JY will outline coding environments. How to manage one's own code; how to deploy, make it into public (probably several different channels); advantage of open source development; how to collaborate with other analysts / developers with similar interests. 
+### Code management, deployment, collaborations 
+**Feb. 12, 15:30 - 16:00**  
+**Jean-Yves Tinevez** will outline his coding environments. How to manage one's own code; how to deploy, make it into public (probably several different channels); advantage of open source development; how to collaborate with other analysts / developers with similar interests. 
 
 **HOMEWORK** 
 
-Please complete the homework in another document **"Setting up a Java development environment for Fiji and friends.md"**
+Please complete the homework in another document [Setting up a Java development environment for Fiji and friends](https://github.com/cmci/AnalystCourse/blob/master/docs/Setting%20up%20a%20Java%20development%20environment%20for%20Fiji%20and%20friends.md)
 
-## Coding & Libraries, Feb 12 (Sun) - 13 (Mon)
+## Coding & Libraries
 
-### ImageJ Ops: 16:30 - 20:00
-
-**Curtis Ruden, assisted by Jan Eglinger, Stefan Helfrich**
-
+### ImageJ Ops
+**Feb. 12, 16:30 - 20:00**  
+**Curtis Ruden, assisted by Jan Eglinger, Stefan Helfrich**  
 The second generation ImageJ uses ImgLib2 as the core of image processing algorithms and Ops framework provides casual access to use them in bioimage analysis workflows. 
 
 Curtis Ruden will lead the introduction to ImageJ Ops. We expect some explanation of ImgLib2 working in behind and then practical tutorials on Ops: how to use them, where to find the desired class, how to look up fields and methods of each class and use it in a script. Martin Horn, Jan Eglinger and Stefan Helfrich (He is a student but volunteered to help) will assist these practicals. 
 
 Curtis will also showcase ImageJ2 in the symposium. 
 
+URL: <http://imagej.net/Welcome>
+
 **HOMEWORK**
 
-Please complete the homework in another document **"Preparation steps for the ImageJ2 workshop.md"**.
+Please complete the homework in another document [Preparation steps for the ImageJ2 workshop](https://github.com/cmci/AnalystCourse/blob/master/docs/Preparation%20steps%20for%20the%20ImageJ2%20workshop.md).
 
-### Talk: Overview of Visualization Libraries 9:00 - 10:30
-
+### Invited Talk: Overview of Visualization Libraries 
+**Feb. 13, 9:00 - 10:30**  
 **Florian Jug** will give one hour lecture overviewing visualization libraries. He is the developer of ClearVolume, which he will showcase in the symposium later. 
 
+**URL**: <https://clearvolume.github.io/>  
+**Reference**: [ClearVolume: open-source live 3D visualization for light-sheet microscopy](http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3372.html) Nature Methods 12, 480–481 (2015) doi:10.1038/nmeth.3372
 
-## Designing Workflows, Feb 13 (Mon) - 14 (Tue)
 
+## Designing Workflows
 How do we design bioimage analysis workflows? Rather then being constrained to one single library, it's always better to open our eyes to broader range of resources and integrate them into workflows. This module aims at expanding our scope. 
 
-### KNIME workflows Feb 13 (Mon) 10:30 - 12:30
-
-**Martin Horn, assisted by Jürgen Rymann**
-
+### KNIME workflows
+**Feb 13, 10:30 - 12:30**  
+**Martin Horn, assisted by Stefan Helfrich**  
 KNIME is a tool for integrating wide range of resources into a bioimage analysis workflow. e.g combining ImageJ and R. This short tutorial aims at experiencing such integration process. 
 
-**HOMEWORK**
-
-Please complete the homework in another document **"Preparation steps for the KNIME workshop.md"**
-
-### Imaris XT 1 Feb 13 (Mon) 14:00 - 17:00
-
-**Igor Beati**
-
-Accessing Imaris XT by Matlab scripting. 
+**URL**: <http://tech.knime.org/community/image-processing>
 
 **HOMEWORK**
 
-TBA
+Please complete the homework in another document [Preparation steps for the KNIME workshop](https://github.com/cmci/AnalystCourse/blob/master/docs/Preparation%20steps%20for%20the%20KNIME%20workshop.md)
 
-### ICY scripting and development  Feb 13 (Mon) 17:00 - 20:00
+### Imaris XT
+**Feb 13, 14:00 - 17:00**  
+**Igor Beati**  
+Accessing Imaris XT by Matlab scripting.
 
-**Alexandre Dufour**
+**URL**: <http://www.bitplane.com/imaris/imarisxt>  
+**HOMEWORK**
 
+Please follow instructions in the document [Preparation steps for the ImarisXT workshop](https://github.com/cmci/AnalystCourse/blob/master/docs/Preparation%20steps%20for%20the%20ImarisXT%20workshop.md).
+
+### ICY scripting and development
+**Feb 13, 17:00 - 20:00**  
+**Alexandre Dufour**  
 ICY allows various ways to construct workflow. After overviewing those capabilities, a short tutorials on the actual construction of workflows is shown, using some of image processing components not available in other libraries (e.g. 3D active contour to segment and track single cell migration)
 
+**URL**: <http://icy.bioimageanalysis.org/>
+
 **HOMEWORK**
 
-Please follow instructions in the document "ICY\_Installation\_notes.md". 
+Please follow instructions in the document [ICY\_Installation\_notes.md](https://github.com/cmci/AnalystCourse/blob/master/docs/ICY_Installation_notes.md).
 
-## Benchmarking & Algorithms, Feb 14 (Tue) - 15 (Wed)
+## Benchmarking & Algorithms
 
-Both for its components and the workflow itself, we need to know how to evaluate them. This module aims at learning the process of benchmarking and evaluating components and workflows in objective ways.
+We need to have in-depth knowledge on image processing and analysis algorithms, and new algorithms are appearing on daily basis. We will hear two talks about algorithms, one about treating point clouds and one about denoising. 
 
-See following document for more details about benchmarking: 
+Both for bioimage analysis components (implementations of algorithms) and workflows , we need to know how to evaluate them. This module aims at learning the process of benchmarking components and workflows in objective ways.
 
-<https://docs.google.com/document/d/1xItxu5PaSdhRm6yvHtEzAhz3WO9ZKs3uhu7ZPLj-dC8/edit>
-
-
-### Image Analysis of Point Clouds + Practicals Feb 14 (Tue) 9:00 - 13:00
-
-**Jean-Baptiste Sibarita & Florian Levet**
-
+### Invited Talk and Practicals: Image Analysis of Point Clouds 
+**Feb 14, 9:00 - 13:00**  
+**Jean-Baptiste Sibarita & Florian Levet**  
 JB Sibarita will give a talk on "image processing of point clouds" (9:00 - 10:00, + 30 minutes interactions) and Florian Levet gives tutorial of SR_Tesseler usages in analysis workflow.
+
+**Reference**: [SR-Tesseler: a method to segment and quantify localization-based super-resolution microscopy data](http://www.nature.com/nmeth/journal/v12/n11/full/nmeth.3579.html), nature methods | VOL.12 NO.11 | NOVEMBER 2015 | 1065
 
 **HOMEWORK**
 
 TBA  
 
 ### Benchmarking Module: The Aim
+**Feb 14, 14:00 - 14:10**  
+**Kota Miura**  
+A brief introduction to the benchmarking module. It has three parts: talks, implementations and presentation by participants.
 
-Kota (14:00 - 14:10)
+See [this document for more details about benchmarking module.](https://docs.google.com/document/d/1xItxu5PaSdhRm6yvHtEzAhz3WO9ZKs3uhu7ZPLj-dC8/edit) 
 
-### Overview of Metrics for Benchmarking (14:10 - 15:30)
-
-Daniel and Michal will give talks on benchmarking procedures and metrics . 
+### Benchmarking Talks
+**Feb 14, 14:10 - 15:30**  
+**Daniel Sage and Michal Kozubek**   
 
 #### Overview of Metrics for Benchmarking (Michal, 30 minutes + 10min interaction)
 
@@ -172,25 +176,24 @@ Based on the benchmarking session Michal organized in [ISBI 2016] (http://biomed
 
 #### Benchmarking of Tracking Tools  (Daniel, , 30 minutes + 10min interaction)
 
-From the experiences of tracking challenges, presenting a list of benchmarking methods to evaluate tracking algorithms and implementations. 
+From the experiences of tracking challenges, Daniel presents a list of benchmarking methods for evaluating tracking algorithms. 
 
-### Benchmarking Implementation Feb 14 (Tue) 15:30 - 20:00
+### Benchmarking Implementation
+**Feb 14, 15:30 - 20:00**  
+**Daniel Sage, Michal Kozubek, Volker Bäcker**, assisted by all available instructors. 
 
-**Daniel Sage, Michal Kozubek, Volker Bäcker**  
-...assisted by all available instructors. 
-
-Students will be separated into several groups and work together. Using some sample images and example components / workflows, each group will implementing benchmarking of those examples. Students basically work freely, and instructors assists upon requests. 
+Students will be separated into several groups and work together. Using some sample images and example components / workflows, each group will implement the benchmarking of those examples. Students basically work freely, and instructors assists upon requests. 
 
 **HOMEWORK**
 
 TBA
 
-### Talk: Advanced Algorithms: Denoising Feb 15 (Wed) 9:00 - 10:30
-
+### Invited Talk: Advanced Algorithms: Denoising 
+**Feb 15, 9:00 - 10:30**  
 **Sebastien Tosi** will give a talk on denoising algorithms. 
 
-### Benchmarking Presentation Feb 15 (Wed) 10:30 - 12:00
-
+### Benchmarking Presentation 
+**Feb 15, 10:30 - 12:00**  
 Students present their benchmarking results and explain their implementations. 
 
 ## Concluding Remarks
