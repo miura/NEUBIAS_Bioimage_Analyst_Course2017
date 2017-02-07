@@ -113,7 +113,7 @@ How do we design bioimage analysis workflows? Rather then being constrained to o
 ### KNIME workflows
 **Feb 13, 10:30 - 12:30**  
 **Martin Horn, assisted by Stefan Helfrich**  
-KNIME is a tool for integrating wide range of resources into a bioimage analysis workflow. e.g combining ImageJ and R. This short tutorial aims at experiencing such integration process. 
+The open analytics platform KNIME is a modular environment that enables easy visual assembly and interactive execution of workflows. This short tutorial aims at demonstrating the use of the KNIME Analytics Platform for image analysis tasks (e.g. segmentation and classification). With KNIME also being an integration platform, various tools, such as ImageJ, R and many more, can be used and combined.
 
 **URL**: <http://tech.knime.org/community/image-processing>
 
