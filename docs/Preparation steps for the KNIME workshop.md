@@ -15,7 +15,11 @@ Go on [KNIME webpage](   https://www.knime.org/downloads/overview) and follow th
 
 KNIME is focused on data analysis and mining in their large sense. The image analysis package in KNIME has to be installed as an extension. The installation instructions and quick overview of the KNIME Image Processing Extension can be found [here](https://tech.knime.org/community/image-processing).
 
-## Useful examples to run.
+## Download Workflow Stub
+
+Please download [this workflow stub](https://depot.uni-konstanz.de/cgi-bin/exchange.pl?g=rc47blzw4l) that will be completed throughout the workshop.
+
+## Useful examples to run (optional)
 
 Example workflows are directly opened in KNIME, as explained [here](https://www.knime.org/example-workflows).
     
