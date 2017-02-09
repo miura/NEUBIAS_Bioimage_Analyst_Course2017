@@ -157,7 +157,7 @@ JB Sibarita will give a talk on "image processing of point clouds" (9:00 - 10:00
 
 **HOMEWORK**
 
-TBA  
+[Analysis of point clouds: useful information](https://github.com/cmci/AnalystCourse/blob/master/docs/pointCloudsAnalysis_Notes.md)
 
 ### Benchmarking Module: The Aim
 **Feb 14, 14:00 - 14:10**  
