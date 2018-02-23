@@ -1,0 +1,116 @@
+
+{
+    "version":"3.3.1.v201612192115",
+    "created":"2017-02-11 00:57",
+    "nodestats":{
+        "nodes":[
+            {
+                "id":"org.knime.base.node.io.table.read.ReadTableNodeFactory#Table Reader",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":1330,
+                "nrcreated":0,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.ext.poi2.node.read2.XLSReaderNodeFactory#Excel Reader (XLS)",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.knip.io.nodes.imgreader2.readfromdialog.ImgReader2NodeFactory#Image Reader",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":8491,
+                "nrcreated":0,
+                "successor":"org.knime.knip.base.nodes.misc.splitter.SplitterNodeFactory#Splitter"
+            },
+            {
+                "id":"org.knime.knip.base.nodes.misc.splitter.SplitterNodeFactory#Splitter",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":118,
+                "nrcreated":1,
+                "successor":"org.knime.base.node.preproc.rename.RenameNodeFactory#Column Rename"
+            },
+            {
+                "id":"org.knime.base.node.preproc.rename.RenameNodeFactory#Column Rename",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":4,
+                "nrcreated":1,
+                "successor":"org.knime.knip.base.nodes.filter.GaussNativeTypeNodeFactory2#Gaussian Convolution"
+            },
+            {
+                "id":"org.knime.knip.base.nodes.filter.GaussNativeTypeNodeFactory2#Gaussian Convolution",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":97519,
+                "nrcreated":1,
+                "successor":"org.knime.knip.base.nodes.proc.imgjep.ImgJEPNodeFactory#Image Calculator"
+            },
+            {
+                "id":"org.knime.knip.base.nodes.proc.imgjep.ImgJEPNodeFactory#Image Calculator",
+                "nrexecs":2,
+                "nrfails":0,
+                "exectime":3381,
+                "nrcreated":1,
+                "successor":"org.knime.knip.base.nodes.proc.ConvertImgNodeFactory#Image Converter"
+            },
+            {
+                "id":"org.knime.knip.base.nodes.proc.ConvertImgNodeFactory#Image Converter",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":3360,
+                "nrcreated":1,
+                "successor":"org.knime.knip.base.nodes.proc.ThresholderNodeFactory3#Global Thresholder"
+            },
+            {
+                "id":"org.knime.knip.base.nodes.proc.ThresholderNodeFactory3#Global Thresholder",
+                "nrexecs":2,
+                "nrfails":0,
+                "exectime":12517,
+                "nrcreated":1,
+                "successor":"org.knime.knip.base.nodes.seg.ConnectedCompAnalysisNodeFactory#Connected Component Analysis"
+            },
+            {
+                "id":"org.knime.knip.base.nodes.seg.ConnectedCompAnalysisNodeFactory#Connected Component Analysis",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":1701,
+                "nrcreated":1,
+                "successor":"org.knime.knip.base.nodes.seg.LabelingFilterNodeFactory#Labeling Filter"
+            },
+            {
+                "id":"org.knime.knip.base.nodes.seg.LabelingFilterNodeFactory#Labeling Filter",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":2121,
+                "nrcreated":1,
+                "successor":"org.knime.knip.base.nodes.features.LabFeatureSetNodeFactory#Segment Features"
+            },
+            {
+                "id":"org.knime.knip.base.nodes.features.LabFeatureSetNodeFactory#Segment Features",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":5424,
+                "nrcreated":1,
+                "successor":"n/a"
+            }
+        ],
+        "metaNodes":{
+        },
+        "wrappedNodes":{
+        }
+    },
+    "uptime":4087294,
+    "workflowsOpened":1,
+    "remoteWorkflowsOpened":1,
+    "launches":3,
+    "timeSinceLastStart":11768885,
+    "crashes":0,
+    "properlyShutDown":true
+}

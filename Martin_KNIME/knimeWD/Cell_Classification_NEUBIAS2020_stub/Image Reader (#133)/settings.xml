@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<config key="check_file_format_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="check_file_format" type="xboolean" value="true"/>
+<config key="group_files_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="group_files" type="xboolean" value="true"/>
+<config key="plane_selection_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_imagesubsetselecction"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<config key="plane_selection">
+<entry key="num_selected_dims" type="xint" value="0"/>
+</config>
+<config key="img_factory_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="img_factory" type="xstring" value="Array Image Factory"/>
+<config key="read_all_series_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="read_all_series" type="xboolean" value="true"/>
+<config key="series_range_selection_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_doubleRange"/>
+<entry key="EnabledStatus" type="xboolean" value="false"/>
+</config>
+<config key="series_range_selection">
+<entry key="MIN" type="xdouble" value="0.0"/>
+<entry key="MAX" type="xdouble" value="32767.0"/>
+</config>
+<config key="metadata_mode_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="metadata_mode" type="xstring" value="No metadata"/>
+<config key="read_all_metadata_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="read_all_metadata" type="xboolean" value="false"/>
+<config key="m_pixeltype_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="m_pixeltype" type="xstring" value="&lt; Automatic &gt;"/>
+<config key="file_list_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_stringarray"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<config key="file_list">
+<entry key="array-size" type="xint" value="96"/>
+<entry key="0" type="xstring" value="knime://knime.workflow/images/01-A-01.ome.tif"/>
+<entry key="1" type="xstring" value="knime://knime.workflow/images/02-A-02.ome.tif"/>
+<entry key="2" type="xstring" value="knime://knime.workflow/images/03-A-03.ome.tif"/>
+<entry key="3" type="xstring" value="knime://knime.workflow/images/04-A-04.ome.tif"/>
+<entry key="4" type="xstring" value="knime://knime.workflow/images/05-A-05.ome.tif"/>
+<entry key="5" type="xstring" value="knime://knime.workflow/images/06-A-06.ome.tif"/>
+<entry key="6" type="xstring" value="knime://knime.workflow/images/07-A-07.ome.tif"/>
+<entry key="7" type="xstring" value="knime://knime.workflow/images/08-A-08.ome.tif"/>
+<entry key="8" type="xstring" value="knime://knime.workflow/images/09-A-09.ome.tif"/>
+<entry key="9" type="xstring" value="knime://knime.workflow/images/10-A-10.ome.tif"/>
+<entry key="10" type="xstring" value="knime://knime.workflow/images/11-A-11.ome.tif"/>
+<entry key="11" type="xstring" value="knime://knime.workflow/images/12-A-12.ome.tif"/>
+<entry key="12" type="xstring" value="knime://knime.workflow/images/13-B-01.ome.tif"/>
+<entry key="13" type="xstring" value="knime://knime.workflow/images/14-B-02.ome.tif"/>
+<entry key="14" type="xstring" value="knime://knime.workflow/images/15-B-03.ome.tif"/>
+<entry key="15" type="xstring" value="knime://knime.workflow/images/16-B-04.ome.tif"/>
+<entry key="16" type="xstring" value="knime://knime.workflow/images/17-B-05.ome.tif"/>
+<entry key="17" type="xstring" value="knime://knime.workflow/images/18-B-06.ome.tif"/>
+<entry key="18" type="xstring" value="knime://knime.workflow/images/19-B-07.ome.tif"/>
+<entry key="19" type="xstring" value="knime://knime.workflow/images/20-B-08.ome.tif"/>
+<entry key="20" type="xstring" value="knime://knime.workflow/images/21-B-09.ome.tif"/>
+<entry key="21" type="xstring" value="knime://knime.workflow/images/22-B-10.ome.tif"/>
+<entry key="22" type="xstring" value="knime://knime.workflow/images/23-B-11.ome.tif"/>
+<entry key="23" type="xstring" value="knime://knime.workflow/images/24-B-12.ome.tif"/>
+<entry key="24" type="xstring" value="knime://knime.workflow/images/25-C-01.ome.tif"/>
+<entry key="25" type="xstring" value="knime://knime.workflow/images/26-C-02.ome.tif"/>
+<entry key="26" type="xstring" value="knime://knime.workflow/images/27-C-03.ome.tif"/>
+<entry key="27" type="xstring" value="knime://knime.workflow/images/28-C-04.ome.tif"/>
+<entry key="28" type="xstring" value="knime://knime.workflow/images/29-C-05.ome.tif"/>
+<entry key="29" type="xstring" value="knime://knime.workflow/images/30-C-06.ome.tif"/>
+<entry key="30" type="xstring" value="knime://knime.workflow/images/31-C-07.ome.tif"/>
+<entry key="31" type="xstring" value="knime://knime.workflow/images/32-C-08.ome.tif"/>
+<entry key="32" type="xstring" value="knime://knime.workflow/images/33-C-09.ome.tif"/>
+<entry key="33" type="xstring" value="knime://knime.workflow/images/34-C-10.ome.tif"/>
+<entry key="34" type="xstring" value="knime://knime.workflow/images/35-C-11.ome.tif"/>
+<entry key="35" type="xstring" value="knime://knime.workflow/images/36-C-12.ome.tif"/>
+<entry key="36" type="xstring" value="knime://knime.workflow/images/37-D-01.ome.tif"/>
+<entry key="37" type="xstring" value="knime://knime.workflow/images/38-D-02.ome.tif"/>
+<entry key="38" type="xstring" value="knime://knime.workflow/images/39-D-03.ome.tif"/>
+<entry key="39" type="xstring" value="knime://knime.workflow/images/40-D-04.ome.tif"/>
+<entry key="40" type="xstring" value="knime://knime.workflow/images/41-D-05.ome.tif"/>
+<entry key="41" type="xstring" value="knime://knime.workflow/images/42-D-06.ome.tif"/>
+<entry key="42" type="xstring" value="knime://knime.workflow/images/43-D-07.ome.tif"/>
+<entry key="43" type="xstring" value="knime://knime.workflow/images/44-D-08.ome.tif"/>
+<entry key="44" type="xstring" value="knime://knime.workflow/images/45-D-09.ome.tif"/>
+<entry key="45" type="xstring" value="knime://knime.workflow/images/46-D-10.ome.tif"/>
+<entry key="46" type="xstring" value="knime://knime.workflow/images/47-D-11.ome.tif"/>
+<entry key="47" type="xstring" value="knime://knime.workflow/images/48-D-12.ome.tif"/>
+<entry key="48" type="xstring" value="knime://knime.workflow/images/49-E-01.ome.tif"/>
+<entry key="49" type="xstring" value="knime://knime.workflow/images/50-E-02.ome.tif"/>
+<entry key="50" type="xstring" value="knime://knime.workflow/images/51-E-03.ome.tif"/>
+<entry key="51" type="xstring" value="knime://knime.workflow/images/52-E-04.ome.tif"/>
+<entry key="52" type="xstring" value="knime://knime.workflow/images/53-E-05.ome.tif"/>
+<entry key="53" type="xstring" value="knime://knime.workflow/images/54-E-06.ome.tif"/>
+<entry key="54" type="xstring" value="knime://knime.workflow/images/55-E-07.ome.tif"/>
+<entry key="55" type="xstring" value="knime://knime.workflow/images/56-E-08.ome.tif"/>
+<entry key="56" type="xstring" value="knime://knime.workflow/images/57-E-09.ome.tif"/>
+<entry key="57" type="xstring" value="knime://knime.workflow/images/58-E-10.ome.tif"/>
+<entry key="58" type="xstring" value="knime://knime.workflow/images/59-E-11.ome.tif"/>
+<entry key="59" type="xstring" value="knime://knime.workflow/images/60-E-12.ome.tif"/>
+<entry key="60" type="xstring" value="knime://knime.workflow/images/61-F-01.ome.tif"/>
+<entry key="61" type="xstring" value="knime://knime.workflow/images/62-F-02.ome.tif"/>
+<entry key="62" type="xstring" value="knime://knime.workflow/images/63-F-03.ome.tif"/>
+<entry key="63" type="xstring" value="knime://knime.workflow/images/64-F-04.ome.tif"/>
+<entry key="64" type="xstring" value="knime://knime.workflow/images/65-F-05.ome.tif"/>
+<entry key="65" type="xstring" value="knime://knime.workflow/images/66-F-06.ome.tif"/>
+<entry key="66" type="xstring" value="knime://knime.workflow/images/67-F-07.ome.tif"/>
+<entry key="67" type="xstring" value="knime://knime.workflow/images/68-F-08.ome.tif"/>
+<entry key="68" type="xstring" value="knime://knime.workflow/images/69-F-09.ome.tif"/>
+<entry key="69" type="xstring" value="knime://knime.workflow/images/70-F-10.ome.tif"/>
+<entry key="70" type="xstring" value="knime://knime.workflow/images/71-F-11.ome.tif"/>
+<entry key="71" type="xstring" value="knime://knime.workflow/images/72-F-12.ome.tif"/>
+<entry key="72" type="xstring" value="knime://knime.workflow/images/73-G-01.ome.tif"/>
+<entry key="73" type="xstring" value="knime://knime.workflow/images/74-G-02.ome.tif"/>
+<entry key="74" type="xstring" value="knime://knime.workflow/images/75-G-03.ome.tif"/>
+<entry key="75" type="xstring" value="knime://knime.workflow/images/76-G-04.ome.tif"/>
+<entry key="76" type="xstring" value="knime://knime.workflow/images/77-G-05.ome.tif"/>
+<entry key="77" type="xstring" value="knime://knime.workflow/images/78-G-06.ome.tif"/>
+<entry key="78" type="xstring" value="knime://knime.workflow/images/79-G-07.ome.tif"/>
+<entry key="79" type="xstring" value="knime://knime.workflow/images/80-G-08.ome.tif"/>
+<entry key="80" type="xstring" value="knime://knime.workflow/images/81-G-09.ome.tif"/>
+<entry key="81" type="xstring" value="knime://knime.workflow/images/82-G-10.ome.tif"/>
+<entry key="82" type="xstring" value="knime://knime.workflow/images/83-G-11.ome.tif"/>
+<entry key="83" type="xstring" value="knime://knime.workflow/images/84-G-12.ome.tif"/>
+<entry key="84" type="xstring" value="knime://knime.workflow/images/85-H-01.ome.tif"/>
+<entry key="85" type="xstring" value="knime://knime.workflow/images/86-H-02.ome.tif"/>
+<entry key="86" type="xstring" value="knime://knime.workflow/images/87-H-03.ome.tif"/>
+<entry key="87" type="xstring" value="knime://knime.workflow/images/88-H-04.ome.tif"/>
+<entry key="88" type="xstring" value="knime://knime.workflow/images/89-H-05.ome.tif"/>
+<entry key="89" type="xstring" value="knime://knime.workflow/images/90-H-06.ome.tif"/>
+<entry key="90" type="xstring" value="knime://knime.workflow/images/91-H-07.ome.tif"/>
+<entry key="91" type="xstring" value="knime://knime.workflow/images/92-H-08.ome.tif"/>
+<entry key="92" type="xstring" value="knime://knime.workflow/images/93-H-09.ome.tif"/>
+<entry key="93" type="xstring" value="knime://knime.workflow/images/94-H-10.ome.tif"/>
+<entry key="94" type="xstring" value="knime://knime.workflow/images/95-H-11.ome.tif"/>
+<entry key="95" type="xstring" value="knime://knime.workflow/images/96-H-12.ome.tif"/>
+</config>
+<config key="complete_path_rowkey_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="complete_path_rowkey" type="xboolean" value="false"/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="Read Images"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="9"/>
+<entry key="y-coordinate" type="xint" value="599"/>
+<entry key="width" type="xint" value="143"/>
+<entry key="height" type="xint" value="17"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="11"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="CONFIGURED"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="WARNING"/>
+<entry key="message" type="xstring" value="Execution canceled"/>
+</config>
+<entry key="factory" type="xstring" value="org.knime.knip.io.nodes.imgreader2.readfromdialog.ImgReader2NodeFactory"/>
+<entry key="node-name" type="xstring" value="Image Reader"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Image IO"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.knip.io"/>
+<entry key="node-bundle-vendor" type="xstring" value="University of Konstanz"/>
+<entry key="node-bundle-version" type="xstring" value="1.5.4.201702031800"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Image Processing"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.knip.feature.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="University of Konstanz / KNIME"/>
+<entry key="node-feature-version" type="xstring" value="1.5.4.201702031800"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="Image Reader"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>

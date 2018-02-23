@@ -1,0 +1,202 @@
+2016-10-01 16:33:53,707 : DEBUG : ModalContext : ReportingDataSetNodeFactory : Deploy a Churn Prediction Model : 2 : Factory is already initialized. Nothing to do.
+2016-10-01 16:33:53,709 : DEBUG : ModalContext : FileReaderNodeFactory : Deploy a Churn Prediction Model : 2 : Factory is already initialized. Nothing to do.
+2016-10-01 16:33:53,716 : DEBUG : ModalContext : JPMMLClassifierNodeFactory : Deploy a Churn Prediction Model : 2 : Factory is already initialized. Nothing to do.
+2016-10-01 16:33:53,755 : DEBUG : ModalContext : PMMLReaderNodeFactory2 : Deploy a Churn Prediction Model : 2 : Factory is already initialized. Nothing to do.
+2016-10-01 16:33:53,759 : DEBUG : ModalContext : File Reader : File Reader : 2:103 : Configure succeeded. (File Reader)
+2016-10-01 16:33:53,787 : DEBUG : ModalContext : PMML Reader : PMML Reader : 2:105 : Configure succeeded. (PMML Reader)
+2016-10-01 16:33:53,788 : DEBUG : ModalContext : JPMML Classifier : JPMML Classifier : 2:104 : Configure succeeded. (JPMML Classifier)
+2016-10-01 16:33:53,788 : DEBUG : ModalContext : Data to Report : Data to Report : 2:88 : Configure succeeded. (Data to Report)
+2016-10-01 16:33:57,510 : DEBUG : KNIME-Worker-28 : WorkflowManager : PMML Reader : 2:105 : PMML Reader 2:105 doBeforePreExecution
+2016-10-01 16:33:57,510 : DEBUG : KNIME-Worker-28 : NodeContainer : PMML Reader : 2:105 : PMML Reader 2:105 has new state: PREEXECUTE
+2016-10-01 16:33:57,510 : DEBUG : KNIME-Worker-28 : WorkflowManager : PMML Reader : 2:105 : PMML Reader 2:105 doBeforeExecution
+2016-10-01 16:33:57,510 : DEBUG : KNIME-Worker-28 : NodeContainer : PMML Reader : 2:105 : PMML Reader 2:105 has new state: EXECUTING
+2016-10-01 16:33:57,510 : DEBUG : KNIME-Worker-28 : WorkflowFileStoreHandlerRepository : PMML Reader : 2:105 : Adding handler 250073ab-1e39-4287-99dd-9f4f4d7fe71d (PMML Reader 2:105: <no directory>) - 1 in total
+2016-10-01 16:33:57,510 : DEBUG : KNIME-Worker-28 : LocalNodeExecutionJob : PMML Reader : 2:105 : PMML Reader 2:105 Start execute
+2016-10-01 16:33:57,510 : DEBUG : KNIME-Worker-29 : WorkflowManager : File Reader : 2:103 : File Reader 2:103 doBeforePreExecution
+2016-10-01 16:33:57,510 : DEBUG : KNIME-Worker-29 : NodeContainer : File Reader : 2:103 : File Reader 2:103 has new state: PREEXECUTE
+2016-10-01 16:33:57,510 : DEBUG : KNIME-Worker-29 : WorkflowManager : File Reader : 2:103 : File Reader 2:103 doBeforeExecution
+2016-10-01 16:33:57,511 : DEBUG : KNIME-Worker-29 : NodeContainer : File Reader : 2:103 : File Reader 2:103 has new state: EXECUTING
+2016-10-01 16:33:57,511 : INFO  : KNIME-Worker-28 : LocalNodeExecutionJob : PMML Reader : 2:105 : PMML Reader 2:105 End execute (0 secs)
+2016-10-01 16:33:57,511 : DEBUG : KNIME-Worker-29 : WorkflowFileStoreHandlerRepository : File Reader : 2:103 : Adding handler 0d29b8de-db9f-4767-84ac-bb00ecd414cd (File Reader 2:103: <no directory>) - 2 in total
+2016-10-01 16:33:57,511 : DEBUG : KNIME-Worker-29 : LocalNodeExecutionJob : File Reader : 2:103 : File Reader 2:103 Start execute
+2016-10-01 16:33:57,511 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: EXECUTING
+2016-10-01 16:33:57,511 : DEBUG : KNIME-Worker-28 : WorkflowManager : PMML Reader : 2:105 : PMML Reader 2:105 doBeforePostExecution
+2016-10-01 16:33:57,511 : DEBUG : KNIME-Worker-28 : NodeContainer : PMML Reader : 2:105 : PMML Reader 2:105 has new state: POSTEXECUTE
+2016-10-01 16:33:57,511 : DEBUG : KNIME-Worker-28 : WorkflowManager : PMML Reader : 2:105 : PMML Reader 2:105 doAfterExecute - success
+2016-10-01 16:33:57,511 : DEBUG : KNIME-Worker-28 : NodeContainer : PMML Reader : 2:105 : PMML Reader 2:105 has new state: EXECUTED
+2016-10-01 16:33:57,512 : DEBUG : KNIME-Worker-28 : JPMML Classifier : JPMML Classifier : 2:104 : Configure succeeded. (JPMML Classifier)
+2016-10-01 16:33:57,512 : INFO  : KNIME-Worker-29 : FileReaderNodeModel : File Reader : 2:103 : Preparing to read from 'knime://knime.workflow/../../../Supplementary%20Data%20(really%20only%20the%20data)/Customers/newdata.csv'.
+2016-10-01 16:33:57,514 : INFO  : KNIME-Worker-29 : LocalNodeExecutionJob : File Reader : 2:103 : File Reader 2:103 End execute (0 secs)
+2016-10-01 16:33:57,514 : DEBUG : KNIME-Worker-29 : WorkflowManager : File Reader : 2:103 : File Reader 2:103 doBeforePostExecution
+2016-10-01 16:33:57,514 : DEBUG : KNIME-Worker-29 : NodeContainer : File Reader : 2:103 : File Reader 2:103 has new state: POSTEXECUTE
+2016-10-01 16:33:57,514 : DEBUG : KNIME-Worker-29 : WorkflowManager : File Reader : 2:103 : File Reader 2:103 doAfterExecute - success
+2016-10-01 16:33:57,514 : DEBUG : KNIME-Worker-29 : NodeContainer : File Reader : 2:103 : File Reader 2:103 has new state: EXECUTED
+2016-10-01 16:33:57,514 : DEBUG : KNIME-Worker-29 : JPMML Classifier : JPMML Classifier : 2:104 : Configure succeeded. (JPMML Classifier)
+2016-10-01 16:33:57,515 : DEBUG : KNIME-Worker-29 : NodeContainer : File Reader : 2:103 : JPMML Classifier 2:104 has new state: CONFIGURED_QUEUED
+2016-10-01 16:33:57,515 : DEBUG : KNIME-Worker-29 : Data to Report : Data to Report : 2:88 : Configure succeeded. (Data to Report)
+2016-10-01 16:33:57,516 : DEBUG : KNIME-Worker-30 : WorkflowManager : JPMML Classifier : 2:104 : JPMML Classifier 2:104 doBeforePreExecution
+2016-10-01 16:33:57,516 : DEBUG : KNIME-Worker-30 : NodeContainer : JPMML Classifier : 2:104 : JPMML Classifier 2:104 has new state: PREEXECUTE
+2016-10-01 16:33:57,516 : DEBUG : KNIME-Worker-30 : WorkflowManager : JPMML Classifier : 2:104 : JPMML Classifier 2:104 doBeforeExecution
+2016-10-01 16:33:57,516 : DEBUG : KNIME-Worker-30 : NodeContainer : JPMML Classifier : 2:104 : JPMML Classifier 2:104 has new state: EXECUTING
+2016-10-01 16:33:57,516 : DEBUG : KNIME-Worker-30 : WorkflowFileStoreHandlerRepository : JPMML Classifier : 2:104 : Adding handler e557a9ee-c87a-4538-8ca5-6088e64bc57b (JPMML Classifier 2:104: <no directory>) - 3 in total
+2016-10-01 16:33:57,516 : DEBUG : KNIME-Worker-30 : LocalNodeExecutionJob : JPMML Classifier : 2:104 : JPMML Classifier 2:104 Start execute
+2016-10-01 16:33:58,458 : DEBUG : KNIME-Worker-30 : JPMML Classifier : JPMML Classifier : 2:104 : reset
+2016-10-01 16:33:58,458 : ERROR : KNIME-Worker-30 : JPMML Classifier : JPMML Classifier : 2:104 : Execute failed: The column VMail Message does not exist in the table
+2016-10-01 16:33:58,459 : DEBUG : KNIME-Worker-30 : JPMML Classifier : JPMML Classifier : 2:104 : Execute failed: The column VMail Message does not exist in the table
+java.lang.Exception: The column VMail Message does not exist in the table
+	at org.knime.jpmml.classification.JPMMLClassifierNodeModel.execute(JPMMLClassifierNodeModel.java:190)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:566)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1128)
+	at org.knime.core.node.Node.execute(Node.java:915)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:556)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2016-10-01 16:33:58,459 : DEBUG : KNIME-Worker-30 : WorkflowManager : JPMML Classifier : 2:104 : JPMML Classifier 2:104 doBeforePostExecution
+2016-10-01 16:33:58,459 : DEBUG : KNIME-Worker-30 : NodeContainer : JPMML Classifier : 2:104 : JPMML Classifier 2:104 has new state: POSTEXECUTE
+2016-10-01 16:33:58,459 : DEBUG : KNIME-Worker-30 : WorkflowManager : JPMML Classifier : 2:104 : JPMML Classifier 2:104 doAfterExecute - failure
+2016-10-01 16:33:58,459 : DEBUG : KNIME-Worker-30 : NodeContainer : JPMML Classifier : 2:104 : Data to Report 2:88 has new state: CONFIGURED
+2016-10-01 16:33:58,459 : DEBUG : KNIME-Worker-30 : JPMML Classifier : JPMML Classifier : 2:104 : reset
+2016-10-01 16:33:58,459 : DEBUG : KNIME-Worker-30 : JPMML Classifier : JPMML Classifier : 2:104 : clean output ports.
+2016-10-01 16:33:58,459 : DEBUG : KNIME-Worker-30 : WorkflowFileStoreHandlerRepository : JPMML Classifier : 2:104 : Removing handler e557a9ee-c87a-4538-8ca5-6088e64bc57b (JPMML Classifier 2:104: <no directory>) - 2 remaining
+2016-10-01 16:33:58,459 : DEBUG : KNIME-Worker-30 : NodeContainer : JPMML Classifier : 2:104 : JPMML Classifier 2:104 has new state: IDLE
+2016-10-01 16:33:58,460 : DEBUG : KNIME-Worker-30 : JPMML Classifier : JPMML Classifier : 2:104 : Configure succeeded. (JPMML Classifier)
+2016-10-01 16:33:58,460 : DEBUG : KNIME-Worker-30 : NodeContainer : JPMML Classifier : 2:104 : JPMML Classifier 2:104 has new state: CONFIGURED
+2016-10-01 16:33:58,460 : DEBUG : KNIME-Worker-30 : Data to Report : Data to Report : 2:88 : Configure succeeded. (Data to Report)
+2016-10-01 16:33:58,460 : DEBUG : KNIME-Worker-30 : NodeContainer : JPMML Classifier : 2:104 : Deploy a Churn Prediction Model 2 has new state: CONFIGURED
+2016-10-01 16:33:58,460 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: IDLE
+2016-10-01 16:34:16,474 : DEBUG : main : Data to Report : Data to Report : 2:88 : reset
+2016-10-01 16:34:16,474 : DEBUG : main : Data to Report : Data to Report : 2:88 : clean output ports.
+2016-10-01 16:34:16,474 : DEBUG : main : NodeContainer : File Reader : 2:103 : Data to Report 2:88 has new state: IDLE
+2016-10-01 16:34:16,474 : DEBUG : main : JPMML Classifier : JPMML Classifier : 2:104 : reset
+2016-10-01 16:34:16,474 : DEBUG : main : JPMML Classifier : JPMML Classifier : 2:104 : clean output ports.
+2016-10-01 16:34:16,474 : DEBUG : main : NodeContainer : File Reader : 2:103 : JPMML Classifier 2:104 has new state: IDLE
+2016-10-01 16:34:16,474 : DEBUG : main : File Reader : File Reader : 2:103 : reset
+2016-10-01 16:34:16,474 : DEBUG : main : File Reader : File Reader : 2:103 : clean output ports.
+2016-10-01 16:34:16,474 : DEBUG : main : WorkflowFileStoreHandlerRepository : File Reader : 2:103 : Removing handler 0d29b8de-db9f-4767-84ac-bb00ecd414cd (File Reader 2:103: <no directory>) - 1 remaining
+2016-10-01 16:34:16,475 : DEBUG : main : NodeContainer : File Reader : 2:103 : File Reader 2:103 has new state: IDLE
+2016-10-01 16:34:16,477 : DEBUG : main : File Reader : File Reader : 2:103 : Configure succeeded. (File Reader)
+2016-10-01 16:34:16,477 : DEBUG : main : NodeContainer : File Reader : 2:103 : File Reader 2:103 has new state: CONFIGURED
+2016-10-01 16:34:16,477 : DEBUG : main : JPMML Classifier : JPMML Classifier : 2:104 : Configure succeeded. (JPMML Classifier)
+2016-10-01 16:34:16,477 : DEBUG : main : NodeContainer : File Reader : 2:103 : JPMML Classifier 2:104 has new state: CONFIGURED
+2016-10-01 16:34:16,478 : DEBUG : main : Data to Report : Data to Report : 2:88 : Configure succeeded. (Data to Report)
+2016-10-01 16:34:16,478 : DEBUG : main : NodeContainer : File Reader : 2:103 : Data to Report 2:88 has new state: CONFIGURED
+2016-10-01 16:34:18,906 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on File Reader 2:103
+2016-10-01 16:34:18,906 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Deploy a Churn Prediction Model 2
+2016-10-01 16:34:18,906 : DEBUG : main : NodeContainer :  :  : File Reader 2:103 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:34:18,906 : DEBUG : main : NodeContainer :  :  : File Reader 2:103 has new state: CONFIGURED_QUEUED
+2016-10-01 16:34:18,907 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on JPMML Classifier 2:104
+2016-10-01 16:34:18,907 : DEBUG : main : NodeContainer :  :  : JPMML Classifier 2:104 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:34:18,907 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Data to Report 2:88
+2016-10-01 16:34:18,907 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:34:18,908 : DEBUG : main : NodeContainer :  :  : Deploy a Churn Prediction Model 2 has new state: EXECUTING
+2016-10-01 16:34:18,908 : DEBUG : KNIME-Worker-31 : WorkflowManager : File Reader : 2:103 : File Reader 2:103 doBeforePreExecution
+2016-10-01 16:34:18,908 : DEBUG : KNIME-Worker-31 : NodeContainer : File Reader : 2:103 : File Reader 2:103 has new state: PREEXECUTE
+2016-10-01 16:34:18,908 : DEBUG : KNIME-Worker-31 : WorkflowManager : File Reader : 2:103 : File Reader 2:103 doBeforeExecution
+2016-10-01 16:34:18,908 : DEBUG : KNIME-Worker-31 : NodeContainer : File Reader : 2:103 : File Reader 2:103 has new state: EXECUTING
+2016-10-01 16:34:18,908 : DEBUG : KNIME-Worker-31 : WorkflowFileStoreHandlerRepository : File Reader : 2:103 : Adding handler 9d1e6b33-83ec-4b81-894e-f4f1bdb59860 (File Reader 2:103: <no directory>) - 2 in total
+2016-10-01 16:34:18,908 : DEBUG : KNIME-Worker-31 : LocalNodeExecutionJob : File Reader : 2:103 : File Reader 2:103 Start execute
+2016-10-01 16:34:18,908 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: EXECUTING
+2016-10-01 16:34:18,910 : INFO  : KNIME-Worker-31 : FileReaderNodeModel : File Reader : 2:103 : Preparing to read from 'knime://knime.workflow/../../../Supplementary%20Data%20(really%20only%20the%20data)/Customers/newdata.csv'.
+2016-10-01 16:34:18,914 : INFO  : KNIME-Worker-31 : LocalNodeExecutionJob : File Reader : 2:103 : File Reader 2:103 End execute (0 secs)
+2016-10-01 16:34:18,914 : DEBUG : KNIME-Worker-31 : WorkflowManager : File Reader : 2:103 : File Reader 2:103 doBeforePostExecution
+2016-10-01 16:34:18,914 : DEBUG : KNIME-Worker-31 : NodeContainer : File Reader : 2:103 : File Reader 2:103 has new state: POSTEXECUTE
+2016-10-01 16:34:18,915 : DEBUG : KNIME-Worker-31 : WorkflowManager : File Reader : 2:103 : File Reader 2:103 doAfterExecute - success
+2016-10-01 16:34:18,915 : DEBUG : KNIME-Worker-31 : NodeContainer : File Reader : 2:103 : File Reader 2:103 has new state: EXECUTED
+2016-10-01 16:34:18,915 : DEBUG : KNIME-Worker-31 : JPMML Classifier : JPMML Classifier : 2:104 : Configure succeeded. (JPMML Classifier)
+2016-10-01 16:34:18,916 : DEBUG : KNIME-Worker-31 : NodeContainer : File Reader : 2:103 : JPMML Classifier 2:104 has new state: CONFIGURED_QUEUED
+2016-10-01 16:34:18,916 : DEBUG : KNIME-Worker-31 : Data to Report : Data to Report : 2:88 : Configure succeeded. (Data to Report)
+2016-10-01 16:34:18,916 : DEBUG : KNIME-Worker-32 : WorkflowManager : JPMML Classifier : 2:104 : JPMML Classifier 2:104 doBeforePreExecution
+2016-10-01 16:34:18,917 : DEBUG : KNIME-Worker-32 : NodeContainer : JPMML Classifier : 2:104 : JPMML Classifier 2:104 has new state: PREEXECUTE
+2016-10-01 16:34:18,917 : DEBUG : KNIME-Worker-32 : WorkflowManager : JPMML Classifier : 2:104 : JPMML Classifier 2:104 doBeforeExecution
+2016-10-01 16:34:18,917 : DEBUG : KNIME-Worker-32 : NodeContainer : JPMML Classifier : 2:104 : JPMML Classifier 2:104 has new state: EXECUTING
+2016-10-01 16:34:18,917 : DEBUG : KNIME-Worker-32 : WorkflowFileStoreHandlerRepository : JPMML Classifier : 2:104 : Adding handler f85abae2-5f24-4b65-ad65-a212e82aa0a8 (JPMML Classifier 2:104: <no directory>) - 3 in total
+2016-10-01 16:34:18,917 : DEBUG : KNIME-Worker-32 : LocalNodeExecutionJob : JPMML Classifier : 2:104 : JPMML Classifier 2:104 Start execute
+2016-10-01 16:34:19,086 : INFO  : KNIME-Worker-32 : LocalNodeExecutionJob : JPMML Classifier : 2:104 : JPMML Classifier 2:104 End execute (0 secs)
+2016-10-01 16:34:19,086 : DEBUG : KNIME-Worker-32 : WorkflowManager : JPMML Classifier : 2:104 : JPMML Classifier 2:104 doBeforePostExecution
+2016-10-01 16:34:19,086 : DEBUG : KNIME-Worker-32 : NodeContainer : JPMML Classifier : 2:104 : JPMML Classifier 2:104 has new state: POSTEXECUTE
+2016-10-01 16:34:19,086 : DEBUG : KNIME-Worker-32 : WorkflowManager : JPMML Classifier : 2:104 : JPMML Classifier 2:104 doAfterExecute - success
+2016-10-01 16:34:19,086 : DEBUG : KNIME-Worker-32 : NodeContainer : JPMML Classifier : 2:104 : JPMML Classifier 2:104 has new state: EXECUTED
+2016-10-01 16:34:19,086 : DEBUG : KNIME-Worker-32 : Data to Report : Data to Report : 2:88 : Configure succeeded. (Data to Report)
+2016-10-01 16:34:19,086 : DEBUG : KNIME-Worker-32 : NodeContainer : JPMML Classifier : 2:104 : Data to Report 2:88 has new state: CONFIGURED_QUEUED
+2016-10-01 16:34:19,086 : DEBUG : KNIME-Worker-25 : WorkflowManager : Data to Report : 2:88 : Data to Report 2:88 doBeforePreExecution
+2016-10-01 16:34:19,087 : DEBUG : KNIME-Worker-25 : NodeContainer : Data to Report : 2:88 : Data to Report 2:88 has new state: PREEXECUTE
+2016-10-01 16:34:19,087 : DEBUG : KNIME-Worker-25 : WorkflowManager : Data to Report : 2:88 : Data to Report 2:88 doBeforeExecution
+2016-10-01 16:34:19,087 : DEBUG : KNIME-Worker-25 : NodeContainer : Data to Report : 2:88 : Data to Report 2:88 has new state: EXECUTING
+2016-10-01 16:34:19,087 : DEBUG : KNIME-Worker-25 : WorkflowFileStoreHandlerRepository : Data to Report : 2:88 : Adding handler 612d7e93-9919-4bf1-bd87-64f303a991d2 (Data to Report 2:88: <no directory>) - 4 in total
+2016-10-01 16:34:19,087 : DEBUG : KNIME-Worker-25 : LocalNodeExecutionJob : Data to Report : 2:88 : Data to Report 2:88 Start execute
+2016-10-01 16:34:19,087 : INFO  : KNIME-Worker-25 : LocalNodeExecutionJob : Data to Report : 2:88 : Data to Report 2:88 End execute (0 secs)
+2016-10-01 16:34:19,087 : DEBUG : KNIME-Worker-25 : WorkflowManager : Data to Report : 2:88 : Data to Report 2:88 doBeforePostExecution
+2016-10-01 16:34:19,087 : DEBUG : KNIME-Worker-25 : NodeContainer : Data to Report : 2:88 : Data to Report 2:88 has new state: POSTEXECUTE
+2016-10-01 16:34:19,087 : DEBUG : KNIME-Worker-25 : WorkflowManager : Data to Report : 2:88 : Data to Report 2:88 doAfterExecute - success
+2016-10-01 16:34:19,087 : DEBUG : KNIME-Worker-25 : NodeContainer : Data to Report : 2:88 : Data to Report 2:88 has new state: EXECUTED
+2016-10-01 16:34:19,087 : DEBUG : KNIME-Worker-25 : NodeContainer : Data to Report : 2:88 : Deploy a Churn Prediction Model 2 has new state: EXECUTED
+2016-10-01 16:34:19,087 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: IDLE
+2016-10-01 16:34:21,110 : DEBUG : main : Data to Report : Data to Report : 2:88 : reset
+2016-10-01 16:34:21,110 : DEBUG : main : Data to Report : Data to Report : 2:88 : clean output ports.
+2016-10-01 16:34:21,110 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 612d7e93-9919-4bf1-bd87-64f303a991d2 (Data to Report 2:88: <no directory>) - 3 remaining
+2016-10-01 16:34:21,110 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: IDLE
+2016-10-01 16:34:21,110 : DEBUG : main : Data to Report : Data to Report : 2:88 : Configure succeeded. (Data to Report)
+2016-10-01 16:34:21,110 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: CONFIGURED
+2016-10-01 16:34:21,110 : DEBUG : main : NodeContainer :  :  : Deploy a Churn Prediction Model 2 has new state: CONFIGURED
+2016-10-01 16:34:21,111 : DEBUG : main : Data to Report : Data to Report : 2:88 : reset
+2016-10-01 16:34:21,111 : DEBUG : main : Data to Report : Data to Report : 2:88 : clean output ports.
+2016-10-01 16:34:21,111 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: IDLE
+2016-10-01 16:34:21,111 : DEBUG : main : JPMML Classifier : JPMML Classifier : 2:104 : reset
+2016-10-01 16:34:21,111 : DEBUG : main : JPMML Classifier : JPMML Classifier : 2:104 : clean output ports.
+2016-10-01 16:34:21,111 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler f85abae2-5f24-4b65-ad65-a212e82aa0a8 (JPMML Classifier 2:104: <no directory>) - 2 remaining
+2016-10-01 16:34:21,111 : DEBUG : main : NodeContainer :  :  : JPMML Classifier 2:104 has new state: IDLE
+2016-10-01 16:34:21,111 : DEBUG : main : File Reader : File Reader : 2:103 : reset
+2016-10-01 16:34:21,111 : DEBUG : main : File Reader : File Reader : 2:103 : clean output ports.
+2016-10-01 16:34:21,111 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 9d1e6b33-83ec-4b81-894e-f4f1bdb59860 (File Reader 2:103: <no directory>) - 1 remaining
+2016-10-01 16:34:21,111 : DEBUG : main : NodeContainer :  :  : File Reader 2:103 has new state: IDLE
+2016-10-01 16:34:21,112 : DEBUG : main : File Reader : File Reader : 2:103 : Configure succeeded. (File Reader)
+2016-10-01 16:34:21,112 : DEBUG : main : NodeContainer :  :  : File Reader 2:103 has new state: CONFIGURED
+2016-10-01 16:34:21,112 : DEBUG : main : JPMML Classifier : JPMML Classifier : 2:104 : Configure succeeded. (JPMML Classifier)
+2016-10-01 16:34:21,112 : DEBUG : main : NodeContainer :  :  : JPMML Classifier 2:104 has new state: CONFIGURED
+2016-10-01 16:34:21,112 : DEBUG : main : Data to Report : Data to Report : 2:88 : Configure succeeded. (Data to Report)
+2016-10-01 16:34:21,112 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: CONFIGURED
+2016-10-01 16:34:21,112 : DEBUG : main : Data to Report : Data to Report : 2:88 : reset
+2016-10-01 16:34:21,112 : DEBUG : main : Data to Report : Data to Report : 2:88 : clean output ports.
+2016-10-01 16:34:21,112 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: IDLE
+2016-10-01 16:34:21,112 : DEBUG : main : JPMML Classifier : JPMML Classifier : 2:104 : reset
+2016-10-01 16:34:21,112 : DEBUG : main : JPMML Classifier : JPMML Classifier : 2:104 : clean output ports.
+2016-10-01 16:34:21,112 : DEBUG : main : NodeContainer :  :  : JPMML Classifier 2:104 has new state: IDLE
+2016-10-01 16:34:21,113 : DEBUG : main : JPMML Classifier : JPMML Classifier : 2:104 : Configure succeeded. (JPMML Classifier)
+2016-10-01 16:34:21,113 : DEBUG : main : NodeContainer :  :  : JPMML Classifier 2:104 has new state: CONFIGURED
+2016-10-01 16:34:21,113 : DEBUG : main : Data to Report : Data to Report : 2:88 : Configure succeeded. (Data to Report)
+2016-10-01 16:34:21,113 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: CONFIGURED
+2016-10-01 16:34:21,113 : DEBUG : main : Data to Report : Data to Report : 2:88 : reset
+2016-10-01 16:34:21,113 : DEBUG : main : Data to Report : Data to Report : 2:88 : clean output ports.
+2016-10-01 16:34:21,113 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: IDLE
+2016-10-01 16:34:21,113 : DEBUG : main : JPMML Classifier : JPMML Classifier : 2:104 : reset
+2016-10-01 16:34:21,113 : DEBUG : main : JPMML Classifier : JPMML Classifier : 2:104 : clean output ports.
+2016-10-01 16:34:21,113 : DEBUG : main : NodeContainer :  :  : JPMML Classifier 2:104 has new state: IDLE
+2016-10-01 16:34:21,113 : DEBUG : main : PMML Reader : PMML Reader : 2:105 : reset
+2016-10-01 16:34:21,113 : DEBUG : main : PMML Reader : PMML Reader : 2:105 : clean output ports.
+2016-10-01 16:34:21,113 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 250073ab-1e39-4287-99dd-9f4f4d7fe71d (PMML Reader 2:105: <no directory>) - 0 remaining
+2016-10-01 16:34:21,113 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on PMML Reader 2:105
+2016-10-01 16:34:21,113 : DEBUG : main : NodeContainer :  :  : PMML Reader 2:105 has new state: IDLE
+2016-10-01 16:34:21,142 : DEBUG : main : PMML Reader : PMML Reader : 2:105 : Configure succeeded. (PMML Reader)
+2016-10-01 16:34:21,142 : DEBUG : main : NodeContainer :  :  : PMML Reader 2:105 has new state: CONFIGURED
+2016-10-01 16:34:21,143 : DEBUG : main : JPMML Classifier : JPMML Classifier : 2:104 : Configure succeeded. (JPMML Classifier)
+2016-10-01 16:34:21,143 : DEBUG : main : NodeContainer :  :  : JPMML Classifier 2:104 has new state: CONFIGURED
+2016-10-01 16:34:21,143 : DEBUG : main : Data to Report : Data to Report : 2:88 : Configure succeeded. (Data to Report)
+2016-10-01 16:34:21,143 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: CONFIGURED
+2016-10-01 16:34:22,611 : DEBUG : main : ProjectWorkflowMap : Deploy a Churn Prediction Model : 2 : Removing "file:/data/KNIME_Releases/workspace/Example%20Workflows/Customer%20Intelligence/Churn%20Prediction/Deploy%20a%20Churn%20Prediction%20Model/" from project map (1 remaining)
+2016-10-01 16:34:22,611 : DEBUG : main : WorkflowManager : Deploy a Churn Prediction Model : 2 : Removing project "Deploy a Churn Prediction Model 2"
+2016-10-01 16:34:22,611 : DEBUG : main : ReportingDataSetNodeModel : Data to Report : 2:88 : Removing all (0) views from model.
+2016-10-01 16:34:22,611 : DEBUG : main : Data to Report : Data to Report : 2:88 : clean output ports.
+2016-10-01 16:34:22,612 : DEBUG : main : JPMMLClassifierNodeModel : JPMML Classifier : 2:104 : Removing all (0) views from model.
+2016-10-01 16:34:22,612 : DEBUG : main : JPMML Classifier : JPMML Classifier : 2:104 : clean output ports.
+2016-10-01 16:34:22,612 : DEBUG : main : PMMLReaderNodeModel : PMML Reader : 2:105 : Removing all (0) views from model.
+2016-10-01 16:34:22,612 : DEBUG : main : PMML Reader : PMML Reader : 2:105 : clean output ports.
+2016-10-01 16:34:22,612 : DEBUG : main : FileReaderNodeModel : File Reader : 2:103 : Removing all (0) views from model.
+2016-10-01 16:34:22,612 : DEBUG : main : File Reader : File Reader : 2:103 : clean output ports.
+2016-10-01 16:34:22,612 : DEBUG : main : WorkflowManager : Deploy a Churn Prediction Model : 2 : Project "Deploy a Churn Prediction Model 2" removed (2 remaining)

@@ -1,0 +1,223 @@
+2016-10-01 20:21:21,932 : DEBUG : ModalContext : NumberToStringNodeFactory : Basic Customer Segmentation Use Case : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 20:21:21,934 : DEBUG : ModalContext : FileReaderNodeFactory : Basic Customer Segmentation Use Case : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 20:21:21,935 : DEBUG : ModalContext : Joiner2NodeFactory : Basic Customer Segmentation Use Case : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 20:21:21,937 : DEBUG : ModalContext : XLSReaderNodeFactory : Basic Customer Segmentation Use Case : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 20:21:21,942 : DEBUG : ModalContext : ClusterNodeFactory2 : Basic Customer Segmentation Use Case : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 20:21:21,945 : DEBUG : ModalContext : NormalizerPMMLNodeFactory2 : Basic Customer Segmentation Use Case : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 20:21:21,947 : DEBUG : ModalContext : NormalizerPMMLDeNodeFactory : Basic Customer Segmentation Use Case : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 20:21:21,949 : DEBUG : ModalContext : NormalizerPMMLDeNodeFactory : Basic Customer Segmentation Use Case : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 20:21:21,951 : DEBUG : ModalContext : File Reader : File Reader : 0:91 : Configure succeeded. (File Reader)
+2016-10-01 20:21:21,952 : DEBUG : ModalContext : XLS Reader (deprecated) : XLS Reader (deprecated) : 0:100 : Configure succeeded. (XLS Reader (deprecated))
+2016-10-01 20:21:21,952 : DEBUG : ModalContext : Joiner : Joiner : 0:95 : Configure succeeded. (Joiner)
+2016-10-01 20:21:21,952 : DEBUG : ModalContext : Number To String : Number To String : 0:64 : Configure succeeded. (Number To String)
+2016-10-01 20:21:21,954 : DEBUG : ModalContext : Normalizer (PMML) : Normalizer (PMML) : 0:139 : Configure succeeded. (Normalizer (PMML))
+2016-10-01 20:21:21,955 : DEBUG : ModalContext : k-Means : k-Means : 0:138 : Configure succeeded. (k-Means)
+2016-10-01 20:21:21,955 : DEBUG : ModalContext : Denormalizer (PMML) : Denormalizer (PMML) : 0:141 : Configure succeeded. (Denormalizer (PMML))
+2016-10-01 20:21:21,955 : DEBUG : ModalContext : Denormalizer (PMML) : Denormalizer (PMML) : 0:140 : Configure succeeded. (Denormalizer (PMML))
+2016-10-01 20:21:24,829 : DEBUG : KNIME-Worker-39 : WorkflowManager : File Reader : 0:91 : File Reader 0:91 doBeforePreExecution
+2016-10-01 20:21:24,830 : DEBUG : KNIME-Worker-39 : NodeContainer : File Reader : 0:91 : File Reader 0:91 has new state: PREEXECUTE
+2016-10-01 20:21:24,830 : DEBUG : KNIME-Worker-39 : WorkflowManager : File Reader : 0:91 : File Reader 0:91 doBeforeExecution
+2016-10-01 20:21:24,830 : DEBUG : KNIME-Worker-39 : NodeContainer : File Reader : 0:91 : File Reader 0:91 has new state: EXECUTING
+2016-10-01 20:21:24,830 : DEBUG : KNIME-Worker-39 : WorkflowFileStoreHandlerRepository : File Reader : 0:91 : Adding handler eae9c4e8-9685-4c5a-ac6d-bf0445aa860b (File Reader 0:91: <no directory>) - 1 in total
+2016-10-01 20:21:24,830 : DEBUG : KNIME-Worker-39 : LocalNodeExecutionJob : File Reader : 0:91 : File Reader 0:91 Start execute
+2016-10-01 20:21:24,830 : DEBUG : KNIME-Worker-40 : WorkflowManager : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 doBeforePreExecution
+2016-10-01 20:21:24,831 : DEBUG : KNIME-Worker-40 : NodeContainer : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 has new state: PREEXECUTE
+2016-10-01 20:21:24,831 : DEBUG : KNIME-Worker-40 : WorkflowManager : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 doBeforeExecution
+2016-10-01 20:21:24,831 : DEBUG : KNIME-Worker-40 : NodeContainer : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 has new state: EXECUTING
+2016-10-01 20:21:24,831 : DEBUG : KNIME-Worker-40 : WorkflowFileStoreHandlerRepository : XLS Reader (deprecated) : 0:100 : Adding handler 3ff76147-803d-4662-9451-81887ac636df (XLS Reader (deprecated) 0:100: <no directory>) - 2 in total
+2016-10-01 20:21:24,831 : DEBUG : KNIME-Worker-40 : LocalNodeExecutionJob : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 Start execute
+2016-10-01 20:21:24,831 : INFO  : KNIME-Worker-39 : FileReaderNodeModel : File Reader : 0:91 : Preparing to read from 'knime://knime.workflow/../../../Supplementary%20Data%20(really%20only%20the%20data)/Customers/ContractData.csv'.
+2016-10-01 20:21:24,865 : INFO  : KNIME-Worker-39 : LocalNodeExecutionJob : File Reader : 0:91 : File Reader 0:91 End execute (0 secs)
+2016-10-01 20:21:24,865 : DEBUG : KNIME-Worker-39 : WorkflowManager : File Reader : 0:91 : File Reader 0:91 doBeforePostExecution
+2016-10-01 20:21:24,865 : DEBUG : KNIME-Worker-39 : NodeContainer : File Reader : 0:91 : File Reader 0:91 has new state: POSTEXECUTE
+2016-10-01 20:21:24,865 : DEBUG : KNIME-Worker-39 : WorkflowManager : File Reader : 0:91 : File Reader 0:91 doAfterExecute - success
+2016-10-01 20:21:24,865 : DEBUG : KNIME-Worker-39 : NodeContainer : File Reader : 0:91 : File Reader 0:91 has new state: EXECUTED
+2016-10-01 20:21:24,865 : DEBUG : KNIME-Worker-39 : Joiner : Joiner : 0:95 : Configure succeeded. (Joiner)
+2016-10-01 20:21:24,866 : DEBUG : KNIME-Worker-39 : Number To String : Number To String : 0:64 : Configure succeeded. (Number To String)
+2016-10-01 20:21:24,866 : DEBUG : KNIME-Worker-39 : Normalizer (PMML) : Normalizer (PMML) : 0:139 : Configure succeeded. (Normalizer (PMML))
+2016-10-01 20:21:24,866 : DEBUG : KNIME-Worker-39 : k-Means : k-Means : 0:138 : Configure succeeded. (k-Means)
+2016-10-01 20:21:24,866 : DEBUG : KNIME-Worker-39 : Denormalizer (PMML) : Denormalizer (PMML) : 0:141 : Configure succeeded. (Denormalizer (PMML))
+2016-10-01 20:21:24,866 : DEBUG : KNIME-Worker-39 : Denormalizer (PMML) : Denormalizer (PMML) : 0:140 : Configure succeeded. (Denormalizer (PMML))
+2016-10-01 20:21:25,138 : INFO  : KNIME-Worker-40 : LocalNodeExecutionJob : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 End execute (0 secs)
+2016-10-01 20:21:25,139 : DEBUG : KNIME-Worker-40 : WorkflowManager : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 doBeforePostExecution
+2016-10-01 20:21:25,139 : DEBUG : KNIME-Worker-40 : NodeContainer : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 has new state: POSTEXECUTE
+2016-10-01 20:21:25,139 : DEBUG : KNIME-Worker-40 : WorkflowManager : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 doAfterExecute - success
+2016-10-01 20:21:25,139 : DEBUG : KNIME-Worker-40 : NodeContainer : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 has new state: EXECUTED
+2016-10-01 20:21:25,139 : DEBUG : KNIME-Worker-40 : Joiner : Joiner : 0:95 : Configure succeeded. (Joiner)
+2016-10-01 20:21:25,139 : DEBUG : KNIME-Worker-40 : NodeContainer : XLS Reader (deprecated) : 0:100 : Joiner 0:95 has new state: CONFIGURED_QUEUED
+2016-10-01 20:21:25,140 : DEBUG : KNIME-Worker-40 : Number To String : Number To String : 0:64 : Configure succeeded. (Number To String)
+2016-10-01 20:21:25,140 : DEBUG : KNIME-Worker-40 : Normalizer (PMML) : Normalizer (PMML) : 0:139 : Configure succeeded. (Normalizer (PMML))
+2016-10-01 20:21:25,140 : DEBUG : KNIME-Worker-41 : WorkflowManager : Joiner : 0:95 : Joiner 0:95 doBeforePreExecution
+2016-10-01 20:21:25,140 : DEBUG : KNIME-Worker-41 : NodeContainer : Joiner : 0:95 : Joiner 0:95 has new state: PREEXECUTE
+2016-10-01 20:21:25,140 : DEBUG : KNIME-Worker-41 : WorkflowManager : Joiner : 0:95 : Joiner 0:95 doBeforeExecution
+2016-10-01 20:21:25,140 : DEBUG : KNIME-Worker-41 : NodeContainer : Joiner : 0:95 : Joiner 0:95 has new state: EXECUTING
+2016-10-01 20:21:25,140 : DEBUG : KNIME-Worker-41 : WorkflowFileStoreHandlerRepository : Joiner : 0:95 : Adding handler 762fef1f-6e39-47e8-ab66-1fbb5a06901a (Joiner 0:95: <no directory>) - 3 in total
+2016-10-01 20:21:25,140 : DEBUG : KNIME-Worker-41 : LocalNodeExecutionJob : Joiner : 0:95 : Joiner 0:95 Start execute
+2016-10-01 20:21:25,159 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 0 with 88 tuples.
+2016-10-01 20:21:25,159 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 1 with 59 tuples.
+2016-10-01 20:21:25,159 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 2 with 68 tuples.
+2016-10-01 20:21:25,159 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 3 with 65 tuples.
+2016-10-01 20:21:25,159 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 4 with 53 tuples.
+2016-10-01 20:21:25,159 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 5 with 55 tuples.
+2016-10-01 20:21:25,159 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 6 with 50 tuples.
+2016-10-01 20:21:25,159 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 7 with 54 tuples.
+2016-10-01 20:21:25,159 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 8 with 33 tuples.
+2016-10-01 20:21:25,159 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 9 with 36 tuples.
+2016-10-01 20:21:25,159 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 10 with 27 tuples.
+2016-10-01 20:21:25,159 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 11 with 23 tuples.
+2016-10-01 20:21:25,159 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 12 with 26 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 13 with 26 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 14 with 24 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 15 with 14 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 16 with 22 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 17 with 33 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 18 with 29 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 19 with 40 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 20 with 48 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 21 with 52 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 22 with 45 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 23 with 67 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 24 with 90 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 25 with 77 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 26 with 85 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 27 with 92 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 28 with 82 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 29 with 89 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 30 with 88 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 31 with 76 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 32 with 83 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 33 with 87 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 34 with 50 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 35 with 72 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 36 with 51 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 37 with 51 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 38 with 43 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 39 with 43 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 40 with 35 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 41 with 23 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 42 with 26 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 43 with 20 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 44 with 17 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 45 with 20 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 46 with 22 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 47 with 14 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 48 with 24 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 49 with 25 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 50 with 37 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 51 with 42 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 52 with 41 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 53 with 46 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 54 with 50 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 55 with 73 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 56 with 91 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 57 with 60 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 58 with 65 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 59 with 87 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 60 with 68 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 61 with 90 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 62 with 85 tuples.
+2016-10-01 20:21:25,160 : DEBUG : KNIME-Worker-41 : Joiner : Joiner : 0:95 : Joined 63 with 76 tuples.
+2016-10-01 20:21:25,231 : INFO  : KNIME-Worker-41 : LocalNodeExecutionJob : Joiner : 0:95 : Joiner 0:95 End execute (0 secs)
+2016-10-01 20:21:25,231 : DEBUG : KNIME-Worker-41 : WorkflowManager : Joiner : 0:95 : Joiner 0:95 doBeforePostExecution
+2016-10-01 20:21:25,231 : DEBUG : KNIME-Worker-41 : NodeContainer : Joiner : 0:95 : Joiner 0:95 has new state: POSTEXECUTE
+2016-10-01 20:21:25,231 : DEBUG : KNIME-Worker-41 : WorkflowManager : Joiner : 0:95 : Joiner 0:95 doAfterExecute - success
+2016-10-01 20:21:25,231 : DEBUG : KNIME-Worker-41 : NodeContainer : Joiner : 0:95 : Joiner 0:95 has new state: EXECUTED
+2016-10-01 20:21:25,231 : DEBUG : KNIME-Worker-41 : Number To String : Number To String : 0:64 : Configure succeeded. (Number To String)
+2016-10-01 20:21:25,231 : DEBUG : KNIME-Worker-41 : NodeContainer : Joiner : 0:95 : Number To String 0:64 has new state: CONFIGURED_QUEUED
+2016-10-01 20:21:25,231 : DEBUG : KNIME-Worker-42 : WorkflowManager : Number To String : 0:64 : Number To String 0:64 doBeforePreExecution
+2016-10-01 20:21:25,231 : DEBUG : KNIME-Worker-42 : NodeContainer : Number To String : 0:64 : Number To String 0:64 has new state: PREEXECUTE
+2016-10-01 20:21:25,231 : DEBUG : KNIME-Worker-42 : WorkflowManager : Number To String : 0:64 : Number To String 0:64 doBeforeExecution
+2016-10-01 20:21:25,231 : DEBUG : KNIME-Worker-42 : NodeContainer : Number To String : 0:64 : Number To String 0:64 has new state: EXECUTING
+2016-10-01 20:21:25,231 : DEBUG : KNIME-Worker-42 : WorkflowFileStoreHandlerRepository : Number To String : 0:64 : Adding handler 2e39985b-bc02-41bc-90c3-8bc0440fb677 (Number To String 0:64: <no directory>) - 4 in total
+2016-10-01 20:21:25,231 : DEBUG : KNIME-Worker-42 : LocalNodeExecutionJob : Number To String : 0:64 : Number To String 0:64 Start execute
+2016-10-01 20:21:25,235 : INFO  : KNIME-Worker-42 : LocalNodeExecutionJob : Number To String : 0:64 : Number To String 0:64 End execute (0 secs)
+2016-10-01 20:21:25,235 : DEBUG : KNIME-Worker-42 : WorkflowManager : Number To String : 0:64 : Number To String 0:64 doBeforePostExecution
+2016-10-01 20:21:25,235 : DEBUG : KNIME-Worker-42 : NodeContainer : Number To String : 0:64 : Number To String 0:64 has new state: POSTEXECUTE
+2016-10-01 20:21:25,235 : DEBUG : KNIME-Worker-42 : WorkflowManager : Number To String : 0:64 : Number To String 0:64 doAfterExecute - success
+2016-10-01 20:21:25,235 : DEBUG : KNIME-Worker-42 : NodeContainer : Number To String : 0:64 : Number To String 0:64 has new state: EXECUTED
+2016-10-01 20:21:25,236 : DEBUG : KNIME-Worker-42 : Normalizer (PMML) : Normalizer (PMML) : 0:139 : Configure succeeded. (Normalizer (PMML))
+2016-10-01 20:21:25,236 : DEBUG : KNIME-Worker-42 : NodeContainer : Number To String : 0:64 : Normalizer (PMML) 0:139 has new state: CONFIGURED_QUEUED
+2016-10-01 20:21:25,237 : DEBUG : KNIME-Worker-42 : k-Means : k-Means : 0:138 : Configure succeeded. (k-Means)
+2016-10-01 20:21:25,237 : DEBUG : KNIME-Worker-42 : Denormalizer (PMML) : Denormalizer (PMML) : 0:141 : Configure succeeded. (Denormalizer (PMML))
+2016-10-01 20:21:25,237 : DEBUG : KNIME-Worker-42 : Denormalizer (PMML) : Denormalizer (PMML) : 0:140 : Configure succeeded. (Denormalizer (PMML))
+2016-10-01 20:21:25,237 : DEBUG : KNIME-Worker-43 : WorkflowManager : Normalizer (PMML) : 0:139 : Normalizer (PMML) 0:139 doBeforePreExecution
+2016-10-01 20:21:25,237 : DEBUG : KNIME-Worker-43 : NodeContainer : Normalizer (PMML) : 0:139 : Normalizer (PMML) 0:139 has new state: PREEXECUTE
+2016-10-01 20:21:25,237 : DEBUG : KNIME-Worker-43 : WorkflowManager : Normalizer (PMML) : 0:139 : Normalizer (PMML) 0:139 doBeforeExecution
+2016-10-01 20:21:25,237 : DEBUG : KNIME-Worker-43 : NodeContainer : Normalizer (PMML) : 0:139 : Normalizer (PMML) 0:139 has new state: EXECUTING
+2016-10-01 20:21:25,238 : DEBUG : KNIME-Worker-43 : WorkflowFileStoreHandlerRepository : Normalizer (PMML) : 0:139 : Adding handler 7c671580-0fdb-4c85-b62d-9f07a7de8d10 (Normalizer (PMML) 0:139: <no directory>) - 5 in total
+2016-10-01 20:21:25,238 : DEBUG : KNIME-Worker-43 : LocalNodeExecutionJob : Normalizer (PMML) : 0:139 : Normalizer (PMML) 0:139 Start execute
+2016-10-01 20:21:25,434 : INFO  : KNIME-Worker-43 : LocalNodeExecutionJob : Normalizer (PMML) : 0:139 : Normalizer (PMML) 0:139 End execute (0 secs)
+2016-10-01 20:21:25,434 : DEBUG : KNIME-Worker-43 : WorkflowManager : Normalizer (PMML) : 0:139 : Normalizer (PMML) 0:139 doBeforePostExecution
+2016-10-01 20:21:25,434 : DEBUG : KNIME-Worker-43 : NodeContainer : Normalizer (PMML) : 0:139 : Normalizer (PMML) 0:139 has new state: POSTEXECUTE
+2016-10-01 20:21:25,435 : DEBUG : KNIME-Worker-43 : WorkflowManager : Normalizer (PMML) : 0:139 : Normalizer (PMML) 0:139 doAfterExecute - success
+2016-10-01 20:21:25,435 : DEBUG : KNIME-Worker-43 : NodeContainer : Normalizer (PMML) : 0:139 : Normalizer (PMML) 0:139 has new state: EXECUTED
+2016-10-01 20:21:25,435 : DEBUG : KNIME-Worker-43 : k-Means : k-Means : 0:138 : Configure succeeded. (k-Means)
+2016-10-01 20:21:25,435 : DEBUG : KNIME-Worker-43 : NodeContainer : Normalizer (PMML) : 0:139 : k-Means 0:138 has new state: CONFIGURED_QUEUED
+2016-10-01 20:21:25,437 : DEBUG : KNIME-Worker-43 : Denormalizer (PMML) : Denormalizer (PMML) : 0:141 : Configure succeeded. (Denormalizer (PMML))
+2016-10-01 20:21:25,437 : DEBUG : KNIME-Worker-43 : Denormalizer (PMML) : Denormalizer (PMML) : 0:140 : Configure succeeded. (Denormalizer (PMML))
+2016-10-01 20:21:25,437 : DEBUG : KNIME-Worker-44 : WorkflowManager : k-Means : 0:138 : k-Means 0:138 doBeforePreExecution
+2016-10-01 20:21:25,437 : DEBUG : KNIME-Worker-44 : NodeContainer : k-Means : 0:138 : k-Means 0:138 has new state: PREEXECUTE
+2016-10-01 20:21:25,437 : DEBUG : KNIME-Worker-44 : WorkflowManager : k-Means : 0:138 : k-Means 0:138 doBeforeExecution
+2016-10-01 20:21:25,437 : DEBUG : KNIME-Worker-44 : NodeContainer : k-Means : 0:138 : k-Means 0:138 has new state: EXECUTING
+2016-10-01 20:21:25,437 : DEBUG : KNIME-Worker-44 : WorkflowFileStoreHandlerRepository : k-Means : 0:138 : Adding handler 0a9702f4-04d9-4d27-b482-c5d8b00292c6 (k-Means 0:138: <no directory>) - 6 in total
+2016-10-01 20:21:25,437 : DEBUG : KNIME-Worker-44 : LocalNodeExecutionJob : k-Means : 0:138 : k-Means 0:138 Start execute
+2016-10-01 20:21:26,072 : INFO  : KNIME-Worker-44 : LocalNodeExecutionJob : k-Means : 0:138 : k-Means 0:138 End execute (0 secs)
+2016-10-01 20:21:26,073 : DEBUG : KNIME-Worker-44 : WorkflowManager : k-Means : 0:138 : k-Means 0:138 doBeforePostExecution
+2016-10-01 20:21:26,073 : DEBUG : KNIME-Worker-44 : NodeContainer : k-Means : 0:138 : k-Means 0:138 has new state: POSTEXECUTE
+2016-10-01 20:21:26,073 : DEBUG : KNIME-Worker-44 : WorkflowManager : k-Means : 0:138 : k-Means 0:138 doAfterExecute - success
+2016-10-01 20:21:26,073 : DEBUG : KNIME-Worker-44 : NodeContainer : k-Means : 0:138 : k-Means 0:138 has new state: EXECUTED
+2016-10-01 20:21:26,073 : DEBUG : KNIME-Worker-44 : Denormalizer (PMML) : Denormalizer (PMML) : 0:140 : Configure succeeded. (Denormalizer (PMML))
+2016-10-01 20:21:26,073 : DEBUG : KNIME-Worker-44 : NodeContainer : k-Means : 0:138 : Denormalizer (PMML) 0:140 has new state: CONFIGURED_QUEUED
+2016-10-01 20:21:26,073 : DEBUG : KNIME-Worker-44 : Denormalizer (PMML) : Denormalizer (PMML) : 0:141 : Configure succeeded. (Denormalizer (PMML))
+2016-10-01 20:21:26,073 : DEBUG : KNIME-Worker-44 : NodeContainer : k-Means : 0:138 : Denormalizer (PMML) 0:141 has new state: CONFIGURED_QUEUED
+2016-10-01 20:21:26,073 : DEBUG : KNIME-Worker-45 : WorkflowManager : Denormalizer (PMML) : 0:140 : Denormalizer (PMML) 0:140 doBeforePreExecution
+2016-10-01 20:21:26,073 : DEBUG : KNIME-Worker-45 : NodeContainer : Denormalizer (PMML) : 0:140 : Denormalizer (PMML) 0:140 has new state: PREEXECUTE
+2016-10-01 20:21:26,073 : DEBUG : KNIME-Worker-45 : WorkflowManager : Denormalizer (PMML) : 0:140 : Denormalizer (PMML) 0:140 doBeforeExecution
+2016-10-01 20:21:26,073 : DEBUG : KNIME-Worker-45 : NodeContainer : Denormalizer (PMML) : 0:140 : Denormalizer (PMML) 0:140 has new state: EXECUTING
+2016-10-01 20:21:26,074 : DEBUG : KNIME-Worker-45 : WorkflowFileStoreHandlerRepository : Denormalizer (PMML) : 0:140 : Adding handler 0fcb4a9a-a428-4c88-953c-c9ca30a2507d (Denormalizer (PMML) 0:140: <no directory>) - 7 in total
+2016-10-01 20:21:26,074 : DEBUG : KNIME-Worker-45 : LocalNodeExecutionJob : Denormalizer (PMML) : 0:140 : Denormalizer (PMML) 0:140 Start execute
+2016-10-01 20:21:26,077 : DEBUG : KNIME-Worker-46 : WorkflowManager : Denormalizer (PMML) : 0:141 : Denormalizer (PMML) 0:141 doBeforePreExecution
+2016-10-01 20:21:26,077 : DEBUG : KNIME-Worker-46 : NodeContainer : Denormalizer (PMML) : 0:141 : Denormalizer (PMML) 0:141 has new state: PREEXECUTE
+2016-10-01 20:21:26,077 : DEBUG : KNIME-Worker-46 : WorkflowManager : Denormalizer (PMML) : 0:141 : Denormalizer (PMML) 0:141 doBeforeExecution
+2016-10-01 20:21:26,077 : DEBUG : KNIME-Worker-46 : NodeContainer : Denormalizer (PMML) : 0:141 : Denormalizer (PMML) 0:141 has new state: EXECUTING
+2016-10-01 20:21:26,077 : DEBUG : KNIME-Worker-46 : WorkflowFileStoreHandlerRepository : Denormalizer (PMML) : 0:141 : Adding handler 994a0ef9-5797-44b3-b840-d3d499a867b3 (Denormalizer (PMML) 0:141: <no directory>) - 8 in total
+2016-10-01 20:21:26,077 : DEBUG : KNIME-Worker-46 : LocalNodeExecutionJob : Denormalizer (PMML) : 0:141 : Denormalizer (PMML) 0:141 Start execute
+2016-10-01 20:21:26,085 : INFO  : KNIME-Worker-46 : LocalNodeExecutionJob : Denormalizer (PMML) : 0:141 : Denormalizer (PMML) 0:141 End execute (0 secs)
+2016-10-01 20:21:26,085 : DEBUG : KNIME-Worker-46 : WorkflowManager : Denormalizer (PMML) : 0:141 : Denormalizer (PMML) 0:141 doBeforePostExecution
+2016-10-01 20:21:26,085 : DEBUG : KNIME-Worker-46 : NodeContainer : Denormalizer (PMML) : 0:141 : Denormalizer (PMML) 0:141 has new state: POSTEXECUTE
+2016-10-01 20:21:26,085 : DEBUG : KNIME-Worker-46 : WorkflowManager : Denormalizer (PMML) : 0:141 : Denormalizer (PMML) 0:141 doAfterExecute - success
+2016-10-01 20:21:26,085 : DEBUG : KNIME-Worker-46 : NodeContainer : Denormalizer (PMML) : 0:141 : Denormalizer (PMML) 0:141 has new state: EXECUTED
+2016-10-01 20:21:26,124 : INFO  : KNIME-Worker-45 : LocalNodeExecutionJob : Denormalizer (PMML) : 0:140 : Denormalizer (PMML) 0:140 End execute (0 secs)
+2016-10-01 20:21:26,124 : DEBUG : KNIME-Worker-45 : WorkflowManager : Denormalizer (PMML) : 0:140 : Denormalizer (PMML) 0:140 doBeforePostExecution
+2016-10-01 20:21:26,124 : DEBUG : KNIME-Worker-45 : NodeContainer : Denormalizer (PMML) : 0:140 : Denormalizer (PMML) 0:140 has new state: POSTEXECUTE
+2016-10-01 20:21:26,124 : DEBUG : KNIME-Worker-45 : WorkflowManager : Denormalizer (PMML) : 0:140 : Denormalizer (PMML) 0:140 doAfterExecute - success
+2016-10-01 20:21:26,124 : DEBUG : KNIME-Worker-45 : NodeContainer : Denormalizer (PMML) : 0:140 : Denormalizer (PMML) 0:140 has new state: EXECUTED
+2016-10-01 20:21:26,124 : DEBUG : KNIME-Worker-45 : NodeContainer : Denormalizer (PMML) : 0:140 : Basic Customer Segmentation Use Case 0 has new state: EXECUTED
+2016-10-01 20:21:26,124 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: IDLE
+2016-10-01 20:21:28,377 : DEBUG : main : ProjectWorkflowMap : Basic Customer Segmentation Use Case : 0 : Removing "file:/data/KNIME_Releases/workspace/Example%20Workflows/Customer%20Intelligence/Customer%20Segmentation/Basic%20Customer%20Segmentation%20Use%20Case/" from project map (0 remaining)
+2016-10-01 20:21:28,377 : DEBUG : main : WorkflowManager : Basic Customer Segmentation Use Case : 0 : Removing project "Basic Customer Segmentation Use Case 0"
+2016-10-01 20:21:28,378 : DEBUG : main : WorkflowFileStoreHandlerRepository : Denormalizer (PMML) : 0:140 : Removing handler 0fcb4a9a-a428-4c88-953c-c9ca30a2507d (Denormalizer (PMML) 0:140: <no directory>) - 7 remaining
+2016-10-01 20:21:28,378 : DEBUG : main : NormalizerPMMLDeNodeModel : Denormalizer (PMML) : 0:140 : Removing all (0) views from model.
+2016-10-01 20:21:28,378 : DEBUG : main : Denormalizer (PMML) : Denormalizer (PMML) : 0:140 : clean output ports.
+2016-10-01 20:21:28,378 : DEBUG : main : WorkflowFileStoreHandlerRepository : Denormalizer (PMML) : 0:141 : Removing handler 994a0ef9-5797-44b3-b840-d3d499a867b3 (Denormalizer (PMML) 0:141: <no directory>) - 6 remaining
+2016-10-01 20:21:28,378 : DEBUG : main : NormalizerPMMLDeNodeModel : Denormalizer (PMML) : 0:141 : Removing all (0) views from model.
+2016-10-01 20:21:28,378 : DEBUG : main : Denormalizer (PMML) : Denormalizer (PMML) : 0:141 : clean output ports.
+2016-10-01 20:21:28,378 : DEBUG : main : WorkflowFileStoreHandlerRepository : k-Means : 0:138 : Removing handler 0a9702f4-04d9-4d27-b482-c5d8b00292c6 (k-Means 0:138: <no directory>) - 5 remaining
+2016-10-01 20:21:28,378 : DEBUG : main : ClusterNodeModel : k-Means : 0:138 : Removing all (0) views from model.
+2016-10-01 20:21:28,378 : DEBUG : main : k-Means : k-Means : 0:138 : clean output ports.
+2016-10-01 20:21:28,378 : DEBUG : main : WorkflowFileStoreHandlerRepository : Normalizer (PMML) : 0:139 : Removing handler 7c671580-0fdb-4c85-b62d-9f07a7de8d10 (Normalizer (PMML) 0:139: <no directory>) - 4 remaining
+2016-10-01 20:21:28,378 : DEBUG : main : NormalizerPMMLNodeModelNoOptIn : Normalizer (PMML) : 0:139 : Removing all (0) views from model.
+2016-10-01 20:21:28,378 : DEBUG : main : Normalizer (PMML) : Normalizer (PMML) : 0:139 : clean output ports.
+2016-10-01 20:21:28,378 : DEBUG : main : WorkflowFileStoreHandlerRepository : Number To String : 0:64 : Removing handler 2e39985b-bc02-41bc-90c3-8bc0440fb677 (Number To String 0:64: <no directory>) - 3 remaining
+2016-10-01 20:21:28,378 : DEBUG : main : NumberToStringNodeModel : Number To String : 0:64 : Removing all (0) views from model.
+2016-10-01 20:21:28,378 : DEBUG : main : Number To String : Number To String : 0:64 : clean output ports.
+2016-10-01 20:21:28,379 : DEBUG : main : WorkflowFileStoreHandlerRepository : Joiner : 0:95 : Removing handler 762fef1f-6e39-47e8-ab66-1fbb5a06901a (Joiner 0:95: <no directory>) - 2 remaining
+2016-10-01 20:21:28,379 : DEBUG : main : Joiner2NodeModel : Joiner : 0:95 : Removing all (0) views from model.
+2016-10-01 20:21:28,379 : DEBUG : main : Joiner : Joiner : 0:95 : clean output ports.
+2016-10-01 20:21:28,379 : DEBUG : main : WorkflowFileStoreHandlerRepository : XLS Reader (deprecated) : 0:100 : Removing handler 3ff76147-803d-4662-9451-81887ac636df (XLS Reader (deprecated) 0:100: <no directory>) - 1 remaining
+2016-10-01 20:21:28,379 : DEBUG : main : XLSReaderNodeModel : XLS Reader (deprecated) : 0:100 : Removing all (0) views from model.
+2016-10-01 20:21:28,379 : DEBUG : main : XLS Reader (deprecated) : XLS Reader (deprecated) : 0:100 : clean output ports.
+2016-10-01 20:21:28,379 : DEBUG : main : WorkflowFileStoreHandlerRepository : File Reader : 0:91 : Removing handler eae9c4e8-9685-4c5a-ac6d-bf0445aa860b (File Reader 0:91: <no directory>) - 0 remaining
+2016-10-01 20:21:28,379 : DEBUG : main : FileReaderNodeModel : File Reader : 0:91 : Removing all (0) views from model.
+2016-10-01 20:21:28,379 : DEBUG : main : File Reader : File Reader : 0:91 : clean output ports.
+2016-10-01 20:21:28,379 : DEBUG : main : WorkflowManager : Basic Customer Segmentation Use Case : 0 : Project "Basic Customer Segmentation Use Case 0" removed (1 remaining)

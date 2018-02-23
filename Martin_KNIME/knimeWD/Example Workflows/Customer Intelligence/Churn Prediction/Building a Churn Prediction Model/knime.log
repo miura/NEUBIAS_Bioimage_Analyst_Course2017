@@ -1,0 +1,648 @@
+2016-10-01 16:30:48,136 : DEBUG : ModalContext : PartitionNodeFactory : Build a Churn Prediction Model : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:48,143 : DEBUG : ModalContext : NumberToStringNodeFactory : Build a Churn Prediction Model : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:48,178 : DEBUG : ModalContext : DecTreePredictorNodeFactory : Build a Churn Prediction Model : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:48,180 : DEBUG : ModalContext : AccuracyScorerNodeFactory : Build a Churn Prediction Model : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:48,182 : DEBUG : ModalContext : ColorManager2NodeFactory : Build a Churn Prediction Model : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:48,188 : DEBUG : ModalContext : ROCNodeFactory : Build a Churn Prediction Model : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:48,191 : DEBUG : ModalContext : PMMLWriterNodeFactory : Build a Churn Prediction Model : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:48,194 : DEBUG : ModalContext : FileReaderNodeFactory : Build a Churn Prediction Model : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:48,196 : DEBUG : ModalContext : Joiner2NodeFactory : Build a Churn Prediction Model : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:48,198 : DEBUG : ModalContext : EqualSizeSamplingNodeFactory : Build a Churn Prediction Model : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:48,200 : DEBUG : ModalContext : XLSReaderNodeFactory : Build a Churn Prediction Model : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:48,203 : DEBUG : ModalContext : DecisionTreeLearnerNodeFactory3 : Build a Churn Prediction Model : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:48,206 : DEBUG : ModalContext : File Reader : File Reader : 0:91 : Configure succeeded. (File Reader)
+2016-10-01 16:30:48,206 : DEBUG : ModalContext : XLS Reader (deprecated) : XLS Reader (deprecated) : 0:100 : Configure succeeded. (XLS Reader (deprecated))
+2016-10-01 16:30:48,207 : DEBUG : ModalContext : Joiner : Joiner : 0:95 : Configure succeeded. (Joiner)
+2016-10-01 16:30:48,208 : DEBUG : ModalContext : Number To String : Number To String : 0:64 : Configure succeeded. (Number To String)
+2016-10-01 16:30:48,208 : WARN  : ModalContext : Color Manager : Color Manager : 0:67 : Column "Churn" has no nominal values set: execute predecessor or add Binner.
+2016-10-01 16:30:55,107 : DEBUG : KNIME-Worker-23 : WorkflowManager : File Reader : 0:91 : File Reader 0:91 doBeforePreExecution
+2016-10-01 16:30:55,107 : DEBUG : KNIME-Worker-23 : NodeContainer : File Reader : 0:91 : File Reader 0:91 has new state: PREEXECUTE
+2016-10-01 16:30:55,107 : DEBUG : KNIME-Worker-23 : WorkflowManager : File Reader : 0:91 : File Reader 0:91 doBeforeExecution
+2016-10-01 16:30:55,108 : DEBUG : KNIME-Worker-23 : NodeContainer : File Reader : 0:91 : File Reader 0:91 has new state: EXECUTING
+2016-10-01 16:30:55,108 : DEBUG : KNIME-Worker-23 : WorkflowFileStoreHandlerRepository : File Reader : 0:91 : Adding handler dc43077b-d89b-48f6-b0af-3b1c286d6bbc (File Reader 0:91: <no directory>) - 1 in total
+2016-10-01 16:30:55,108 : DEBUG : KNIME-Worker-23 : LocalNodeExecutionJob : File Reader : 0:91 : File Reader 0:91 Start execute
+0:91 : File Reader 0:91 Start execute
+2016-10-01 16:30:55,108 : DEBUG : KNIME-Worker-22 : WorkflowManager : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 doBeforePreExecution
+2016-10-01 16:30:55,108 : DEBUG : KNIME-Worker-22 : NodeContainer : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 has new state: PREEXECUTE
+2016-10-01 16:30:55,108 : DEBUG : KNIME-Worker-22 : WorkflowManager : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 doBeforeExecution
+2016-10-01 16:30:55,108 : DEBUG : KNIME-Worker-22 : NodeContainer : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 has new state: EXECUTING
+2016-10-01 16:30:55,108 : DEBUG : KNIME-Worker-22 : WorkflowFileStoreHandlerRepository : XLS Reader (deprecated) : 0:100 : Adding handler eed5c04d-e71b-4e02-a4bc-27eb188b2179 (XLS Reader (deprecated) 0:100: <no directory>) - 2 in total
+2016-10-01 16:30:55,108 : DEBUG : KNIME-Worker-22 : LocalNodeExecutionJob : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 Start execute
+2016-10-01 16:30:55,108 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: EXECUTING
+2016-10-01 16:30:55,108 : INFO  : KNIME-Worker-23 : FileReaderNodeModel : File Reader : 0:91 : Preparing to read from 'knime://knime.workflow/../../../Supplementary%20Data%20(really%20only%20the%20data)/Customers/ContractData.csv'.
+2016-10-01 16:30:55,135 : INFO  : KNIME-Worker-23 : LocalNodeExecutionJob : File Reader : 0:91 : File Reader 0:91 End execute (0 secs)
+2016-10-01 16:30:55,135 : DEBUG : KNIME-Worker-23 : WorkflowManager : File Reader : 0:91 : File Reader 0:91 doBeforePostExecution
+2016-10-01 16:30:55,135 : DEBUG : KNIME-Worker-23 : NodeContainer : File Reader : 0:91 : File Reader 0:91 has new state: POSTEXECUTE
+2016-10-01 16:30:55,135 : DEBUG : KNIME-Worker-23 : WorkflowManager : File Reader : 0:91 : File Reader 0:91 doAfterExecute - success
+2016-10-01 16:30:55,135 : DEBUG : KNIME-Worker-23 : NodeContainer : File Reader : 0:91 : File Reader 0:91 has new state: EXECUTED
+2016-10-01 16:30:55,136 : DEBUG : KNIME-Worker-23 : Joiner : Joiner : 0:95 : Configure succeeded. (Joiner)
+2016-10-01 16:30:55,136 : DEBUG : KNIME-Worker-23 : Number To String : Number To String : 0:64 : Configure succeeded. (Number To String)
+2016-10-01 16:30:55,137 : WARN  : KNIME-Worker-23 : Color Manager : Color Manager : 0:67 : Column "Churn" has no nominal values set: execute predecessor or add Binner.
+2016-10-01 16:30:55,403 : INFO  : KNIME-Worker-22 : LocalNodeExecutionJob : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 End execute (0 secs)
+2016-10-01 16:30:55,404 : DEBUG : KNIME-Worker-22 : WorkflowManager : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 doBeforePostExecution
+2016-10-01 16:30:55,404 : DEBUG : KNIME-Worker-22 : NodeContainer : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 has new state: POSTEXECUTE
+2016-10-01 16:30:55,404 : DEBUG : KNIME-Worker-22 : WorkflowManager : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 doAfterExecute - success
+2016-10-01 16:30:55,404 : DEBUG : KNIME-Worker-22 : NodeContainer : XLS Reader (deprecated) : 0:100 : XLS Reader (deprecated) 0:100 has new state: EXECUTED
+2016-10-01 16:30:55,404 : DEBUG : KNIME-Worker-22 : Joiner : Joiner : 0:95 : Configure succeeded. (Joiner)
+2016-10-01 16:30:55,404 : DEBUG : KNIME-Worker-22 : NodeContainer : XLS Reader (deprecated) : 0:100 : Joiner 0:95 has new state: CONFIGURED_QUEUED
+2016-10-01 16:30:55,404 : DEBUG : KNIME-Worker-22 : Number To String : Number To String : 0:64 : Configure succeeded. (Number To String)
+2016-10-01 16:30:55,404 : WARN  : KNIME-Worker-22 : Color Manager : Color Manager : 0:67 : Column "Churn" has no nominal values set: execute predecessor or add Binner.
+2016-10-01 16:30:55,404 : DEBUG : KNIME-Worker-18 : WorkflowManager : Joiner : 0:95 : Joiner 0:95 doBeforePreExecution
+2016-10-01 16:30:55,405 : DEBUG : KNIME-Worker-18 : NodeContainer : Joiner : 0:95 : Joiner 0:95 has new state: PREEXECUTE
+2016-10-01 16:30:55,405 : DEBUG : KNIME-Worker-18 : WorkflowManager : Joiner : 0:95 : Joiner 0:95 doBeforeExecution
+2016-10-01 16:30:55,405 : DEBUG : KNIME-Worker-18 : NodeContainer : Joiner : 0:95 : Joiner 0:95 has new state: EXECUTING
+2016-10-01 16:30:55,405 : DEBUG : KNIME-Worker-18 : WorkflowFileStoreHandlerRepository : Joiner : 0:95 : Adding handler 5bf80eb5-f5a5-4705-87ad-dc9d33ac8f4b (Joiner 0:95: <no directory>) - 3 in total
+2016-10-01 16:30:55,405 : DEBUG : KNIME-Worker-18 : LocalNodeExecutionJob : Joiner : 0:95 : Joiner 0:95 Start execute
+2016-10-01 16:30:55,426 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 0 with 88 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 1 with 59 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 2 with 68 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 3 with 65 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 4 with 53 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 5 with 55 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 6 with 50 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 7 with 54 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 8 with 33 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 9 with 36 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 10 with 27 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 11 with 23 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 12 with 26 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 13 with 26 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 14 with 24 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 15 with 14 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 16 with 22 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 17 with 33 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 18 with 29 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 19 with 40 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 20 with 48 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 21 with 52 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 22 with 45 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 23 with 67 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 24 with 90 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 25 with 77 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 26 with 85 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 27 with 92 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 28 with 82 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 29 with 89 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 30 with 88 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 31 with 76 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 32 with 83 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 33 with 87 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 34 with 50 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 35 with 72 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 36 with 51 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 37 with 51 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 38 with 43 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 39 with 43 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 40 with 35 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 41 with 23 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 42 with 26 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 43 with 20 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 44 with 17 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 45 with 20 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 46 with 22 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 47 with 14 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 48 with 24 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 49 with 25 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 50 with 37 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 51 with 42 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 52 with 41 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 53 with 46 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 54 with 50 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 55 with 73 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 56 with 91 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 57 with 60 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 58 with 65 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 59 with 87 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 60 with 68 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 61 with 90 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 62 with 85 tuples.
+2016-10-01 16:30:55,427 : DEBUG : KNIME-Worker-18 : Joiner : Joiner : 0:95 : Joined 63 with 76 tuples.
+2016-10-01 16:30:55,477 : INFO  : KNIME-Worker-18 : LocalNodeExecutionJob : Joiner : 0:95 : Joiner 0:95 End execute (0 secs)
+2016-10-01 16:30:55,477 : DEBUG : KNIME-Worker-18 : WorkflowManager : Joiner : 0:95 : Joiner 0:95 doBeforePostExecution
+2016-10-01 16:30:55,477 : DEBUG : KNIME-Worker-18 : NodeContainer : Joiner : 0:95 : Joiner 0:95 has new state: POSTEXECUTE
+2016-10-01 16:30:55,477 : DEBUG : KNIME-Worker-18 : WorkflowManager : Joiner : 0:95 : Joiner 0:95 doAfterExecute - success
+2016-10-01 16:30:55,477 : DEBUG : KNIME-Worker-18 : NodeContainer : Joiner : 0:95 : Joiner 0:95 has new state: EXECUTED
+2016-10-01 16:30:55,477 : DEBUG : KNIME-Worker-18 : Number To String : Number To String : 0:64 : Configure succeeded. (Number To String)
+2016-10-01 16:30:55,478 : DEBUG : KNIME-Worker-18 : NodeContainer : Joiner : 0:95 : Number To String 0:64 has new state: CONFIGURED_QUEUED
+2016-10-01 16:30:55,478 : DEBUG : KNIME-Worker-21 : WorkflowManager : Number To String : 0:64 : Number To String 0:64 doBeforePreExecution
+2016-10-01 16:30:55,478 : DEBUG : KNIME-Worker-21 : NodeContainer : Number To String : 0:64 : Number To String 0:64 has new state: PREEXECUTE
+2016-10-01 16:30:55,478 : DEBUG : KNIME-Worker-21 : WorkflowManager : Number To String : 0:64 : Number To String 0:64 doBeforeExecution
+2016-10-01 16:30:55,478 : DEBUG : KNIME-Worker-21 : NodeContainer : Number To String : 0:64 : Number To String 0:64 has new state: EXECUTING
+2016-10-01 16:30:55,478 : DEBUG : KNIME-Worker-21 : WorkflowFileStoreHandlerRepository : Number To String : 0:64 : Adding handler 618b0550-1a07-4822-8665-b0b13f015817 (Number To String 0:64: <no directory>) - 4 in total
+2016-10-01 16:30:55,478 : DEBUG : KNIME-Worker-21 : LocalNodeExecutionJob : Number To String : 0:64 : Number To String 0:64 Start execute
+2016-10-01 16:30:55,485 : INFO  : KNIME-Worker-21 : LocalNodeExecutionJob : Number To String : 0:64 : Number To String 0:64 End execute (0 secs)
+2016-10-01 16:30:55,485 : DEBUG : KNIME-Worker-21 : WorkflowManager : Number To String : 0:64 : Number To String 0:64 doBeforePostExecution
+2016-10-01 16:30:55,485 : DEBUG : KNIME-Worker-21 : NodeContainer : Number To String : 0:64 : Number To String 0:64 has new state: POSTEXECUTE
+2016-10-01 16:30:55,486 : DEBUG : KNIME-Worker-21 : WorkflowManager : Number To String : 0:64 : Number To String 0:64 doAfterExecute - success
+2016-10-01 16:30:55,486 : DEBUG : KNIME-Worker-21 : NodeContainer : Number To String : 0:64 : Number To String 0:64 has new state: EXECUTED
+2016-10-01 16:30:55,486 : DEBUG : KNIME-Worker-21 : Color Manager : Color Manager : 0:67 : Configure succeeded. (Color Manager)
+2016-10-01 16:30:55,486 : DEBUG : KNIME-Worker-21 : NodeContainer : Number To String : 0:64 : Color Manager 0:67 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:30:55,486 : DEBUG : KNIME-Worker-21 : NodeContainer : Number To String : 0:64 : Color Manager 0:67 has new state: CONFIGURED_QUEUED
+2016-10-01 16:30:55,486 : DEBUG : KNIME-Worker-21 : Partitioning : Partitioning : 0:61 : Configure succeeded. (Partitioning)
+2016-10-01 16:30:55,486 : DEBUG : KNIME-Worker-21 : NodeContainer : Number To String : 0:64 : Partitioning 0:61 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:30:55,487 : DEBUG : KNIME-Worker-21 : Decision Tree Learner : Decision Tree Learner : 0:101 : Configure succeeded. (Decision Tree Learner)
+2016-10-01 16:30:55,487 : DEBUG : KNIME-Worker-21 : NodeContainer : Number To String : 0:64 : Decision Tree Learner 0:101 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:30:55,487 : DEBUG : KNIME-Worker-21 : Equal Size Sampling : Equal Size Sampling : 0:96 : Configure succeeded. (Equal Size Sampling)
+2016-10-01 16:30:55,487 : DEBUG : KNIME-Worker-21 : NodeContainer : Number To String : 0:64 : Equal Size Sampling 0:96 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:30:55,488 : WARN  : KNIME-Worker-21 : PMML Writer : PMML Writer : 0:86 : Output file '/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/../../../Supplementary Data (really only the data)/Customers/model.pmml' exists and will be overwritten
+2016-10-01 16:30:55,488 : DEBUG : KNIME-Worker-21 : PMML Writer : PMML Writer : 0:86 : Configure succeeded. (PMML Writer)
+2016-10-01 16:30:55,488 : DEBUG : KNIME-Worker-21 : NodeContainer : Number To String : 0:64 : PMML Writer 0:86 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:30:55,488 : WARN  : KNIME-Worker-21 : DataTableSpec : Decision Tree Predictor : 0:65 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 16:30:55,488 : WARN  : KNIME-Worker-21 : DataTableSpec : Decision Tree Predictor : 0:65 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 16:30:55,488 : WARN  : KNIME-Worker-21 : DataTableSpec : Decision Tree Predictor : 0:65 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 16:30:55,488 : DEBUG : KNIME-Worker-21 : Decision Tree Predictor : Decision Tree Predictor : 0:65 : Configure succeeded. (Decision Tree Predictor)
+2016-10-01 16:30:55,488 : DEBUG : KNIME-Worker-21 : NodeContainer : Number To String : 0:64 : Decision Tree Predictor 0:65 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:30:55,489 : DEBUG : KNIME-Worker-21 : Scorer : Scorer : 0:66 : Configure succeeded. (Scorer)
+2016-10-01 16:30:55,489 : DEBUG : KNIME-Worker-21 : NodeContainer : Number To String : 0:64 : Scorer 0:66 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:30:55,489 : DEBUG : KNIME-Worker-21 : ROC Curve : ROC Curve : 0:68 : Configure succeeded. (ROC Curve)
+2016-10-01 16:30:55,489 : DEBUG : KNIME-Worker-21 : NodeContainer : Number To String : 0:64 : ROC Curve 0:68 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:30:55,489 : DEBUG : KNIME-Worker-20 : WorkflowManager : Color Manager : 0:67 : Color Manager 0:67 doBeforePreExecution
+2016-10-01 16:30:55,489 : DEBUG : KNIME-Worker-20 : NodeContainer : Color Manager : 0:67 : Color Manager 0:67 has new state: PREEXECUTE
+2016-10-01 16:30:55,489 : DEBUG : KNIME-Worker-20 : WorkflowManager : Color Manager : 0:67 : Color Manager 0:67 doBeforeExecution
+2016-10-01 16:30:55,489 : DEBUG : KNIME-Worker-20 : NodeContainer : Color Manager : 0:67 : Color Manager 0:67 has new state: EXECUTING
+2016-10-01 16:30:55,489 : DEBUG : KNIME-Worker-20 : WorkflowFileStoreHandlerRepository : Color Manager : 0:67 : Adding handler 9723883a-147d-4d39-bef7-1d15941d5f96 (Color Manager 0:67: <no directory>) - 5 in total
+2016-10-01 16:30:55,489 : DEBUG : KNIME-Worker-20 : LocalNodeExecutionJob : Color Manager : 0:67 : Color Manager 0:67 Start execute
+2016-10-01 16:30:55,489 : INFO  : KNIME-Worker-20 : LocalNodeExecutionJob : Color Manager : 0:67 : Color Manager 0:67 End execute (0 secs)
+2016-10-01 16:30:55,489 : DEBUG : KNIME-Worker-20 : WorkflowManager : Color Manager : 0:67 : Color Manager 0:67 doBeforePostExecution
+2016-10-01 16:30:55,490 : DEBUG : KNIME-Worker-20 : NodeContainer : Color Manager : 0:67 : Color Manager 0:67 has new state: POSTEXECUTE
+2016-10-01 16:30:55,490 : DEBUG : KNIME-Worker-20 : WorkflowManager : Color Manager : 0:67 : Color Manager 0:67 doAfterExecute - success
+2016-10-01 16:30:55,490 : DEBUG : KNIME-Worker-20 : NodeContainer : Color Manager : 0:67 : Color Manager 0:67 has new state: EXECUTED
+2016-10-01 16:30:55,490 : DEBUG : KNIME-Worker-20 : Partitioning : Partitioning : 0:61 : Configure succeeded. (Partitioning)
+2016-10-01 16:30:55,490 : DEBUG : KNIME-Worker-20 : NodeContainer : Color Manager : 0:67 : Partitioning 0:61 has new state: CONFIGURED_QUEUED
+2016-10-01 16:30:55,490 : DEBUG : KNIME-Worker-19 : WorkflowManager : Partitioning : 0:61 : Partitioning 0:61 doBeforePreExecution
+2016-10-01 16:30:55,490 : DEBUG : KNIME-Worker-19 : NodeContainer : Partitioning : 0:61 : Partitioning 0:61 has new state: PREEXECUTE
+2016-10-01 16:30:55,490 : DEBUG : KNIME-Worker-19 : WorkflowManager : Partitioning : 0:61 : Partitioning 0:61 doBeforeExecution
+2016-10-01 16:30:55,490 : DEBUG : KNIME-Worker-19 : NodeContainer : Partitioning : 0:61 : Partitioning 0:61 has new state: EXECUTING
+2016-10-01 16:30:55,490 : DEBUG : KNIME-Worker-19 : WorkflowFileStoreHandlerRepository : Partitioning : 0:61 : Adding handler e200bdb0-457f-4f16-a093-aebea1f811ae (Partitioning 0:61: <no directory>) - 6 in total
+2016-10-01 16:30:55,491 : DEBUG : KNIME-Worker-19 : LocalNodeExecutionJob : Partitioning : 0:61 : Partitioning 0:61 Start execute
+2016-10-01 16:30:55,530 : INFO  : KNIME-Worker-19 : LocalNodeExecutionJob : Partitioning : 0:61 : Partitioning 0:61 End execute (0 secs)
+2016-10-01 16:30:55,530 : DEBUG : KNIME-Worker-19 : WorkflowManager : Partitioning : 0:61 : Partitioning 0:61 doBeforePostExecution
+2016-10-01 16:30:55,530 : DEBUG : KNIME-Worker-19 : NodeContainer : Partitioning : 0:61 : Partitioning 0:61 has new state: POSTEXECUTE
+2016-10-01 16:30:55,530 : DEBUG : KNIME-Worker-19 : WorkflowManager : Partitioning : 0:61 : Partitioning 0:61 doAfterExecute - success
+2016-10-01 16:30:55,530 : DEBUG : KNIME-Worker-19 : NodeContainer : Partitioning : 0:61 : Partitioning 0:61 has new state: EXECUTED
+2016-10-01 16:30:55,531 : DEBUG : KNIME-Worker-19 : Decision Tree Learner : Decision Tree Learner : 0:101 : Configure succeeded. (Decision Tree Learner)
+2016-10-01 16:30:55,531 : DEBUG : KNIME-Worker-19 : NodeContainer : Partitioning : 0:61 : Decision Tree Learner 0:101 has new state: CONFIGURED_QUEUED
+2016-10-01 16:30:55,531 : DEBUG : KNIME-Worker-19 : Equal Size Sampling : Equal Size Sampling : 0:96 : Configure succeeded. (Equal Size Sampling)
+2016-10-01 16:30:55,531 : DEBUG : KNIME-Worker-19 : NodeContainer : Partitioning : 0:61 : Equal Size Sampling 0:96 has new state: CONFIGURED_QUEUED
+2016-10-01 16:30:55,531 : DEBUG : KNIME-Worker-17 : WorkflowManager : Equal Size Sampling : 0:96 : Equal Size Sampling 0:96 doBeforePreExecution
+2016-10-01 16:30:55,532 : DEBUG : KNIME-Worker-17 : NodeContainer : Equal Size Sampling : 0:96 : Equal Size Sampling 0:96 has new state: PREEXECUTE
+2016-10-01 16:30:55,532 : DEBUG : KNIME-Worker-17 : WorkflowManager : Equal Size Sampling : 0:96 : Equal Size Sampling 0:96 doBeforeExecution
+2016-10-01 16:30:55,532 : DEBUG : KNIME-Worker-17 : NodeContainer : Equal Size Sampling : 0:96 : Equal Size Sampling 0:96 has new state: EXECUTING
+2016-10-01 16:30:55,532 : DEBUG : KNIME-Worker-17 : WorkflowFileStoreHandlerRepository : Equal Size Sampling : 0:96 : Adding handler 2623d5c9-55f2-48f0-a678-7c785e537b04 (Equal Size Sampling 0:96: <no directory>) - 7 in total
+2016-10-01 16:30:55,532 : DEBUG : KNIME-Worker-17 : LocalNodeExecutionJob : Equal Size Sampling : 0:96 : Equal Size Sampling 0:96 Start execute
+2016-10-01 16:30:55,532 : DEBUG : KNIME-Worker-24 : WorkflowManager : Decision Tree Learner : 0:101 : Decision Tree Learner 0:101 doBeforePreExecution
+2016-10-01 16:30:55,532 : DEBUG : KNIME-Worker-24 : NodeContainer : Decision Tree Learner : 0:101 : Decision Tree Learner 0:101 has new state: PREEXECUTE
+2016-10-01 16:30:55,532 : DEBUG : KNIME-Worker-24 : WorkflowManager : Decision Tree Learner : 0:101 : Decision Tree Learner 0:101 doBeforeExecution
+2016-10-01 16:30:55,532 : DEBUG : KNIME-Worker-24 : NodeContainer : Decision Tree Learner : 0:101 : Decision Tree Learner 0:101 has new state: EXECUTING
+2016-10-01 16:30:55,532 : DEBUG : KNIME-Worker-24 : WorkflowFileStoreHandlerRepository : Decision Tree Learner : 0:101 : Adding handler 9eb11e2b-aafa-45b2-83b9-b7e0debcc353 (Decision Tree Learner 0:101: <no directory>) - 8 in total
+2016-10-01 16:30:55,532 : DEBUG : KNIME-Worker-24 : LocalNodeExecutionJob : Decision Tree Learner : 0:101 : Decision Tree Learner 0:101 Start execute
+2016-10-01 16:30:55,532 : DEBUG : KNIME-Worker-24 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Number available threads: 8 used threads: 1
+2016-10-01 16:30:55,540 : INFO  : KNIME-Worker-17 : LocalNodeExecutionJob : Equal Size Sampling : 0:96 : Equal Size Sampling 0:96 End execute (0 secs)
+2016-10-01 16:30:55,541 : DEBUG : KNIME-Worker-17 : WorkflowManager : Equal Size Sampling : 0:96 : Equal Size Sampling 0:96 doBeforePostExecution
+2016-10-01 16:30:55,541 : DEBUG : KNIME-Worker-17 : NodeContainer : Equal Size Sampling : 0:96 : Equal Size Sampling 0:96 has new state: POSTEXECUTE
+2016-10-01 16:30:55,541 : DEBUG : KNIME-Worker-17 : WorkflowManager : Equal Size Sampling : 0:96 : Equal Size Sampling 0:96 doAfterExecute - success
+2016-10-01 16:30:55,541 : DEBUG : KNIME-Worker-17 : NodeContainer : Equal Size Sampling : 0:96 : Equal Size Sampling 0:96 has new state: EXECUTED
+2016-10-01 16:30:55,541 : WARN  : KNIME-Worker-17 : DataTableSpec : Decision Tree Predictor : 0:65 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 16:30:55,541 : WARN  : KNIME-Worker-17 : DataTableSpec : Decision Tree Predictor : 0:65 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 16:30:55,541 : WARN  : KNIME-Worker-17 : DataTableSpec : Decision Tree Predictor : 0:65 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 16:30:55,541 : DEBUG : KNIME-Worker-17 : Decision Tree Predictor : Decision Tree Predictor : 0:65 : Configure succeeded. (Decision Tree Predictor)
+2016-10-01 16:30:55,558 : DEBUG : KNIME-Worker-24 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Start new parallel building thread: Build thread, node: 0.0
+2016-10-01 16:30:55,569 : DEBUG : Build thread, node: 0.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Start new parallel building thread: Build thread, node: 2.0
+2016-10-01 16:30:55,579 : DEBUG : Build thread, node: 2.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Start new parallel building thread: Build thread, node: 22.0
+2016-10-01 16:30:55,587 : DEBUG : Build thread, node: 22.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Start new parallel building thread: Build thread, node: 50.0
+2016-10-01 16:30:55,594 : DEBUG : Build thread, node: 50.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Start new parallel building thread: Build thread, node: 62.0
+2016-10-01 16:30:55,594 : DEBUG : Build thread, node: 50.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Start new parallel building thread: Build thread, node: 62.1
+2016-10-01 16:30:55,598 : DEBUG : Build thread, node: 62.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Start new parallel building thread: Build thread, node: 85.0
+2016-10-01 16:30:55,600 : DEBUG : Build thread, node: 85.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Thread: Build thread, node: 85.0 finished
+2016-10-01 16:30:55,603 : DEBUG : Build thread, node: 62.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Thread: Build thread, node: 62.0 finished
+2016-10-01 16:30:55,605 : DEBUG : Build thread, node: 62.1 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Start new parallel building thread: Build thread, node: 103.0
+2016-10-01 16:30:55,614 : DEBUG : Build thread, node: 103.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Thread: Build thread, node: 103.0 finished
+2016-10-01 16:30:55,615 : DEBUG : Build thread, node: 62.1 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Thread: Build thread, node: 62.1 finished
+2016-10-01 16:30:55,615 : DEBUG : Build thread, node: 50.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Thread: Build thread, node: 50.0 finished
+2016-10-01 16:30:55,615 : DEBUG : Build thread, node: 22.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Thread: Build thread, node: 22.0 finished
+2016-10-01 16:30:55,615 : DEBUG : Build thread, node: 2.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Thread: Build thread, node: 2.0 finished
+2016-10-01 16:30:55,615 : DEBUG : Build thread, node: 0.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Thread: Build thread, node: 0.0 finished
+2016-10-01 16:30:55,644 : INFO  : KNIME-Worker-24 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Decision tree consisting of 73 nodes created with pruning method No pruning
+2016-10-01 16:30:55,662 : INFO  : KNIME-Worker-24 : LocalNodeExecutionJob : Decision Tree Learner : 0:101 : Decision Tree Learner 0:101 End execute (0 secs)
+2016-10-01 16:30:55,662 : DEBUG : KNIME-Worker-24 : WorkflowManager : Decision Tree Learner : 0:101 : Decision Tree Learner 0:101 doBeforePostExecution
+2016-10-01 16:30:55,662 : DEBUG : KNIME-Worker-24 : NodeContainer : Decision Tree Learner : 0:101 : Decision Tree Learner 0:101 has new state: POSTEXECUTE
+2016-10-01 16:30:55,662 : DEBUG : KNIME-Worker-24 : WorkflowManager : Decision Tree Learner : 0:101 : Decision Tree Learner 0:101 doAfterExecute - success
+2016-10-01 16:30:55,662 : DEBUG : KNIME-Worker-24 : NodeContainer : Decision Tree Learner : 0:101 : Decision Tree Learner 0:101 has new state: EXECUTED
+2016-10-01 16:30:55,663 : WARN  : KNIME-Worker-24 : PMML Writer : PMML Writer : 0:86 : Output file '/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/../../../Supplementary Data (really only the data)/Customers/model.pmml' exists and will be overwritten
+2016-10-01 16:30:55,663 : DEBUG : KNIME-Worker-24 : PMML Writer : PMML Writer : 0:86 : Configure succeeded. (PMML Writer)
+2016-10-01 16:30:55,664 : DEBUG : KNIME-Worker-24 : NodeContainer : Decision Tree Learner : 0:101 : PMML Writer 0:86 has new state: CONFIGURED_QUEUED
+2016-10-01 16:30:55,664 : WARN  : KNIME-Worker-24 : DataTableSpec : Decision Tree Predictor : 0:65 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 16:30:55,664 : WARN  : KNIME-Worker-24 : DataTableSpec : Decision Tree Predictor : 0:65 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 16:30:55,664 : WARN  : KNIME-Worker-24 : DataTableSpec : Decision Tree Predictor : 0:65 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 16:30:55,664 : DEBUG : KNIME-Worker-24 : Decision Tree Predictor : Decision Tree Predictor : 0:65 : Configure succeeded. (Decision Tree Predictor)
+2016-10-01 16:30:55,664 : DEBUG : KNIME-Worker-24 : NodeContainer : Decision Tree Learner : 0:101 : Decision Tree Predictor 0:65 has new state: CONFIGURED_QUEUED
+2016-10-01 16:30:55,664 : DEBUG : KNIME-Worker-22 : WorkflowManager : Decision Tree Predictor : 0:65 : Decision Tree Predictor 0:65 doBeforePreExecution
+2016-10-01 16:30:55,665 : DEBUG : KNIME-Worker-22 : NodeContainer : Decision Tree Predictor : 0:65 : Decision Tree Predictor 0:65 has new state: PREEXECUTE
+2016-10-01 16:30:55,665 : DEBUG : KNIME-Worker-22 : WorkflowManager : Decision Tree Predictor : 0:65 : Decision Tree Predictor 0:65 doBeforeExecution
+2016-10-01 16:30:55,665 : DEBUG : KNIME-Worker-22 : NodeContainer : Decision Tree Predictor : 0:65 : Decision Tree Predictor 0:65 has new state: EXECUTING
+2016-10-01 16:30:55,665 : DEBUG : KNIME-Worker-22 : WorkflowFileStoreHandlerRepository : Decision Tree Predictor : 0:65 : Adding handler ede0d32c-2341-4e60-92f8-5181d221136b (Decision Tree Predictor 0:65: <no directory>) - 9 in total
+2016-10-01 16:30:55,665 : DEBUG : KNIME-Worker-22 : LocalNodeExecutionJob : Decision Tree Predictor : 0:65 : Decision Tree Predictor 0:65 Start execute
+2016-10-01 16:30:55,665 : DEBUG : KNIME-Worker-23 : WorkflowManager : PMML Writer : 0:86 : PMML Writer 0:86 doBeforePreExecution
+2016-10-01 16:30:55,665 : DEBUG : KNIME-Worker-23 : NodeContainer : PMML Writer : 0:86 : PMML Writer 0:86 has new state: PREEXECUTE
+2016-10-01 16:30:55,665 : DEBUG : KNIME-Worker-23 : WorkflowManager : PMML Writer : 0:86 : PMML Writer 0:86 doBeforeExecution
+2016-10-01 16:30:55,665 : DEBUG : KNIME-Worker-23 : NodeContainer : PMML Writer : 0:86 : PMML Writer 0:86 has new state: EXECUTING
+2016-10-01 16:30:55,665 : DEBUG : KNIME-Worker-23 : WorkflowFileStoreHandlerRepository : PMML Writer : 0:86 : Adding handler b208af2d-15a3-4dab-bbff-b0bb3423159f (PMML Writer 0:86: <no directory>) - 10 in total
+2016-10-01 16:30:55,665 : DEBUG : KNIME-Worker-23 : LocalNodeExecutionJob : PMML Writer : 0:86 : PMML Writer 0:86 Start execute
+2016-10-01 16:30:55,692 : INFO  : KNIME-Worker-23 : LocalNodeExecutionJob : PMML Writer : 0:86 : PMML Writer 0:86 End execute (0 secs)
+2016-10-01 16:30:55,692 : DEBUG : KNIME-Worker-23 : WorkflowManager : PMML Writer : 0:86 : PMML Writer 0:86 doBeforePostExecution
+2016-10-01 16:30:55,692 : DEBUG : KNIME-Worker-23 : NodeContainer : PMML Writer : 0:86 : PMML Writer 0:86 has new state: POSTEXECUTE
+2016-10-01 16:30:55,692 : DEBUG : KNIME-Worker-23 : WorkflowManager : PMML Writer : 0:86 : PMML Writer 0:86 doAfterExecute - success
+2016-10-01 16:30:55,692 : DEBUG : KNIME-Worker-23 : NodeContainer : PMML Writer : 0:86 : PMML Writer 0:86 has new state: EXECUTED
+2016-10-01 16:30:55,703 : WARN  : KNIME-Worker-22 : DataTableSpec : Decision Tree Predictor : 0:65 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 16:30:55,703 : WARN  : KNIME-Worker-22 : DataTableSpec : Decision Tree Predictor : 0:65 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 16:30:55,703 : WARN  : KNIME-Worker-22 : DataTableSpec : Decision Tree Predictor : 0:65 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 16:30:55,708 : INFO  : KNIME-Worker-22 : LocalNodeExecutionJob : Decision Tree Predictor : 0:65 : Decision Tree Predictor 0:65 End execute (0 secs)
+2016-10-01 16:30:55,709 : DEBUG : KNIME-Worker-22 : WorkflowManager : Decision Tree Predictor : 0:65 : Decision Tree Predictor 0:65 doBeforePostExecution
+2016-10-01 16:30:55,709 : DEBUG : KNIME-Worker-22 : NodeContainer : Decision Tree Predictor : 0:65 : Decision Tree Predictor 0:65 has new state: POSTEXECUTE
+2016-10-01 16:30:55,709 : DEBUG : KNIME-Worker-22 : WorkflowManager : Decision Tree Predictor : 0:65 : Decision Tree Predictor 0:65 doAfterExecute - success
+2016-10-01 16:30:55,709 : DEBUG : KNIME-Worker-22 : NodeContainer : Decision Tree Predictor : 0:65 : Decision Tree Predictor 0:65 has new state: EXECUTED
+2016-10-01 16:30:55,709 : DEBUG : KNIME-Worker-22 : Scorer : Scorer : 0:66 : Configure succeeded. (Scorer)
+2016-10-01 16:30:55,709 : DEBUG : KNIME-Worker-22 : NodeContainer : Decision Tree Predictor : 0:65 : Scorer 0:66 has new state: CONFIGURED_QUEUED
+2016-10-01 16:30:55,709 : DEBUG : KNIME-Worker-22 : ROC Curve : ROC Curve : 0:68 : Configure succeeded. (ROC Curve)
+2016-10-01 16:30:55,710 : DEBUG : KNIME-Worker-22 : NodeContainer : Decision Tree Predictor : 0:65 : ROC Curve 0:68 has new state: CONFIGURED_QUEUED
+2016-10-01 16:30:55,710 : DEBUG : KNIME-Worker-18 : WorkflowManager : Scorer : 0:66 : Scorer 0:66 doBeforePreExecution
+2016-10-01 16:30:55,710 : DEBUG : KNIME-Worker-18 : NodeContainer : Scorer : 0:66 : Scorer 0:66 has new state: PREEXECUTE
+2016-10-01 16:30:55,710 : DEBUG : KNIME-Worker-18 : WorkflowManager : Scorer : 0:66 : Scorer 0:66 doBeforeExecution
+2016-10-01 16:30:55,710 : DEBUG : KNIME-Worker-18 : NodeContainer : Scorer : 0:66 : Scorer 0:66 has new state: EXECUTING
+2016-10-01 16:30:55,710 : DEBUG : KNIME-Worker-18 : WorkflowFileStoreHandlerRepository : Scorer : 0:66 : Adding handler 2beb08f2-5a05-4d36-b65f-540c95bc2a13 (Scorer 0:66: <no directory>) - 11 in total
+2016-10-01 16:30:55,710 : DEBUG : KNIME-Worker-18 : LocalNodeExecutionJob : Scorer : 0:66 : Scorer 0:66 Start execute
+0:66 : Scorer 0:66 Start execute
+2016-10-01 16:30:55,710 : DEBUG : KNIME-Worker-20 : WorkflowManager : ROC Curve : 0:68 : ROC Curve 0:68 doBeforePreExecution
+2016-10-01 16:30:55,710 : DEBUG : KNIME-Worker-20 : NodeContainer : ROC Curve : 0:68 : ROC Curve 0:68 has new state: PREEXECUTE
+2016-10-01 16:30:55,710 : DEBUG : KNIME-Worker-20 : WorkflowManager : ROC Curve : 0:68 : ROC Curve 0:68 doBeforeExecution
+2016-10-01 16:30:55,710 : DEBUG : KNIME-Worker-20 : NodeContainer : ROC Curve : 0:68 : ROC Curve 0:68 has new state: EXECUTING
+2016-10-01 16:30:55,710 : DEBUG : KNIME-Worker-20 : WorkflowFileStoreHandlerRepository : ROC Curve : 0:68 : Adding handler e85d6f33-1a14-4400-9fa9-5fb1659b5e17 (ROC Curve 0:68: <no directory>) - 12 in total
+2016-10-01 16:30:55,710 : DEBUG : KNIME-Worker-20 : LocalNodeExecutionJob : ROC Curve : 0:68 : ROC Curve 0:68 Start execute
+2016-10-01 16:30:55,711 : INFO  : KNIME-Worker-18 : AccuracyScorerNodeModel : Scorer : 0:66 : error=0.13917525773195877, #correct=167, #false=27, #rows=194, #missing=0
+2016-10-01 16:30:55,711 : INFO  : KNIME-Worker-18 : LocalNodeExecutionJob : Scorer : 0:66 : Scorer 0:66 End execute (0 secs)
+2016-10-01 16:30:55,711 : DEBUG : KNIME-Worker-18 : WorkflowManager : Scorer : 0:66 : Scorer 0:66 doBeforePostExecution
+2016-10-01 16:30:55,711 : DEBUG : KNIME-Worker-18 : NodeContainer : Scorer : 0:66 : Scorer 0:66 has new state: POSTEXECUTE
+2016-10-01 16:30:55,711 : DEBUG : KNIME-Worker-18 : WorkflowManager : Scorer : 0:66 : Scorer 0:66 doAfterExecute - success
+2016-10-01 16:30:55,711 : DEBUG : KNIME-Worker-18 : NodeContainer : Scorer : 0:66 : Scorer 0:66 has new state: EXECUTED
+2016-10-01 16:30:55,718 : INFO  : KNIME-Worker-20 : LocalNodeExecutionJob : ROC Curve : 0:68 : ROC Curve 0:68 End execute (0 secs)
+2016-10-01 16:30:55,718 : DEBUG : KNIME-Worker-20 : WorkflowManager : ROC Curve : 0:68 : ROC Curve 0:68 doBeforePostExecution
+2016-10-01 16:30:55,718 : DEBUG : KNIME-Worker-20 : NodeContainer : ROC Curve : 0:68 : ROC Curve 0:68 has new state: POSTEXECUTE
+2016-10-01 16:30:55,718 : DEBUG : KNIME-Worker-20 : WorkflowManager : ROC Curve : 0:68 : ROC Curve 0:68 doAfterExecute - success
+2016-10-01 16:30:55,718 : DEBUG : KNIME-Worker-20 : NodeContainer : ROC Curve : 0:68 : ROC Curve 0:68 has new state: EXECUTED
+2016-10-01 16:30:55,719 : DEBUG : KNIME-Worker-20 : NodeContainer : ROC Curve : 0:68 : Build a Churn Prediction Model 0 has new state: EXECUTED
+2016-10-01 16:30:55,719 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: IDLE
+2016-10-01 16:31:30,384 : DEBUG : main : ROC Curve : ROC Curve : 0:68 : reset
+2016-10-01 16:31:30,384 : DEBUG : main : ROC Curve : ROC Curve : 0:68 : clean output ports.
+2016-10-01 16:31:30,384 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler e85d6f33-1a14-4400-9fa9-5fb1659b5e17 (ROC Curve 0:68: <no directory>) - 11 remaining
+2016-10-01 16:31:30,384 : DEBUG : main : NodeContainer :  :  : ROC Curve 0:68 has new state: IDLE
+2016-10-01 16:31:30,384 : DEBUG : main : ROCNodeModel : ROC Curve : 0:68 : Removing all (0) views from model.
+2016-10-01 16:31:30,384 : DEBUG : main : ROC Curve : ROC Curve : 0:68 : clean output ports.
+2016-10-01 16:31:30,388 : DEBUG : main : WorkflowManager :  :  : Added new node 0:102
+ : 2016-10-01 16:31:30,388 : DEBUG : KNIME-Workflow-Notifier : WorkflowEditor : Build a Churn Prediction Model 0 has new state: IDLE
+2016-10-01 16:31:30,388 : WARN  : main : JavaScript ROC Curve : JavaScript ROC Curve : 0:102 : Class column 'null ' does not exist
+2016-10-01 16:31:30,388 : DEBUG : main : WorkflowManager :  :  : Added new connection from node 0:65(1) to node 0:102(1)
+2016-10-01 16:32:55,760 : WARN  : main : JavaScript ROC Curve : JavaScript ROC Curve : 0:102 : No value for the positive class chosen
+2016-10-01 16:33:06,593 : DEBUG : main : JavaScript ROC Curve : JavaScript ROC Curve : 0:102 : Configure succeeded. (JavaScript ROC Curve)
+2016-10-01 16:33:06,594 : DEBUG : main : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: CONFIGURED
+2016-10-01 16:33:06,594 : DEBUG : main : NodeContainer : JavaScript ROC Curve : 0:102 : Build a Churn Prediction Model 0 has new state: CONFIGURED
+2016-10-01 16:33:07,498 : DEBUG : ModalContext : WorkflowManager :  :  : Deleted obsolete node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/ROC Curve (#68)"
+2016-10-01 16:33:08,983 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on JavaScript ROC Curve 0:102
+2016-10-01 16:33:08,983 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Build a Churn Prediction Model 0
+2016-10-01 16:33:08,983 : DEBUG : main : NodeContainer :  :  : JavaScript ROC Curve 0:102 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:33:08,983 : DEBUG : main : NodeContainer :  :  : JavaScript ROC Curve 0:102 has new state: CONFIGURED_QUEUED
+2016-10-01 16:33:08,984 : DEBUG : main : NodeContainer :  :  : Build a Churn Prediction Model 0 has new state: EXECUTING
+2016-10-01 16:33:08,984 : DEBUG : KNIME-Worker-25 : WorkflowManager : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 doBeforePreExecution
+2016-10-01 16:33:08,984 : DEBUG : KNIME-Worker-25 : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: PREEXECUTE
+2016-10-01 16:33:08,984 : DEBUG : KNIME-Worker-25 : WorkflowManager : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 doBeforeExecution
+2016-10-01 16:33:08,984 : DEBUG : KNIME-Worker-25 : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: EXECUTING
+2016-10-01 16:33:08,984 : DEBUG : KNIME-Worker-25 : WorkflowFileStoreHandlerRepository : JavaScript ROC Curve : 0:102 : Adding handler 0102adab-effb-4541-82b1-158afa673a9d (JavaScript ROC Curve 0:102: <no directory>) - 12 in total
+2016-10-01 16:33:08,984 : DEBUG : KNIME-Worker-25 : LocalNodeExecutionJob : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 Start execute
+2016-10-01 16:33:08,984 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: EXECUTING
+2016-10-01 16:33:09,484 : INFO  : KNIME-Worker-25 : LocalNodeExecutionJob : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 End execute (0 secs)
+2016-10-01 16:33:09,484 : DEBUG : KNIME-Worker-25 : WorkflowManager : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 doBeforePostExecution
+2016-10-01 16:33:09,484 : DEBUG : KNIME-Worker-25 : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: POSTEXECUTE
+2016-10-01 16:33:09,484 : DEBUG : KNIME-Worker-25 : WorkflowManager : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 doAfterExecute - success
+2016-10-01 16:33:09,484 : DEBUG : KNIME-Worker-25 : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: EXECUTED
+2016-10-01 16:33:09,484 : DEBUG : KNIME-Worker-25 : NodeContainer : JavaScript ROC Curve : 0:102 : Build a Churn Prediction Model 0 has new state: EXECUTED
+2016-10-01 16:33:09,484 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: IDLE
+2016-10-01 16:33:20,649 : DEBUG : main : JavaScript ROC Curve : JavaScript ROC Curve : 0:102 : reset
+2016-10-01 16:33:20,649 : DEBUG : main : JavaScript ROC Curve : JavaScript ROC Curve : 0:102 : clean output ports.
+2016-10-01 16:33:20,649 : DEBUG : main : WorkflowFileStoreHandlerRepository : JavaScript ROC Curve : 0:102 : Removing handler 0102adab-effb-4541-82b1-158afa673a9d (JavaScript ROC Curve 0:102: <no directory>) - 11 remaining
+2016-10-01 16:33:20,649 : DEBUG : main : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: IDLE
+2016-10-01 16:33:20,649 : DEBUG : main : JavaScript ROC Curve : JavaScript ROC Curve : 0:102 : Configure succeeded. (JavaScript ROC Curve)
+2016-10-01 16:33:20,649 : DEBUG : main : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: CONFIGURED
+2016-10-01 16:33:20,649 : DEBUG : main : NodeContainer : JavaScript ROC Curve : 0:102 : Build a Churn Prediction Model 0 has new state: CONFIGURED
+2016-10-01 16:33:22,245 : DEBUG : main : NodeContainer :  :  : JavaScript ROC Curve 0:102 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:33:22,245 : DEBUG : main : NodeContainer :  :  : JavaScript ROC Curve 0:102 has new state: CONFIGURED_QUEUED
+2016-10-01 16:33:22,246 : DEBUG : main : NodeContainer :  :  : Build a Churn Prediction Model 0 has new state: EXECUTING
+2016-10-01 16:33:22,246 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: EXECUTING
+2016-10-01 16:33:22,2462016-10-01 16:33:22,246 : DEBUG :  : KNIME-WFM-Parent-Notifier : DEBUG : KNIME-Worker-26 : NodeContainer :  :  : ROOT  has new state: EXECUTING
+WorkflowManager : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 doBeforePreExecution
+2016-10-01 16:33:22,247 : DEBUG : KNIME-Worker-26 : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: PREEXECUTE
+2016-10-01 16:33:22,247 : DEBUG : KNIME-Worker-26 : WorkflowManager : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 doBeforeExecution
+2016-10-01 16:33:22,247 : DEBUG : KNIME-Worker-26 : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: EXECUTING
+2016-10-01 16:33:22,247 : DEBUG : KNIME-Worker-26 : WorkflowFileStoreHandlerRepository : JavaScript ROC Curve : 0:102 : Adding handler fbc6e2b2-3615-4495-8878-3299ca07e987 (JavaScript ROC Curve 0:102: <no directory>) - 12 in total
+2016-10-01 16:33:22,247 : DEBUG : KNIME-Worker-26 : LocalNodeExecutionJob : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 Start execute
+2016-10-01 16:33:22,493 : INFO  : KNIME-Worker-26 : LocalNodeExecutionJob : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 End execute (0 secs)
+2016-10-01 16:33:22,493 : DEBUG : KNIME-Worker-26 : WorkflowManager : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 doBeforePostExecution
+2016-10-01 16:33:22,493 : DEBUG : KNIME-Worker-26 : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: POSTEXECUTE
+2016-10-01 16:33:22,494 : DEBUG : KNIME-Worker-26 : WorkflowManager : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 doAfterExecute - success
+2016-10-01 16:33:22,494 : DEBUG : KNIME-Worker-26 : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: EXECUTED
+2016-10-01 16:33:22,494 : DEBUG : KNIME-Worker-26 : NodeContainer : JavaScript ROC Curve : 0:102 : Build a Churn Prediction Model 0 has new state: EXECUTED
+2016-10-01 16:33:22,494 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: IDLE
+2016-10-01 16:33:31,810 : DEBUG : main : JavaScript ROC Curve : JavaScript ROC Curve : 0:102 : reset
+2016-10-01 16:33:31,810 : DEBUG : main : JavaScript ROC Curve : JavaScript ROC Curve : 0:102 : clean output ports.
+2016-10-01 16:33:31,810 : DEBUG : main : WorkflowFileStoreHandlerRepository : JavaScript ROC Curve : 0:102 : Removing handler fbc6e2b2-3615-4495-8878-3299ca07e987 (JavaScript ROC Curve 0:102: <no directory>) - 11 remaining
+2016-10-01 16:33:31,810 : DEBUG : main : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: IDLE
+2016-10-01 16:33:31,810 : DEBUG : main : JavaScript ROC Curve : JavaScript ROC Curve : 0:102 : Configure succeeded. (JavaScript ROC Curve)
+2016-10-01 16:33:31,810 : DEBUG : main : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: CONFIGURED
+2016-10-01 16:33:31,810 : DEBUG : main : NodeContainer : JavaScript ROC Curve : 0:102 : Build a Churn Prediction Model 0 has new state: CONFIGURED
+2016-10-01 16:33:33,171 : DEBUG : main : NodeContainer :  :  : JavaScript ROC Curve 0:102 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:33:33,171 : DEBUG : main : NodeContainer :  :  : JavaScript ROC Curve 0:102 has new state: CONFIGURED_QUEUED
+2016-10-01 16:33:33,171 : DEBUG : main : NodeContainer :  :  : Build a Churn Prediction Model 0 has new state: EXECUTING
+2016-10-01 16:33:33,171 : DEBUG : KNIME-Worker-27 : WorkflowManager : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 doBeforePreExecution
+2016-10-01 16:33:33,172 : DEBUG : KNIME-Worker-27 : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: PREEXECUTE
+2016-10-01 16:33:33,172 : DEBUG : KNIME-Worker-27 : WorkflowManager : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 doBeforeExecution
+2016-10-01 16:33:33,172 : DEBUG : KNIME-Worker-27 : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: EXECUTING
+2016-10-01 16:33:33,172 : DEBUG : KNIME-Worker-27 : WorkflowFileStoreHandlerRepository : JavaScript ROC Curve : 0:102 : Adding handler ee8b83f4-2530-4f43-b2e6-742d203b1d56 (JavaScript ROC Curve 0:102: <no directory>) - 12 in total
+2016-10-01 16:33:33,172 : DEBUG : KNIME-Worker-27 : LocalNodeExecutionJob : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 Start execute
+2016-10-01 16:33:33,172 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: EXECUTING
+2016-10-01 16:33:33,404 : INFO  : KNIME-Worker-27 : LocalNodeExecutionJob : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 End execute (0 secs)
+2016-10-01 16:33:33,404 : DEBUG : KNIME-Worker-27 : WorkflowManager : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 doBeforePostExecution
+2016-10-01 16:33:33,404 : DEBUG : KNIME-Worker-27 : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: POSTEXECUTE
+2016-10-01 16:33:33,404 : DEBUG : KNIME-Worker-27 : WorkflowManager : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 doAfterExecute - success
+2016-10-01 16:33:33,404 : DEBUG : KNIME-Worker-27 : NodeContainer : JavaScript ROC Curve : 0:102 : JavaScript ROC Curve 0:102 has new state: EXECUTED
+2016-10-01 16:33:33,404 : DEBUG : KNIME-Worker-27 : NodeContainer : JavaScript ROC Curve : 0:102 : Build a Churn Prediction Model 0 has new state: EXECUTED
+2016-10-01 16:33:33,404 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: IDLE
+2016-10-01 16:33:47,357 : DEBUG : main : PMML Writer : PMML Writer : 0:86 : reset
+2016-10-01 16:33:47,357 : DEBUG : main : PMML Writer : PMML Writer : 0:86 : clean output ports.
+2016-10-01 16:33:47,357 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler b208af2d-15a3-4dab-bbff-b0bb3423159f (PMML Writer 0:86: <no directory>) - 11 remaining
+2016-10-01 16:33:47,357 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on PMML Writer 0:86
+2016-10-01 16:33:47,358 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Build a Churn Prediction Model 0
+2016-10-01 16:33:47,358 : DEBUG : main : NodeContainer :  :  : PMML Writer 0:86 has new state: IDLE
+2016-10-01 16:33:47,358 : DEBUG : main : Scorer : Scorer : 0:66 : reset
+2016-10-01 16:33:47,358 : DEBUG : main : Scorer : Scorer : 0:66 : clean output ports.
+2016-10-01 16:33:47,358 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 2beb08f2-5a05-4d36-b65f-540c95bc2a13 (Scorer 0:66: <no directory>) - 10 remaining
+2016-10-01 16:33:47,358 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Scorer 0:66
+2016-10-01 16:33:47,358 : DEBUG : main : NodeContainer :  :  : Scorer 0:66 has new state: IDLE
+2016-10-01 16:33:47,358 : DEBUG : main : JavaScript ROC Curve : JavaScript ROC Curve : 0:102 : reset
+2016-10-01 16:33:47,359 : DEBUG : main : JavaScript ROC Curve : JavaScript ROC Curve : 0:102 : clean output ports.
+2016-10-01 16:33:47,359 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler ee8b83f4-2530-4f43-b2e6-742d203b1d56 (JavaScript ROC Curve 0:102: <no directory>) - 9 remaining
+2016-10-01 16:33:47,359 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on JavaScript ROC Curve 0:102
+2016-10-01 16:33:47,359 : DEBUG : main : NodeContainer :  :  : JavaScript ROC Curve 0:102 has new state: IDLE
+2016-10-01 16:33:47,359 : DEBUG : main : Decision Tree Predictor : Decision Tree Predictor : 0:65 : reset
+2016-10-01 16:33:47,359 : DEBUG : main : Decision Tree Predictor : Decision Tree Predictor : 0:65 : clean output ports.
+2016-10-01 16:33:47,359 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler ede0d32c-2341-4e60-92f8-5181d221136b (Decision Tree Predictor 0:65: <no directory>) - 8 remaining
+2016-10-01 16:33:47,359 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Decision Tree Predictor 0:65
+2016-10-01 16:33:47,360 : DEBUG : main : NodeContainer :  :  : Decision Tree Predictor 0:65 has new state: IDLE
+2016-10-01 16:33:47,360 : DEBUG : main : Decision Tree Learner : Decision Tree Learner : 0:101 : reset
+2016-10-01 16:33:47,360 : DEBUG : main : Decision Tree Learner : Decision Tree Learner : 0:101 : clean output ports.
+2016-10-01 16:33:47,360 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 9eb11e2b-aafa-45b2-83b9-b7e0debcc353 (Decision Tree Learner 0:101: <no directory>) - 7 remaining
+2016-10-01 16:33:47,360 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Decision Tree Learner 0:101
+2016-10-01 16:33:47,360 : DEBUG : main : NodeContainer :  :  : Decision Tree Learner 0:101 has new state: IDLE
+2016-10-01 16:33:47,360 : DEBUG : main : Equal Size Sampling : Equal Size Sampling : 0:96 : reset
+2016-10-01 16:33:47,360 : DEBUG : main : Equal Size Sampling : Equal Size Sampling : 0:96 : clean output ports.
+2016-10-01 16:33:47,361 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 2623d5c9-55f2-48f0-a678-7c785e537b04 (Equal Size Sampling 0:96: <no directory>) - 6 remaining
+2016-10-01 16:33:47,361 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Equal Size Sampling 0:96
+2016-10-01 16:33:47,361 : DEBUG : main : NodeContainer :  :  : Equal Size Sampling 0:96 has new state: IDLE
+2016-10-01 16:33:47,361 : DEBUG : main : Partitioning : Partitioning : 0:61 : reset
+2016-10-01 16:33:47,361 : DEBUG : main : Partitioning : Partitioning : 0:61 : clean output ports.
+2016-10-01 16:33:47,361 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler e200bdb0-457f-4f16-a093-aebea1f811ae (Partitioning 0:61: <no directory>) - 5 remaining
+2016-10-01 16:33:47,361 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Partitioning 0:61
+2016-10-01 16:33:47,361 : DEBUG : main : NodeContainer :  :  : Partitioning 0:61 has new state: IDLE
+2016-10-01 16:33:47,361 : DEBUG : main : Partitioning : Partitioning : 0:61 : Configure succeeded. (Partitioning)
+2016-10-01 16:33:47,362 : DEBUG : main : NodeContainer :  :  : Partitioning 0:61 has new state: CONFIGURED
+2016-10-01 16:33:47,362 : DEBUG : main : Decision Tree Learner : Decision Tree Learner : 0:101 : Configure succeeded. (Decision Tree Learner)
+2016-10-01 16:33:47,362 : DEBUG : main : NodeContainer :  :  : Decision Tree Learner 0:101 has new state: CONFIGURED
+2016-10-01 16:33:47,362 : DEBUG : main : Equal Size Sampling : Equal Size Sampling : 0:96 : Configure succeeded. (Equal Size Sampling)
+2016-10-01 16:33:47,362 : DEBUG : main : NodeContainer :  :  : Equal Size Sampling 0:96 has new state: CONFIGURED
+2016-10-01 16:33:47,364 : WARN  : main : PMML Writer : PMML Writer : 0:86 : Output file '/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/../../../Supplementary Data (really only the data)/Customers/model.pmml' exists and will be overwritten
+2016-10-01 16:33:47,364 : DEBUG : main : PMML Writer : PMML Writer : 0:86 : Configure succeeded. (PMML Writer)
+2016-10-01 16:33:47,364 : DEBUG : main : NodeContainer :  :  : PMML Writer 0:86 has new state: CONFIGURED
+2016-10-01 16:33:47,365 : WARN  : main : DataTableSpec : Decision Tree Predictor : 0:65 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 16:33:47,365 : WARN  : main : DataTableSpec : Decision Tree Predictor : 0:65 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 16:33:47,365 : WARN  : main : DataTableSpec : Decision Tree Predictor : 0:65 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 16:33:47,365 : DEBUG : main : Decision Tree Predictor : Decision Tree Predictor : 0:65 : Configure succeeded. (Decision Tree Predictor)
+2016-10-01 16:33:47,365 : DEBUG : main : NodeContainer :  :  : Decision Tree Predictor 0:65 has new state: CONFIGURED
+2016-10-01 16:33:47,365 : DEBUG : main : Scorer : Scorer : 0:66 : Configure succeeded. (Scorer)
+2016-10-01 16:33:47,366 : DEBUG : main : NodeContainer :  :  : Scorer 0:66 has new state: CONFIGURED
+2016-10-01 16:33:47,366 : DEBUG : main : JavaScript ROC Curve : JavaScript ROC Curve : 0:102 : Configure succeeded. (JavaScript ROC Curve)
+2016-10-01 16:33:47,366 : DEBUG : main : NodeContainer :  :  : JavaScript ROC Curve 0:102 has new state: CONFIGURED
+2016-10-01 16:33:47,366 : DEBUG : main : NodeContainer :  :  : Build a Churn Prediction Model 0 has new state: CONFIGURED
+2016-10-01 16:33:47,366 : DEBUG : main : PMML Writer : PMML Writer : 0:86 : reset
+2016-10-01 16:33:47,367 : DEBUG : main : PMML Writer : PMML Writer : 0:86 : clean output ports.
+2016-10-01 16:33:47,367 : DEBUG : main : NodeContainer :  :  : PMML Writer 0:86 has new state: IDLE
+2016-10-01 16:33:47,367 : DEBUG : main : Scorer : Scorer : 0:66 : reset
+2016-10-01 16:33:47,367 : DEBUG : main : Scorer : Scorer : 0:66 : clean output ports.
+2016-10-01 16:33:47,367 : DEBUG : main : NodeContainer :  :  : Scorer 0:66 has new state: IDLE
+2016-10-01 16:33:47,367 : DEBUG : main : JavaScript ROC Curve : JavaScript ROC Curve : 0:102 : reset
+2016-10-01 16:33:47,367 : DEBUG : main : JavaScript ROC Curve : JavaScript ROC Curve : 0:102 : clean output ports.
+2016-10-01 16:33:47,367 : DEBUG : main : NodeContainer :  :  : JavaScript ROC Curve 0:102 has new state: IDLE
+2016-10-01 16:33:47,367 : DEBUG : main : Decision Tree Predictor : Decision Tree Predictor : 0:65 : reset
+2016-10-01 16:33:47,367 : DEBUG : main : Decision Tree Predictor : Decision Tree Predictor : 0:65 : clean output ports.
+2016-10-01 16:33:47,367 : DEBUG : main : NodeContainer :  :  : Decision Tree Predictor 0:65 has new state: IDLE
+2016-10-01 16:33:47,367 : DEBUG : main : Decision Tree Learner : Decision Tree Learner : 0:101 : reset
+2016-10-01 16:33:47,367 : DEBUG : main : Decision Tree Learner : Decision Tree Learner : 0:101 : clean output ports.
+2016-10-01 16:33:47,367 : DEBUG : main : NodeContainer :  :  : Decision Tree Learner 0:101 has new state: IDLE
+2016-10-01 16:33:47,367 : DEBUG : main : Equal Size Sampling : Equal Size Sampling : 0:96 : reset
+2016-10-01 16:33:47,368 : DEBUG : main : Equal Size Sampling : Equal Size Sampling : 0:96 : clean output ports.
+2016-10-01 16:33:47,368 : DEBUG : main : NodeContainer :  :  : Equal Size Sampling 0:96 has new state: IDLE
+2016-10-01 16:33:47,368 : DEBUG : main : Partitioning : Partitioning : 0:61 : reset
+2016-10-01 16:33:47,368 : DEBUG : main : Partitioning : Partitioning : 0:61 : clean output ports.
+2016-10-01 16:33:47,368 : DEBUG : main : NodeContainer :  :  : Partitioning 0:61 has new state: IDLE
+2016-10-01 16:33:47,368 : DEBUG : main : Color Manager : Color Manager : 0:67 : reset
+2016-10-01 16:33:47,368 : DEBUG : main : Color Manager : Color Manager : 0:67 : clean output ports.
+2016-10-01 16:33:47,368 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 9723883a-147d-4d39-bef7-1d15941d5f96 (Color Manager 0:67: <no directory>) - 4 remaining
+2016-10-01 16:33:47,368 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Color Manager 0:67
+2016-10-01 16:33:47,368 : DEBUG : main : NodeContainer :  :  : Color Manager 0:67 has new state: IDLE
+2016-10-01 16:33:47,368 : DEBUG : main : Number To String : Number To String : 0:64 : reset
+2016-10-01 16:33:47,368 : DEBUG : main : Number To String : Number To String : 0:64 : clean output ports.
+2016-10-01 16:33:47,369 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 618b0550-1a07-4822-8665-b0b13f015817 (Number To String 0:64: <no directory>) - 3 remaining
+2016-10-01 16:33:47,369 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Number To String 0:64
+2016-10-01 16:33:47,369 : DEBUG : main : NodeContainer :  :  : Number To String 0:64 has new state: IDLE
+2016-10-01 16:33:47,369 : DEBUG : main : Number To String : Number To String : 0:64 : Configure succeeded. (Number To String)
+2016-10-01 16:33:47,369 : DEBUG : main : NodeContainer :  :  : Number To String 0:64 has new state: CONFIGURED
+2016-10-01 16:33:47,370 : WARN  : main : Color Manager : Color Manager : 0:67 : Column "Churn" has no nominal values set: execute predecessor or add Binner.
+2016-10-01 16:33:47,370 : DEBUG : main : NodeContainer :  :  : Build a Churn Prediction Model 0 has new state: IDLE
+2016-10-01 16:33:47,370 : WARN  : main : Color Manager : Color Manager : 0:67 : Column "Churn" has no nominal values set: execute predecessor or add Binner.
+2016-10-01 16:33:47,370 : DEBUG : main : Number To String : Number To String : 0:64 : reset
+2016-10-01 16:33:47,370 : DEBUG : main : Number To String : Number To String : 0:64 : clean output ports.
+2016-10-01 16:33:47,370 : DEBUG : main : NodeContainer :  :  : Number To String 0:64 has new state: IDLE
+2016-10-01 16:33:47,370 : DEBUG : main : Joiner : Joiner : 0:95 : reset
+2016-10-01 16:33:47,370 : DEBUG : main : Joiner : Joiner : 0:95 : clean output ports.
+2016-10-01 16:33:47,370 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 5bf80eb5-f5a5-4705-87ad-dc9d33ac8f4b (Joiner 0:95: <no directory>) - 2 remaining
+2016-10-01 16:33:47,371 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Joiner 0:95
+2016-10-01 16:33:47,371 : DEBUG : main : NodeContainer :  :  : Joiner 0:95 has new state: IDLE
+2016-10-01 16:33:47,371 : DEBUG : main : File Reader : File Reader : 0:91 : reset
+2016-10-01 16:33:47,371 : DEBUG : main : File Reader : File Reader : 0:91 : clean output ports.
+2016-10-01 16:33:47,371 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler dc43077b-d89b-48f6-b0af-3b1c286d6bbc (File Reader 0:91: <no directory>) - 1 remaining
+2016-10-01 16:33:47,371 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on File Reader 0:91
+2016-10-01 16:33:47,371 : DEBUG : main : NodeContainer :  :  : File Reader 0:91 has new state: IDLE
+2016-10-01 16:33:47,371 : DEBUG : main : File Reader : File Reader : 0:91 : Configure succeeded. (File Reader)
+2016-10-01 16:33:47,371 : DEBUG : main : NodeContainer :  :  : File Reader 0:91 has new state: CONFIGURED
+2016-10-01 16:33:47,371 : DEBUG : main : Joiner : Joiner : 0:95 : Configure succeeded. (Joiner)
+2016-10-01 16:33:47,371 : DEBUG : main : NodeContainer :  :  : Joiner 0:95 has new state: CONFIGURED
+2016-10-01 16:33:47,372 : DEBUG : main : Number To String : Number To String : 0:64 : Configure succeeded. (Number To String)
+2016-10-01 16:33:47,372 : DEBUG : main : NodeContainer :  :  : Number To String 0:64 has new state: CONFIGURED
+2016-10-01 16:33:47,372 : WARN  : main : Color Manager : Color Manager : 0:67 : Column "Churn" has no nominal values set: execute predecessor or add Binner.
+2016-10-01 16:33:47,372 : DEBUG : main : Number To String : Number To String : 0:64 : reset
+2016-10-01 16:33:47,372 : DEBUG : main : Number To String : Number To String : 0:64 : clean output ports.
+2016-10-01 16:33:47,372 : DEBUG : main : NodeContainer :  :  : Number To String 0:64 has new state: IDLE
+2016-10-01 16:33:47,372 : DEBUG : main : Joiner : Joiner : 0:95 : reset
+2016-10-01 16:33:47,372 : DEBUG : main : Joiner : Joiner : 0:95 : clean output ports.
+2016-10-01 16:33:47,372 : DEBUG : main : NodeContainer :  :  : Joiner 0:95 has new state: IDLE
+2016-10-01 16:33:47,372 : DEBUG : main : Joiner : Joiner : 0:95 : Configure succeeded. (Joiner)
+2016-10-01 16:33:47,372 : DEBUG : main : NodeContainer :  :  : Joiner 0:95 has new state: CONFIGURED
+2016-10-01 16:33:47,372 : DEBUG : main : Number To String : Number To String : 0:64 : Configure succeeded. (Number To String)
+2016-10-01 16:33:47,372 : DEBUG : main : NodeContainer :  :  : Number To String 0:64 has new state: CONFIGURED
+2016-10-01 16:33:47,372 : WARN  : main : Color Manager : Color Manager : 0:67 : Column "Churn" has no nominal values set: execute predecessor or add Binner.
+2016-10-01 16:33:47,372 : DEBUG : main : Number To String : Number To String : 0:64 : reset
+2016-10-01 16:33:47,372 : DEBUG : main : Number To String : Number To String : 0:64 : clean output ports.
+2016-10-01 16:33:47,372 : DEBUG : main : NodeContainer :  :  : Number To String 0:64 has new state: IDLE
+2016-10-01 16:33:47,372 : DEBUG : main : Joiner : Joiner : 0:95 : reset
+2016-10-01 16:33:47,372 : DEBUG : main : Joiner : Joiner : 0:95 : clean output ports.
+2016-10-01 16:33:47,372 : DEBUG : main : NodeContainer :  :  : Joiner 0:95 has new state: IDLE
+2016-10-01 16:33:47,372 : DEBUG : main : XLS Reader (deprecated) : XLS Reader (deprecated) : 0:100 : reset
+2016-10-01 16:33:47,372 : DEBUG : main : XLS Reader (deprecated) : XLS Reader (deprecated) : 0:100 : clean output ports.
+2016-10-01 16:33:47,373 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler eed5c04d-e71b-4e02-a4bc-27eb188b2179 (XLS Reader (deprecated) 0:100: <no directory>) - 0 remaining
+2016-10-01 16:33:47,373 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on XLS Reader (deprecated) 0:100
+2016-10-01 16:33:47,373 : DEBUG : main : NodeContainer :  :  : XLS Reader (deprecated) 0:100 has new state: IDLE
+2016-10-01 16:33:47,373 : DEBUG : main : XLS Reader (deprecated) : XLS Reader (deprecated) : 0:100 : Configure succeeded. (XLS Reader (deprecated))
+2016-10-01 16:33:47,373 : DEBUG : main : NodeContainer :  :  : XLS Reader (deprecated) 0:100 has new state: CONFIGURED
+2016-10-01 16:33:47,373 : DEBUG : main : Joiner : Joiner : 0:95 : Configure succeeded. (Joiner)
+2016-10-01 16:33:47,373 : DEBUG : main : NodeContainer :  :  : Joiner 0:95 has new state: CONFIGURED
+2016-10-01 16:33:47,373 : DEBUG : main : Number To String : Number To String : 0:64 : Configure succeeded. (Number To String)
+2016-10-01 16:33:47,373 : DEBUG : main : NodeContainer :  :  : Number To String 0:64 has new state: CONFIGURED
+2016-10-01 16:33:47,373 : WARN  : main : Color Manager : Color Manager : 0:67 : Column "Churn" has no nominal values set: execute predecessor or add Binner.
+2016-10-01 16:33:48,268 : DEBUG : Worker-11 : FileSingleNodeContainerPersistor : Build a Churn Prediction Model : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/.Build a Churn Prediction Model.autoSave/Partitioning (#61)"
+2016-10-01 16:33:48,270 : DEBUG : Worker-11 : FileSingleNodeContainerPersistor : Build a Churn Prediction Model : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/.Build a Churn Prediction Model.autoSave/Number To String (#64)"
+2016-10-01 16:33:48,270 : DEBUG : Worker-11 : FileSingleNodeContainerPersistor : Build a Churn Prediction Model : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/.Build a Churn Prediction Model.autoSave/Decision Tree Predictor (#65)"
+2016-10-01 16:33:48,271 : DEBUG : Worker-11 : FileSingleNodeContainerPersistor : Build a Churn Prediction Model : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/.Build a Churn Prediction Model.autoSave/Scorer (#66)"
+2016-10-01 16:33:48,272 : DEBUG : Worker-11 : FileSingleNodeContainerPersistor : Build a Churn Prediction Model : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/.Build a Churn Prediction Model.autoSave/Color Manager (#67)"
+2016-10-01 16:33:48,273 : DEBUG : Worker-11 : FileSingleNodeContainerPersistor : Build a Churn Prediction Model : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/.Build a Churn Prediction Model.autoSave/PMML Writer (#86)"
+2016-10-01 16:33:48,273 : DEBUG : Worker-11 : FileSingleNodeContainerPersistor : Build a Churn Prediction Model : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/.Build a Churn Prediction Model.autoSave/File Reader (#91)"
+2016-10-01 16:33:48,275 : DEBUG : Worker-11 : FileSingleNodeContainerPersistor : Build a Churn Prediction Model : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/.Build a Churn Prediction Model.autoSave/Joiner (#95)"
+2016-10-01 16:33:48,276 : DEBUG : Worker-11 : FileSingleNodeContainerPersistor : Build a Churn Prediction Model : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/.Build a Churn Prediction Model.autoSave/Equal Size Sampling (#96)"
+2016-10-01 16:33:48,277 : DEBUG : Worker-11 : FileSingleNodeContainerPersistor : Build a Churn Prediction Model : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/.Build a Churn Prediction Model.autoSave/XLS Reader _deprecated_ (#100)"
+2016-10-01 16:33:48,277 : DEBUG : Worker-11 : FileSingleNodeContainerPersistor : Build a Churn Prediction Model : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/.Build a Churn Prediction Model.autoSave/Decision Tree Learner (#101)"
+2016-10-01 16:33:48,278 : DEBUG : Worker-11 : FileSingleNodeContainerPersistor : Build a Churn Prediction Model : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/.Build a Churn Prediction Model.autoSave/JavaScript ROC Curve (#102)"
+2016-10-01 16:33:48,284 : DEBUG : Worker-11 : LocalWorkspaceContentProvider : Build a Churn Prediction Model : 0 : Refreshing "/Example Workflows/Customer Intelligence/Churn Prediction"
+2016-10-01 16:33:48,375 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Partitioning (#61)"
+2016-10-01 16:33:48,376 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Number To String (#64)"
+2016-10-01 16:33:48,378 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Decision Tree Predictor (#65)"
+2016-10-01 16:33:48,379 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Scorer (#66)"
+2016-10-01 16:33:48,380 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Color Manager (#67)"
+2016-10-01 16:33:48,381 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/PMML Writer (#86)"
+2016-10-01 16:33:48,382 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/File Reader (#91)"
+2016-10-01 16:33:48,383 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Joiner (#95)"
+2016-10-01 16:33:48,384 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Equal Size Sampling (#96)"
+2016-10-01 16:33:48,385 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/XLS Reader (#100)"
+2016-10-01 16:33:48,386 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Decision Tree Learner (#101)"
+2016-10-01 16:33:48,388 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/JavaScript ROC Curve (#102)"
+2016-10-01 16:33:48,394 : DEBUG : ModalContext : LocalWorkspaceContentProvider :  :  : Refreshing "/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Color Manager (#67)"
+2016-10-01 16:33:48,394 : DEBUG : ModalContext : LocalWorkspaceContentProvider :  :  : Refreshing "/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Decision Tree Learner (#101)"
+2016-10-01 16:33:48,394 : DEBUG : ModalContext : LocalWorkspaceContentProvider :  :  : Refreshing "/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Decision Tree Predictor (#65)"
+2016-10-01 16:33:48,394 : DEBUG : ModalContext : LocalWorkspaceContentProvider :  :  : Refreshing "/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Equal Size Sampling (#96)"
+2016-10-01 16:33:48,394 : DEBUG : ModalContext : LocalWorkspaceContentProvider :  :  : Refreshing "/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/File Reader (#91)"
+2016-10-01 16:33:48,394 : DEBUG : ModalContext : LocalWorkspaceContentProvider :  :  : Refreshing "/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/JavaScript ROC Curve (#102)"
+2016-10-01 16:33:48,394 : DEBUG : ModalContext : LocalWorkspaceContentProvider :  :  : Refreshing "/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Joiner (#95)"
+2016-10-01 16:33:48,394 : DEBUG : ModalContext : LocalWorkspaceContentProvider :  :  : Refreshing "/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Number To String (#64)"
+2016-10-01 16:33:48,394 : DEBUG : ModalContext : LocalWorkspaceContentProvider :  :  : Refreshing "/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/PMML Writer (#86)"
+2016-10-01 16:33:48,394 : DEBUG : ModalContext : LocalWorkspaceContentProvider :  :  : Refreshing "/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Partitioning (#61)"
+2016-10-01 16:33:48,394 : DEBUG : ModalContext : LocalWorkspaceContentProvider :  :  : Refreshing "/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/Scorer (#66)"
+2016-10-01 16:33:48,394 : DEBUG : ModalContext : LocalWorkspaceContentProvider :  :  : Refreshing "/Example Workflows/Customer Intelligence/Churn Prediction/Build a Churn Prediction Model/XLS Reader (#100)"
+2016-10-01 16:33:53,683 : DEBUG : ModalContext : WorkflowManager :  :  : Loading workflow from "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Deploy a Churn Prediction Model" (version "V3010" with loader class "FileWorkflowPersistor")
+2016-10-01 16:33:53,684 : DEBUG : ModalContext : WorkflowManager :  :  : Created subworkflow 2
+2016-10-01 16:33:53,756 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:104(1) to node 2:88(1)
+2016-10-01 16:33:53,756 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:105(1) to node 2:104(1)
+2016-10-01 16:33:53,756 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:103(1) to node 2:104(2)
+2016-10-01 16:33:53,788 : DEBUG : ModalContext : WorkflowManager :  :  : Loaded workflow from "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Deploy a Churn Prediction Model"  with no errors
+2016-10-01 16:33:57,509 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on PMML Reader 2:105
+2016-10-01 16:33:57,509 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Deploy a Churn Prediction Model 2
+2016-10-01 16:33:57,509 : DEBUG : main : NodeContainer :  :  : PMML Reader 2:105 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:33:57,509 : DEBUG : main : NodeContainer :  :  : PMML Reader 2:105 has new state: CONFIGURED_QUEUED
+2016-10-01 16:33:57,509 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on File Reader 2:103
+2016-10-01 16:33:57,509 : DEBUG : main : NodeContainer :  :  : File Reader 2:103 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:33:57,509 : DEBUG : main : NodeContainer :  :  : File Reader 2:103 has new state: CONFIGURED_QUEUED
+2016-10-01 16:33:57,509 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on JPMML Classifier 2:104
+2016-10-01 16:33:57,509 : DEBUG : main : NodeContainer :  :  : JPMML Classifier 2:104 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:33:57,510 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Data to Report 2:88
+2016-10-01 16:33:57,510 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:33:57,510 : DEBUG : main : NodeContainer :  :  : Deploy a Churn Prediction Model 2 has new state: EXECUTING
+2016-10-01 16:33:57,511 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: EXECUTING
+2016-10-01 16:33:58,460 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: IDLE
+2016-10-01 16:34:17,293 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Deploy a Churn Prediction Model/Data to Report (#88)"
+2016-10-01 16:34:17,294 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Deploy a Churn Prediction Model/File Reader (#103)"
+2016-10-01 16:34:17,295 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Deploy a Churn Prediction Model/JPMML Classifier (#104)"
+2016-10-01 16:34:17,296 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Deploy a Churn Prediction Model/PMML Reader (#105)"
+2016-10-01 16:34:17,306 : DEBUG : ModalContext : LocalWorkspaceContentProvider :  :  : Refreshing "/Example Workflows/Customer Intelligence/Churn Prediction/Deploy a Churn Prediction Model"
+2016-10-01 16:34:18,906 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on File Reader 2:103
+2016-10-01 16:34:18,906 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Deploy a Churn Prediction Model 2
+2016-10-01 16:34:18,906 : DEBUG : main : NodeContainer :  :  : File Reader 2:103 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:34:18,906 : DEBUG : main : NodeContainer :  :  : File Reader 2:103 has new state: CONFIGURED_QUEUED
+2016-10-01 16:34:18,907 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on JPMML Classifier 2:104
+2016-10-01 16:34:18,907 : DEBUG : main : NodeContainer :  :  : JPMML Classifier 2:104 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:34:18,907 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Data to Report 2:88
+2016-10-01 16:34:18,907 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 16:34:18,908 : DEBUG : main : NodeContainer :  :  : Deploy a Churn Prediction Model 2 has new state: EXECUTING
+2016-10-01 16:34:18,908 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: EXECUTING
+2016-10-01 16:34:19,087 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: IDLE
+2016-10-01 16:34:21,110 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 612d7e93-9919-4bf1-bd87-64f303a991d2 (Data to Report 2:88: <no directory>) - 3 remaining
+2016-10-01 16:34:21,110 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: IDLE
+2016-10-01 16:34:21,110 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: CONFIGURED
+2016-10-01 16:34:21,110 : DEBUG : main : NodeContainer :  :  : Deploy a Churn Prediction Model 2 has new state: CONFIGURED
+2016-10-01 16:34:21,111 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: IDLE
+2016-10-01 16:34:21,111 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler f85abae2-5f24-4b65-ad65-a212e82aa0a8 (JPMML Classifier 2:104: <no directory>) - 2 remaining
+2016-10-01 16:34:21,111 : DEBUG : main : NodeContainer :  :  : JPMML Classifier 2:104 has new state: IDLE
+2016-10-01 16:34:21,111 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 9d1e6b33-83ec-4b81-894e-f4f1bdb59860 (File Reader 2:103: <no directory>) - 1 remaining
+2016-10-01 16:34:21,111 : DEBUG : main : NodeContainer :  :  : File Reader 2:103 has new state: IDLE
+2016-10-01 16:34:21,112 : DEBUG : main : NodeContainer :  :  : File Reader 2:103 has new state: CONFIGURED
+2016-10-01 16:34:21,112 : DEBUG : main : NodeContainer :  :  : JPMML Classifier 2:104 has new state: CONFIGURED
+2016-10-01 16:34:21,112 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: CONFIGURED
+2016-10-01 16:34:21,112 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: IDLE
+2016-10-01 16:34:21,112 : DEBUG : main : NodeContainer :  :  : JPMML Classifier 2:104 has new state: IDLE
+2016-10-01 16:34:21,113 : DEBUG : main : NodeContainer :  :  : JPMML Classifier 2:104 has new state: CONFIGURED
+2016-10-01 16:34:21,113 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: CONFIGURED
+2016-10-01 16:34:21,113 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: IDLE
+2016-10-01 16:34:21,113 : DEBUG : main : NodeContainer :  :  : JPMML Classifier 2:104 has new state: IDLE
+2016-10-01 16:34:21,113 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 250073ab-1e39-4287-99dd-9f4f4d7fe71d (PMML Reader 2:105: <no directory>) - 0 remaining
+2016-10-01 16:34:21,113 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on PMML Reader 2:105
+2016-10-01 16:34:21,113 : DEBUG : main : NodeContainer :  :  : PMML Reader 2:105 has new state: IDLE
+2016-10-01 16:34:21,142 : DEBUG : main : NodeContainer :  :  : PMML Reader 2:105 has new state: CONFIGURED
+2016-10-01 16:34:21,143 : DEBUG : main : NodeContainer :  :  : JPMML Classifier 2:104 has new state: CONFIGURED
+2016-10-01 16:34:21,143 : DEBUG : main : NodeContainer :  :  : Data to Report 2:88 has new state: CONFIGURED
+2016-10-01 16:34:21,613 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Deploy a Churn Prediction Model/Data to Report (#88)"
+2016-10-01 16:34:21,614 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Deploy a Churn Prediction Model/File Reader (#103)"
+2016-10-01 16:34:21,614 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Deploy a Churn Prediction Model/JPMML Classifier (#104)"
+2016-10-01 16:34:21,615 : DEBUG : ModalContext : FileSingleNodeContainerPersistor :  :  : Replaced node directory "/data/KNIME_Releases/workspace/Example Workflows/Customer Intelligence/Churn Prediction/Deploy a Churn Prediction Model/PMML Reader (#105)"
+2016-10-01 16:34:21,618 : DEBUG : ModalContext : LocalWorkspaceContentProvider :  :  : Refreshing "/Example Workflows/Customer Intelligence/Churn Prediction/Deploy a Churn Prediction Model/PMML Reader (#105)"
+2016-10-01 16:34:23,784 : DEBUG : main : ProjectWorkflowMap : Build a Churn Prediction Model : 0 : Removing "file:/data/KNIME_Releases/workspace/Example%20Workflows/Customer%20Intelligence/Churn%20Prediction/Build%20a%20Churn%20Prediction%20Model/" from project map (0 remaining)
+2016-10-01 16:34:23,784 : DEBUG : main : WorkflowManager : Build a Churn Prediction Model : 0 : Removing project "Build a Churn Prediction Model 0"
+2016-10-01 16:34:23,785 : DEBUG : main : ROCCurveNodeModel : JavaScript ROC Curve : 0:102 : Removing all (3) views from model.
+2016-10-01 16:34:23,785 : DEBUG : main : ROCCurveNodeModel : JavaScript ROC Curve : 0:102 : Unregistering view from model (2 remaining).
+2016-10-01 16:34:23,785 : DEBUG : main : ROCCurveNodeModel : JavaScript ROC Curve : 0:102 : Unregistering view from model (1 remaining).
+2016-10-01 16:34:23,785 : DEBUG : main : ROCCurveNodeModel : JavaScript ROC Curve : 0:102 : Unregistering view from model (0 remaining).
+2016-10-01 16:34:23,785 : DEBUG : main : JavaScript ROC Curve : JavaScript ROC Curve : 0:102 : clean output ports.
+2016-10-01 16:34:23,785 : DEBUG : main : AccuracyScorerNodeModel : Scorer : 0:66 : Removing all (0) views from model.
+2016-10-01 16:34:23,785 : DEBUG : main : Scorer : Scorer : 0:66 : clean output ports.
+2016-10-01 16:34:23,785 : DEBUG : main : DecTreePredictorNodeModel : Decision Tree Predictor : 0:65 : Removing all (0) views from model.
+2016-10-01 16:34:23,785 : DEBUG : main : Decision Tree Predictor : Decision Tree Predictor : 0:65 : clean output ports.
+2016-10-01 16:34:23,786 : DEBUG : main : PMMLWriterNodeModel : PMML Writer : 0:86 : Removing all (0) views from model.
+2016-10-01 16:34:23,786 : DEBUG : main : PMML Writer : PMML Writer : 0:86 : clean output ports.
+2016-10-01 16:34:23,786 : DEBUG : main : EqualSizeSamplingNodeModel : Equal Size Sampling : 0:96 : Removing all (0) views from model.
+2016-10-01 16:34:23,786 : DEBUG : main : Equal Size Sampling : Equal Size Sampling : 0:96 : clean output ports.
+2016-10-01 16:34:23,786 : DEBUG : main : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:101 : Removing all (0) views from model.
+2016-10-01 16:34:23,786 : DEBUG : main : Decision Tree Learner : Decision Tree Learner : 0:101 : clean output ports.
+2016-10-01 16:34:23,786 : DEBUG : main : PartitionNodeModel : Partitioning : 0:61 : Removing all (0) views from model.
+2016-10-01 16:34:23,786 : DEBUG : main : Partitioning : Partitioning : 0:61 : clean output ports.
+2016-10-01 16:34:23,786 : DEBUG : main : ColorManager2NodeModel : Color Manager : 0:67 : Removing all (0) views from model.
+2016-10-01 16:34:23,786 : DEBUG : main : Color Manager : Color Manager : 0:67 : clean output ports.
+2016-10-01 16:34:23,786 : DEBUG : main : NumberToStringNodeModel : Number To String : 0:64 : Removing all (0) views from model.
+2016-10-01 16:34:23,786 : DEBUG : main : Number To String : Number To String : 0:64 : clean output ports.
+2016-10-01 16:34:23,786 : DEBUG : main : Joiner2NodeModel : Joiner : 0:95 : Removing all (0) views from model.
+2016-10-01 16:34:23,787 : DEBUG : main : Joiner : Joiner : 0:95 : clean output ports.
+2016-10-01 16:34:23,787 : DEBUG : main : XLSReaderNodeModel : XLS Reader (deprecated) : 0:100 : Removing all (0) views from model.
+2016-10-01 16:34:23,787 : DEBUG : main : XLS Reader (deprecated) : XLS Reader (deprecated) : 0:100 : clean output ports.
+2016-10-01 16:34:23,787 : DEBUG : main : FileReaderNodeModel : File Reader : 0:91 : Removing all (0) views from model.
+2016-10-01 16:34:23,787 : DEBUG : main : File Reader : File Reader : 0:91 : clean output ports.
+2016-10-01 16:34:23,787 : DEBUG : main : WorkflowManager : Build a Churn Prediction Model : 0 : Project "Build a Churn Prediction Model 0" removed (1 remaining)

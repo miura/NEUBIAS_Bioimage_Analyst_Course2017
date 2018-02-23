@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<met:KNIMEMetaInfo xmlns:met="http://www.knime.org/2.9/metainfo">
+  <met:element form="text" name="Author">david.kolb</met:element>
+  <met:element form="date" name="Creation Date">3/8/2015</met:element>
+  <met:element form="multiline" name="Comments"/>
+</met:KNIMEMetaInfo>

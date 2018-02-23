@@ -1,0 +1,784 @@
+2016-10-01 20:58:31,156 : DEBUG : ModalContext : ParallelTopicExtractorNodeFactory : Topic detection based on movie reviews : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 20:58:31,163 : DEBUG : ModalContext : GroupByNodeFactory : Topic detection based on movie reviews : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 20:58:31,165 : DEBUG : ModalContext : FileReaderNodeFactory : Topic detection based on movie reviews : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 20:58:31,167 : DEBUG : ModalContext : File Reader : File Reader : 0:289 : Configure succeeded. (File Reader)
+2016-10-01 20:58:31,170 : DEBUG : ModalContext : StringsToDocumentNodeFactory : Document Creation and document pre-processing : 0:287 : Factory is already initialized. Nothing to do.
+2016-10-01 20:58:31,176 : DEBUG : ModalContext : DataColumnSpecFilterNodeFactory : Document Creation and document pre-processing : 0:287 : Factory is already initialized. Nothing to do.
+2016-10-01 20:58:31,179 : DEBUG : ModalContext : RenameNodeFactory : Document Creation and document pre-processing : 0:287 : Factory is already initialized. Nothing to do.
+2016-10-01 20:58:31,181 : DEBUG : ModalContext : PunctuationErasureNodeFactory2 : Document Creation and document pre-processing : 0:287 : Factory is already initialized. Nothing to do.
+2016-10-01 20:58:31,185 : DEBUG : ModalContext : NumberFilterNodeFactory2 : Document Creation and document pre-processing : 0:287 : Factory is already initialized. Nothing to do.
+2016-10-01 20:58:31,187 : DEBUG : ModalContext : NCharsFilterNodeFactory2 : Document Creation and document pre-processing : 0:287 : Factory is already initialized. Nothing to do.
+2016-10-01 20:58:31,190 : DEBUG : ModalContext : StopWordFilterNodeFactory2 : Document Creation and document pre-processing : 0:287 : Factory is already initialized. Nothing to do.
+2016-10-01 20:58:31,193 : DEBUG : ModalContext : CaseConverterNodeFactory2 : Document Creation and document pre-processing : 0:287 : Factory is already initialized. Nothing to do.
+2016-10-01 20:58:31,194 : DEBUG : ModalContext : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "URL", leaving it untouched.
+2016-10-01 20:58:31,194 : DEBUG : ModalContext : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "Text", leaving it untouched.
+2016-10-01 20:58:31,194 : DEBUG : ModalContext : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "Sentiment", leaving it untouched.
+2016-10-01 20:58:31,194 : DEBUG : ModalContext : Column Rename : Column Rename : 0:287:7 : Configure succeeded. (Column Rename)
+2016-10-01 20:58:31,198 : DEBUG : ModalContext : TextContainerDataCellFactoryBuilder : Strings To Document : 0:287:5 : Creating buffered document file store cell factory!
+2016-10-01 20:58:31,201 : DEBUG : ModalContext : Strings To Document : Strings To Document : 0:287:5 : Configure succeeded. (Strings To Document)
+2016-10-01 20:58:31,201 : DEBUG : ModalContext : Column Filter : Column Filter : 0:287:6 : Configure succeeded. (Column Filter)
+2016-10-01 20:58:31,202 : DEBUG : ModalContext : TextContainerDataCellFactoryBuilder : Punctuation Erasure : 0:287:29 : Creating buffered document file store cell factory!
+2016-10-01 20:58:31,203 : DEBUG : ModalContext : TextContainerDataCellFactoryBuilder : Punctuation Erasure : 0:287:29 : Creating buffered document file store cell factory!
+2016-10-01 20:58:31,203 : DEBUG : ModalContext : Punctuation Erasure : Punctuation Erasure : 0:287:29 : Configure succeeded. (Punctuation Erasure)
+2016-10-01 20:58:31,203 : DEBUG : ModalContext : TextContainerDataCellFactoryBuilder : Number Filter : 0:287:30 : Creating buffered document file store cell factory!
+2016-10-01 20:58:31,203 : DEBUG : ModalContext : TextContainerDataCellFactoryBuilder : Number Filter : 0:287:30 : Creating buffered document file store cell factory!
+2016-10-01 20:58:31,203 : DEBUG : ModalContext : Number Filter : Number Filter : 0:287:30 : Configure succeeded. (Number Filter)
+2016-10-01 20:58:31,204 : DEBUG : ModalContext : TextContainerDataCellFactoryBuilder : N Chars Filter : 0:287:31 : Creating buffered document file store cell factory!
+2016-10-01 20:58:31,204 : DEBUG : ModalContext : TextContainerDataCellFactoryBuilder : N Chars Filter : 0:287:31 : Creating buffered document file store cell factory!
+2016-10-01 20:58:31,204 : DEBUG : ModalContext : N Chars Filter : N Chars Filter : 0:287:31 : Configure succeeded. (N Chars Filter)
+2016-10-01 20:58:31,204 : DEBUG : ModalContext : TextContainerDataCellFactoryBuilder : Stop word Filter : 0:287:32 : Creating buffered document file store cell factory!
+2016-10-01 20:58:31,205 : DEBUG : ModalContext : TextContainerDataCellFactoryBuilder : Stop word Filter : 0:287:32 : Creating buffered document file store cell factory!
+2016-10-01 20:58:31,205 : DEBUG : ModalContext : Stop word Filter : Stop word Filter : 0:287:32 : Configure succeeded. (Stop word Filter)
+2016-10-01 20:58:31,205 : DEBUG : ModalContext : TextContainerDataCellFactoryBuilder : Case converter : 0:287:33 : Creating buffered document file store cell factory!
+2016-10-01 20:58:31,206 : DEBUG : ModalContext : TextContainerDataCellFactoryBuilder : Case converter : 0:287:33 : Creating buffered document file store cell factory!
+2016-10-01 20:58:31,206 : DEBUG : ModalContext : Case converter : Case converter : 0:287:33 : Configure succeeded. (Case converter)
+2016-10-01 20:58:31,207 : DEBUG : ModalContext : Topic Extractor (Parallel LDA) : Topic Extractor (Parallel LDA) : 0:15 : Configure succeeded. (Topic Extractor (Parallel LDA))
+2016-10-01 20:58:31,207 : DEBUG : ModalContext : GroupByNodeModel : GroupBy : 0:221 : [Term->Concatenate true]
+2016-10-01 20:58:31,207 : DEBUG : ModalContext : GroupBy : GroupBy : 0:221 : Configure succeeded. (GroupBy)
+2016-10-01 20:58:38,145 : DEBUG : KNIME-Worker-91 : WorkflowManager : File Reader : 0:289 : File Reader 0:289 doBeforePreExecution
+2016-10-01 20:58:38,145 : DEBUG : KNIME-Worker-91 : NodeContainer : File Reader : 0:289 : File Reader 0:289 has new state: PREEXECUTE
+2016-10-01 20:58:38,145 : DEBUG : KNIME-Worker-91 : WorkflowManager : File Reader : 0:289 : File Reader 0:289 doBeforeExecution
+2016-10-01 20:58:38,145 : DEBUG : KNIME-Worker-91 : NodeContainer : File Reader : 0:289 : File Reader 0:289 has new state: EXECUTING
+2016-10-01 20:58:38,145 : DEBUG : KNIME-Worker-91 : WorkflowFileStoreHandlerRepository : File Reader : 0:289 : Adding handler 92aff0bf-42cd-4cf2-a8ae-1d16b35bd7a9 (File Reader 0:289: <no directory>) - 1 in total
+2016-10-01 20:58:38,145 : DEBUG : KNIME-Worker-91 : LocalNodeExecutionJob : File Reader : 0:289 : File Reader 0:289 Start execute
+2016-10-01 20:58:38,146 : INFO  : KNIME-Worker-91 : FileReaderNodeModel : File Reader : 0:289 : Preparing to read from 'knime://knime.workflow/../../Supplementary%20Data%20(really%20only%20the%20data)/Social%20Media/IMDb-sample.csv'.
+2016-10-01 20:58:38,340 : INFO  : KNIME-Worker-91 : LocalNodeExecutionJob : File Reader : 0:289 : File Reader 0:289 End execute (0 secs)
+2016-10-01 20:58:38,340 : DEBUG : KNIME-Worker-91 : WorkflowManager : File Reader : 0:289 : File Reader 0:289 doBeforePostExecution
+2016-10-01 20:58:38,340 : DEBUG : KNIME-Worker-91 : NodeContainer : File Reader : 0:289 : File Reader 0:289 has new state: POSTEXECUTE
+2016-10-01 20:58:38,340 : DEBUG : KNIME-Worker-91 : WorkflowManager : File Reader : 0:289 : File Reader 0:289 doAfterExecute - success
+2016-10-01 20:58:38,340 : DEBUG : KNIME-Worker-91 : NodeContainer : File Reader : 0:289 : File Reader 0:289 has new state: EXECUTED
+2016-10-01 20:58:38,341 : DEBUG : KNIME-Worker-91 : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "URL", leaving it untouched.
+2016-10-01 20:58:38,341 : DEBUG : KNIME-Worker-91 : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "Text", leaving it untouched.
+2016-10-01 20:58:38,341 : DEBUG : KNIME-Worker-91 : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "Sentiment", leaving it untouched.
+2016-10-01 20:58:38,341 : DEBUG : KNIME-Worker-91 : Column Rename : Column Rename : 0:287:7 : Configure succeeded. (Column Rename)
+2016-10-01 20:58:38,341 : DEBUG : KNIME-Worker-91 : NodeContainer : File Reader : 0:289 : Column Rename 0:287:7 has new state: CONFIGURED_QUEUED
+2016-10-01 20:58:38,341 : DEBUG : KNIME-Worker-91 : TextContainerDataCellFactoryBuilder : Strings To Document : 0:287:5 : Creating buffered document file store cell factory!
+2016-10-01 20:58:38,341 : DEBUG : KNIME-Worker-91 : Strings To Document : Strings To Document : 0:287:5 : Configure succeeded. (Strings To Document)
+2016-10-01 20:58:38,341 : DEBUG : KNIME-Worker-91 : Column Filter : Column Filter : 0:287:6 : Configure succeeded. (Column Filter)
+2016-10-01 20:58:38,341 : DEBUG : KNIME-Worker-91 : TextContainerDataCellFactoryBuilder : Punctuation Erasure : 0:287:29 : Creating buffered document file store cell factory!
+2016-10-01 20:58:38,341 : DEBUG : KNIME-Worker-91 : TextContainerDataCellFactoryBuilder : Punctuation Erasure : 0:287:29 : Creating buffered document file store cell factory!
+2016-10-01 20:58:38,341 : DEBUG : KNIME-Worker-91 : Punctuation Erasure : Punctuation Erasure : 0:287:29 : Configure succeeded. (Punctuation Erasure)
+2016-10-01 20:58:38,341 : DEBUG : KNIME-Worker-91 : TextContainerDataCellFactoryBuilder : Number Filter : 0:287:30 : Creating buffered document file store cell factory!
+2016-10-01 20:58:38,341 : DEBUG : KNIME-Worker-91 : TextContainerDataCellFactoryBuilder : Number Filter : 0:287:30 : Creating buffered document file store cell factory!
+2016-10-01 20:58:38,341 : DEBUG : KNIME-Worker-91 : Number Filter : Number Filter : 0:287:30 : Configure succeeded. (Number Filter)
+2016-10-01 20:58:38,342 : DEBUG : KNIME-Worker-91 : TextContainerDataCellFactoryBuilder : N Chars Filter : 0:287:31 : Creating buffered document file store cell factory!
+2016-10-01 20:58:38,342 : DEBUG : KNIME-Worker-91 : TextContainerDataCellFactoryBuilder : N Chars Filter : 0:287:31 : Creating buffered document file store cell factory!
+2016-10-01 20:58:38,342 : DEBUG : KNIME-Worker-91 : N Chars Filter : N Chars Filter : 0:287:31 : Configure succeeded. (N Chars Filter)
+2016-10-01 20:58:38,342 : DEBUG : KNIME-Worker-91 : TextContainerDataCellFactoryBuilder : Stop word Filter : 0:287:32 : Creating buffered document file store cell factory!
+2016-10-01 20:58:38,342 : DEBUG : KNIME-Worker-91 : TextContainerDataCellFactoryBuilder : Stop word Filter : 0:287:32 : Creating buffered document file store cell factory!
+2016-10-01 20:58:38,342 : DEBUG : KNIME-Worker-91 : Stop word Filter : Stop word Filter : 0:287:32 : Configure succeeded. (Stop word Filter)
+2016-10-01 20:58:38,342 : DEBUG : KNIME-Worker-91 : TextContainerDataCellFactoryBuilder : Case converter : 0:287:33 : Creating buffered document file store cell factory!
+2016-10-01 20:58:38,342 : DEBUG : KNIME-Worker-91 : TextContainerDataCellFactoryBuilder : Case converter : 0:287:33 : Creating buffered document file store cell factory!
+2016-10-01 20:58:38,342 : DEBUG : KNIME-Worker-91 : Case converter : Case converter : 0:287:33 : Configure succeeded. (Case converter)
+2016-10-01 20:58:38,342 : DEBUG : KNIME-Worker-91 : NodeContainer : File Reader : 0:289 : Document Creation and document pre-processing 0:287 has new state: EXECUTING
+2016-10-01 20:58:38,342 : DEBUG : KNIME-Worker-91 : Topic Extractor (Parallel LDA) : Topic Extractor (Parallel LDA) : 0:15 : Configure succeeded. (Topic Extractor (Parallel LDA))
+2016-10-01 20:58:38,342 : DEBUG : KNIME-Worker-92 : WorkflowManager : Column Rename : 0:287:7 : Column Rename 0:287:7 doBeforePreExecution
+2016-10-01 20:58:38,343 : DEBUG : KNIME-Worker-92 : NodeContainer : Column Rename : 0:287:7 : Column Rename 0:287:7 has new state: PREEXECUTE
+2016-10-01 20:58:38,343 : DEBUG : KNIME-Worker-92 : WorkflowManager : Column Rename : 0:287:7 : Column Rename 0:287:7 doBeforeExecution
+2016-10-01 20:58:38,343 : DEBUG : KNIME-Worker-92 : NodeContainer : Column Rename : 0:287:7 : Column Rename 0:287:7 has new state: EXECUTING
+2016-10-01 20:58:38,343 : DEBUG : KNIME-Worker-92 : WorkflowFileStoreHandlerRepository : Column Rename : 0:287:7 : Adding handler 499cf894-d9f0-443f-8c92-ca92b42dc303 (Column Rename 0:287:7: <no directory>) - 2 in total
+2016-10-01 20:58:38,343 : DEBUG : KNIME-Worker-92 : LocalNodeExecutionJob : Column Rename : 0:287:7 : Column Rename 0:287:7 Start execute
+2016-10-01 20:58:38,343 : DEBUG : KNIME-Worker-92 : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "URL", leaving it untouched.
+2016-10-01 20:58:38,343 : DEBUG : KNIME-Worker-92 : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "Text", leaving it untouched.
+2016-10-01 20:58:38,343 : DEBUG : KNIME-Worker-92 : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "Sentiment", leaving it untouched.
+2016-10-01 20:58:38,348 : INFO  : KNIME-Worker-92 : LocalNodeExecutionJob : Column Rename : 0:287:7 : Column Rename 0:287:7 End execute (0 secs)
+2016-10-01 20:58:38,348 : DEBUG : KNIME-Worker-92 : WorkflowManager : Column Rename : 0:287:7 : Column Rename 0:287:7 doBeforePostExecution
+2016-10-01 20:58:38,348 : DEBUG : KNIME-Worker-92 : NodeContainer : Column Rename : 0:287:7 : Column Rename 0:287:7 has new state: POSTEXECUTE
+2016-10-01 20:58:38,348 : DEBUG : KNIME-Worker-92 : WorkflowManager : Column Rename : 0:287:7 : Column Rename 0:287:7 doAfterExecute - success
+2016-10-01 20:58:38,348 : DEBUG : KNIME-Worker-92 : NodeContainer : Column Rename : 0:287:7 : Column Rename 0:287:7 has new state: EXECUTED
+2016-10-01 20:58:38,349 : DEBUG : KNIME-Worker-92 : TextContainerDataCellFactoryBuilder : Strings To Document : 0:287:5 : Creating buffered document file store cell factory!
+2016-10-01 20:58:38,349 : DEBUG : KNIME-Worker-92 : Strings To Document : Strings To Document : 0:287:5 : Configure succeeded. (Strings To Document)
+2016-10-01 20:58:38,349 : DEBUG : KNIME-Worker-92 : NodeContainer : Column Rename : 0:287:7 : Strings To Document 0:287:5 has new state: CONFIGURED_QUEUED
+2016-10-01 20:58:38,349 : DEBUG : KNIME-Worker-93 : WorkflowManager : Strings To Document : 0:287:5 : Strings To Document 0:287:5 doBeforePreExecution
+2016-10-01 20:58:38,349 : DEBUG : KNIME-Worker-93 : NodeContainer : Strings To Document : 0:287:5 : Strings To Document 0:287:5 has new state: PREEXECUTE
+2016-10-01 20:58:38,349 : DEBUG : KNIME-Worker-93 : WorkflowManager : Strings To Document : 0:287:5 : Strings To Document 0:287:5 doBeforeExecution
+2016-10-01 20:58:38,349 : DEBUG : KNIME-Worker-93 : NodeContainer : Strings To Document : 0:287:5 : Strings To Document 0:287:5 has new state: EXECUTING
+2016-10-01 20:58:38,349 : DEBUG : KNIME-Worker-93 : WorkflowFileStoreHandlerRepository : Strings To Document : 0:287:5 : Adding handler 90198172-17ba-4e98-95f5-2fcf1436d8b7 (Strings To Document 0:287:5: <no directory>) - 3 in total
+2016-10-01 20:58:38,349 : DEBUG : KNIME-Worker-93 : LocalNodeExecutionJob : Strings To Document : 0:287:5 : Strings To Document 0:287:5 Start execute
+2016-10-01 20:58:38,349 : DEBUG : KNIME-Worker-93 : TextContainerDataCellFactoryBuilder : Strings To Document : 0:287:5 : Creating buffered document file store cell factory!
+2016-10-01 20:58:38,371 : DEBUG : KNIME-Worker-94 : TextContainerDataCellFactoryBuilder : Strings To Document : 0:287:5 : Creating buffered document file store cell factory!
+2016-10-01 20:58:38,372 : DEBUG : KNIME-Worker-94 : DocumentBufferedFileStoreDataCellFactory : Strings To Document : 0:287:5 : Creating file store: ad12729b-1047-43a4-8967-899330c8cd68
+2016-10-01 20:58:38,373 : DEBUG : KNIME-Worker-94 : WriteFileStoreHandler : Strings To Document : 0:287:5 : Assigning temp directory to file store "90198172-17ba-4e98-95f5-2fcf1436d8b7 (Strings To Document 0:287:5: /tmp/knime_Topic detection1558/knime_fs-Strings_To_Document_0_287_5-1559)"
+2016-10-01 20:58:41,675 : DEBUG : KNIME-Worker-93 : LRUDataCellCache : Strings To Document : 0:287:5 : Closing lru data cell cache.
+2016-10-01 20:58:41,675 : INFO  : KNIME-Worker-93 : LocalNodeExecutionJob : Strings To Document : 0:287:5 : Strings To Document 0:287:5 End execute (3 secs)
+2016-10-01 20:58:41,675 : DEBUG : KNIME-Worker-93 : WorkflowManager : Strings To Document : 0:287:5 : Strings To Document 0:287:5 doBeforePostExecution
+2016-10-01 20:58:41,676 : DEBUG : KNIME-Worker-93 : NodeContainer : Strings To Document : 0:287:5 : Strings To Document 0:287:5 has new state: POSTEXECUTE
+2016-10-01 20:58:41,676 : DEBUG : KNIME-Worker-93 : WorkflowManager : Strings To Document : 0:287:5 : Strings To Document 0:287:5 doAfterExecute - success
+2016-10-01 20:58:41,676 : DEBUG : KNIME-Worker-93 : NodeContainer : Strings To Document : 0:287:5 : Strings To Document 0:287:5 has new state: EXECUTED
+2016-10-01 20:58:41,676 : DEBUG : KNIME-Worker-93 : Column Filter : Column Filter : 0:287:6 : Configure succeeded. (Column Filter)
+2016-10-01 20:58:41,676 : DEBUG : KNIME-Worker-93 : NodeContainer : Strings To Document : 0:287:5 : Column Filter 0:287:6 has new state: CONFIGURED_QUEUED
+2016-10-01 20:58:41,676 : DEBUG : KNIME-Worker-97 : WorkflowManager : Column Filter : 0:287:6 : Column Filter 0:287:6 doBeforePreExecution
+2016-10-01 20:58:41,676 : DEBUG : KNIME-Worker-97 : NodeContainer : Column Filter : 0:287:6 : Column Filter 0:287:6 has new state: PREEXECUTE
+2016-10-01 20:58:41,676 : DEBUG : KNIME-Worker-97 : WorkflowManager : Column Filter : 0:287:6 : Column Filter 0:287:6 doBeforeExecution
+2016-10-01 20:58:41,676 : DEBUG : KNIME-Worker-97 : NodeContainer : Column Filter : 0:287:6 : Column Filter 0:287:6 has new state: EXECUTING
+2016-10-01 20:58:41,676 : DEBUG : KNIME-Worker-97 : WorkflowFileStoreHandlerRepository : Column Filter : 0:287:6 : Adding handler cf3e519e-5681-4300-830b-077ea35df9bd (Column Filter 0:287:6: <no directory>) - 4 in total
+2016-10-01 20:58:41,676 : DEBUG : KNIME-Worker-97 : LocalNodeExecutionJob : Column Filter : 0:287:6 : Column Filter 0:287:6 Start execute
+2016-10-01 20:58:41,676 : INFO  : KNIME-Worker-97 : LocalNodeExecutionJob : Column Filter : 0:287:6 : Column Filter 0:287:6 End execute (0 secs)
+2016-10-01 20:58:41,676 : DEBUG : KNIME-Worker-97 : WorkflowManager : Column Filter : 0:287:6 : Column Filter 0:287:6 doBeforePostExecution
+2016-10-01 20:58:41,676 : DEBUG : KNIME-Worker-97 : NodeContainer : Column Filter : 0:287:6 : Column Filter 0:287:6 has new state: POSTEXECUTE
+2016-10-01 20:58:41,676 : DEBUG : KNIME-Worker-97 : WorkflowManager : Column Filter : 0:287:6 : Column Filter 0:287:6 doAfterExecute - success
+2016-10-01 20:58:41,676 : DEBUG : KNIME-Worker-97 : NodeContainer : Column Filter : 0:287:6 : Column Filter 0:287:6 has new state: EXECUTED
+2016-10-01 20:58:41,677 : DEBUG : KNIME-Worker-97 : TextContainerDataCellFactoryBuilder : Punctuation Erasure : 0:287:29 : Creating buffered document file store cell factory!
+2016-10-01 20:58:41,677 : DEBUG : KNIME-Worker-97 : TextContainerDataCellFactoryBuilder : Punctuation Erasure : 0:287:29 : Creating buffered document file store cell factory!
+2016-10-01 20:58:41,677 : DEBUG : KNIME-Worker-97 : Punctuation Erasure : Punctuation Erasure : 0:287:29 : Configure succeeded. (Punctuation Erasure)
+2016-10-01 20:58:41,677 : DEBUG : KNIME-Worker-97 : NodeContainer : Column Filter : 0:287:6 : Punctuation Erasure 0:287:29 has new state: CONFIGURED_QUEUED
+2016-10-01 20:58:41,677 : DEBUG : KNIME-Worker-96 : WorkflowManager : Punctuation Erasure : 0:287:29 : Punctuation Erasure 0:287:29 doBeforePreExecution
+2016-10-01 20:58:41,677 : DEBUG : KNIME-Worker-96 : NodeContainer : Punctuation Erasure : 0:287:29 : Punctuation Erasure 0:287:29 has new state: PREEXECUTE
+2016-10-01 20:58:41,677 : DEBUG : KNIME-Worker-96 : WorkflowManager : Punctuation Erasure : 0:287:29 : Punctuation Erasure 0:287:29 doBeforeExecution
+2016-10-01 20:58:41,677 : DEBUG : KNIME-Worker-96 : NodeContainer : Punctuation Erasure : 0:287:29 : Punctuation Erasure 0:287:29 has new state: EXECUTING
+2016-10-01 20:58:41,677 : DEBUG : KNIME-Worker-96 : WorkflowFileStoreHandlerRepository : Punctuation Erasure : 0:287:29 : Adding handler ec579c53-78d3-45f5-9ba5-774787f2b652 (Punctuation Erasure 0:287:29: <no directory>) - 5 in total
+2016-10-01 20:58:41,677 : DEBUG : KNIME-Worker-96 : LocalNodeExecutionJob : Punctuation Erasure : 0:287:29 : Punctuation Erasure 0:287:29 Start execute
+2016-10-01 20:58:41,678 : DEBUG : KNIME-Worker-96 : TextContainerDataCellFactoryBuilder : Punctuation Erasure : 0:287:29 : Creating buffered document file store cell factory!
+2016-10-01 20:58:41,678 : DEBUG : KNIME-Worker-96 : TextContainerDataCellFactoryBuilder : Punctuation Erasure : 0:287:29 : Creating buffered document file store cell factory!
+2016-10-01 20:58:41,679 : DEBUG : KNIME-Worker-88 : DocumentBufferedFileStoreDataCellFactory : Punctuation Erasure : 0:287:29 : Creating file store: 2a9c314e-349d-42c3-bd2c-8927bc07d788
+2016-10-01 20:58:41,679 : DEBUG : KNIME-Worker-88 : WriteFileStoreHandler : Punctuation Erasure : 0:287:29 : Assigning temp directory to file store "ec579c53-78d3-45f5-9ba5-774787f2b652 (Punctuation Erasure 0:287:29: /tmp/knime_Topic detection1558/knime_fs-Punctuation_Erasure_0_287_29-1560)"
+2016-10-01 20:58:42,511 : INFO  : KNIME-Worker-96 : LocalNodeExecutionJob : Punctuation Erasure : 0:287:29 : Punctuation Erasure 0:287:29 End execute (0 secs)
+2016-10-01 20:58:42,511 : DEBUG : KNIME-Worker-96 : WorkflowManager : Punctuation Erasure : 0:287:29 : Punctuation Erasure 0:287:29 doBeforePostExecution
+2016-10-01 20:58:42,511 : DEBUG : KNIME-Worker-96 : NodeContainer : Punctuation Erasure : 0:287:29 : Punctuation Erasure 0:287:29 has new state: POSTEXECUTE
+2016-10-01 20:58:42,511 : DEBUG : KNIME-Worker-96 : WorkflowManager : Punctuation Erasure : 0:287:29 : Punctuation Erasure 0:287:29 doAfterExecute - success
+2016-10-01 20:58:42,511 : DEBUG : KNIME-Worker-96 : NodeContainer : Punctuation Erasure : 0:287:29 : Punctuation Erasure 0:287:29 has new state: EXECUTED
+2016-10-01 20:58:42,512 : DEBUG : KNIME-Worker-96 : TextContainerDataCellFactoryBuilder : Number Filter : 0:287:30 : Creating buffered document file store cell factory!
+2016-10-01 20:58:42,512 : DEBUG : KNIME-Worker-96 : TextContainerDataCellFactoryBuilder : Number Filter : 0:287:30 : Creating buffered document file store cell factory!
+2016-10-01 20:58:42,512 : DEBUG : KNIME-Worker-96 : Number Filter : Number Filter : 0:287:30 : Configure succeeded. (Number Filter)
+2016-10-01 20:58:42,512 : DEBUG : KNIME-Worker-96 : NodeContainer : Punctuation Erasure : 0:287:29 : Number Filter 0:287:30 has new state: CONFIGURED_QUEUED
+2016-10-01 20:58:42,512 : DEBUG : KNIME-Worker-101 : WorkflowManager : Number Filter : 0:287:30 : Number Filter 0:287:30 doBeforePreExecution
+2016-10-01 20:58:42,512 : DEBUG : KNIME-Worker-101 : NodeContainer : Number Filter : 0:287:30 : Number Filter 0:287:30 has new state: PREEXECUTE
+2016-10-01 20:58:42,512 : DEBUG : KNIME-Worker-101 : WorkflowManager : Number Filter : 0:287:30 : Number Filter 0:287:30 doBeforeExecution
+2016-10-01 20:58:42,512 : DEBUG : KNIME-Worker-101 : NodeContainer : Number Filter : 0:287:30 : Number Filter 0:287:30 has new state: EXECUTING
+2016-10-01 20:58:42,512 : DEBUG : KNIME-Worker-101 : WorkflowFileStoreHandlerRepository : Number Filter : 0:287:30 : Adding handler 941c8be7-6bf1-4a74-bbe5-fa2065eaf966 (Number Filter 0:287:30: <no directory>) - 6 in total
+2016-10-01 20:58:42,512 : DEBUG : KNIME-Worker-101 : LocalNodeExecutionJob : Number Filter : 0:287:30 : Number Filter 0:287:30 Start execute
+2016-10-01 20:58:42,512 : DEBUG : KNIME-Worker-101 : TextContainerDataCellFactoryBuilder : Number Filter : 0:287:30 : Creating buffered document file store cell factory!
+2016-10-01 20:58:42,513 : DEBUG : KNIME-Worker-101 : TextContainerDataCellFactoryBuilder : Number Filter : 0:287:30 : Creating buffered document file store cell factory!
+2016-10-01 20:58:42,513 : DEBUG : KNIME-Worker-89 : DocumentBufferedFileStoreDataCellFactory : Number Filter : 0:287:30 : Creating file store: b236890e-de8a-4a93-aef4-8a7455e4f384
+2016-10-01 20:58:42,513 : DEBUG : KNIME-Worker-89 : WriteFileStoreHandler : Number Filter : 0:287:30 : Assigning temp directory to file store "941c8be7-6bf1-4a74-bbe5-fa2065eaf966 (Number Filter 0:287:30: /tmp/knime_Topic detection1558/knime_fs-Number_Filter_0_287_30-1561)"
+2016-10-01 20:58:43,137 : INFO  : KNIME-Worker-101 : LocalNodeExecutionJob : Number Filter : 0:287:30 : Number Filter 0:287:30 End execute (0 secs)
+2016-10-01 20:58:43,137 : DEBUG : KNIME-Worker-101 : WorkflowManager : Number Filter : 0:287:30 : Number Filter 0:287:30 doBeforePostExecution
+2016-10-01 20:58:43,137 : DEBUG : KNIME-Worker-101 : NodeContainer : Number Filter : 0:287:30 : Number Filter 0:287:30 has new state: POSTEXECUTE
+2016-10-01 20:58:43,138 : DEBUG : KNIME-Worker-101 : WorkflowManager : Number Filter : 0:287:30 : Number Filter 0:287:30 doAfterExecute - success
+2016-10-01 20:58:43,138 : DEBUG : KNIME-Worker-101 : NodeContainer : Number Filter : 0:287:30 : Number Filter 0:287:30 has new state: EXECUTED
+2016-10-01 20:58:43,138 : DEBUG : KNIME-Worker-101 : TextContainerDataCellFactoryBuilder : N Chars Filter : 0:287:31 : Creating buffered document file store cell factory!
+2016-10-01 20:58:43,138 : DEBUG : KNIME-Worker-101 : TextContainerDataCellFactoryBuilder : N Chars Filter : 0:287:31 : Creating buffered document file store cell factory!
+2016-10-01 20:58:43,138 : DEBUG : KNIME-Worker-101 : N Chars Filter : N Chars Filter : 0:287:31 : Configure succeeded. (N Chars Filter)
+2016-10-01 20:58:43,138 : DEBUG : KNIME-Worker-101 : NodeContainer : Number Filter : 0:287:30 : N Chars Filter 0:287:31 has new state: CONFIGURED_QUEUED
+2016-10-01 20:58:43,138 : DEBUG : KNIME-Worker-96 : WorkflowManager : N Chars Filter : 0:287:31 : N Chars Filter 0:287:31 doBeforePreExecution
+2016-10-01 20:58:43,138 : DEBUG : KNIME-Worker-96 : NodeContainer : N Chars Filter : 0:287:31 : N Chars Filter 0:287:31 has new state: PREEXECUTE
+2016-10-01 20:58:43,138 : DEBUG : KNIME-Worker-96 : WorkflowManager : N Chars Filter : 0:287:31 : N Chars Filter 0:287:31 doBeforeExecution
+2016-10-01 20:58:43,138 : DEBUG : KNIME-Worker-96 : NodeContainer : N Chars Filter : 0:287:31 : N Chars Filter 0:287:31 has new state: EXECUTING
+2016-10-01 20:58:43,138 : DEBUG : KNIME-Worker-96 : WorkflowFileStoreHandlerRepository : N Chars Filter : 0:287:31 : Adding handler 53cb8748-4f13-41cb-a208-938dd9781b28 (N Chars Filter 0:287:31: <no directory>) - 7 in total
+2016-10-01 20:58:43,139 : DEBUG : KNIME-Worker-96 : LocalNodeExecutionJob : N Chars Filter : 0:287:31 : N Chars Filter 0:287:31 Start execute
+2016-10-01 20:58:43,139 : DEBUG : KNIME-Worker-96 : TextContainerDataCellFactoryBuilder : N Chars Filter : 0:287:31 : Creating buffered document file store cell factory!
+2016-10-01 20:58:43,139 : DEBUG : KNIME-Worker-96 : TextContainerDataCellFactoryBuilder : N Chars Filter : 0:287:31 : Creating buffered document file store cell factory!
+2016-10-01 20:58:43,141 : DEBUG : KNIME-Worker-99 : DocumentBufferedFileStoreDataCellFactory : N Chars Filter : 0:287:31 : Creating file store: af4dfe1e-8c91-4c3a-b25c-64db25707a3e
+2016-10-01 20:58:43,143 : DEBUG : KNIME-Worker-99 : WriteFileStoreHandler : N Chars Filter : 0:287:31 : Assigning temp directory to file store "53cb8748-4f13-41cb-a208-938dd9781b28 (N Chars Filter 0:287:31: /tmp/knime_Topic detection1558/knime_fs-N_Chars_Filter_0_287_31-1562)"
+2016-10-01 20:58:43,384 : INFO  : KNIME-Worker-96 : LocalNodeExecutionJob : N Chars Filter : 0:287:31 : N Chars Filter 0:287:31 End execute (0 secs)
+2016-10-01 20:58:43,384 : DEBUG : KNIME-Worker-96 : WorkflowManager : N Chars Filter : 0:287:31 : N Chars Filter 0:287:31 doBeforePostExecution
+2016-10-01 20:58:43,384 : DEBUG : KNIME-Worker-96 : NodeContainer : N Chars Filter : 0:287:31 : N Chars Filter 0:287:31 has new state: POSTEXECUTE
+2016-10-01 20:58:43,384 : DEBUG : KNIME-Worker-96 : WorkflowManager : N Chars Filter : 0:287:31 : N Chars Filter 0:287:31 doAfterExecute - success
+2016-10-01 20:58:43,384 : DEBUG : KNIME-Worker-96 : NodeContainer : N Chars Filter : 0:287:31 : N Chars Filter 0:287:31 has new state: EXECUTED
+2016-10-01 20:58:43,385 : DEBUG : KNIME-Worker-96 : TextContainerDataCellFactoryBuilder : Stop word Filter : 0:287:32 : Creating buffered document file store cell factory!
+2016-10-01 20:58:43,385 : DEBUG : KNIME-Worker-96 : TextContainerDataCellFactoryBuilder : Stop word Filter : 0:287:32 : Creating buffered document file store cell factory!
+2016-10-01 20:58:43,385 : DEBUG : KNIME-Worker-96 : Stop word Filter : Stop word Filter : 0:287:32 : Configure succeeded. (Stop word Filter)
+2016-10-01 20:58:43,385 : DEBUG : KNIME-Worker-96 : NodeContainer : N Chars Filter : 0:287:31 : Stop word Filter 0:287:32 has new state: CONFIGURED_QUEUED
+2016-10-01 20:58:43,385 : DEBUG : KNIME-Worker-101 : WorkflowManager : Stop word Filter : 0:287:32 : Stop word Filter 0:287:32 doBeforePreExecution
+2016-10-01 20:58:43,385 : DEBUG : KNIME-Worker-101 : NodeContainer : Stop word Filter : 0:287:32 : Stop word Filter 0:287:32 has new state: PREEXECUTE
+2016-10-01 20:58:43,385 : DEBUG : KNIME-Worker-101 : WorkflowManager : Stop word Filter : 0:287:32 : Stop word Filter 0:287:32 doBeforeExecution
+2016-10-01 20:58:43,385 : DEBUG : KNIME-Worker-101 : NodeContainer : Stop word Filter : 0:287:32 : Stop word Filter 0:287:32 has new state: EXECUTING
+2016-10-01 20:58:43,385 : DEBUG : KNIME-Worker-101 : WorkflowFileStoreHandlerRepository : Stop word Filter : 0:287:32 : Adding handler d15b971c-46f5-42ec-a593-111dc301545e (Stop word Filter 0:287:32: <no directory>) - 8 in total
+2016-10-01 20:58:43,385 : DEBUG : KNIME-Worker-101 : LocalNodeExecutionJob : Stop word Filter : 0:287:32 : Stop word Filter 0:287:32 Start execute
+2016-10-01 20:58:43,385 : DEBUG : KNIME-Worker-101 : TextContainerDataCellFactoryBuilder : Stop word Filter : 0:287:32 : Creating buffered document file store cell factory!
+2016-10-01 20:58:43,386 : DEBUG : KNIME-Worker-101 : TextContainerDataCellFactoryBuilder : Stop word Filter : 0:287:32 : Creating buffered document file store cell factory!
+2016-10-01 20:58:43,388 : DEBUG : KNIME-Worker-94 : DocumentBufferedFileStoreDataCellFactory : Stop word Filter : 0:287:32 : Creating file store: 058771bf-6cd8-497b-b90e-1378cce5d5f5
+2016-10-01 20:58:43,388 : DEBUG : KNIME-Worker-94 : WriteFileStoreHandler : Stop word Filter : 0:287:32 : Assigning temp directory to file store "d15b971c-46f5-42ec-a593-111dc301545e (Stop word Filter 0:287:32: /tmp/knime_Topic detection1558/knime_fs-Stop_word_Filter_0_287_32-1563)"
+2016-10-01 20:58:43,528 : INFO  : KNIME-Worker-101 : LocalNodeExecutionJob : Stop word Filter : 0:287:32 : Stop word Filter 0:287:32 End execute (0 secs)
+2016-10-01 20:58:43,528 : DEBUG : KNIME-Worker-101 : WorkflowManager : Stop word Filter : 0:287:32 : Stop word Filter 0:287:32 doBeforePostExecution
+2016-10-01 20:58:43,528 : DEBUG : KNIME-Worker-101 : NodeContainer : Stop word Filter : 0:287:32 : Stop word Filter 0:287:32 has new state: POSTEXECUTE
+2016-10-01 20:58:43,528 : DEBUG : KNIME-Worker-101 : WorkflowManager : Stop word Filter : 0:287:32 : Stop word Filter 0:287:32 doAfterExecute - success
+2016-10-01 20:58:43,528 : DEBUG : KNIME-Worker-101 : NodeContainer : Stop word Filter : 0:287:32 : Stop word Filter 0:287:32 has new state: EXECUTED
+2016-10-01 20:58:43,528 : DEBUG : KNIME-Worker-101 : TextContainerDataCellFactoryBuilder : Case converter : 0:287:33 : Creating buffered document file store cell factory!
+2016-10-01 20:58:43,528 : DEBUG : KNIME-Worker-101 : TextContainerDataCellFactoryBuilder : Case converter : 0:287:33 : Creating buffered document file store cell factory!
+2016-10-01 20:58:43,528 : DEBUG : KNIME-Worker-101 : Case converter : Case converter : 0:287:33 : Configure succeeded. (Case converter)
+2016-10-01 20:58:43,528 : DEBUG : KNIME-Worker-101 : NodeContainer : Stop word Filter : 0:287:32 : Case converter 0:287:33 has new state: CONFIGURED_QUEUED
+2016-10-01 20:58:43,528 : DEBUG : KNIME-Worker-100 : WorkflowManager : Case converter : 0:287:33 : Case converter 0:287:33 doBeforePreExecution
+2016-10-01 20:58:43,529 : DEBUG : KNIME-Worker-100 : NodeContainer : Case converter : 0:287:33 : Case converter 0:287:33 has new state: PREEXECUTE
+2016-10-01 20:58:43,529 : DEBUG : KNIME-Worker-100 : WorkflowManager : Case converter : 0:287:33 : Case converter 0:287:33 doBeforeExecution
+2016-10-01 20:58:43,529 : DEBUG : KNIME-Worker-100 : NodeContainer : Case converter : 0:287:33 : Case converter 0:287:33 has new state: EXECUTING
+2016-10-01 20:58:43,529 : DEBUG : KNIME-Worker-100 : WorkflowFileStoreHandlerRepository : Case converter : 0:287:33 : Adding handler 8ce74932-cb0b-4a75-b47b-34f5cca5231d (Case converter 0:287:33: <no directory>) - 9 in total
+2016-10-01 20:58:43,529 : DEBUG : KNIME-Worker-100 : LocalNodeExecutionJob : Case converter : 0:287:33 : Case converter 0:287:33 Start execute
+2016-10-01 20:58:43,529 : DEBUG : KNIME-Worker-100 : TextContainerDataCellFactoryBuilder : Case converter : 0:287:33 : Creating buffered document file store cell factory!
+2016-10-01 20:58:43,529 : DEBUG : KNIME-Worker-100 : TextContainerDataCellFactoryBuilder : Case converter : 0:287:33 : Creating buffered document file store cell factory!
+2016-10-01 20:58:43,529 : DEBUG : KNIME-Worker-87 : DocumentBufferedFileStoreDataCellFactory : Case converter : 0:287:33 : Creating file store: 1928f534-a664-48bb-84da-f2bd4e30a765
+2016-10-01 20:58:43,533 : DEBUG : KNIME-Worker-87 : WriteFileStoreHandler : Case converter : 0:287:33 : Assigning temp directory to file store "8ce74932-cb0b-4a75-b47b-34f5cca5231d (Case converter 0:287:33: /tmp/knime_Topic detection1558/knime_fs-Case_converter_0_287_33-1564)"
+2016-10-01 20:58:43,672 : INFO  : KNIME-Worker-100 : LocalNodeExecutionJob : Case converter : 0:287:33 : Case converter 0:287:33 End execute (0 secs)
+2016-10-01 20:58:43,672 : DEBUG : KNIME-Worker-100 : WorkflowManager : Case converter : 0:287:33 : Case converter 0:287:33 doBeforePostExecution
+2016-10-01 20:58:43,672 : DEBUG : KNIME-Worker-100 : NodeContainer : Case converter : 0:287:33 : Case converter 0:287:33 has new state: POSTEXECUTE
+2016-10-01 20:58:43,672 : DEBUG : KNIME-Worker-100 : WorkflowManager : Case converter : 0:287:33 : Case converter 0:287:33 doAfterExecute - success
+2016-10-01 20:58:43,672 : DEBUG : KNIME-Worker-100 : NodeContainer : Case converter : 0:287:33 : Case converter 0:287:33 has new state: EXECUTED
+2016-10-01 20:58:43,673 : DEBUG : KNIME-Worker-100 : Topic Extractor (Parallel LDA) : Topic Extractor (Parallel LDA) : 0:15 : Configure succeeded. (Topic Extractor (Parallel LDA))
+2016-10-01 20:58:43,673 : DEBUG : KNIME-Worker-100 : NodeContainer : Case converter : 0:287:33 : Topic Extractor (Parallel LDA) 0:15 has new state: CONFIGURED_QUEUED
+2016-10-01 20:58:43,673 : DEBUG : KNIME-Worker-100 : NodeContainer : Case converter : 0:287:33 : Document Creation and document pre-processing 0:287 has new state: EXECUTED
+2016-10-01 20:58:43,673 : DEBUG : KNIME-Worker-87 : WorkflowManager : Topic Extractor (Parallel LDA) : 0:15 : Topic Extractor (Parallel LDA) 0:15 doBeforePreExecution
+2016-10-01 20:58:43,673 : DEBUG : KNIME-Worker-87 : NodeContainer : Topic Extractor (Parallel LDA) : 0:15 : Topic Extractor (Parallel LDA) 0:15 has new state: PREEXECUTE
+2016-10-01 20:58:43,673 : DEBUG : KNIME-Worker-87 : WorkflowManager : Topic Extractor (Parallel LDA) : 0:15 : Topic Extractor (Parallel LDA) 0:15 doBeforeExecution
+2016-10-01 20:58:43,673 : DEBUG : KNIME-Worker-87 : NodeContainer : Topic Extractor (Parallel LDA) : 0:15 : Topic Extractor (Parallel LDA) 0:15 has new state: EXECUTING
+2016-10-01 20:58:43,673 : DEBUG : KNIME-Worker-87 : WorkflowFileStoreHandlerRepository : Topic Extractor (Parallel LDA) : 0:15 : Adding handler 5c4e58fb-5bee-4663-9c3f-48faa72dbd0e (Topic Extractor (Parallel LDA) 0:15: <no directory>) - 10 in total
+2016-10-01 20:58:43,673 : DEBUG : KNIME-Worker-87 : LocalNodeExecutionJob : Topic Extractor (Parallel LDA) : 0:15 : Topic Extractor (Parallel LDA) 0:15 Start execute
+2016-10-01 20:58:44,479 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <10> LL/token: -10.37428
+2016-10-01 20:58:44,848 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <20> LL/token: -10.11358
+2016-10-01 20:58:45,229 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <30> LL/token: -10.00097
+2016-10-01 20:58:45,598 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <40> LL/token: -9.93512
+2016-10-01 20:58:46,108 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.1	film movie people time movies bad 
+1	0.1	movie time love original story death 
+2	0.1	film character films war idea family 
+3	0.1	film movie director story cast look 
+4	0.1	film comedy series role book story 
+5	0.1	movie bad film movies time people 
+6	0.1	film story character real life people 
+7	0.1	movie film story characters time love 
+
+2016-10-01 20:58:46,148 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <50> LL/token: -9.88387
+2016-10-01 20:58:46,512 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <60> LL/token: -9.85214
+2016-10-01 20:58:46,875 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <70> LL/token: -9.82517
+2016-10-01 20:58:47,243 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <80> LL/token: -9.80733
+2016-10-01 20:58:47,608 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <90> LL/token: -9.78307
+2016-10-01 20:58:47,957 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.1	film movie people scene time story 
+1	0.1	movie time life love musical original 
+2	0.1	film people war character history american 
+3	0.1	film story cast character director movie 
+4	0.1	film comedy series book story episodes 
+5	0.1	movie film bad time watch movies 
+6	0.1	film story real films own life 
+7	0.1	movie film time love story seen 
+
+2016-10-01 20:58:47,997 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <100> LL/token: -9.76933
+2016-10-01 20:58:48,364 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <110> LL/token: -9.75465
+2016-10-01 20:58:48,728 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <120> LL/token: -9.73931
+2016-10-01 20:58:49,093 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <130> LL/token: -9.72862
+2016-10-01 20:58:49,455 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <140> LL/token: -9.72342
+2016-10-01 20:58:49,790 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.1	film people scene movie story time 
+1	0.1	movie time musical original love family 
+2	0.1	film war history people american time 
+3	0.1	film story character cast director look 
+4	0.1	film comedy series book cast character 
+5	0.1	movie film bad time acting movies 
+6	0.1	film story life character real love 
+7	0.1	movie film story time love characters 
+
+2016-10-01 20:58:49,829 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <150> LL/token: -9.71274
+2016-10-01 20:58:50,202 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <160> LL/token: -9.70899
+2016-10-01 20:58:50,565 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <170> LL/token: -9.69977
+2016-10-01 20:58:50,927 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <180> LL/token: -9.69361
+2016-10-01 20:58:51,298 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <190> LL/token: -9.68889
+2016-10-01 20:58:51,635 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.1	film scene people films scenes music 
+1	0.1	time movie family musical story woman 
+2	0.1	film war day american history time 
+3	0.1	film story director character cast horror 
+4	0.1	comedy film series cast character episode 
+5	0.1	movie film bad time people acting 
+6	0.1	film life real story people own 
+7	0.1	movie film story time love characters 
+
+2016-10-01 20:58:51,674 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <200> LL/token: -9.68485
+2016-10-01 20:58:52,062 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <210> LL/token: -9.67948
+2016-10-01 20:58:52,605 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <220> LL/token: -9.67925
+2016-10-01 20:58:52,967 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <230> LL/token: -9.67859
+2016-10-01 20:58:53,341 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <240> LL/token: -9.66861
+2016-10-01 20:58:53,678 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.1	film scene looking scenes story music 
+1	0.1	movie time family father children musical 
+2	0.1	film war time people history american 
+3	0.1	film story character director cast acting 
+4	0.1	comedy series film cast funny role 
+5	0.1	movie film bad time people plot 
+6	0.1	film story life films real own 
+7	0.1	movie film story time love movies 
+
+2016-10-01 20:58:53,725 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.06432] 
+2016-10-01 20:58:53,729 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <250> LL/token: -9.51292
+2016-10-01 20:58:54,097 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <260> LL/token: -9.61272
+2016-10-01 20:58:54,470 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <270> LL/token: -9.59945
+2016-10-01 20:58:54,843 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <280> LL/token: -9.58897
+2016-10-01 20:58:55,226 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <290> LL/token: -9.5732
+2016-10-01 20:58:55,567 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.14648	film films scene scenes horror zombie 
+1	0.11309	family father woman christmas musical children 
+2	0.12643	war time history documentary people world 
+3	0.13763	film story character cast director performance 
+4	0.1348	comedy series film episodes episode funny 
+5	0.1844	movie film bad time people acting 
+6	0.13501	film life story own director characters 
+7	0.18555	movie film story time love movies 
+
+2016-10-01 20:58:55,612 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.08918] 
+2016-10-01 20:58:55,617 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <300> LL/token: -9.55835
+2016-10-01 20:58:55,988 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <310> LL/token: -9.57143
+2016-10-01 20:58:56,363 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <320> LL/token: -9.55897
+2016-10-01 20:58:56,735 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <330> LL/token: -9.54334
+2016-10-01 20:58:57,110 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <340> LL/token: -9.54029
+2016-10-01 20:58:57,454 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.15633	film horror effects pretty zombie monster 
+1	0.10929	family christmas woman kids father children 
+2	0.12356	war time people history world american 
+3	0.14623	film story character cast role director 
+4	0.14313	comedy series episode episodes cast character 
+5	0.25072	movie film bad time acting people 
+6	0.14815	film life own director films love 
+7	0.25623	movie film story time love people 
+
+2016-10-01 20:58:57,493 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.09745] 
+2016-10-01 20:58:57,498 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <350> LL/token: -9.52748
+2016-10-01 20:58:57,877 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <360> LL/token: -9.52869
+2016-10-01 20:58:58,252 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <370> LL/token: -9.52221
+2016-10-01 20:58:58,625 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <380> LL/token: -9.51799
+2016-10-01 20:58:59,004 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <390> LL/token: -9.51652
+2016-10-01 20:58:59,353 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.14356	effects monster zombie spirit zombies looking 
+1	0.09801	family kids christmas harry love father 
+2	0.11044	war time people history documentary police 
+3	0.13956	film story cast role character director 
+4	0.13364	comedy series robert episodes role funny 
+5	0.30862	movie film bad time people acting 
+6	0.15133	film life own director love scene 
+7	0.31848	movie film story time love seen 
+
+2016-10-01 20:58:59,408 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.10053] 
+2016-10-01 20:58:59,412 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <400> LL/token: -9.51689
+2016-10-01 20:58:59,786 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <410> LL/token: -9.4984
+2016-10-01 20:59:00,160 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <420> LL/token: -9.4996
+2016-10-01 20:59:00,532 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <430> LL/token: -9.50039
+2016-10-01 20:59:00,910 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <440> LL/token: -9.49435
+2016-10-01 20:59:01,249 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.12373	zombie effects monster spirit series zombies 
+1	0.08663	family christmas father sister love dance 
+2	0.09773	war time history police world people 
+3	0.129	film performance role story director character 
+4	0.12528	comedy series character funny wife role 
+5	0.35882	movie film bad time people acting 
+6	0.15216	film own life films love characters 
+7	0.37118	movie film story time characters love 
+
+2016-10-01 20:59:01,292 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.10242] 
+2016-10-01 20:59:01,296 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <450> LL/token: -9.48957
+2016-10-01 20:59:01,673 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <460> LL/token: -9.48561
+2016-10-01 20:59:02,044 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <470> LL/token: -9.47993
+2016-10-01 20:59:02,418 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <480> LL/token: -9.47449
+2016-10-01 20:59:02,787 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <490> LL/token: -9.47003
+2016-10-01 20:59:03,125 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.10512	zombie effects monster king spirit zombies 
+1	0.07789	family christmas woman father harry sister 
+2	0.09126	war people history documentary time police 
+3	0.1203	film director role character cast performance 
+4	0.11616	comedy series funny episode john peter 
+5	0.39803	movie film bad time people plot 
+6	0.14925	film life own scene mother woman 
+7	0.42003	movie film story time characters love 
+
+2016-10-01 20:59:03,168 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.10407] 
+2016-10-01 20:59:03,172 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <500> LL/token: -9.46842
+2016-10-01 20:59:03,549 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <510> LL/token: -9.46096
+2016-10-01 20:59:03,923 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <520> LL/token: -9.46221
+2016-10-01 20:59:04,302 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <530> LL/token: -9.4609
+2016-10-01 20:59:04,676 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <540> LL/token: -9.46337
+2016-10-01 20:59:05,018 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.09181	effects monster zombie king spirit zombies 
+1	0.07176	christmas woman family father dance harry 
+2	0.08727	war time history documentary police people 
+3	0.11375	character role film performance performances director 
+4	0.10883	comedy series episode funny peter episodes 
+5	0.43027	movie film bad time people plot 
+6	0.14113	film own life mother father society 
+7	0.46267	film movie story time characters love 
+
+2016-10-01 20:59:05,064 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.1051] 
+2016-10-01 20:59:05,068 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <550> LL/token: -9.4511
+2016-10-01 20:59:05,441 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <560> LL/token: -9.44777
+2016-10-01 20:59:05,822 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <570> LL/token: -9.43635
+2016-10-01 20:59:06,195 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <580> LL/token: -9.44067
+2016-10-01 20:59:06,565 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <590> LL/token: -9.43328
+2016-10-01 20:59:06,905 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.08485	zombie monster effects star zombies series 
+1	0.06803	family christmas woman father sister kids 
+2	0.08451	war documentary police history time film 
+3	0.10698	director character role cast thriller performances 
+4	0.10296	comedy funny series episode peter robert 
+5	0.45329	movie film bad time acting people 
+6	0.12631	film own art women society mother 
+7	0.508	film movie story time characters love 
+
+2016-10-01 20:59:06,948 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.10665] 
+2016-10-01 20:59:06,952 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <600> LL/token: -9.42618
+2016-10-01 20:59:07,323 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <610> LL/token: -9.42991
+2016-10-01 20:59:07,696 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <620> LL/token: -9.42713
+2016-10-01 20:59:08,067 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <630> LL/token: -9.42708
+2016-10-01 20:59:08,444 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <640> LL/token: -9.42388
+2016-10-01 20:59:08,781 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.07794	monster effects series zombie star king 
+1	0.06568	christmas family dance kids father joan 
+2	0.08166	war people time history police documentary 
+3	0.0996	director role thriller performance harry james 
+4	0.10048	comedy funny series episode peter episodes 
+5	0.46919	movie film bad time people acting 
+6	0.11135	film own life mother son father 
+7	0.5487	film movie story time characters love 
+
+2016-10-01 20:59:08,824 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.10759] 
+2016-10-01 20:59:08,829 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <650> LL/token: -9.42055
+2016-10-01 20:59:09,197 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <660> LL/token: -9.42032
+2016-10-01 20:59:09,567 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <670> LL/token: -9.41587
+2016-10-01 20:59:09,947 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <680> LL/token: -9.41101
+2016-10-01 20:59:10,321 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <690> LL/token: -9.41334
+2016-10-01 20:59:10,667 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.07369	effects monster series zombie spirit star 
+1	0.06293	family christmas kids songs father santa 
+2	0.08079	war time people history documentary police 
+3	0.09479	harry role thriller character lincoln john 
+4	0.10042	comedy series funny episode episodes peter 
+5	0.48002	movie film bad time people acting 
+6	0.09939	film own life mother family paris 
+7	0.58655	film movie story time characters love 
+
+2016-10-01 20:59:10,710 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.10829] 
+2016-10-01 20:59:10,714 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <700> LL/token: -9.41156
+2016-10-01 20:59:11,087 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <710> LL/token: -9.41001
+2016-10-01 20:59:11,463 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <720> LL/token: -9.40872
+2016-10-01 20:59:11,833 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <730> LL/token: -9.40428
+2016-10-01 20:59:12,209 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <740> LL/token: -9.39845
+2016-10-01 20:59:12,549 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.07105	monster series zombie star zombies original 
+1	0.06214	musical christmas family songs dance father 
+2	0.08088	war time documentary history police people 
+3	0.08661	role character harry john cast lincoln 
+4	0.09827	comedy series funny episode peter john 
+5	0.48921	movie film bad time people acting 
+6	0.09237	film own women life paris father 
+7	0.61948	film movie story time characters love 
+
+2016-10-01 20:59:12,593 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.10949] 
+2016-10-01 20:59:12,597 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <750> LL/token: -9.39794
+2016-10-01 20:59:12,970 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <760> LL/token: -9.39849
+2016-10-01 20:59:13,338 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <770> LL/token: -9.3984
+2016-10-01 20:59:13,705 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <780> LL/token: -9.39739
+2016-10-01 20:59:14,080 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <790> LL/token: -9.39707
+2016-10-01 20:59:14,424 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.07118	monster effects series zombie star original 
+1	0.06201	musical christmas family father woman songs 
+2	0.08005	war time people documentary history police 
+3	0.08059	thriller harry character lincoln role noir 
+4	0.09974	comedy funny series episode peter episodes 
+5	0.49639	movie film bad time people acting 
+6	0.08458	film own mother paris tarzan hotel 
+7	0.64869	film movie story time characters love 
+
+2016-10-01 20:59:14,468 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.10962] 
+2016-10-01 20:59:14,472 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <800> LL/token: -9.3932
+2016-10-01 20:59:14,847 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <810> LL/token: -9.39657
+2016-10-01 20:59:15,219 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <820> LL/token: -9.39214
+2016-10-01 20:59:15,591 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <830> LL/token: -9.38863
+2016-10-01 20:59:15,958 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <840> LL/token: -9.38305
+2016-10-01 20:59:16,294 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.0714	monster series zombie spirit star effects 
+1	0.06084	musical christmas family dance songs woman 
+2	0.08036	war time documentary people history police 
+3	0.07799	thriller harry role john lincoln noir 
+4	0.09631	comedy funny series episode john robert 
+5	0.50392	movie film bad time people acting 
+6	0.07631	film own tarzan paris mother hotel 
+7	0.67302	film movie story time characters love 
+
+2016-10-01 20:59:16,338 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.10992] 
+2016-10-01 20:59:16,343 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <850> LL/token: -9.38595
+2016-10-01 20:59:16,720 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <860> LL/token: -9.39041
+2016-10-01 20:59:17,089 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <870> LL/token: -9.39125
+2016-10-01 20:59:17,464 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <880> LL/token: -9.38658
+2016-10-01 20:59:17,913 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <890> LL/token: -9.38929
+2016-10-01 20:59:18,267 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.07024	series monster zombie spirit star course 
+1	0.06057	musical christmas family father woman songs 
+2	0.07955	war time documentary history christian people 
+3	0.07787	thriller harry john lincoln murder performance 
+4	0.09662	comedy funny series episode john peter 
+5	0.51054	movie film bad time people movies 
+6	0.07282	own tarzan paris women mother hotel 
+7	0.69042	film movie story time characters love 
+
+2016-10-01 20:59:18,333 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.10996] 
+2016-10-01 20:59:18,346 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <900> LL/token: -9.38281
+2016-10-01 20:59:18,723 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <910> LL/token: -9.38524
+2016-10-01 20:59:19,094 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <920> LL/token: -9.38646
+2016-10-01 20:59:19,467 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <930> LL/token: -9.38224
+2016-10-01 20:59:19,839 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <940> LL/token: -9.38115
+2016-10-01 20:59:20,186 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.06887	series monster original king star zombie 
+1	0.06176	musical christmas songs kids dance father 
+2	0.07845	war time documentary history people christian 
+3	0.07768	thriller harry lincoln john role noir 
+4	0.09882	comedy funny episode series john peter 
+5	0.5121	movie film bad time movies horror 
+6	0.06861	own hotel paris mother tarzan sex 
+7	0.70993	film movie story time characters love 
+
+2016-10-01 20:59:20,232 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.11053] 
+2016-10-01 20:59:20,236 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <950> LL/token: -9.37583
+2016-10-01 20:59:20,612 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <960> LL/token: -9.37935
+2016-10-01 20:59:20,987 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <970> LL/token: -9.38013
+2016-10-01 20:59:21,363 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <980> LL/token: -9.37923
+2016-10-01 20:59:21,732 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <990> LL/token: -9.38212
+2016-10-01 20:59:22,076 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+0	0.0695	series monster animation original star spirit 
+1	0.06335	musical christmas family songs santa dance 
+2	0.07888	war history documentary time people christian 
+3	0.07443	harry thriller character lincoln john role 
+4	0.09865	comedy funny series episode robert john 
+5	0.50948	movie film bad time people horror 
+6	0.06783	own tarzan paris hotel mother women 
+7	0.73217	film movie story time love characters 
+
+2016-10-01 20:59:22,120 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : [beta: 0.11075] 
+2016-10-01 20:59:22,125 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : <1000> LL/token: -9.37798
+2016-10-01 20:59:22,126 : DEBUG : KNIME-Worker-87 : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : 
+Total time: 38 seconds
+2016-10-01 20:59:22,157 : INFO  : KNIME-Worker-87 : LocalNodeExecutionJob : Topic Extractor (Parallel LDA) : 0:15 : Topic Extractor (Parallel LDA) 0:15 End execute (38 secs)
+2016-10-01 20:59:22,157 : DEBUG : KNIME-Worker-87 : WorkflowManager : Topic Extractor (Parallel LDA) : 0:15 : Topic Extractor (Parallel LDA) 0:15 doBeforePostExecution
+2016-10-01 20:59:22,157 : DEBUG : KNIME-Worker-87 : NodeContainer : Topic Extractor (Parallel LDA) : 0:15 : Topic Extractor (Parallel LDA) 0:15 has new state: POSTEXECUTE
+2016-10-01 20:59:22,157 : DEBUG : KNIME-Worker-87 : WorkflowManager : Topic Extractor (Parallel LDA) : 0:15 : Topic Extractor (Parallel LDA) 0:15 doAfterExecute - success
+2016-10-01 20:59:22,157 : DEBUG : KNIME-Worker-87 : NodeContainer : Topic Extractor (Parallel LDA) : 0:15 : Topic Extractor (Parallel LDA) 0:15 has new state: EXECUTED
+2016-10-01 20:59:22,157 : DEBUG : KNIME-Worker-87 : GroupByNodeModel : GroupBy : 0:221 : [Term->Concatenate true]
+2016-10-01 20:59:22,157 : DEBUG : KNIME-Worker-87 : GroupBy : GroupBy : 0:221 : Configure succeeded. (GroupBy)
+2016-10-01 20:59:22,157 : DEBUG : KNIME-Worker-87 : NodeContainer : Topic Extractor (Parallel LDA) : 0:15 : GroupBy 0:221 has new state: CONFIGURED_QUEUED
+2016-10-01 20:59:22,157 : DEBUG : KNIME-Worker-99 : WorkflowManager : GroupBy : 0:221 : GroupBy 0:221 doBeforePreExecution
+2016-10-01 20:59:22,158 : DEBUG : KNIME-Worker-99 : NodeContainer : GroupBy : 0:221 : GroupBy 0:221 has new state: PREEXECUTE
+2016-10-01 20:59:22,158 : DEBUG : KNIME-Worker-99 : WorkflowManager : GroupBy : 0:221 : GroupBy 0:221 doBeforeExecution
+2016-10-01 20:59:22,158 : DEBUG : KNIME-Worker-99 : NodeContainer : GroupBy : 0:221 : GroupBy 0:221 has new state: EXECUTING
+2016-10-01 20:59:22,158 : DEBUG : KNIME-Worker-99 : WorkflowFileStoreHandlerRepository : GroupBy : 0:221 : Adding handler 98584a5f-3a62-4604-a3e4-75ba6d9d2ea3 (GroupBy 0:221: <no directory>) - 11 in total
+2016-10-01 20:59:22,158 : DEBUG : KNIME-Worker-99 : LocalNodeExecutionJob : GroupBy : 0:221 : GroupBy 0:221 Start execute
+2016-10-01 20:59:22,158 : DEBUG : KNIME-Worker-99 : BigGroupByTable : GroupBy : 0:221 : Entering createGroupByTable(exec, table) of class BigGroupByTable.
+2016-10-01 20:59:22,158 : INFO  : KNIME-Worker-99 : LocalNodeExecutionJob : GroupBy : 0:221 : GroupBy 0:221 End execute (0 secs)
+2016-10-01 20:59:22,158 : DEBUG : KNIME-Worker-99 : WorkflowManager : GroupBy : 0:221 : GroupBy 0:221 doBeforePostExecution
+2016-10-01 20:59:22,158 : DEBUG : KNIME-Worker-99 : NodeContainer : GroupBy : 0:221 : GroupBy 0:221 has new state: POSTEXECUTE
+2016-10-01 20:59:22,158 : DEBUG : KNIME-Worker-99 : WorkflowManager : GroupBy : 0:221 : GroupBy 0:221 doAfterExecute - success
+2016-10-01 20:59:22,158 : DEBUG : KNIME-Worker-99 : NodeContainer : GroupBy : 0:221 : GroupBy 0:221 has new state: EXECUTED
+2016-10-01 20:59:22,158 : DEBUG : KNIME-Worker-99 : NodeContainer : GroupBy : 0:221 : Topic detection based on movie reviews 0 has new state: EXECUTED
+2016-10-01 20:59:22,159 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: IDLE
+2016-10-01 20:59:26,703 : DEBUG : main : GroupBy : GroupBy : 0:221 : reset
+2016-10-01 20:59:26,703 : DEBUG : main : GroupBy : GroupBy : 0:221 : clean output ports.
+2016-10-01 20:59:26,703 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 98584a5f-3a62-4604-a3e4-75ba6d9d2ea3 (GroupBy 0:221: <no directory>) - 10 remaining
+2016-10-01 20:59:26,703 : DEBUG : main : NodeContainer :  :  : GroupBy 0:221 has new state: IDLE
+2016-10-01 20:59:26,703 : DEBUG : main : Topic Extractor (Parallel LDA) : Topic Extractor (Parallel LDA) : 0:15 : reset
+2016-10-01 20:59:26,703 : DEBUG : main : Topic Extractor (Parallel LDA) : Topic Extractor (Parallel LDA) : 0:15 : clean output ports.
+2016-10-01 20:59:26,703 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 5c4e58fb-5bee-4663-9c3f-48faa72dbd0e (Topic Extractor (Parallel LDA) 0:15: <no directory>) - 9 remaining
+2016-10-01 20:59:26,703 : DEBUG : main : NodeContainer :  :  : Topic Extractor (Parallel LDA) 0:15 has new state: IDLE
+2016-10-01 20:59:26,703 : DEBUG : main : Topic Extractor (Parallel LDA) : Topic Extractor (Parallel LDA) : 0:15 : Configure succeeded. (Topic Extractor (Parallel LDA))
+2016-10-01 20:59:26,703 : DEBUG : main : NodeContainer :  :  : Topic Extractor (Parallel LDA) 0:15 has new state: CONFIGURED
+2016-10-01 20:59:26,704 : DEBUG : main : GroupByNodeModel : GroupBy : 0:221 : [Term->Concatenate true]
+2016-10-01 20:59:26,704 : DEBUG : main : GroupBy : GroupBy : 0:221 : Configure succeeded. (GroupBy)
+2016-10-01 20:59:26,704 : DEBUG : main : NodeContainer :  :  : GroupBy 0:221 has new state: CONFIGURED
+2016-10-01 20:59:26,704 : DEBUG : main : NodeContainer :  :  : Topic detection based on movie reviews 0 has new state: CONFIGURED
+2016-10-01 20:59:26,704 : DEBUG : main : GroupBy : GroupBy : 0:221 : reset
+2016-10-01 20:59:26,704 : DEBUG : main : GroupBy : GroupBy : 0:221 : clean output ports.
+2016-10-01 20:59:26,704 : DEBUG : main : NodeContainer :  :  : GroupBy 0:221 has new state: IDLE
+2016-10-01 20:59:26,704 : DEBUG : main : GroupByNodeModel : GroupBy : 0:221 : [Term->Concatenate true]
+2016-10-01 20:59:26,704 : DEBUG : main : GroupBy : GroupBy : 0:221 : Configure succeeded. (GroupBy)
+2016-10-01 20:59:26,704 : DEBUG : main : NodeContainer :  :  : GroupBy 0:221 has new state: CONFIGURED
+2016-10-01 20:59:26,704 : DEBUG : main : GroupBy : GroupBy : 0:221 : reset
+2016-10-01 20:59:26,704 : DEBUG : main : GroupBy : GroupBy : 0:221 : clean output ports.
+2016-10-01 20:59:26,704 : DEBUG : main : NodeContainer :  :  : GroupBy 0:221 has new state: IDLE
+2016-10-01 20:59:26,704 : DEBUG : main : Topic Extractor (Parallel LDA) : Topic Extractor (Parallel LDA) : 0:15 : reset
+2016-10-01 20:59:26,704 : DEBUG : main : Topic Extractor (Parallel LDA) : Topic Extractor (Parallel LDA) : 0:15 : clean output ports.
+2016-10-01 20:59:26,704 : DEBUG : main : NodeContainer :  :  : Topic Extractor (Parallel LDA) 0:15 has new state: IDLE
+2016-10-01 20:59:26,704 : DEBUG : main : Column Rename : Column Rename : 0:287:7 : reset
+2016-10-01 20:59:26,704 : DEBUG : main : Column Rename : Column Rename : 0:287:7 : clean output ports.
+2016-10-01 20:59:26,704 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 499cf894-d9f0-443f-8c92-ca92b42dc303 (Column Rename 0:287:7: <no directory>) - 8 remaining
+2016-10-01 20:59:26,704 : DEBUG : main : NodeContainer :  :  : Column Rename 0:287:7 has new state: IDLE
+2016-10-01 20:59:26,704 : DEBUG : main : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "URL", leaving it untouched.
+2016-10-01 20:59:26,704 : DEBUG : main : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "Text", leaving it untouched.
+2016-10-01 20:59:26,704 : DEBUG : main : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "Sentiment", leaving it untouched.
+2016-10-01 20:59:26,704 : DEBUG : main : Column Rename : Column Rename : 0:287:7 : Configure succeeded. (Column Rename)
+2016-10-01 20:59:26,704 : DEBUG : main : NodeContainer :  :  : Column Rename 0:287:7 has new state: CONFIGURED
+2016-10-01 20:59:26,704 : DEBUG : main : Strings To Document : Strings To Document : 0:287:5 : reset
+2016-10-01 20:59:26,704 : DEBUG : main : Strings To Document : Strings To Document : 0:287:5 : clean output ports.
+2016-10-01 20:59:26,704 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 90198172-17ba-4e98-95f5-2fcf1436d8b7 (Strings To Document 0:287:5: /tmp/knime_Topic detection1558/knime_fs-Strings_To_Document_0_287_5-1559) - 7 remaining
+2016-10-01 20:59:26,706 : DEBUG : main : WriteFileStoreHandler :  :  : Disposing file store "90198172-17ba-4e98-95f5-2fcf1436d8b7 (Strings To Document 0:287:5: /tmp/knime_Topic detection1558/knime_fs-Strings_To_Document_0_287_5-1559)" - folder successfully deleted
+2016-10-01 20:59:26,706 : DEBUG : main : NodeContainer :  :  : Strings To Document 0:287:5 has new state: IDLE
+2016-10-01 20:59:26,706 : DEBUG : main : TextContainerDataCellFactoryBuilder : Strings To Document : 0:287:5 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,706 : DEBUG : main : Strings To Document : Strings To Document : 0:287:5 : Configure succeeded. (Strings To Document)
+2016-10-01 20:59:26,706 : DEBUG : main : NodeContainer :  :  : Strings To Document 0:287:5 has new state: CONFIGURED
+2016-10-01 20:59:26,706 : DEBUG : main : Column Filter : Column Filter : 0:287:6 : reset
+2016-10-01 20:59:26,706 : DEBUG : main : Column Filter : Column Filter : 0:287:6 : clean output ports.
+2016-10-01 20:59:26,706 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler cf3e519e-5681-4300-830b-077ea35df9bd (Column Filter 0:287:6: <no directory>) - 6 remaining
+2016-10-01 20:59:26,707 : DEBUG : main : NodeContainer :  :  : Column Filter 0:287:6 has new state: IDLE
+2016-10-01 20:59:26,707 : DEBUG : main : Column Filter : Column Filter : 0:287:6 : Configure succeeded. (Column Filter)
+2016-10-01 20:59:26,707 : DEBUG : main : NodeContainer :  :  : Column Filter 0:287:6 has new state: CONFIGURED
+2016-10-01 20:59:26,707 : DEBUG : main : Punctuation Erasure : Punctuation Erasure : 0:287:29 : reset
+2016-10-01 20:59:26,707 : DEBUG : main : Punctuation Erasure : Punctuation Erasure : 0:287:29 : clean output ports.
+2016-10-01 20:59:26,707 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler ec579c53-78d3-45f5-9ba5-774787f2b652 (Punctuation Erasure 0:287:29: /tmp/knime_Topic detection1558/knime_fs-Punctuation_Erasure_0_287_29-1560) - 5 remaining
+2016-10-01 20:59:26,708 : DEBUG : main : WriteFileStoreHandler :  :  : Disposing file store "ec579c53-78d3-45f5-9ba5-774787f2b652 (Punctuation Erasure 0:287:29: /tmp/knime_Topic detection1558/knime_fs-Punctuation_Erasure_0_287_29-1560)" - folder successfully deleted
+2016-10-01 20:59:26,708 : DEBUG : main : NodeContainer :  :  : Punctuation Erasure 0:287:29 has new state: IDLE
+2016-10-01 20:59:26,708 : DEBUG : main : TextContainerDataCellFactoryBuilder : Punctuation Erasure : 0:287:29 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,709 : DEBUG : main : TextContainerDataCellFactoryBuilder : Punctuation Erasure : 0:287:29 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,709 : DEBUG : main : Punctuation Erasure : Punctuation Erasure : 0:287:29 : Configure succeeded. (Punctuation Erasure)
+2016-10-01 20:59:26,709 : DEBUG : main : NodeContainer :  :  : Punctuation Erasure 0:287:29 has new state: CONFIGURED
+2016-10-01 20:59:26,709 : DEBUG : main : Number Filter : Number Filter : 0:287:30 : reset
+2016-10-01 20:59:26,709 : DEBUG : main : Number Filter : Number Filter : 0:287:30 : clean output ports.
+2016-10-01 20:59:26,709 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 941c8be7-6bf1-4a74-bbe5-fa2065eaf966 (Number Filter 0:287:30: /tmp/knime_Topic detection1558/knime_fs-Number_Filter_0_287_30-1561) - 4 remaining
+2016-10-01 20:59:26,710 : DEBUG : main : WriteFileStoreHandler :  :  : Disposing file store "941c8be7-6bf1-4a74-bbe5-fa2065eaf966 (Number Filter 0:287:30: /tmp/knime_Topic detection1558/knime_fs-Number_Filter_0_287_30-1561)" - folder successfully deleted
+2016-10-01 20:59:26,710 : DEBUG : main : NodeContainer :  :  : Number Filter 0:287:30 has new state: IDLE
+2016-10-01 20:59:26,710 : DEBUG : main : TextContainerDataCellFactoryBuilder : Number Filter : 0:287:30 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,710 : DEBUG : main : TextContainerDataCellFactoryBuilder : Number Filter : 0:287:30 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,710 : DEBUG : main : Number Filter : Number Filter : 0:287:30 : Configure succeeded. (Number Filter)
+2016-10-01 20:59:26,710 : DEBUG : main : NodeContainer :  :  : Number Filter 0:287:30 has new state: CONFIGURED
+2016-10-01 20:59:26,711 : DEBUG : main : N Chars Filter : N Chars Filter : 0:287:31 : reset
+2016-10-01 20:59:26,711 : DEBUG : main : N Chars Filter : N Chars Filter : 0:287:31 : clean output ports.
+2016-10-01 20:59:26,711 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 53cb8748-4f13-41cb-a208-938dd9781b28 (N Chars Filter 0:287:31: /tmp/knime_Topic detection1558/knime_fs-N_Chars_Filter_0_287_31-1562) - 3 remaining
+2016-10-01 20:59:26,712 : DEBUG : main : WriteFileStoreHandler :  :  : Disposing file store "53cb8748-4f13-41cb-a208-938dd9781b28 (N Chars Filter 0:287:31: /tmp/knime_Topic detection1558/knime_fs-N_Chars_Filter_0_287_31-1562)" - folder successfully deleted
+2016-10-01 20:59:26,712 : DEBUG : main : NodeContainer :  :  : N Chars Filter 0:287:31 has new state: IDLE
+2016-10-01 20:59:26,712 : DEBUG : main : TextContainerDataCellFactoryBuilder : N Chars Filter : 0:287:31 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,712 : DEBUG : main : TextContainerDataCellFactoryBuilder : N Chars Filter : 0:287:31 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,712 : DEBUG : main : N Chars Filter : N Chars Filter : 0:287:31 : Configure succeeded. (N Chars Filter)
+2016-10-01 20:59:26,712 : DEBUG : main : NodeContainer :  :  : N Chars Filter 0:287:31 has new state: CONFIGURED
+2016-10-01 20:59:26,712 : DEBUG : main : Stop word Filter : Stop word Filter : 0:287:32 : reset
+2016-10-01 20:59:26,712 : DEBUG : main : Stop word Filter : Stop word Filter : 0:287:32 : clean output ports.
+2016-10-01 20:59:26,712 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler d15b971c-46f5-42ec-a593-111dc301545e (Stop word Filter 0:287:32: /tmp/knime_Topic detection1558/knime_fs-Stop_word_Filter_0_287_32-1563) - 2 remaining
+2016-10-01 20:59:26,713 : DEBUG : main : WriteFileStoreHandler :  :  : Disposing file store "d15b971c-46f5-42ec-a593-111dc301545e (Stop word Filter 0:287:32: /tmp/knime_Topic detection1558/knime_fs-Stop_word_Filter_0_287_32-1563)" - folder successfully deleted
+2016-10-01 20:59:26,713 : DEBUG : main : NodeContainer :  :  : Stop word Filter 0:287:32 has new state: IDLE
+2016-10-01 20:59:26,713 : DEBUG : main : TextContainerDataCellFactoryBuilder : Stop word Filter : 0:287:32 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,713 : DEBUG : main : TextContainerDataCellFactoryBuilder : Stop word Filter : 0:287:32 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,713 : DEBUG : main : Stop word Filter : Stop word Filter : 0:287:32 : Configure succeeded. (Stop word Filter)
+2016-10-01 20:59:26,713 : DEBUG : main : NodeContainer :  :  : Stop word Filter 0:287:32 has new state: CONFIGURED
+2016-10-01 20:59:26,713 : DEBUG : main : Case converter : Case converter : 0:287:33 : reset
+2016-10-01 20:59:26,713 : DEBUG : main : Case converter : Case converter : 0:287:33 : clean output ports.
+2016-10-01 20:59:26,713 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 8ce74932-cb0b-4a75-b47b-34f5cca5231d (Case converter 0:287:33: /tmp/knime_Topic detection1558/knime_fs-Case_converter_0_287_33-1564) - 1 remaining
+2016-10-01 20:59:26,714 : DEBUG : main : WriteFileStoreHandler :  :  : Disposing file store "8ce74932-cb0b-4a75-b47b-34f5cca5231d (Case converter 0:287:33: /tmp/knime_Topic detection1558/knime_fs-Case_converter_0_287_33-1564)" - folder successfully deleted
+2016-10-01 20:59:26,714 : DEBUG : main : NodeContainer :  :  : Case converter 0:287:33 has new state: IDLE
+2016-10-01 20:59:26,714 : DEBUG : main : TextContainerDataCellFactoryBuilder : Case converter : 0:287:33 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,714 : DEBUG : main : TextContainerDataCellFactoryBuilder : Case converter : 0:287:33 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,714 : DEBUG : main : Case converter : Case converter : 0:287:33 : Configure succeeded. (Case converter)
+2016-10-01 20:59:26,714 : DEBUG : main : NodeContainer :  :  : Case converter 0:287:33 has new state: CONFIGURED
+2016-10-01 20:59:26,715 : DEBUG : main : NodeContainer :  :  : Document Creation and document pre-processing 0:287 has new state: CONFIGURED
+2016-10-01 20:59:26,715 : DEBUG : main : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "URL", leaving it untouched.
+2016-10-01 20:59:26,715 : DEBUG : main : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "Text", leaving it untouched.
+2016-10-01 20:59:26,715 : DEBUG : main : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "Sentiment", leaving it untouched.
+2016-10-01 20:59:26,715 : DEBUG : main : Column Rename : Column Rename : 0:287:7 : Configure succeeded. (Column Rename)
+2016-10-01 20:59:26,715 : DEBUG : main : TextContainerDataCellFactoryBuilder : Strings To Document : 0:287:5 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,715 : DEBUG : main : Strings To Document : Strings To Document : 0:287:5 : Configure succeeded. (Strings To Document)
+2016-10-01 20:59:26,715 : DEBUG : main : Column Filter : Column Filter : 0:287:6 : Configure succeeded. (Column Filter)
+2016-10-01 20:59:26,715 : DEBUG : main : TextContainerDataCellFactoryBuilder : Punctuation Erasure : 0:287:29 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,715 : DEBUG : main : TextContainerDataCellFactoryBuilder : Punctuation Erasure : 0:287:29 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,715 : DEBUG : main : Punctuation Erasure : Punctuation Erasure : 0:287:29 : Configure succeeded. (Punctuation Erasure)
+2016-10-01 20:59:26,715 : DEBUG : main : TextContainerDataCellFactoryBuilder : Number Filter : 0:287:30 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,715 : DEBUG : main : TextContainerDataCellFactoryBuilder : Number Filter : 0:287:30 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,715 : DEBUG : main : Number Filter : Number Filter : 0:287:30 : Configure succeeded. (Number Filter)
+2016-10-01 20:59:26,715 : DEBUG : main : TextContainerDataCellFactoryBuilder : N Chars Filter : 0:287:31 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,715 : DEBUG : main : TextContainerDataCellFactoryBuilder : N Chars Filter : 0:287:31 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,715 : DEBUG : main : N Chars Filter : N Chars Filter : 0:287:31 : Configure succeeded. (N Chars Filter)
+2016-10-01 20:59:26,715 : DEBUG : main : TextContainerDataCellFactoryBuilder : Stop word Filter : 0:287:32 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,715 : DEBUG : main : TextContainerDataCellFactoryBuilder : Stop word Filter : 0:287:32 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,715 : DEBUG : main : Stop word Filter : Stop word Filter : 0:287:32 : Configure succeeded. (Stop word Filter)
+2016-10-01 20:59:26,716 : DEBUG : main : TextContainerDataCellFactoryBuilder : Case converter : 0:287:33 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,716 : DEBUG : main : TextContainerDataCellFactoryBuilder : Case converter : 0:287:33 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,716 : DEBUG : main : Case converter : Case converter : 0:287:33 : Configure succeeded. (Case converter)
+2016-10-01 20:59:26,716 : DEBUG : main : Topic Extractor (Parallel LDA) : Topic Extractor (Parallel LDA) : 0:15 : Configure succeeded. (Topic Extractor (Parallel LDA))
+2016-10-01 20:59:26,716 : DEBUG : main : NodeContainer :  :  : Topic Extractor (Parallel LDA) 0:15 has new state: CONFIGURED
+2016-10-01 20:59:26,716 : DEBUG : main : GroupByNodeModel : GroupBy : 0:221 : [Term->Concatenate true]
+2016-10-01 20:59:26,716 : DEBUG : main : GroupBy : GroupBy : 0:221 : Configure succeeded. (GroupBy)
+2016-10-01 20:59:26,716 : DEBUG : main : NodeContainer :  :  : GroupBy 0:221 has new state: CONFIGURED
+2016-10-01 20:59:26,716 : DEBUG : main : GroupBy : GroupBy : 0:221 : reset
+2016-10-01 20:59:26,716 : DEBUG : main : GroupBy : GroupBy : 0:221 : clean output ports.
+2016-10-01 20:59:26,716 : DEBUG : main : NodeContainer :  :  : GroupBy 0:221 has new state: IDLE
+2016-10-01 20:59:26,716 : DEBUG : main : Topic Extractor (Parallel LDA) : Topic Extractor (Parallel LDA) : 0:15 : reset
+2016-10-01 20:59:26,716 : DEBUG : main : Topic Extractor (Parallel LDA) : Topic Extractor (Parallel LDA) : 0:15 : clean output ports.
+2016-10-01 20:59:26,716 : DEBUG : main : NodeContainer :  :  : Topic Extractor (Parallel LDA) 0:15 has new state: IDLE
+2016-10-01 20:59:26,716 : DEBUG : main : Case converter : Case converter : 0:287:33 : reset
+2016-10-01 20:59:26,716 : DEBUG : main : Case converter : Case converter : 0:287:33 : clean output ports.
+2016-10-01 20:59:26,716 : DEBUG : main : NodeContainer :  :  : Case converter 0:287:33 has new state: IDLE
+2016-10-01 20:59:26,716 : DEBUG : main : Stop word Filter : Stop word Filter : 0:287:32 : reset
+2016-10-01 20:59:26,716 : DEBUG : main : Stop word Filter : Stop word Filter : 0:287:32 : clean output ports.
+2016-10-01 20:59:26,716 : DEBUG : main : NodeContainer :  :  : Stop word Filter 0:287:32 has new state: IDLE
+2016-10-01 20:59:26,716 : DEBUG : main : N Chars Filter : N Chars Filter : 0:287:31 : reset
+2016-10-01 20:59:26,716 : DEBUG : main : N Chars Filter : N Chars Filter : 0:287:31 : clean output ports.
+2016-10-01 20:59:26,716 : DEBUG : main : NodeContainer :  :  : N Chars Filter 0:287:31 has new state: IDLE
+2016-10-01 20:59:26,716 : DEBUG : main : Number Filter : Number Filter : 0:287:30 : reset
+2016-10-01 20:59:26,716 : DEBUG : main : Number Filter : Number Filter : 0:287:30 : clean output ports.
+2016-10-01 20:59:26,716 : DEBUG : main : NodeContainer :  :  : Number Filter 0:287:30 has new state: IDLE
+2016-10-01 20:59:26,716 : DEBUG : main : Punctuation Erasure : Punctuation Erasure : 0:287:29 : reset
+2016-10-01 20:59:26,716 : DEBUG : main : Punctuation Erasure : Punctuation Erasure : 0:287:29 : clean output ports.
+2016-10-01 20:59:26,716 : DEBUG : main : NodeContainer :  :  : Punctuation Erasure 0:287:29 has new state: IDLE
+2016-10-01 20:59:26,716 : DEBUG : main : Column Filter : Column Filter : 0:287:6 : reset
+2016-10-01 20:59:26,716 : DEBUG : main : Column Filter : Column Filter : 0:287:6 : clean output ports.
+2016-10-01 20:59:26,716 : DEBUG : main : NodeContainer :  :  : Column Filter 0:287:6 has new state: IDLE
+2016-10-01 20:59:26,716 : DEBUG : main : Strings To Document : Strings To Document : 0:287:5 : reset
+2016-10-01 20:59:26,716 : DEBUG : main : Strings To Document : Strings To Document : 0:287:5 : clean output ports.
+2016-10-01 20:59:26,716 : DEBUG : main : NodeContainer :  :  : Strings To Document 0:287:5 has new state: IDLE
+2016-10-01 20:59:26,716 : DEBUG : main : Column Rename : Column Rename : 0:287:7 : reset
+2016-10-01 20:59:26,716 : DEBUG : main : Column Rename : Column Rename : 0:287:7 : clean output ports.
+2016-10-01 20:59:26,716 : DEBUG : main : NodeContainer :  :  : Column Rename 0:287:7 has new state: IDLE
+2016-10-01 20:59:26,716 : DEBUG : main : NodeContainer :  :  : Document Creation and document pre-processing 0:287 has new state: IDLE
+2016-10-01 20:59:26,716 : DEBUG : main : File Reader : File Reader : 0:289 : reset
+2016-10-01 20:59:26,716 : DEBUG : main : File Reader : File Reader : 0:289 : clean output ports.
+2016-10-01 20:59:26,716 : DEBUG : main : WorkflowFileStoreHandlerRepository :  :  : Removing handler 92aff0bf-42cd-4cf2-a8ae-1d16b35bd7a9 (File Reader 0:289: <no directory>) - 0 remaining
+2016-10-01 20:59:26,716 : DEBUG : main : NodeContainer :  :  : File Reader 0:289 has new state: IDLE
+2016-10-01 20:59:26,717 : DEBUG : main : File Reader : File Reader : 0:289 : Configure succeeded. (File Reader)
+2016-10-01 20:59:26,717 : DEBUG : main : NodeContainer :  :  : File Reader 0:289 has new state: CONFIGURED
+2016-10-01 20:59:26,717 : DEBUG : main : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "URL", leaving it untouched.
+2016-10-01 20:59:26,717 : DEBUG : main : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "Text", leaving it untouched.
+2016-10-01 20:59:26,717 : DEBUG : main : RenameConfiguration : Column Rename : 0:287:7 : No rename settings for column "Sentiment", leaving it untouched.
+2016-10-01 20:59:26,717 : DEBUG : main : Column Rename : Column Rename : 0:287:7 : Configure succeeded. (Column Rename)
+2016-10-01 20:59:26,717 : DEBUG : main : NodeContainer :  :  : Column Rename 0:287:7 has new state: CONFIGURED
+2016-10-01 20:59:26,717 : DEBUG : main : TextContainerDataCellFactoryBuilder : Strings To Document : 0:287:5 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,717 : DEBUG : main : Strings To Document : Strings To Document : 0:287:5 : Configure succeeded. (Strings To Document)
+2016-10-01 20:59:26,717 : DEBUG : main : NodeContainer :  :  : Strings To Document 0:287:5 has new state: CONFIGURED
+2016-10-01 20:59:26,717 : DEBUG : main : Column Filter : Column Filter : 0:287:6 : Configure succeeded. (Column Filter)
+2016-10-01 20:59:26,717 : DEBUG : main : NodeContainer :  :  : Column Filter 0:287:6 has new state: CONFIGURED
+2016-10-01 20:59:26,717 : DEBUG : main : TextContainerDataCellFactoryBuilder : Punctuation Erasure : 0:287:29 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,717 : DEBUG : main : TextContainerDataCellFactoryBuilder : Punctuation Erasure : 0:287:29 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,717 : DEBUG : main : Punctuation Erasure : Punctuation Erasure : 0:287:29 : Configure succeeded. (Punctuation Erasure)
+2016-10-01 20:59:26,718 : DEBUG : main : NodeContainer :  :  : Punctuation Erasure 0:287:29 has new state: CONFIGURED
+2016-10-01 20:59:26,718 : DEBUG : main : TextContainerDataCellFactoryBuilder : Number Filter : 0:287:30 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,718 : DEBUG : main : TextContainerDataCellFactoryBuilder : Number Filter : 0:287:30 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,718 : DEBUG : main : Number Filter : Number Filter : 0:287:30 : Configure succeeded. (Number Filter)
+2016-10-01 20:59:26,718 : DEBUG : main : NodeContainer :  :  : Number Filter 0:287:30 has new state: CONFIGURED
+2016-10-01 20:59:26,718 : DEBUG : main : TextContainerDataCellFactoryBuilder : N Chars Filter : 0:287:31 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,718 : DEBUG : main : TextContainerDataCellFactoryBuilder : N Chars Filter : 0:287:31 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,718 : DEBUG : main : N Chars Filter : N Chars Filter : 0:287:31 : Configure succeeded. (N Chars Filter)
+2016-10-01 20:59:26,718 : DEBUG : main : NodeContainer :  :  : N Chars Filter 0:287:31 has new state: CONFIGURED
+2016-10-01 20:59:26,718 : DEBUG : main : TextContainerDataCellFactoryBuilder : Stop word Filter : 0:287:32 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,718 : DEBUG : main : TextContainerDataCellFactoryBuilder : Stop word Filter : 0:287:32 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,718 : DEBUG : main : Stop word Filter : Stop word Filter : 0:287:32 : Configure succeeded. (Stop word Filter)
+2016-10-01 20:59:26,718 : DEBUG : main : NodeContainer :  :  : Stop word Filter 0:287:32 has new state: CONFIGURED
+2016-10-01 20:59:26,718 : DEBUG : main : TextContainerDataCellFactoryBuilder : Case converter : 0:287:33 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,718 : DEBUG : main : TextContainerDataCellFactoryBuilder : Case converter : 0:287:33 : Creating buffered document file store cell factory!
+2016-10-01 20:59:26,718 : DEBUG : main : Case converter : Case converter : 0:287:33 : Configure succeeded. (Case converter)
+2016-10-01 20:59:26,718 : DEBUG : main : NodeContainer :  :  : Case converter 0:287:33 has new state: CONFIGURED
+2016-10-01 20:59:26,718 : DEBUG : main : NodeContainer :  :  : Document Creation and document pre-processing 0:287 has new state: CONFIGURED
+2016-10-01 20:59:26,718 : DEBUG : main : Topic Extractor (Parallel LDA) : Topic Extractor (Parallel LDA) : 0:15 : Configure succeeded. (Topic Extractor (Parallel LDA))
+2016-10-01 20:59:26,718 : DEBUG : main : NodeContainer :  :  : Topic Extractor (Parallel LDA) 0:15 has new state: CONFIGURED
+2016-10-01 20:59:26,718 : DEBUG : main : GroupByNodeModel : GroupBy : 0:221 : [Term->Concatenate true]
+2016-10-01 20:59:26,718 : DEBUG : main : GroupBy : GroupBy : 0:221 : Configure succeeded. (GroupBy)
+2016-10-01 20:59:26,718 : DEBUG : main : NodeContainer :  :  : GroupBy 0:221 has new state: CONFIGURED
+2016-10-01 20:59:28,950 : DEBUG : main : ProjectWorkflowMap : Topic detection based on movie reviews : 0 : Removing "file:/data/KNIME_Releases/workspace/Example%20Workflows/Social%20Media/Topic%20detection%20based%20on%20movie%20reviews/" from project map (0 remaining)
+2016-10-01 20:59:28,950 : DEBUG : main : WorkflowManager : Topic detection based on movie reviews : 0 : Removing project "Topic detection based on movie reviews 0"
+2016-10-01 20:59:28,951 : DEBUG : main : GroupByNodeModel : GroupBy : 0:221 : Removing all (0) views from model.
+2016-10-01 20:59:28,951 : DEBUG : main : GroupBy : GroupBy : 0:221 : clean output ports.
+2016-10-01 20:59:28,951 : DEBUG : main : ParallelTopicExtractorNodeModel : Topic Extractor (Parallel LDA) : 0:15 : Removing all (0) views from model.
+2016-10-01 20:59:28,951 : DEBUG : main : Topic Extractor (Parallel LDA) : Topic Extractor (Parallel LDA) : 0:15 : clean output ports.
+2016-10-01 20:59:28,951 : DEBUG : main : CaseConverterNodeModel2 : Case converter : 0:287:33 : Removing all (0) views from model.
+2016-10-01 20:59:28,951 : DEBUG : main : Case converter : Case converter : 0:287:33 : clean output ports.
+2016-10-01 20:59:28,951 : DEBUG : main : StopWordFilterNodeModel2 : Stop word Filter : 0:287:32 : Removing all (0) views from model.
+2016-10-01 20:59:28,951 : DEBUG : main : Stop word Filter : Stop word Filter : 0:287:32 : clean output ports.
+2016-10-01 20:59:28,951 : DEBUG : main : NCharsFilterNodeModel2 : N Chars Filter : 0:287:31 : Removing all (0) views from model.
+2016-10-01 20:59:28,951 : DEBUG : main : N Chars Filter : N Chars Filter : 0:287:31 : clean output ports.
+2016-10-01 20:59:28,951 : DEBUG : main : NumberFilterNodeModel2 : Number Filter : 0:287:30 : Removing all (0) views from model.
+2016-10-01 20:59:28,951 : DEBUG : main : Number Filter : Number Filter : 0:287:30 : clean output ports.
+2016-10-01 20:59:28,951 : DEBUG : main : PunctuationErasureNodeModel2 : Punctuation Erasure : 0:287:29 : Removing all (0) views from model.
+2016-10-01 20:59:28,951 : DEBUG : main : Punctuation Erasure : Punctuation Erasure : 0:287:29 : clean output ports.
+2016-10-01 20:59:28,951 : DEBUG : main : DataColumnSpecFilterNodeModel : Column Filter : 0:287:6 : Removing all (0) views from model.
+2016-10-01 20:59:28,951 : DEBUG : main : Column Filter : Column Filter : 0:287:6 : clean output ports.
+2016-10-01 20:59:28,951 : DEBUG : main : StringsToDocumentNodeModel : Strings To Document : 0:287:5 : Removing all (0) views from model.
+2016-10-01 20:59:28,951 : DEBUG : main : Strings To Document : Strings To Document : 0:287:5 : clean output ports.
+2016-10-01 20:59:28,951 : DEBUG : main : RenameNodeModel : Column Rename : 0:287:7 : Removing all (0) views from model.
+2016-10-01 20:59:28,951 : DEBUG : main : Column Rename : Column Rename : 0:287:7 : clean output ports.
+2016-10-01 20:59:28,951 : DEBUG : main : FileReaderNodeModel : File Reader : 0:289 : Removing all (0) views from model.
+2016-10-01 20:59:28,951 : DEBUG : main : File Reader : File Reader : 0:289 : clean output ports.
+2016-10-01 20:59:28,951 : DEBUG : main : WorkflowManager : Topic detection based on movie reviews : 0 : Project "Topic detection based on movie reviews 0" removed (1 remaining)

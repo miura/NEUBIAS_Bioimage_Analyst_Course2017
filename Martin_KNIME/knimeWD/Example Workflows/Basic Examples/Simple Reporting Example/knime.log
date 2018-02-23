@@ -1,0 +1,210 @@
+2016-10-01 15:04:08,108 : DEBUG : ModalContext : ColorManager2NodeFactory : Simple Reporting Example : 3 : Factory is already initialized. Nothing to do.
+2016-10-01 15:04:08,114 : DEBUG : ModalContext : SorterNodeFactory : Simple Reporting Example : 3 : Factory is already initialized. Nothing to do.
+2016-10-01 15:04:08,117 : DEBUG : ModalContext : ReportingDataSetNodeFactory : Simple Reporting Example : 3 : Factory is already initialized. Nothing to do.
+2016-10-01 15:04:08,121 : DEBUG : ModalContext : Pivot2NodeFactory : Simple Reporting Example : 3 : Factory is already initialized. Nothing to do.
+2016-10-01 15:04:08,125 : DEBUG : ModalContext : FileReaderNodeFactory : Simple Reporting Example : 3 : Factory is already initialized. Nothing to do.
+2016-10-01 15:04:08,149 : DEBUG : AWT-EventQueue-0 : Buffer : Data to Report : 3:16 : Opening input stream on file "/tmp/knime_Simple Reportin1542/knime_container_20161001_6030122842400851578.bin.gz", 1 open streams
+2016-10-01 15:04:31,931 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_Build a Simple1538/knime_container_20161001_5510175081767510460.bin.gz"
+2016-10-01 15:04:31,932 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_Build a Simple1538/knime_container_20161001_1429048323734744757.bin.gz"
+2016-10-01 15:04:31,935 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_Build a Simple1538/knime_container_20161001_7019164672684670824.bin.gz"
+2016-10-01 15:04:35,781 : DEBUG : main : ProjectWorkflowMap : Simple Reporting Example : 3 : Removing "file:/data/KNIME_Releases/workspace/Example%20Workflows/Basics/Simple%20Reporting%20Example/" from project map (1 remaining)
+2016-10-01 15:04:35,782 : DEBUG : main : WorkflowManager : Simple Reporting Example : 3 : Removing project "Simple Reporting Example 3"
+2016-10-01 15:04:35,782 : DEBUG : main : ReportingDataSetNodeModel : Data to Report : 3:16 : Removing all (0) views from model.
+2016-10-01 15:04:35,782 : DEBUG : main : Data to Report : Data to Report : 3:16 : clean output ports.
+2016-10-01 15:04:35,783 : DEBUG : main : SorterNodeModel : Sorter : 3:15 : Removing all (0) views from model.
+2016-10-01 15:04:35,783 : DEBUG : main : Sorter : Sorter : 3:15 : clean output ports.
+2016-10-01 15:04:35,783 : DEBUG : main : Buffer : Sorter : 3:15 : Closing input stream on "/tmp/knime_Simple Reportin1542/knime_container_20161001_6030122842400851578.bin.gz", 0 remaining
+2016-10-01 15:04:35,783 : DEBUG : main : Pivot2NodeModel : Pivoting : 3:17 : Removing all (0) views from model.
+2016-10-01 15:04:35,783 : DEBUG : main : Pivoting : Pivoting : 3:17 : clean output ports.
+2016-10-01 15:04:35,783 : DEBUG : main : 2016-10-01 15:04:35,783Pivoting :  : Pivoting : DEBUG : 3:17KNIME-Temp-File-Deleter :  : clean output ports.
+Buffer :  :  : Deleted temporary file "/tmp/knime_Simple Reportin1542/knime_container_20161001_6030122842400851578.bin.gz"
+2016-10-01 15:04:35,784 : DEBUG : main : ColorManager2NodeModel : Color Manager : 3:2 : Removing all (0) views from model.
+2016-10-01 15:04:35,784 : DEBUG : main : Color Manager : Color Manager : 3:2 : clean output ports.
+2016-10-01 15:04:35,784 : DEBUG : main : FileReaderNodeModel : File Reader : 3:18 : Removing all (0) views from model.
+2016-10-01 15:04:35,784 : DEBUG : main : File Reader : File Reader : 3:18 : clean output ports.
+2016-10-01 15:04:35,784 : DEBUG : main : WorkflowManager : Simple Reporting Example : 3 : Project "Simple Reporting Example 3" removed (2 remaining)
+2016-10-01 15:06:15,285 : DEBUG : ModalContext : ColorManager2NodeFactory : Simple Reporting Example : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 15:06:15,287 : DEBUG : ModalContext : SorterNodeFactory : Simple Reporting Example : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 15:06:15,289 : DEBUG : ModalContext : ReportingDataSetNodeFactory : Simple Reporting Example : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 15:06:15,291 : DEBUG : ModalContext : Pivot2NodeFactory : Simple Reporting Example : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 15:06:15,292 : DEBUG : ModalContext : FileReaderNodeFactory : Simple Reporting Example : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 15:06:15,308 : DEBUG : AWT-EventQueue-0 : Buffer : Data to Report : 0:16 : Opening input stream on file "/tmp/knime_Simple Reportin1543/knime_container_20161001_1048871524400703019.bin.gz", 1 open streams
+2016-10-01 15:06:18,149 : DEBUG : main : Data to Report : Data to Report : 0:16 : reset
+2016-10-01 15:06:18,150 : DEBUG : main : Data to Report : Data to Report : 0:16 : clean output ports.
+2016-10-01 15:06:18,152 : DEBUG : AWT-EventQueue-0 : Buffer : Data to Report : 0:16 : Closing input stream on "/tmp/knime_Simple Reportin1543/knime_container_20161001_1048871524400703019.bin.gz", 0 remaining
+2016-10-01 15:06:18,152 : DEBUG : main : Sorter : Sorter : 0:15 : reset
+2016-10-01 15:06:18,152 : DEBUG : main : Sorter : Sorter : 0:15 : clean output ports.
+2016-10-01 15:06:18,153 : DEBUG : main : Pivoting : Pivoting : 0:17 : reset
+2016-10-01 15:06:18,153 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_Simple Reportin1543/knime_container_20161001_1048871524400703019.bin.gz"
+2016-10-01 15:06:18,153 : DEBUG : main : Pivoting : Pivoting : 2016-10-01 15:06:18,153 : 0:17 : DEBUG : clean output ports.
+2016-10-01 15:06:18,153 : DEBUG : main : Color Manager : Color Manager : 0:2 : reset
+2016-10-01 15:06:18,153 : DEBUG : main : Color Manager : Color Manager : 0:2 : clean output ports.
+2016-10-01 15:06:18,153 : DEBUG : main : File Reader : File Reader : 0:18 : reset
+2016-10-01 15:06:18,153 : DEBUG : main : File Reader : File Reader : 0:18 : clean output ports.
+2016-10-01 15:06:18,154 : DEBUG : main : File Reader : File Reader : 0:18 : Configure succeeded. (File Reader)
+2016-10-01 15:06:18,154 : WARN  : main : Color Manager : Color Manager : 0:2 : Column "income" has no nominal values set: execute predecessor or add Binner.
+ROOT  has new state: EXECUTING
+2016-10-01 15:06:19,294 : DEBUG : KNIME-Worker-16 : WorkflowManager : File Reader : 0:18 : File Reader 0:18 doBeforePreExecution
+2016-10-01 15:06:19,294 : DEBUG : KNIME-Worker-16 : NodeContainer : File Reader : 0:18 : File Reader 0:18 has new state: PREEXECUTE
+2016-10-01 15:06:19,294 : DEBUG : KNIME-Worker-16 : WorkflowManager : File Reader : 0:18 : File Reader 0:18 doBeforeExecution
+2016-10-01 15:06:19,294 : DEBUG : KNIME-Worker-16 : NodeContainer : File Reader : 0:18 : File Reader 0:18 has new state: EXECUTING
+2016-10-01 15:06:19,294 : DEBUG : KNIME-Worker-16 : WorkflowFileStoreHandlerRepository : File Reader : 0:18 : Adding handler a39a61f5-da60-4db9-b6fb-9cd54b9d6444 (File Reader 0:18: <no directory>) - 1 in total
+2016-10-01 15:06:19,294 : DEBUG : KNIME-Worker-16 : LocalNodeExecutionJob : File Reader : 0:18 : File Reader 0:18 Start execute
+2016-10-01 15:06:19,296 : INFO  : KNIME-Worker-16 : FileReaderNodeModel : File Reader : 0:18 : Preparing to read from 'knime://knime.workflow/../../Supplementary%20Data%20(really%20only%20the%20data)/Basics/adult.csv'.
+2016-10-01 15:06:19,487 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_container_20161001_873549788032786591.bin.gz"
+2016-10-01 15:06:19,487 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_container_20161001_6943344970566570682.bin.gz"
+2016-10-01 15:06:19,487 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_container_20161001_1571626917202975036.bin.gz"
+2016-10-01 15:06:19,488 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_container_20161001_7450617777786523086.bin.gz"
+2016-10-01 15:06:19,488 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_container_20161001_7852291138304481999.bin.gz"
+2016-10-01 15:06:19,488 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_container_20161001_4517674303765432198.bin.gz"
+2016-10-01 15:06:19,488 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_container_20161001_3779749420577740057.bin.gz"
+2016-10-01 15:06:19,488 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_container_20161001_4265785855402017644.bin.gz"
+2016-10-01 15:06:19,488 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_container_20161001_6812607868440103385.bin.gz"
+2016-10-01 15:06:19,919 : DEBUG : KNIME-Worker-16 : Buffer : File Reader : 0:18 : Buffer file (/tmp/knime_Simple Reportin1543/knime_container_20161001_2672860729409630620.bin.gz) is 0.544MB in size
+2016-10-01 15:06:19,919 : INFO  : KNIME-Worker-16 : LocalNodeExecutionJob : File Reader : 0:18 : File Reader 0:18 End execute (0 secs)
+2016-10-01 15:06:19,919 : DEBUG : KNIME-Worker-16 : WorkflowManager : File Reader : 0:18 : File Reader 0:18 doBeforePostExecution
+2016-10-01 15:06:19,919 : DEBUG : KNIME-Worker-16 : NodeContainer : File Reader : 0:18 : File Reader 0:18 has new state: POSTEXECUTE
+2016-10-01 15:06:19,919 : DEBUG : KNIME-Worker-16 : WorkflowManager : File Reader : 0:18 : File Reader 0:18 doAfterExecute - success
+2016-10-01 15:06:19,919 : DEBUG : KNIME-Worker-16 : NodeContainer : File Reader : 0:18 : File Reader 0:18 has new state: EXECUTED
+2016-10-01 15:06:19,920 : DEBUG : KNIME-Worker-16 : Color Manager : Color Manager : 0:2 : Configure succeeded. (Color Manager)
+2016-10-01 15:06:19,920 : DEBUG : KNIME-Worker-16 : NodeContainer : File Reader : 0:18 : Color Manager 0:2 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:06:19,920 : DEBUG : KNIME-Worker-16 : NodeContainer : File Reader : 0:18 : Color Manager 0:2 has new state: CONFIGURED_QUEUED
+2016-10-01 15:06:19,920 : DEBUG : KNIME-Worker-16 : GroupByNodeModel : Pivoting : 0:17 : [age->Count false]
+2016-10-01 15:06:19,921 : DEBUG : KNIME-Worker-16 : GroupByNodeModel : Pivoting : 0:17 : [age->Count false]
+2016-10-01 15:06:19,921 : DEBUG : KNIME-Worker-16 : GroupByNodeModel : Pivoting : 0:17 : [age->Count false]
+2016-10-01 15:06:19,921 : DEBUG : KNIME-Worker-16 : Pivoting : Pivoting : 0:17 : Configure succeeded. (Pivoting)
+2016-10-01 15:06:19,921 : DEBUG : KNIME-Worker-16 : NodeContainer : File Reader : 0:18 : Pivoting 0:17 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:06:19,921 : DEBUG : KNIME-Worker-9 : WorkflowManager : Color Manager : 0:2 : Color Manager 0:2 doBeforePreExecution
+2016-10-01 15:06:19,921 : DEBUG : KNIME-Worker-9 : NodeContainer : Color Manager : 0:2 : Color Manager 0:2 has new state: PREEXECUTE
+2016-10-01 15:06:19,921 : DEBUG : KNIME-Worker-9 : WorkflowManager : Color Manager : 0:2 : Color Manager 0:2 doBeforeExecution
+2016-10-01 15:06:19,921 : DEBUG : KNIME-Worker-9 : NodeContainer : Color Manager : 0:2 : Color Manager 0:2 has new state: EXECUTING
+2016-10-01 15:06:19,921 : DEBUG : KNIME-Worker-9 : WorkflowFileStoreHandlerRepository : Color Manager : 0:2 : Adding handler 25a3b2da-a500-4dd6-b896-589bf0df8a1f (Color Manager 0:2: <no directory>) - 2 in total
+2016-10-01 15:06:19,921 : DEBUG : KNIME-Worker-9 : LocalNodeExecutionJob : Color Manager : 0:2 : Color Manager 0:2 Start execute
+2016-10-01 15:06:19,922 : INFO  : KNIME-Worker-9 : LocalNodeExecutionJob : Color Manager : 0:2 : Color Manager 0:2 End execute (0 secs)
+2016-10-01 15:06:19,922 : DEBUG : KNIME-Worker-9 : WorkflowManager : Color Manager : 0:2 : Color Manager 0:2 doBeforePostExecution
+2016-10-01 15:06:19,922 : DEBUG : KNIME-Worker-9 : NodeContainer : Color Manager : 0:2 : Color Manager 0:2 has new state: POSTEXECUTE
+2016-10-01 15:06:19,922 : DEBUG : KNIME-Worker-9 : WorkflowManager : Color Manager : 0:2 : Color Manager 0:2 doAfterExecute - success
+2016-10-01 15:06:19,922 : DEBUG : KNIME-Worker-9 : NodeContainer : Color Manager : 0:2 : Color Manager 0:2 has new state: EXECUTED
+2016-10-01 15:06:19,922 : DEBUG : KNIME-Worker-9 : GroupByNodeModel : Pivoting : 0:17 : [age->Count false]
+2016-10-01 15:06:19,922 : DEBUG : KNIME-Worker-9 : GroupByNodeModel : Pivoting : 0:17 : [age->Count false]
+2016-10-01 15:06:19,922 : DEBUG : KNIME-Worker-9 : GroupByNodeModel : Pivoting : 0:17 : [age->Count false]
+2016-10-01 15:06:19,922 : DEBUG : KNIME-Worker-9 : Pivoting : Pivoting : 0:17 : Configure succeeded. (Pivoting)
+2016-10-01 15:06:19,923 : DEBUG : KNIME-Worker-9 : NodeContainer : Color Manager : 0:2 : Pivoting 0:17 has new state: CONFIGURED_QUEUED
+2016-10-01 15:06:19,923 : DEBUG : KNIME-Worker-10 : WorkflowManager : Pivoting : 0:17 : Pivoting 0:17 doBeforePreExecution
+2016-10-01 15:06:19,923 : DEBUG : KNIME-Worker-10 : NodeContainer : Pivoting : 0:17 : Pivoting 0:17 has new state: PREEXECUTE
+2016-10-01 15:06:19,923 : DEBUG : KNIME-Worker-10 : WorkflowManager : Pivoting : 0:17 : Pivoting 0:17 doBeforeExecution
+2016-10-01 15:06:19,923 : DEBUG : KNIME-Worker-10 : NodeContainer : Pivoting : 0:17 : Pivoting 0:17 has new state: EXECUTING
+2016-10-01 15:06:19,923 : DEBUG : KNIME-Worker-10 : WorkflowFileStoreHandlerRepository : Pivoting : 0:17 : Adding handler ab1537fa-6f95-49fd-ae4b-30583e11b621 (Pivoting 0:17: <no directory>) - 3 in total
+2016-10-01 15:06:19,923 : DEBUG : KNIME-Worker-10 : LocalNodeExecutionJob : Pivoting : 0:17 : Pivoting 0:17 Start execute
+2016-10-01 15:06:19,923 : DEBUG : KNIME-Worker-10 : BigGroupByTable : Pivoting : 0:17 : Entering createGroupByTable(exec, table) of class BigGroupByTable.
+2016-10-01 15:06:19,923 : DEBUG : KNIME-Worker-10 : Buffer : Pivoting : 0:17 : Opening input stream on file "/tmp/knime_Simple Reportin1543/knime_container_20161001_2672860729409630620.bin.gz", 1 open streams
+2016-10-01 15:06:20,028 : DEBUG : KNIME-Worker-10 : Buffer : Pivoting : 0:17 : Closing input stream on "/tmp/knime_Simple Reportin1543/knime_container_20161001_2672860729409630620.bin.gz", 0 remaining
+2016-10-01 15:06:20,178 : DEBUG : KNIME-Worker-10 : BigGroupByTable : Pivoting : 0:17 : Entering createGroupByTable(exec, table) of class BigGroupByTable.
+2016-10-01 15:06:20,178 : DEBUG : KNIME-Worker-10 : Buffer : Pivoting : 0:17 : Opening input stream on file "/tmp/knime_Simple Reportin1543/knime_container_20161001_2672860729409630620.bin.gz", 1 open streams
+2016-10-01 15:06:20,270 : DEBUG : KNIME-Worker-10 : Buffer : Pivoting : 0:17 : Closing input stream on "/tmp/knime_Simple Reportin1543/knime_container_20161001_2672860729409630620.bin.gz", 0 remaining
+2016-10-01 15:06:20,366 : DEBUG : KNIME-Worker-10 : BigGroupByTable : Pivoting : 0:17 : Entering createGroupByTable(exec, table) of class BigGroupByTable.
+2016-10-01 15:06:20,366 : DEBUG : KNIME-Worker-10 : Buffer : Pivoting : 0:17 : Opening input stream on file "/tmp/knime_Simple Reportin1543/knime_container_20161001_2672860729409630620.bin.gz", 1 open streams
+2016-10-01 15:06:20,458 : DEBUG : KNIME-Worker-10 : Buffer : Pivoting : 0:17 : Closing input stream on "/tmp/knime_Simple Reportin1543/knime_container_20161001_2672860729409630620.bin.gz", 0 remaining
+2016-10-01 15:06:20,549 : INFO  : KNIME-Worker-10 : LocalNodeExecutionJob : Pivoting : 0:17 : Pivoting 0:17 End execute (0 secs)
+2016-10-01 15:06:20,549 : DEBUG : KNIME-Worker-10 : WorkflowManager : Pivoting : 0:17 : Pivoting 0:17 doBeforePostExecution
+2016-10-01 15:06:20,549 : DEBUG : KNIME-Worker-10 : NodeContainer : Pivoting : 0:17 : Pivoting 0:17 has new state: POSTEXECUTE
+2016-10-01 15:06:20,549 : DEBUG : KNIME-Worker-10 : WorkflowManager : Pivoting : 0:17 : Pivoting 0:17 doAfterExecute - success
+2016-10-01 15:06:20,549 : DEBUG : KNIME-Worker-10 : NodeContainer : Pivoting : 0:17 : Pivoting 0:17 has new state: EXECUTED
+2016-10-01 15:06:20,549 : DEBUG : KNIME-Worker-10 : Sorter : Sorter : 0:15 : Configure succeeded. (Sorter)
+2016-10-01 15:06:20,549 : DEBUG : KNIME-Worker-10 : NodeContainer : Pivoting : 0:17 : Sorter 0:15 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:06:20,549 : DEBUG : KNIME-Worker-10 : NodeContainer : Pivoting : 0:17 : Sorter 0:15 has new state: CONFIGURED_QUEUED
+2016-10-01 15:06:20,549 : DEBUG : KNIME-Worker-10 : Data to Report : Data to Report : 0:16 : Configure succeeded. (Data to Report)
+2016-10-01 15:06:20,549 : DEBUG : KNIME-Worker-10 : NodeContainer : Pivoting : 0:17 : Data to Report 0:16 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:06:20,550 : DEBUG : KNIME-Worker-11 : WorkflowManager : Sorter : 0:15 : Sorter 0:15 doBeforePreExecution
+2016-10-01 15:06:20,550 : DEBUG : KNIME-Worker-11 : NodeContainer : Sorter : 0:15 : Sorter 0:15 has new state: PREEXECUTE
+2016-10-01 15:06:20,550 : DEBUG : KNIME-Worker-11 : WorkflowManager : Sorter : 0:15 : Sorter 0:15 doBeforeExecution
+2016-10-01 15:06:20,550 : DEBUG : KNIME-Worker-11 : NodeContainer : Sorter : 0:15 : Sorter 0:15 has new state: EXECUTING
+2016-10-01 15:06:20,550 : DEBUG : KNIME-Worker-11 : WorkflowFileStoreHandlerRepository : Sorter : 0:15 : Adding handler 361838e3-59c8-49b5-b4cf-ccf3a9be26d3 (Sorter 0:15: <no directory>) - 4 in total
+2016-10-01 15:06:20,550 : DEBUG : KNIME-Worker-11 : LocalNodeExecutionJob : Sorter : 0:15 : Sorter 0:15 Start execute
+2016-10-01 15:06:20,550 : INFO  : KNIME-Worker-11 : LocalNodeExecutionJob : Sorter : 0:15 : Sorter 0:15 End execute (0 secs)
+2016-10-01 15:06:20,550 : DEBUG : KNIME-Worker-11 : WorkflowManager : Sorter : 0:15 : Sorter 0:15 doBeforePostExecution
+2016-10-01 15:06:20,550 : DEBUG : KNIME-Worker-11 : NodeContainer : Sorter : 0:15 : Sorter 0:15 has new state: POSTEXECUTE
+2016-10-01 15:06:20,550 : DEBUG : KNIME-Worker-11 : WorkflowManager : Sorter : 0:15 : Sorter 0:15 doAfterExecute - success
+2016-10-01 15:06:20,550 : DEBUG : KNIME-Worker-11 : NodeContainer : Sorter : 0:15 : Sorter 0:15 has new state: EXECUTED
+2016-10-01 15:06:20,551 : DEBUG : KNIME-Worker-11 : Data to Report : Data to Report : 0:16 : Configure succeeded. (Data to Report)
+2016-10-01 15:06:20,551 : DEBUG : KNIME-Worker-11 : NodeContainer : Sorter : 0:15 : Data to Report 0:16 has new state: CONFIGURED_QUEUED
+2016-10-01 15:06:20,551 : DEBUG : KNIME-Worker-12 : WorkflowManager : Data to Report : 0:16 : Data to Report 0:16 doBeforePreExecution
+2016-10-01 15:06:20,551 : DEBUG : KNIME-Worker-12 : NodeContainer : Data to Report : 0:16 : Data to Report 0:16 has new state: PREEXECUTE
+2016-10-01 15:06:20,551 : DEBUG : KNIME-Worker-12 : WorkflowManager : Data to Report : 0:16 : Data to Report 0:16 doBeforeExecution
+2016-10-01 15:06:20,551 : DEBUG : KNIME-Worker-12 : NodeContainer : Data to Report : 0:16 : Data to Report 0:16 has new state: EXECUTING
+2016-10-01 15:06:20,551 : DEBUG : KNIME-Worker-12 : WorkflowFileStoreHandlerRepository : Data to Report : 0:16 : Adding handler bd62dc6f-322b-4d4d-9b46-46bfff3cbe72 (Data to Report 0:16: <no directory>) - 5 in total
+2016-10-01 15:06:20,551 : DEBUG : KNIME-Worker-12 : LocalNodeExecutionJob : Data to Report : 0:16 : Data to Report 0:16 Start execute
+2016-10-01 15:06:20,551 : INFO  : KNIME-Worker-12 : LocalNodeExecutionJob : Data to Report : 0:16 : Data to Report 0:16 End execute (0 secs)
+2016-10-01 15:06:20,551 : DEBUG : KNIME-Worker-12 : WorkflowManager : Data to Report : 0:16 : Data to Report 0:16 doBeforePostExecution
+2016-10-01 15:06:20,551 : DEBUG : KNIME-Worker-12 : NodeContainer : Data to Report : 0:16 : Data to Report 0:16 has new state: POSTEXECUTE
+2016-10-01 15:06:20,552 : DEBUG : KNIME-Worker-12 : WorkflowManager : Data to Report : 0:16 : Data to Report 0:16 doAfterExecute - success
+2016-10-01 15:06:20,552 : DEBUG : KNIME-Worker-12 : NodeContainer : Data to Report : 0:16 : Data to Report 0:16 has new state: EXECUTED
+2016-10-01 15:06:20,552 : DEBUG : KNIME-Worker-12 : NodeContainer : Data to Report : 0:16 : Simple Reporting Example 0 has new state: EXECUTED
+2016-10-01 15:06:20,552 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: IDLE
+2016-10-01 16:30:03,084 : DEBUG : main : ProjectWorkflowMap : Simple Reporting Example : 0 : Removing "file:/data/KNIME_Releases/workspace/Example%20Workflows/Basics/Simple%20Reporting%20Example/" from project map (0 remaining)
+2016-10-01 16:30:03,084 : DEBUG : main : WorkflowManager : Simple Reporting Example : 0 : Removing project "Simple Reporting Example 0"
+2016-10-01 16:30:03,085 : DEBUG : main : WorkflowFileStoreHandlerRepository : Data to Report : 0:16 : Removing handler bd62dc6f-322b-4d4d-9b46-46bfff3cbe72 (Data to Report 0:16: <no directory>) - 4 remaining
+2016-10-01 16:30:03,085 : DEBUG : main : ReportingDataSetNodeModel : Data to Report : 0:16 : Removing all (0) views from model.
+2016-10-01 16:30:03,085 : DEBUG : main : Data to Report : Data to Report : 0:16 : clean output ports.
+2016-10-01 16:30:03,085 : DEBUG : main : WorkflowFileStoreHandlerRepository : Sorter : 0:15 : Removing handler 361838e3-59c8-49b5-b4cf-ccf3a9be26d3 (Sorter 0:15: <no directory>) - 3 remaining
+2016-10-01 16:30:03,085 : DEBUG : main : SorterNodeModel : Sorter : 0:15 : Removing all (0) views from model.
+2016-10-01 16:30:03,085 : DEBUG : main : Sorter : Sorter : 0:15 : clean output ports.
+2016-10-01 16:30:03,085 : DEBUG : main : WorkflowFileStoreHandlerRepository : Pivoting : 0:17 : Removing handler ab1537fa-6f95-49fd-ae4b-30583e11b621 (Pivoting 0:17: <no directory>) - 2 remaining
+2016-10-01 16:30:03,085 : DEBUG : main : Pivot2NodeModel : Pivoting : 0:17 : Removing all (0) views from model.
+2016-10-01 16:30:03,085 : DEBUG : main : Pivoting : Pivoting : 0:17 : clean output ports.
+2016-10-01 16:30:03,085 : DEBUG : main : WorkflowFileStoreHandlerRepository : Color Manager : 0:2 : Removing handler 25a3b2da-a500-4dd6-b896-589bf0df8a1f (Color Manager 0:2: <no directory>) - 1 remaining
+2016-10-01 16:30:03,085 : DEBUG : main : ColorManager2NodeModel : Color Manager : 0:2 : Removing all (0) views from model.
+2016-10-01 16:30:03,085 : DEBUG : main : Color Manager : Color Manager : 0:2 : clean output ports.
+2016-10-01 16:30:03,085 : DEBUG : main : WorkflowFileStoreHandlerRepository : File Reader : 0:18 : Removing handler a39a61f5-da60-4db9-b6fb-9cd54b9d6444 (File Reader 0:18: <no directory>) - 0 remaining
+2016-10-01 16:30:03,086 : DEBUG : main : FileReaderNodeModel : File Reader : 0:18 : Removing all (0) views from model.
+2016-10-01 16:30:03,086 : DEBUG : main : File Reader : File Reader : 0:18 : clean output ports.
+2016-10-01 16:30:03,086 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_Simple Reportin1543/knime_container_20161001_2672860729409630620.bin.gz"
+2016-10-01 16:30:03,086 : DEBUG : main : WorkflowManager : Simple Reporting Example : 0 : Project "Simple Reporting Example 0" removed (1 remaining)
+2016-10-01 16:30:08,343 : DEBUG : ModalContext : ColorManager2NodeFactory : Simple Reporting Example : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:08,345 : DEBUG : ModalContext : SorterNodeFactory : Simple Reporting Example : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:08,347 : DEBUG : ModalContext : ReportingDataSetNodeFactory : Simple Reporting Example : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:08,350 : DEBUG : ModalContext : Pivot2NodeFactory : Simple Reporting Example : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:08,353 : DEBUG : ModalContext : FileReaderNodeFactory : Simple Reporting Example : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 16:30:08,369 : DEBUG : AWT-EventQueue-0 : Buffer : Data to Report : 0:16 : Opening input stream on file "/tmp/knime_Simple Reportin1544/knime_container_20161001_6446432958339563612.bin.gz", 1 open streams
+2016-10-01 16:30:18,080 : DEBUG : main : Data to Report : Data to Report : 0:16 : reset
+2016-10-01 16:30:18,081 : DEBUG : main : Data to Report : Data to Report : 0:16 : clean output ports.
+2016-10-01 16:30:18,082 : DEBUG : AWT-EventQueue-0 : Buffer : Data to Report : 0:16 : Closing input stream on "/tmp/knime_Simple Reportin1544/knime_container_20161001_6446432958339563612.bin.gz", 0 remaining
+2016-10-01 16:30:18,082 : DEBUG : main : Sorter : Sorter : 0:15 : reset
+2016-10-01 16:30:18,082 : DEBUG : main : Sorter : Sorter : 0:15 : clean output ports.
+2016-10-01 16:30:18,083 : DEBUG : main : Pivoting : Pivoting : 0:17 : reset
+2016-10-01 16:30:18,083 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_Simple Reportin1544/knime_container_20161001_6446432958339563612.bin.gz"
+2016-10-01 16:30:18,083 : DEBUG : main : Pivoting : Pivoting : 0:17 : 2016-10-01 16:30:18,083 : clean output ports.
+2016-10-01 16:30:18,083 : DEBUG : main : Color Manager : Color Manager : 0:2 : reset
+2016-10-01 16:30:18,083 : DEBUG : main : Color Manager : Color Manager : 0:2 : clean output ports.
+2016-10-01 16:30:18,084 : DEBUG : main : Color Manager : Color Manager : 0:2 : Configure succeeded. (Color Manager)
+2016-10-01 16:30:18,084 : DEBUG : main : GroupByNodeModel : Pivoting : 0:17 : [age->Count false]
+2016-10-01 16:30:18,084 : DEBUG : main : GroupByNodeModel : Pivoting : 0:17 : [age->Count false]
+2016-10-01 16:30:18,084 : DEBUG : main : GroupByNodeModel : Pivoting : 0:17 : [age->Count false]
+2016-10-01 16:30:18,085 : DEBUG : main : Pivoting : Pivoting : 0:17 : Configure succeeded. (Pivoting)
+2016-10-01 16:30:18,086 : DEBUG : main : Pivoting : Pivoting : 0:17 : reset
+2016-10-01 16:30:18,086 : DEBUG : main : Pivoting : Pivoting : 0:17 : clean output ports.
+2016-10-01 16:30:18,086 : DEBUG : main : GroupByNodeModel : Pivoting : 0:17 : [age->Count false]
+2016-10-01 16:30:18,087 : DEBUG : main : GroupByNodeModel : Pivoting : 0:17 : [age->Count false]
+2016-10-01 16:30:18,087 : DEBUG : main : GroupByNodeModel : Pivoting : 0:17 : [age->Count false]
+2016-10-01 16:30:18,087 : DEBUG : main : Pivoting : Pivoting : 0:17 : Configure succeeded. (Pivoting)
+2016-10-01 16:30:18,087 : DEBUG : main : Pivoting : Pivoting : 0:17 : reset
+2016-10-01 16:30:18,087 : DEBUG : main : Pivoting : Pivoting : 0:17 : clean output ports.
+2016-10-01 16:30:18,087 : DEBUG : main : Color Manager : Color Manager : 0:2 : reset
+2016-10-01 16:30:18,087 : DEBUG : main : Color Manager : Color Manager : 0:2 : clean output ports.
+2016-10-01 16:30:18,088 : DEBUG : main : File Reader : File Reader : 0:18 : reset
+2016-10-01 16:30:18,088 : DEBUG : main : File Reader : File Reader : 0:18 : clean output ports.
+2016-10-01 16:30:18,091 : DEBUG : main : File Reader : File Reader : 0:18 : Configure succeeded. (File Reader)
+2016-10-01 16:30:18,091 : WARN  : main : Color Manager : Color Manager : 0:2 : Column "income" has no nominal values set: execute predecessor or add Binner.
+2016-10-01 16:30:19,762 : DEBUG : main : ProjectWorkflowMap : Simple Reporting Example : 0 : Removing "file:/data/KNIME_Releases/workspace/Example%20Workflows/Basics/Simple%20Reporting%20Example/" from project map (0 remaining)
+2016-10-01 16:30:19,762 : DEBUG : main : WorkflowManager : Simple Reporting Example : 0 : Removing project "Simple Reporting Example 0"
+2016-10-01 16:30:19,763 : DEBUG : main : ReportingDataSetNodeModel : Data to Report : 0:16 : Removing all (0) views from model.
+2016-10-01 16:30:19,763 : DEBUG : main : Data to Report : Data to Report : 0:16 : clean output ports.
+2016-10-01 16:30:19,763 : DEBUG : main : SorterNodeModel : Sorter : 0:15 : Removing all (0) views from model.
+2016-10-01 16:30:19,763 : DEBUG : main : Sorter : Sorter : 0:15 : clean output ports.
+2016-10-01 16:30:19,763 : DEBUG : main : Pivot2NodeModel : Pivoting : 0:17 : Removing all (0) views from model.
+2016-10-01 16:30:19,763 : DEBUG : main : Pivoting : Pivoting : 0:17 : clean output ports.
+2016-10-01 16:30:19,763 : DEBUG : main : ColorManager2NodeModel : Color Manager : 0:2 : Removing all (0) views from model.
+2016-10-01 16:30:19,763 : DEBUG : main : Color Manager : Color Manager : 0:2 : clean output ports.
+2016-10-01 16:30:19,763 : DEBUG : main : FileReaderNodeModel : File Reader : 0:18 : Removing all (0) views from model.
+2016-10-01 16:30:19,763 : DEBUG : main : File Reader : File Reader : 0:18 : clean output ports.
+2016-10-01 16:30:19,764 : DEBUG : main : WorkflowManager : Simple Reporting Example : 0 : Project "Simple Reporting Example 0" removed (1 remaining)

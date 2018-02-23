@@ -1,0 +1,360 @@
+2016-10-01 14:59:46,526 : DEBUG : ModalContext : FileReaderNodeFactory : Build a Simple Model Training for Classification : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 14:59:46,534 : DEBUG : ModalContext : ColorManager2NodeFactory : Build a Simple Model Training for Classification : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 14:59:46,569 : DEBUG : ModalContext : DecTreePredictorNodeFactory : Build a Simple Model Training for Classification : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 14:59:46,571 : DEBUG : ModalContext : PartitionNodeFactory : Build a Simple Model Training for Classification : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 14:59:46,573 : DEBUG : ModalContext : AccuracyScorerNodeFactory : Build a Simple Model Training for Classification : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 14:59:46,580 : DEBUG : ModalContext : TableNodeFactory : Build a Simple Model Training for Classification : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 14:59:46,619 : DEBUG : ModalContext : ExtendedStatisticsNodeFactory : Build a Simple Model Training for Classification : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 14:59:46,634 : DEBUG : ModalContext : DecisionTreeLearnerNodeFactory3 : Build a Simple Model Training for Classification : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 14:59:46,656 : DEBUG : ModalContext : ScatterPlotNodeFactory : Build a Simple Model Training for Classification : 0 : Factory is already initialized. Nothing to do.
+2016-10-01 14:59:46,677 : INFO  : ModalContext : StringHistory : Build a Simple Model Training for Classification : 0 : History file '/data/KNIME_Releases/workspace/.metadata/knime/history_javascript-date-formats.txt' does not exist.
+2016-10-01 14:59:46,686 : DEBUG : ModalContext : File Reader : File Reader : 0:1 : Configure succeeded. (File Reader)
+2016-10-01 14:59:46,688 : WARN  : ModalContext : Color Manager : Color Manager : 0:2 : Column "income" has no nominal values set: execute predecessor or add Binner.
+2016-10-01 14:59:46,708 : DEBUG : ModalContext : Statistics : Statistics : 0:9 : Configure succeeded. (Statistics)
+2016-10-01 15:00:04,646 : DEBUG : KNIME-Worker-3 : WorkflowManager : File Reader : 0:1 : File Reader 0:1 doBeforePreExecution
+2016-10-01 15:00:04,647 : DEBUG : KNIME-Worker-3 : NodeContainer : File Reader : 0:1 : File Reader 0:1 has new state: PREEXECUTE
+2016-10-01 15:00:04,647 : DEBUG : KNIME-Worker-3 : WorkflowManager : File Reader : 0:1 : File Reader 0:1 doBeforeExecution
+2016-10-01 15:00:04,647 : DEBUG : KNIME-Worker-3 : NodeContainer : File Reader : 0:1 : File Reader 0:1 has new state: EXECUTING
+2016-10-01 15:00:04,649 : DEBUG : KNIME-Worker-3 : WorkflowFileStoreHandlerRepository : File Reader : 0:1 : Adding handler 33670e64-03a0-4620-9459-ea152ca0c33f (File Reader 0:1: <no directory>) - 1 in total
+2016-10-01 15:00:04,649 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: EXECUTING
+2016-10-01 15:00:04,649 : DEBUG : 2016-10-01 15:00:04,649KNIME-WFM-Parent-Notifier :  : NodeContainer : DEBUG :  : KNIME-Worker-3 :  : ROOT  has new state: EXECUTING
+LocalNodeExecutionJob : File Reader : 0:1 : File Reader 0:1 Start execute
+2016-10-01 15:00:04,663 : INFO  : KNIME-Worker-3 : FileReaderNodeModel : File Reader : 0:1 : Preparing to read from 'knime://knime.workflow/../../Supplementary%20Data%20(really%20only%20the%20data)/Basics/adult.csv'.
+2016-10-01 15:00:05,648 : DEBUG : KNIME-Worker-3 : Buffer : File Reader : 0:1 : Buffer file (/tmp/knime_Build a Simple1538/knime_container_20161001_7019164672684670824.bin.gz) is 0.544MB in size
+2016-10-01 15:00:05,650 : INFO  : KNIME-Worker-3 : LocalNodeExecutionJob : File Reader : 0:1 : File Reader 0:1 End execute (1 sec)
+2016-10-01 15:00:05,650 : DEBUG : KNIME-Worker-3 : WorkflowManager : File Reader : 0:1 : File Reader 0:1 doBeforePostExecution
+2016-10-01 15:00:05,650 : DEBUG : KNIME-Worker-3 : NodeContainer : File Reader : 0:1 : File Reader 0:1 has new state: POSTEXECUTE
+2016-10-01 15:00:05,650 : DEBUG : KNIME-Worker-3 : WorkflowManager : File Reader : 0:1 : File Reader 0:1 doAfterExecute - success
+2016-10-01 15:00:05,651 : DEBUG : KNIME-Worker-3 : NodeContainer : File Reader : 0:1 : File Reader 0:1 has new state: EXECUTED
+2016-10-01 15:00:05,654 : DEBUG : KNIME-Worker-3 : Color Manager : Color Manager : 0:2 : Configure succeeded. (Color Manager)
+2016-10-01 15:00:05,654 : DEBUG : KNIME-Worker-3 : NodeContainer : File Reader : 0:1 : Color Manager 0:2 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:05,654 : DEBUG : KNIME-Worker-3 : NodeContainer : File Reader : 0:1 : Color Manager 0:2 has new state: CONFIGURED_QUEUED
+2016-10-01 15:00:05,655 : DEBUG : KNIME-Worker-3 : Statistics : Statistics : 0:9 : Configure succeeded. (Statistics)
+2016-10-01 15:00:05,656 : DEBUG : KNIME-Worker-3 : NodeContainer : File Reader : 0:1 : Statistics 0:9 has new state: CONFIGURED_QUEUED
+2016-10-01 15:00:05,657 : DEBUG : KNIME-Worker-3 : Partitioning : Partitioning : 0:5 : Configure succeeded. (Partitioning)
+2016-10-01 15:00:05,657 : DEBUG : KNIME-Worker-3 : NodeContainer : File Reader : 0:1 : Partitioning 0:5 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:05,657 : DEBUG : KNIME-Worker-3 : Interactive Table : Interactive Table : 0:7 : Configure succeeded. (Interactive Table)
+2016-10-01 15:00:05,657 : DEBUG : KNIME-Worker-3 : NodeContainer : File Reader : 0:1 : Interactive Table 0:7 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:05,660 : DEBUG : KNIME-Worker-3 : Decision Tree Learner : Decision Tree Learner : 0:10 : Configure succeeded. (Decision Tree Learner)
+2016-10-01 15:00:05,660 : DEBUG : KNIME-Worker-3 : NodeContainer : File Reader : 0:1 : Decision Tree Learner 0:10 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:05,661 : WARN  : KNIME-Worker-3 : DataTableSpec : Decision Tree Predictor : 0:4 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 15:00:05,662 : WARN  : KNIME-Worker-3 : DataTableSpec : Decision Tree Predictor : 0:4 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 15:00:05,662 : WARN  : KNIME-Worker-3 : DataTableSpec : Decision Tree Predictor : 0:4 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 15:00:05,662 : DEBUG : KNIME-Worker-3 : Decision Tree Predictor : Decision Tree Predictor : 0:4 : Configure succeeded. (Decision Tree Predictor)
+2016-10-01 15:00:05,662 : DEBUG : KNIME-Worker-3 : NodeContainer : File Reader : 0:1 : Decision Tree Predictor 0:4 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:05,662 : DEBUG : KNIME-Worker-3 : Scorer : Scorer : 0:6 : Configure succeeded. (Scorer)
+2016-10-01 15:00:05,662 : DEBUG : KNIME-Worker-3 : NodeContainer : File Reader : 0:1 : Scorer 0:6 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:05,668 : DEBUG : KNIME-Worker-3 : JavaScript Scatter Plot : JavaScript Scatter Plot : 0:11 : Configure succeeded. (JavaScript Scatter Plot)
+2016-10-01 15:00:05,668 : DEBUG : KNIME-Worker-3 : NodeContainer : File Reader : 0:1 : JavaScript Scatter Plot 0:11 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:05,668 : DEBUG : KNIME-Worker-1 : WorkflowManager : Color Manager : 0:2 : Color Manager 0:2 doBeforePreExecution
+2016-10-01 15:00:05,668 : DEBUG : KNIME-Worker-1 : NodeContainer : Color Manager : 0:2 : Color Manager 0:2 has new state: PREEXECUTE
+2016-10-01 15:00:05,668 : DEBUG : KNIME-Worker-1 : WorkflowManager : Color Manager : 0:2 : Color Manager 0:2 doBeforeExecution
+2016-10-01 15:00:05,668 : DEBUG : KNIME-Worker-1 : NodeContainer : Color Manager : 0:2 : Color Manager 0:2 has new state: EXECUTING
+2016-10-01 15:00:05,669 : DEBUG : KNIME-Worker-1 : WorkflowFileStoreHandlerRepository : Color Manager : 0:2 : Adding handler 3d3a4f91-a058-4b63-af2a-a550bfdd93a6 (Color Manager 0:2: <no directory>) - 2 in total
+2016-10-01 15:00:05,669 : DEBUG : KNIME-Worker-0 : WorkflowManager : Statistics : 0:9 : Statistics 0:9 doBeforePreExecution
+Statistics : 0:9 : Statistics 0:9 doBeforePreExecution
+2016-10-01 15:00:05,669 : DEBUG : KNIME-Worker-1 : LocalNodeExecutionJob : Color Manager : 0:2 : Color Manager 0:2 Start execute
+0:2 : Color Manager 0:2 Start execute
+2016-10-01 15:00:05,669 : DEBUG : KNIME-Worker-0 : NodeContainer : Statistics : 0:9 : Statistics 0:9 has new state: PREEXECUTE
+2016-10-01 15:00:05,669 : DEBUG : KNIME-Worker-0 : WorkflowManager : Statistics : 0:9 : Statistics 0:9 doBeforeExecution
+2016-10-01 15:00:05,669 : DEBUG : KNIME-Worker-0 : NodeContainer : Statistics : 0:9 : Statistics 0:9 has new state: EXECUTING
+2016-10-01 15:00:05,669 : DEBUG : KNIME-Worker-0 : WorkflowFileStoreHandlerRepository : Statistics : 0:9 : Adding handler 1fcc8d6c-fcbb-4f8a-b1ac-61ff9c935cbc (Statistics 0:9: <no directory>) - 3 in total
+2016-10-01 15:00:05,669 : DEBUG : KNIME-Worker-0 : LocalNodeExecutionJob : Statistics : 0:9 : Statistics 0:9 Start execute
+2016-10-01 15:00:05,671 : INFO  : KNIME-Worker-1 : LocalNodeExecutionJob : Color Manager : 0:2 : Color Manager 0:2 End execute (0 secs)
+2016-10-01 15:00:05,671 : DEBUG : KNIME-Worker-1 : WorkflowManager : Color Manager : 0:2 : Color Manager 0:2 doBeforePostExecution
+2016-10-01 15:00:05,671 : DEBUG : KNIME-Worker-1 : NodeContainer : Color Manager : 0:2 : Color Manager 0:2 has new state: POSTEXECUTE
+2016-10-01 15:00:05,673 : DEBUG : KNIME-Worker-1 : WorkflowManager : Color Manager : 0:2 : Color Manager 0:2 doAfterExecute - success
+2016-10-01 15:00:05,673 : DEBUG : KNIME-Worker-1 : NodeContainer : Color Manager : 0:2 : Color Manager 0:2 has new state: EXECUTED
+2016-10-01 15:00:05,674 : DEBUG : KNIME-Worker-1 : Partitioning : Partitioning : 0:5 : Configure succeeded. (Partitioning)
+2016-10-01 15:00:05,674 : DEBUG : KNIME-Worker-1 : NodeContainer : Color Manager : 0:2 : Partitioning 0:5 has new state: CONFIGURED_QUEUED
+2016-10-01 15:00:05,674 : DEBUG : KNIME-Worker-3 : WorkflowManager : Partitioning : 0:5 : Partitioning 0:5 doBeforePreExecution
+2016-10-01 15:00:05,675 : DEBUG : KNIME-Worker-3 : NodeContainer : Partitioning : 0:5 : Partitioning 0:5 has new state: PREEXECUTE
+2016-10-01 15:00:05,675 : DEBUG : KNIME-Worker-3 : WorkflowManager : Partitioning : 0:5 : Partitioning 0:5 doBeforeExecution
+2016-10-01 15:00:05,675 : DEBUG : KNIME-Worker-3 : NodeContainer : Partitioning : 0:5 : Partitioning 0:5 has new state: EXECUTING
+2016-10-01 15:00:05,675 : DEBUG : KNIME-Worker-3 : WorkflowFileStoreHandlerRepository : Partitioning : 0:5 : Adding handler 05e59506-ee46-47de-9006-c2e1dc1044b1 (Partitioning 0:5: <no directory>) - 4 in total
+2016-10-01 15:00:05,675 : DEBUG : KNIME-Worker-3 : LocalNodeExecutionJob : Partitioning : 0:5 : Partitioning 0:5 Start execute
+2016-10-01 15:00:05,681 : DEBUG : KNIME-Worker-3 : PartitionNodeModel : Partitioning : 0:5 : Using random seed -838863984056591
+2016-10-01 15:00:05,686 : DEBUG : KNIME-Worker-0 : Buffer : Statistics : 0:9 : Opening input stream on file "/tmp/knime_Build a Simple1538/knime_container_20161001_7019164672684670824.bin.gz", 1 open streams
+2016-10-01 15:00:05,698 : DEBUG : KNIME-Worker-3 : Buffer : Partitioning : 0:5 : Opening input stream on file "/tmp/knime_Build a Simple1538/knime_container_20161001_7019164672684670824.bin.gz", 2 open streams
+2016-10-01 15:00:06,416 : DEBUG : KNIME-Worker-0 : Buffer : Statistics : 0:9 : Closing input stream on "/tmp/knime_Build a Simple1538/knime_container_20161001_7019164672684670824.bin.gz", 1 remaining
+2016-10-01 15:00:06,416 : DEBUG : KNIME-Worker-0 : Buffer : Statistics : 0:9 : Opening input stream on file "/tmp/knime_Build a Simple1538/knime_container_20161001_7019164672684670824.bin.gz", 2 open streams
+2016-10-01 15:00:06,435 : DEBUG : KNIME-Worker-0 : HistogramColumn : Statistics : 0:9 : Number of bins: 15 for age (Number (integer)) [17.0, 90.0]
+2016-10-01 15:00:06,436 : DEBUG : KNIME-Worker-0 : HistogramColumn : Statistics : 0:9 : Number of bins: 15 for fnlwgt (Number (integer)) [12285.0, 1484705.0]
+2016-10-01 15:00:06,436 : DEBUG : KNIME-Worker-0 : HistogramColumn : Statistics : 0:9 : Number of bins: 15 for education-num (Number (integer)) [1.0, 16.0]
+2016-10-01 15:00:06,436 : DEBUG : KNIME-Worker-0 : HistogramColumn : Statistics : 0:9 : Number of bins: 10 for capital-gain (Number (integer)) [0.0, 99999.0]
+2016-10-01 15:00:06,436 : DEBUG : KNIME-Worker-0 : HistogramColumn : Statistics : 0:9 : Number of bins: 11 for capital-loss (Number (integer)) [0.0, 4356.0]
+2016-10-01 15:00:06,437 : DEBUG : KNIME-Worker-0 : HistogramColumn : Statistics : 0:9 : Number of bins: 10 for hours-per-week (Number (integer)) [1.0, 99.0]
+2016-10-01 15:00:06,437 : DEBUG : KNIME-Worker-0 : Buffer : Statistics : 0:9 : Opening input stream on file "/tmp/knime_Build a Simple1538/knime_container_20161001_7019164672684670824.bin.gz", 3 open streams
+2016-10-01 15:00:06,505 : DEBUG : KNIME-Worker-3 : Buffer : Partitioning : 0:5 : Closing input stream on "/tmp/knime_Build a Simple1538/knime_container_20161001_7019164672684670824.bin.gz", 2 remaining
+2016-10-01 15:00:06,507 : DEBUG : KNIME-Worker-3 : Buffer : Partitioning : 0:5 : Buffer file (/tmp/knime_Build a Simple1538/knime_container_20161001_1429048323734744757.bin.gz) is 0.437MB in size
+2016-10-01 15:00:06,508 : INFO  : KNIME-Worker-3 : LocalNodeExecutionJob : Partitioning : 0:5 : Partitioning 0:5 End execute (0 secs)
+2016-10-01 15:00:06,509 : DEBUG : KNIME-Worker-3 : WorkflowManager : Partitioning : 0:5 : Partitioning 0:5 doBeforePostExecution
+2016-10-01 15:00:06,509 : DEBUG : KNIME-Worker-3 : NodeContainer : Partitioning : 0:5 : Partitioning 0:5 has new state: POSTEXECUTE
+2016-10-01 15:00:06,509 : DEBUG : KNIME-Worker-3 : WorkflowManager : Partitioning : 0:5 : Partitioning 0:5 doAfterExecute - success
+2016-10-01 15:00:06,509 : DEBUG : KNIME-Worker-3 : NodeContainer : Partitioning : 0:5 : Partitioning 0:5 has new state: EXECUTED
+2016-10-01 15:00:06,509 : DEBUG : KNIME-Worker-3 : Interactive Table : Interactive Table : 0:7 : Configure succeeded. (Interactive Table)
+2016-10-01 15:00:06,509 : DEBUG : KNIME-Worker-3 : NodeContainer : Partitioning : 0:5 : Interactive Table 0:7 has new state: CONFIGURED_QUEUED
+2016-10-01 15:00:06,509 : DEBUG : KNIME-Worker-3 : Decision Tree Learner : Decision Tree Learner : 0:10 : Configure succeeded. (Decision Tree Learner)
+2016-10-01 15:00:06,510 : DEBUG : KNIME-Worker-3 : NodeContainer : Partitioning : 0:5 : Decision Tree Learner 0:10 has new state: CONFIGURED_QUEUED
+2016-10-01 15:00:06,510 : WARN  : KNIME-Worker-3 : DataTableSpec : Decision Tree Predictor : 0:4 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 15:00:06,510 : WARN  : KNIME-Worker-3 : DataTableSpec : Decision Tree Predictor : 0:4 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 15:00:06,510 : WARN  : KNIME-Worker-3 : DataTableSpec : Decision Tree Predictor : 0:4 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 15:00:06,511 : DEBUG : KNIME-Worker-3 : Decision Tree Predictor : Decision Tree Predictor : 0:4 : Configure succeeded. (Decision Tree Predictor)
+2016-10-01 15:00:06,511 : DEBUG : KNIME-Worker-1 : WorkflowManager : Interactive Table : 0:7 : Interactive Table 0:7 doBeforePreExecution
+2016-10-01 15:00:06,511 : DEBUG : KNIME-Worker-1 : NodeContainer : Interactive Table : 0:7 : Interactive Table 0:7 has new state: PREEXECUTE
+2016-10-01 15:00:06,511 : DEBUG : KNIME-Worker-1 : WorkflowManager : Interactive Table : 0:7 : Interactive Table 0:7 doBeforeExecution
+2016-10-01 15:00:06,511 : DEBUG : KNIME-Worker-1 : NodeContainer : Interactive Table : 0:7 : Interactive Table 0:7 has new state: EXECUTING
+2016-10-01 15:00:06,511 : DEBUG : KNIME-Worker-1 : WorkflowFileStoreHandlerRepository : Interactive Table : 0:7 : Adding handler 66b6123b-5145-4df9-a0f5-ff4b4afb53c1 (Interactive Table 0:7: <no directory>) - 5 in total
+2016-10-01 15:00:06,511 : DEBUG : KNIME-Worker-1 : LocalNodeExecutionJob : Interactive Table : 0:7 : Interactive Table 0:7 Start execute
+2016-10-01 15:00:06,511 : DEBUG : KNIME-Worker-4 : WorkflowManager : Decision Tree Learner : 0:10 : Decision Tree Learner 0:10 doBeforePreExecution
+2016-10-01 15:00:06,511 : DEBUG : KNIME-Worker-4 : NodeContainer : Decision Tree Learner : 0:10 : Decision Tree Learner 0:10 has new state: PREEXECUTE
+2016-10-01 15:00:06,511 : DEBUG : KNIME-Worker-4 : WorkflowManager : Decision Tree Learner : 0:10 : Decision Tree Learner 0:10 doBeforeExecution
+2016-10-01 15:00:06,512 : DEBUG : KNIME-Worker-4 : NodeContainer : Decision Tree Learner : 0:10 : Decision Tree Learner 0:10 has new state: EXECUTING
+2016-10-01 15:00:06,512 : DEBUG : KNIME-Worker-4 : WorkflowFileStoreHandlerRepository : Decision Tree Learner : 0:10 : Adding handler cb26b2e7-ce59-4957-b6d8-7af6c17269ec (Decision Tree Learner 0:10: <no directory>) - 6 in total
+2016-10-01 15:00:06,512 : DEBUG : KNIME-Worker-4 : LocalNodeExecutionJob : Decision Tree Learner : 0:10 : Decision Tree Learner 0:10 Start execute
+2016-10-01 15:00:06,512 : DEBUG : KNIME-Worker-4 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Number available threads: 4 used threads: 1
+2016-10-01 15:00:06,517 : DEBUG : KNIME-Worker-4 : Buffer : Decision Tree Learner : 0:10 : Opening input stream on file "/tmp/knime_Build a Simple1538/knime_container_20161001_1429048323734744757.bin.gz", 1 open streams
+2016-10-01 15:00:06,521 : INFO  : KNIME-Worker-1 : LocalNodeExecutionJob : Interactive Table : 0:7 : Interactive Table 0:7 End execute (0 secs)
+2016-10-01 15:00:06,521 : DEBUG : KNIME-Worker-1 : WorkflowManager : Interactive Table : 0:7 : Interactive Table 0:7 doBeforePostExecution
+2016-10-01 15:00:06,521 : DEBUG : KNIME-Worker-1 : NodeContainer : Interactive Table : 0:7 : Interactive Table 0:7 has new state: POSTEXECUTE
+2016-10-01 15:00:06,521 : DEBUG : KNIME-Worker-1 : WorkflowManager : Interactive Table : 0:7 : Interactive Table 0:7 doAfterExecute - success
+2016-10-01 15:00:06,521 : DEBUG : KNIME-Worker-1 : NodeContainer : Interactive Table : 0:7 : Interactive Table 0:7 has new state: EXECUTED
+2016-10-01 15:00:06,635 : DEBUG : Finalizer : Buffer :  :  : Closing input stream on "/tmp/knime_Build a Simple1538/knime_container_20161001_7019164672684670824.bin.gz", 1 remaining
+2016-10-01 15:00:06,689 : DEBUG : KNIME-Worker-0 : Buffer : Statistics : 0:9 : Closing input stream on "/tmp/knime_Build a Simple1538/knime_container_20161001_7019164672684670824.bin.gz", 0 remaining
+2016-10-01 15:00:06,814 : DEBUG : KNIME-Worker-4 : Buffer : Decision Tree Learner : 0:10 : Closing input stream on "/tmp/knime_Build a Simple1538/knime_container_20161001_1429048323734744757.bin.gz", 0 remaining
+2016-10-01 15:00:07,046 : DEBUG : KNIME-Worker-4 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Start new parallel building thread: Build thread, node: 0.0
+2016-10-01 15:00:07,047 : DEBUG : KNIME-Worker-4 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Start new parallel building thread: Build thread, node: 0.1
+2016-10-01 15:00:07,047 : DEBUG : KNIME-Worker-4 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Start new parallel building thread: Build thread, node: 0.2
+2016-10-01 15:00:07,083 : DEBUG : Build thread, node: 0.2 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Thread: Build thread, node: 0.2 finished
+2016-10-01 15:00:07,098 : DEBUG : Build thread, node: 0.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Start new parallel building thread: Build thread, node: 1.0
+2016-10-01 15:00:07,139 : DEBUG : Build thread, node: 1.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Thread: Build thread, node: 1.0 finished
+2016-10-01 15:00:07,144 : DEBUG : Build thread, node: 0.1 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Start new parallel building thread: Build thread, node: 118.4
+2016-10-01 15:00:07,159 : DEBUG : Build thread, node: 118.4 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Thread: Build thread, node: 118.4 finished
+2016-10-01 15:00:07,160 : DEBUG : Build thread, node: 0.1 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Thread: Build thread, node: 0.1 finished
+2016-10-01 15:00:07,161 : DEBUG : Build thread, node: 0.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Start new parallel building thread: Build thread, node: 1.4
+2016-10-01 15:00:07,166 : DEBUG : Build thread, node: 1.4 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Start new parallel building thread: Build thread, node: 2138.0
+2016-10-01 15:00:07,180 : DEBUG : Build thread, node: 2138.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Thread: Build thread, node: 2138.0 finished
+2016-10-01 15:00:07,181 : DEBUG : Build thread, node: 1.4 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Thread: Build thread, node: 1.4 finished
+2016-10-01 15:00:07,181 : DEBUG : Build thread, node: 0.0 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Thread: Build thread, node: 0.0 finished
+2016-10-01 15:00:07,186 : DEBUG : KNIME-Worker-4 : Buffer : Decision Tree Learner : 0:10 : Opening input stream on file "/tmp/knime_Build a Simple1538/knime_container_20161001_1429048323734744757.bin.gz", 1 open streams
+2016-10-01 15:00:07,533 : DEBUG : KNIME-Worker-4 : Buffer : Decision Tree Learner : 0:10 : Closing input stream on "/tmp/knime_Build a Simple1538/knime_container_20161001_1429048323734744757.bin.gz", 0 remaining
+2016-10-01 15:00:07,533 : INFO  : KNIME-Worker-4 : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Decision tree consisting of 1052 nodes created with pruning method No pruning
+2016-10-01 15:00:07,557 : INFO  : KNIME-Worker-0 : LocalNodeExecutionJob : Statistics : 0:9 : Statistics 0:9 End execute (1 sec)
+2016-10-01 15:00:07,558 : DEBUG : KNIME-Worker-0 : WorkflowManager : Statistics : 0:9 : Statistics 0:9 doBeforePostExecution
+2016-10-01 15:00:07,558 : DEBUG : KNIME-Worker-0 : NodeContainer : Statistics : 0:9 : Statistics 0:9 has new state: POSTEXECUTE
+2016-10-01 15:00:07,559 : DEBUG : KNIME-Worker-0 : WorkflowManager : Statistics : 0:9 : Statistics 0:9 doAfterExecute - success
+2016-10-01 15:00:07,559 : DEBUG : KNIME-Worker-0 : NodeContainer : Statistics : 0:9 : Statistics 0:9 has new state: EXECUTED
+2016-10-01 15:00:07,711 : INFO  : KNIME-Worker-4 : LocalNodeExecutionJob : Decision Tree Learner : 0:10 : Decision Tree Learner 0:10 End execute (1 sec)
+2016-10-01 15:00:07,711 : DEBUG : KNIME-Worker-4 : WorkflowManager : Decision Tree Learner : 0:10 : Decision Tree Learner 0:10 doBeforePostExecution
+2016-10-01 15:00:07,711 : DEBUG : KNIME-Worker-4 : NodeContainer : Decision Tree Learner : 0:10 : Decision Tree Learner 0:10 has new state: POSTEXECUTE
+2016-10-01 15:00:07,711 : DEBUG : KNIME-Worker-4 : WorkflowManager : Decision Tree Learner : 0:10 : Decision Tree Learner 0:10 doAfterExecute - success
+2016-10-01 15:00:07,711 : DEBUG : KNIME-Worker-4 : NodeContainer : Decision Tree Learner : 0:10 : Decision Tree Learner 0:10 has new state: EXECUTED
+2016-10-01 15:00:07,712 : WARN  : KNIME-Worker-4 : DataTableSpec : Decision Tree Predictor : 0:4 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 15:00:07,712 : WARN  : KNIME-Worker-4 : DataTableSpec : Decision Tree Predictor : 0:4 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 15:00:07,712 : WARN  : KNIME-Worker-4 : DataTableSpec : Decision Tree Predictor : 0:4 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 15:00:07,713 : DEBUG : KNIME-Worker-4 : Decision Tree Predictor : Decision Tree Predictor : 0:4 : Configure succeeded. (Decision Tree Predictor)
+2016-10-01 15:00:07,713 : DEBUG : KNIME-Worker-4 : NodeContainer : Decision Tree Learner : 0:10 : Decision Tree Predictor 0:4 has new state: CONFIGURED_QUEUED
+2016-10-01 15:00:07,714 : DEBUG : KNIME-Worker-6 : WorkflowManager : Decision Tree Predictor : 0:4 : Decision Tree Predictor 0:4 doBeforePreExecution
+2016-10-01 15:00:07,714 : DEBUG : KNIME-Worker-6 : NodeContainer : Decision Tree Predictor : 0:4 : Decision Tree Predictor 0:4 has new state: PREEXECUTE
+2016-10-01 15:00:07,714 : DEBUG : KNIME-Worker-6 : WorkflowManager : Decision Tree Predictor : 0:4 : Decision Tree Predictor 0:4 doBeforeExecution
+2016-10-01 15:00:07,714 : DEBUG : KNIME-Worker-6 : NodeContainer : Decision Tree Predictor : 0:4 : Decision Tree Predictor 0:4 has new state: EXECUTING
+2016-10-01 15:00:07,714 : DEBUG : KNIME-Worker-6 : WorkflowFileStoreHandlerRepository : Decision Tree Predictor : 0:4 : Adding handler 06ddcb37-1b3e-4407-a91e-5d120230b3a4 (Decision Tree Predictor 0:4: <no directory>) - 7 in total
+2016-10-01 15:00:07,714 : DEBUG : KNIME-Worker-6 : LocalNodeExecutionJob : Decision Tree Predictor : 0:4 : Decision Tree Predictor 0:4 Start execute
+2016-10-01 15:00:08,304 : WARN  : KNIME-Worker-6 : DataTableSpec : Decision Tree Predictor : 0:4 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 15:00:08,304 : WARN  : KNIME-Worker-6 : DataTableSpec : Decision Tree Predictor : 0:4 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 15:00:08,305 : WARN  : KNIME-Worker-6 : DataTableSpec : Decision Tree Predictor : 0:4 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2016-10-01 15:00:08,323 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row1387: (40, Self-emp-not-inc, 266324, Some-college, 10, Divorced, Exec-managerial, Other-relative, White, Male, 0, 1564, 70, Iran, >50K)
+2016-10-01 15:00:08,323 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row1387: (40, Self-emp-not-inc, 266324, Some-college, 10, Divorced, Exec-managerial, Other-relative, White, Male, 0, 1564, 70, Iran, >50K)'. Ignoring pattern.
+2016-10-01 15:00:08,333 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row2252: (44, Private, 175935, Doctorate, 16, Married-civ-spouse, Adm-clerical, Husband, White, Male, 0, 0, 55, United-States, >50K)
+2016-10-01 15:00:08,333 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row2252: (44, Private, 175935, Doctorate, 16, Married-civ-spouse, Adm-clerical, Husband, White, Male, 0, 0, 55, United-States, >50K)'. Ignoring pattern.
+2016-10-01 15:00:08,356 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row4085: (37, Private, 243425, HS-grad, 9, Divorced, Other-service, Other-relative, White, Female, 0, 0, 50, Peru, <=50K)
+2016-10-01 15:00:08,356 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row4085: (37, Private, 243425, HS-grad, 9, Divorced, Other-service, Other-relative, White, Female, 0, 0, 50, Peru, <=50K)'. Ignoring pattern.
+2016-10-01 15:00:08,373 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row5612: (53, State-gov, 53197, Doctorate, 16, Married-civ-spouse, Adm-clerical, Husband, White, Male, 0, 0, 50, United-States, >50K)
+2016-10-01 15:00:08,373 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row5612: (53, State-gov, 53197, Doctorate, 16, Married-civ-spouse, Adm-clerical, Husband, White, Male, 0, 0, 50, United-States, >50K)'. Ignoring pattern.
+2016-10-01 15:00:08,387 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row7089: (53, Private, 182186, 9th, 5, Married-civ-spouse, Other-service, Husband, White, Male, 0, 0, 40, Dominican-Republic, <=50K)
+2016-10-01 15:00:08,387 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row7089: (53, Private, 182186, 9th, 5, Married-civ-spouse, Other-service, Husband, White, Male, 0, 0, 40, Dominican-Republic, <=50K)'. Ignoring pattern.
+2016-10-01 15:00:08,398 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row8040: (51, Private, 142717, Doctorate, 16, Divorced, Craft-repair, Not-in-family, White, Female, 4787, 0, 60, United-States, >50K)
+2016-10-01 15:00:08,398 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row8040: (51, Private, 142717, Doctorate, 16, Divorced, Craft-repair, Not-in-family, White, Female, 4787, 0, 60, United-States, >50K)'. Ignoring pattern.
+2016-10-01 15:00:08,419 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row9822: (25, Private, 57635, Assoc-voc, 11, Married-civ-spouse, Sales, Wife, White, Female, 0, 0, 42, United-States, >50K)
+2016-10-01 15:00:08,419 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row9822: (25, Private, 57635, Assoc-voc, 11, Married-civ-spouse, Sales, Wife, White, Female, 0, 0, 42, United-States, >50K)'. Ignoring pattern.
+2016-10-01 15:00:08,422 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row10007: (27, State-gov, 553473, Bachelors, 13, Married-civ-spouse, Protective-serv, Wife, Black, Female, 0, 0, 48, United-States, <=50K)
+2016-10-01 15:00:08,422 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row10007: (27, State-gov, 553473, Bachelors, 13, Married-civ-spouse, Protective-serv, Wife, Black, Female, 0, 0, 48, United-States, <=50K)'. Ignoring pattern.
+2016-10-01 15:00:08,437 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row11481: (30, State-gov, 46144, HS-grad, 9, Married-AF-spouse, Adm-clerical, Own-child, White, Female, 0, 0, 38, United-States, <=50K)
+2016-10-01 15:00:08,438 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row11481: (30, State-gov, 46144, HS-grad, 9, Married-AF-spouse, Adm-clerical, Own-child, White, Female, 0, 0, 38, United-States, <=50K)'. Ignoring pattern.
+2016-10-01 15:00:08,466 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row13897: (24, Private, 193920, Masters, 14, Never-married, Priv-house-serv, Not-in-family, White, Female, 0, 0, 45, ?, <=50K)
+2016-10-01 15:00:08,467 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row13897: (24, Private, 193920, Masters, 14, Never-married, Priv-house-serv, Not-in-family, White, Female, 0, 0, 45, ?, <=50K)'. Ignoring pattern.
+2016-10-01 15:00:08,522 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row18982: (44, Private, 237993, Prof-school, 15, Married-civ-spouse, Machine-op-inspct, Husband, White, Male, 0, 0, 45, ?, <=50K)
+2016-10-01 15:00:08,522 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row18982: (44, Private, 237993, Prof-school, 15, Married-civ-spouse, Machine-op-inspct, Husband, White, Male, 0, 0, 45, ?, <=50K)'. Ignoring pattern.
+2016-10-01 15:00:08,523 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row19193: (44, Local-gov, 189956, Bachelors, 13, Married-civ-spouse, Protective-serv, Wife, Black, Female, 15024, 0, 40, United-States, >50K)
+2016-10-01 15:00:08,523 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row19193: (44, Local-gov, 189956, Bachelors, 13, Married-civ-spouse, Protective-serv, Wife, Black, Female, 15024, 0, 40, United-States, >50K)'. Ignoring pattern.
+2016-10-01 15:00:08,526 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row19821: (24, Private, 172496, Masters, 14, Never-married, Tech-support, Not-in-family, White, Male, 0, 0, 50, United-States, <=50K)
+2016-10-01 15:00:08,526 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row19821: (24, Private, 172496, Masters, 14, Never-married, Tech-support, Not-in-family, White, Male, 0, 0, 50, United-States, <=50K)'. Ignoring pattern.
+2016-10-01 15:00:08,532 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row21424: (32, Local-gov, 29235, Some-college, 10, Married-civ-spouse, Protective-serv, Wife, White, Female, 0, 0, 40, France, >50K)
+2016-10-01 15:00:08,533 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row21424: (32, Local-gov, 29235, Some-college, 10, Married-civ-spouse, Protective-serv, Wife, White, Female, 0, 0, 40, France, >50K)'. Ignoring pattern.
+2016-10-01 15:00:08,535 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row21944: (52, Without-pay, 198262, HS-grad, 9, Married-civ-spouse, Adm-clerical, Wife, White, Female, 0, 0, 30, United-States, <=50K)
+2016-10-01 15:00:08,535 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row21944: (52, Without-pay, 198262, HS-grad, 9, Married-civ-spouse, Adm-clerical, Wife, White, Female, 0, 0, 30, United-States, <=50K)'. Ignoring pattern.
+2016-10-01 15:00:08,541 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row23495: (56, Private, 170324, 5th-6th, 3, Married-civ-spouse, Craft-repair, Husband, Black, Male, 0, 0, 40, Trinadad&Tobago, <=50K)
+2016-10-01 15:00:08,541 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row23495: (56, Private, 170324, 5th-6th, 3, Married-civ-spouse, Craft-repair, Husband, Black, Male, 0, 0, 40, Trinadad&Tobago, <=50K)'. Ignoring pattern.
+2016-10-01 15:00:08,542 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row23835: (64, Self-emp-not-inc, 388625, 10th, 6, Married-civ-spouse, Prof-specialty, Husband, White, Male, 0, 0, 10, United-States, >50K)
+2016-10-01 15:00:08,542 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row23835: (64, Self-emp-not-inc, 388625, 10th, 6, Married-civ-spouse, Prof-specialty, Husband, White, Male, 0, 0, 10, United-States, >50K)'. Ignoring pattern.
+2016-10-01 15:00:08,544 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row24307: (42, Private, 191765, HS-grad, 9, Never-married, Adm-clerical, Other-relative, Black, Female, 0, 2339, 40, Trinadad&Tobago, <=50K)
+2016-10-01 15:00:08,544 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row24307: (42, Private, 191765, HS-grad, 9, Never-married, Adm-clerical, Other-relative, Black, Female, 0, 2339, 40, Trinadad&Tobago, <=50K)'. Ignoring pattern.
+2016-10-01 15:00:08,638 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row28357: (35, Private, 244803, HS-grad, 9, Never-married, Handlers-cleaners, Other-relative, White, Male, 0, 0, 40, Peru, <=50K)
+2016-10-01 15:00:08,638 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row28357: (35, Private, 244803, HS-grad, 9, Never-married, Handlers-cleaners, Other-relative, White, Male, 0, 0, 40, Peru, <=50K)'. Ignoring pattern.
+2016-10-01 15:00:08,639 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : No matching decision tree branch for row 'Row28631: (40, Private, 400061, Some-college, 10, Married-civ-spouse, Machine-op-inspct, Husband, Other, Male, 0, 0, 40, United-States, >50K)
+2016-10-01 15:00:08,640 : DEBUG : KNIME-Worker-6 : DecisionTreeNodeSplitPMML : Decision Tree Predictor : 0:4 : Decision Tree HiLiteAdder failed. Could not find branch for row 'Row28631: (40, Private, 400061, Some-college, 10, Married-civ-spouse, Machine-op-inspct, Husband, Other, Male, 0, 0, 40, United-States, >50K)'. Ignoring pattern.
+2016-10-01 15:00:08,666 : DEBUG : KNIME-Worker-6 : Buffer : Decision Tree Predictor : 0:4 : Buffer file (/tmp/knime_Build a Simple1538/knime_container_20161001_5510175081767510460.bin.gz) is 0.171MB in size
+2016-10-01 15:00:08,667 : INFO  : KNIME-Worker-6 : LocalNodeExecutionJob : Decision Tree Predictor : 0:4 : Decision Tree Predictor 0:4 End execute (0 secs)
+2016-10-01 15:00:08,667 : DEBUG : KNIME-Worker-6 : WorkflowManager : Decision Tree Predictor : 0:4 : Decision Tree Predictor 0:4 doBeforePostExecution
+2016-10-01 15:00:08,667 : DEBUG : KNIME-Worker-6 : NodeContainer : Decision Tree Predictor : 0:4 : Decision Tree Predictor 0:4 has new state: POSTEXECUTE
+2016-10-01 15:00:08,667 : DEBUG : KNIME-Worker-6 : WorkflowManager : Decision Tree Predictor : 0:4 : Decision Tree Predictor 0:4 doAfterExecute - success
+2016-10-01 15:00:08,667 : DEBUG : KNIME-Worker-6 : NodeContainer : Decision Tree Predictor : 0:4 : Decision Tree Predictor 0:4 has new state: EXECUTED
+2016-10-01 15:00:08,668 : DEBUG : KNIME-Worker-6 : Scorer : Scorer : 0:6 : Configure succeeded. (Scorer)
+2016-10-01 15:00:08,668 : DEBUG : KNIME-Worker-6 : NodeContainer : Decision Tree Predictor : 0:4 : Scorer 0:6 has new state: CONFIGURED_QUEUED
+2016-10-01 15:00:08,669 : DEBUG : KNIME-Worker-6 : JavaScript Scatter Plot : JavaScript Scatter Plot : 0:11 : Configure succeeded. (JavaScript Scatter Plot)
+2016-10-01 15:00:08,670 : DEBUG : KNIME-Worker-6 : NodeContainer : Decision Tree Predictor : 0:4 : JavaScript Scatter Plot 0:11 has new state: CONFIGURED_QUEUED
+2016-10-01 15:00:08,671 : DEBUG : KNIME-Worker-8 : WorkflowManager : JavaScript Scatter Plot : 0:11 : JavaScript Scatter Plot 0:11 doBeforePreExecution
+2016-10-01 15:00:08,671 : DEBUG : KNIME-Worker-8 : NodeContainer : JavaScript Scatter Plot : 0:11 : JavaScript Scatter Plot 0:11 has new state: PREEXECUTE
+2016-10-01 15:00:08,671 : DEBUG : KNIME-Worker-8 : WorkflowManager : JavaScript Scatter Plot : 0:11 : JavaScript Scatter Plot 0:11 doBeforeExecution
+2016-10-01 15:00:08,671 : DEBUG : KNIME-Worker-8 : NodeContainer : JavaScript Scatter Plot : 0:11 : JavaScript Scatter Plot 0:11 has new state: EXECUTING
+2016-10-01 15:00:08,671 : DEBUG : KNIME-Worker-8 : WorkflowFileStoreHandlerRepository : JavaScript Scatter Plot : 0:11 : Adding handler d97608f6-f6de-4db6-a1a5-978b3293b04e (JavaScript Scatter Plot 0:11: <no directory>) - 8 in total
+2016-10-01 15:00:08,671 : DEBUG : KNIME-Worker-8 : LocalNodeExecutionJob : JavaScript Scatter Plot : 0:11 : JavaScript Scatter Plot 0:11 Start execute
+2016-10-01 15:00:08,671 : DEBUG : KNIME-Worker-5 : WorkflowManager : Scorer : 0:6 : Scorer 0:6 doBeforePreExecution
+2016-10-01 15:00:08,671 : DEBUG : KNIME-Worker-5 : NodeContainer : Scorer : 0:6 : Scorer 0:6 has new state: PREEXECUTE
+2016-10-01 15:00:08,671 : DEBUG : KNIME-Worker-5 : WorkflowManager : Scorer : 0:6 : Scorer 0:6 doBeforeExecution
+2016-10-01 15:00:08,671 : DEBUG : KNIME-Worker-5 : NodeContainer : Scorer : 0:6 : Scorer 0:6 has new state: EXECUTING
+2016-10-01 15:00:08,671 : DEBUG : KNIME-Worker-5 : WorkflowFileStoreHandlerRepository : Scorer : 0:6 : Adding handler 87e19459-8763-4ba1-aa02-f7ff3d13214a (Scorer 0:6: <no directory>) - 9 in total
+2016-10-01 15:00:08,671 : DEBUG : KNIME-Worker-5 : LocalNodeExecutionJob : Scorer : 0:6 : Scorer 0:6 Start execute
+2016-10-01 15:00:08,672 : DEBUG : KNIME-Worker-5 : Buffer : Scorer : 0:6 : Opening input stream on file "/tmp/knime_Build a Simple1538/knime_container_20161001_5510175081767510460.bin.gz", 1 open streams
+2016-10-01 15:00:08,678 : DEBUG : KNIME-Worker-8 : Buffer : JavaScript Scatter Plot : 0:11 : Opening input stream on file "/tmp/knime_Build a Simple1538/knime_container_20161001_5510175081767510460.bin.gz", 2 open streams
+2016-10-01 15:00:08,865 : DEBUG : KNIME-Worker-5 : Buffer : Scorer : 0:6 : Closing input stream on "/tmp/knime_Build a Simple1538/knime_container_20161001_5510175081767510460.bin.gz", 1 remaining
+2016-10-01 15:00:08,865 : WARN  : KNIME-Worker-5 : Scorer : Scorer : 0:6 : There were missing values in the reference or in the predicition class columns.
+2016-10-01 15:00:08,867 : INFO  : KNIME-Worker-5 : AccuracyScorerNodeModel : Scorer : 0:6 : error=0.15693824118281227, #correct=5474, #false=1019, #rows=6513, #missing=20
+2016-10-01 15:00:08,867 : INFO  : KNIME-Worker-5 : LocalNodeExecutionJob : Scorer : 0:6 : Scorer 0:6 End execute (0 secs)
+2016-10-01 15:00:08,868 : DEBUG : KNIME-Worker-5 : WorkflowManager : Scorer : 0:6 : Scorer 0:6 doBeforePostExecution
+2016-10-01 15:00:08,868 : DEBUG : KNIME-Worker-5 : NodeContainer : Scorer : 0:6 : Scorer 0:6 has new state: POSTEXECUTE
+2016-10-01 15:00:08,868 : DEBUG : KNIME-Worker-5 : WorkflowManager : Scorer : 0:6 : Scorer 0:6 doAfterExecute - success
+2016-10-01 15:00:08,868 : DEBUG : KNIME-Worker-5 : NodeContainer : Scorer : 0:6 : Scorer 0:6 has new state: EXECUTED
+2016-10-01 15:00:09,068 : DEBUG : KNIME-Worker-8 : Buffer : JavaScript Scatter Plot : 0:11 : Closing input stream on "/tmp/knime_Build a Simple1538/knime_container_20161001_5510175081767510460.bin.gz", 0 remaining
+2016-10-01 15:00:11,134 : DEBUG : KNIME-Worker-8 : Buffer : JavaScript Scatter Plot : 0:11 : Opening input stream on file "/tmp/knime_Build a Simple1538/knime_container_20161001_5510175081767510460.bin.gz", 1 open streams
+2016-10-01 15:00:11,188 : DEBUG : KNIME-Worker-8 : Buffer : JavaScript Scatter Plot : 0:11 : Closing input stream on "/tmp/knime_Build a Simple1538/knime_container_20161001_5510175081767510460.bin.gz", 0 remaining
+2016-10-01 15:00:11,458 : INFO  : KNIME-Worker-8 : LocalNodeExecutionJob : JavaScript Scatter Plot : 0:11 : JavaScript Scatter Plot 0:11 End execute (2 secs)
+2016-10-01 15:00:11,459 : DEBUG : KNIME-Worker-8 : WorkflowManager : JavaScript Scatter Plot : 0:11 : JavaScript Scatter Plot 0:11 doBeforePostExecution
+2016-10-01 15:00:11,459 : DEBUG : KNIME-Worker-8 : NodeContainer : JavaScript Scatter Plot : 0:11 : JavaScript Scatter Plot 0:11 has new state: POSTEXECUTE
+2016-10-01 15:00:11,459 : DEBUG : KNIME-Worker-8 : WorkflowManager : JavaScript Scatter Plot : 0:11 : JavaScript Scatter Plot 0:11 doAfterExecute - success
+2016-10-01 15:00:11,459 : DEBUG : KNIME-Worker-8 : NodeContainer : JavaScript Scatter Plot : 0:11 : JavaScript Scatter Plot 0:11 has new state: EXECUTED
+2016-10-01 15:00:11,459 : DEBUG : KNIME-Worker-8 : NodeContainer : JavaScript Scatter Plot : 0:11 : Build a Simple Model Training for Classification 0 has new state: EXECUTED
+2016-10-01 15:00:11,459 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: IDLE
+2016-10-01 15:00:16,235 : DEBUG : ModalContext : WorkflowManager :  :  : Loading workflow from "/data/KNIME_Releases/workspace/Example Workflows/Basics/Data Blending" (version "V3010" with loader class "FileWorkflowPersistor")
+2016-10-01 15:00:16,237 : DEBUG : ModalContext : WorkflowManager :  :  : Created subworkflow 2
+2016-10-01 15:00:16,537 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:145(1) to node 2:144(1)
+2016-10-01 15:00:16,537 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:238(1) to node 2:143(2)
+2016-10-01 15:00:16,537 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:144(1) to node 2:146(1)
+2016-10-01 15:00:16,537 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:240(1) to node 2:146(2)
+2016-10-01 15:00:16,537 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:146(1) to node 2:244(1)
+2016-10-01 15:00:16,537 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:152(1) to node 2:144(2)
+2016-10-01 15:00:16,537 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:235(1) to node 2:129(2)
+2016-10-01 15:00:16,537 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:234(1) to node 2:129(1)
+2016-10-01 15:00:16,537 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:244(1) to node 2:255(1)
+2016-10-01 15:00:16,538 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:129(1) to node 2:145(2)
+2016-10-01 15:00:16,538 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:233(1) to node 2:152(1)
+2016-10-01 15:00:16,538 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:237(1) to node 2:156(1)
+2016-10-01 15:00:16,538 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:156(1) to node 2:143(1)
+2016-10-01 15:00:16,538 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:236(1) to node 2:240(1)
+2016-10-01 15:00:16,538 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:143(1) to node 2:145(1)
+2016-10-01 15:00:16,538 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 2:241(1) to node 2:238(1)
+2016-10-01 15:00:17,253 : DEBUG : ModalContext : WorkflowManager :  :  : Loaded workflow from "/data/KNIME_Releases/workspace/Example Workflows/Basics/Data Blending"  with no errors
+2016-10-01 15:00:24,765 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on File Reader 2:235
+2016-10-01 15:00:24,765 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Data Blending 2
+2016-10-01 15:00:24,765 : DEBUG : main : NodeContainer :  :  : File Reader 2:235 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,765 : DEBUG : main : NodeContainer :  :  : File Reader 2:235 has new state: CONFIGURED_QUEUED
+2016-10-01 15:00:24,765 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Table Reader 2:234
+2016-10-01 15:00:24,765 : DEBUG : main : NodeContainer :  :  : Table Reader 2:234 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,765 : DEBUG : main : NodeContainer :  :  : Table Reader 2:234 has new state: CONFIGURED_QUEUED
+2016-10-01 15:00:24,765 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Cell Replacer 2:129
+2016-10-01 15:00:24,765 : DEBUG : main : NodeContainer :  :  : Cell Replacer 2:129 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,765 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on SQLite Connector 2:241
+2016-10-01 15:00:24,765 : DEBUG : main : NodeContainer :  :  : SQLite Connector 2:241 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,765 : DEBUG : main : NodeContainer :  :  : SQLite Connector 2:241 has new state: CONFIGURED_QUEUED
+2016-10-01 15:00:24,765 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Database Reader 2:238
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Database Reader 2:238 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on File Reader 2:237
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : File Reader 2:237 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : File Reader 2:237 has new state: CONFIGURED_QUEUED
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Column Rename 2:156
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Column Rename 2:156 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Concatenate 2:143
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Concatenate 2:143 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Joiner 2:145
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Joiner 2:145 has new state: UNCONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on File Reader 2:233
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : File Reader 2:233 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : File Reader 2:233 has new state: CONFIGURED_QUEUED
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Column Filter 2:152
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Column Filter 2:152 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Joiner 2:144
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Joiner 2:144 has new state: UNCONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on XLS Reader (deprecated) 2:236
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : XLS Reader (deprecated) 2:236 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : XLS Reader (deprecated) 2:236 has new state: CONFIGURED_QUEUED
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on String Manipulation 2:240
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : String Manipulation 2:240 has new state: CONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on Joiner 2:146
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Joiner 2:146 has new state: UNCONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on GroupBy 2:244
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : GroupBy 2:244 has new state: UNCONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Setting dirty flag on JavaScript Bar Chart 2:255
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : JavaScript Bar Chart 2:255 has new state: UNCONFIGURED_MARKEDFOREXEC
+2016-10-01 15:00:24,766 : DEBUG : main : NodeContainer :  :  : Data Blending 2 has new state: EXECUTING
+2016-10-01 15:00:24,766 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: EXECUTING
+2016-10-01 15:00:26,248 : DEBUG : KNIME-WFM-Parent-Notifier : NodeContainer :  :  : ROOT  has new state: IDLE
+2016-10-01 15:02:46,782 : DEBUG : Worker-0 : FileSingleNodeContainerPersistor : Build a Simple Model Training for Classification : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Basics/.Build a Simple Model Training for Classification.autoSave/File Reader (#1)"
+2016-10-01 15:02:46,785 : DEBUG : Worker-0 : FileSingleNodeContainerPersistor : Build a Simple Model Training for Classification : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Basics/.Build a Simple Model Training for Classification.autoSave/Color Manager (#2)"
+2016-10-01 15:02:46,786 : DEBUG : Worker-0 : FileSingleNodeContainerPersistor : Build a Simple Model Training for Classification : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Basics/.Build a Simple Model Training for Classification.autoSave/Decision Tree Predictor (#4)"
+2016-10-01 15:02:46,786 : DEBUG : Worker-0 : FileSingleNodeContainerPersistor : Build a Simple Model Training for Classification : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Basics/.Build a Simple Model Training for Classification.autoSave/Partitioning (#5)"
+2016-10-01 15:02:46,787 : DEBUG : Worker-0 : FileSingleNodeContainerPersistor : Build a Simple Model Training for Classification : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Basics/.Build a Simple Model Training for Classification.autoSave/Scorer (#6)"
+2016-10-01 15:02:46,788 : DEBUG : Worker-0 : FileSingleNodeContainerPersistor : Build a Simple Model Training for Classification : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Basics/.Build a Simple Model Training for Classification.autoSave/Interactive Table (#7)"
+2016-10-01 15:02:46,788 : DEBUG : Worker-0 : FileSingleNodeContainerPersistor : Build a Simple Model Training for Classification : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Basics/.Build a Simple Model Training for Classification.autoSave/Statistics (#9)"
+2016-10-01 15:02:46,789 : DEBUG : Worker-0 : FileSingleNodeContainerPersistor : Build a Simple Model Training for Classification : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Basics/.Build a Simple Model Training for Classification.autoSave/Decision Tree Learner (#10)"
+2016-10-01 15:02:46,789 : DEBUG : Worker-0 : FileSingleNodeContainerPersistor : Build a Simple Model Training for Classification : 0 : Created node directory "/data/KNIME_Releases/workspace/Example Workflows/Basics/.Build a Simple Model Training for Classification.autoSave/JavaScript Scatter Plot (#11)"
+2016-10-01 15:02:46,796 : DEBUG : Worker-0 : LocalWorkspaceContentProvider : Build a Simple Model Training for Classification : 0 : Refreshing "/Example Workflows/Basics"
+2016-10-01 15:04:08,083 : DEBUG : ModalContext : WorkflowManager :  :  : Loading workflow from "/data/KNIME_Releases/workspace/Example Workflows/Basics/Simple Reporting Example" (version "V3010" with loader class "FileWorkflowPersistor")
+2016-10-01 15:04:08,085 : DEBUG : ModalContext : WorkflowManager :  :  : Created subworkflow 3
+2016-10-01 15:04:08,126 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 3:18(1) to node 3:2(1)
+2016-10-01 15:04:08,126 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 3:2(1) to node 3:17(1)
+2016-10-01 15:04:08,126 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 3:17(1) to node 3:15(1)
+2016-10-01 15:04:08,126 : DEBUG : ModalContext : WorkflowManager :  :  : Added new connection from node 3:15(1) to node 3:16(1)
+2016-10-01 15:04:08,144 : DEBUG : ModalContext : WorkflowManager :  :  : Loaded workflow from "/data/KNIME_Releases/workspace/Example Workflows/Basics/Simple Reporting Example"  with no errors
+2016-10-01 15:04:31,927 : DEBUG : main : ProjectWorkflowMap : Build a Simple Model Training for Classification : 0 : Removing "file:/data/KNIME_Releases/workspace/Example%20Workflows/Basics/Build%20a%20Simple%20Model%20Training%20for%20Classification/" from project map (2 remaining)
+2016-10-01 15:04:31,928 : DEBUG : main : WorkflowManager : Build a Simple Model Training for Classification : 0 : Removing project "Build a Simple Model Training for Classification 0"
+2016-10-01 15:04:31,929 : DEBUG : main : WorkflowFileStoreHandlerRepository : JavaScript Scatter Plot : 0:11 : Removing handler d97608f6-f6de-4db6-a1a5-978b3293b04e (JavaScript Scatter Plot 0:11: <no directory>) - 8 remaining
+2016-10-01 15:04:31,929 : DEBUG : main : ScatterPlotNodeModel : JavaScript Scatter Plot : 0:11 : Removing all (0) views from model.
+2016-10-01 15:04:31,929 : DEBUG : main : JavaScript Scatter Plot : JavaScript Scatter Plot : 0:11 : clean output ports.
+2016-10-01 15:04:31,929 : DEBUG : main : WorkflowFileStoreHandlerRepository : Scorer : 0:6 : Removing handler 87e19459-8763-4ba1-aa02-f7ff3d13214a (Scorer 0:6: <no directory>) - 7 remaining
+2016-10-01 15:04:31,929 : DEBUG : main : AccuracyScorerNodeModel : Scorer : 0:6 : Removing all (0) views from model.
+2016-10-01 15:04:31,929 : DEBUG : main : Scorer : Scorer : 0:6 : clean output ports.
+2016-10-01 15:04:31,930 : DEBUG : main : WorkflowFileStoreHandlerRepository : Decision Tree Predictor : 0:4 : Removing handler 06ddcb37-1b3e-4407-a91e-5d120230b3a4 (Decision Tree Predictor 0:4: <no directory>) - 6 remaining
+2016-10-01 15:04:31,930 : DEBUG : main : DecTreePredictorNodeModel : Decision Tree Predictor : 0:4 : Removing all (0) views from model.
+2016-10-01 15:04:31,930 : DEBUG : main : Decision Tree Predictor : Decision Tree Predictor : 0:4 : clean output ports.
+2016-10-01 15:04:31,931 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_Build a Simple1538/knime_container_20161001_5510175081767510460.bin.gz"
+2016-10-01 15:04:31,931 : DEBUG : main : WorkflowFileStoreHandlerRepository : Decision Tree Learner : 0:10 : Removing handler cb26b2e7-ce59-4957-b6d8-7af6c17269ec (Decision Tree Learner 0:10: <no directory>) - 5 remaining
+2016-10-01 15:04:31,932 : DEBUG : main : DecisionTreeLearnerNodeModel2 : Decision Tree Learner : 0:10 : Removing all (0) views from model.
+2016-10-01 15:04:31,932 : DEBUG : main : Decision Tree Learner : Decision Tree Learner : 0:10 : clean output ports.
+2016-10-01 15:04:31,932 : DEBUG : main : WorkflowFileStoreHandlerRepository : Interactive Table : 0:7 : Removing handler 66b6123b-5145-4df9-a0f5-ff4b4afb53c1 (Interactive Table 0:7: <no directory>) - 4 remaining
+2016-10-01 15:04:31,932 : DEBUG : main : TableNodeModel : Interactive Table : 0:7 : Removing all (0) views from model.
+2016-10-01 15:04:31,932 : DEBUG : main : Interactive Table : Interactive Table : 0:7 : clean output ports.
+2016-10-01 15:04:31,932 : DEBUG : main : WorkflowFileStoreHandlerRepository : Partitioning : 0:5 : Removing handler 05e59506-ee46-47de-9006-c2e1dc1044b1 (Partitioning 0:5: <no directory>) - 3 remaining
+2016-10-01 15:04:31,932 : DEBUG : main : PartitionNodeModel : Partitioning : 0:5 : Removing all (0) views from model.
+2016-10-01 15:04:31,932 : DEBUG : main : Partitioning : Partitioning : 0:5 : clean output ports.
+2016-10-01 15:04:31,932 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_Build a Simple1538/knime_container_20161001_1429048323734744757.bin.gz"
+2016-10-01 15:04:31,933 : DEBUG : main : WorkflowFileStoreHandlerRepository : Statistics : 0:9 : Removing handler 1fcc8d6c-fcbb-4f8a-b1ac-61ff9c935cbc (Statistics 0:9: <no directory>) - 2 remaining
+2016-10-01 15:04:31,933 : DEBUG : main : ExtendedStatisticsNodeModel : Statistics : 0:9 : Removing all (0) views from model.
+2016-10-01 15:04:31,933 : DEBUG : main : Statistics : Statistics : 0:9 : clean output ports.
+2016-10-01 15:04:31,933 : DEBUG : main : WorkflowFileStoreHandlerRepository : Color Manager : 0:2 : Removing handler 3d3a4f91-a058-4b63-af2a-a550bfdd93a6 (Color Manager 0:2: <no directory>) - 1 remaining
+2016-10-01 15:04:31,933 : DEBUG : main : ColorManager2NodeModel : Color Manager : 0:2 : Removing all (0) views from model.
+2016-10-01 15:04:31,933 : DEBUG : main : Color Manager : Color Manager : 0:2 : clean output ports.
+2016-10-01 15:04:31,933 : DEBUG : main : WorkflowFileStoreHandlerRepository : File Reader : 0:1 : Removing handler 33670e64-03a0-4620-9459-ea152ca0c33f (File Reader 0:1: <no directory>) - 0 remaining
+2016-10-01 15:04:31,933 : DEBUG : main : FileReaderNodeModel : File Reader : 0:1 : Removing all (0) views from model.
+2016-10-01 15:04:31,935 : DEBUG : main : File Reader : File Reader : 0:1 : clean output ports.
+2016-10-01 15:04:31,935 : DEBUG : KNIME-Temp-File-Deleter : Buffer :  :  : Deleted temporary file "/tmp/knime_Build a Simple1538/knime_container_20161001_7019164672684670824.bin.gz"
+2016-10-01 15:04:31,936 : DEBUG : main : WorkflowManager : Build a Simple Model Training for Classification : 0 : Project "Build a Simple Model Training for Classification 0" removed (3 remaining)
