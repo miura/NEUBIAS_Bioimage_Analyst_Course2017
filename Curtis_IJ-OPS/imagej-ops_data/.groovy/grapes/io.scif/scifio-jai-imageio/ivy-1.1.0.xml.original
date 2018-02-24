@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>2.1</version>
+		<relativePath />
+	</parent>
+
+	<groupId>io.scif</groupId>
+	<artifactId>scifio-jai-imageio</artifactId>
+	<version>1.1.0</version>
+
+	<name>JAI Image I/O Tools</name>
+	<description>Java API to handle JPEG and JPEG2000 files. Used by Bio-Formats to read images compressed with JPEG2000 and lossless JPEG. Modified from the 2008-10-14 source to include support for the YCbCr color space. Several files in the com.sun.media.jai packages were removed, as they are not needed by Bio-Formats, and created an additional dependency. This project can be removed once our changes have been added to the official JAI CVS repository.</description>
+	<url>http://jai-imageio.dev.java.net/</url>
+	<inceptionYear>2008</inceptionYear>
+
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<configuration>
+					<licenseName>bsd_2</licenseName>
+					<projectName>SCIFIO fork of the Java Advanced Imaging Image I/O Tools API Core.</projectName>
+					<organizationName>Open Microscopy Environment:
+	- Board of Regents of the University of Wisconsin-Madison
+	- Glencoe Software, Inc.
+	- University of Dundee</organizationName>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<organization>
+		<name>SCIFIO</name>
+		<url>http://scif.io/</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>melissa</id>
+			<name>Melissa Linkert</name>
+			<email>melissa.linkert@glencoesoftware.com</email>
+			<url>http://www.openmicroscopy.org/site/about/development-teams/glencoe-software</url>
+			<organization>Glencoe Software</organization>
+			<organizationUrl>http://glencoesoftware.com/</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>-6</timezone>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/scifio/scifio-jai-imageio-core</connection>
+		<developerConnection>scm:git:git@github.com:scifio/scifio-jai-imageio-core</developerConnection>
+		<tag>scifio-jai-imageio-1.1.0</tag>
+		<url>https://github.com/scifio/scifio-jai-imageio-core</url>
+	</scm>
+
+	<repositories>
+		<!-- NB: for project parent -->
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+</project>

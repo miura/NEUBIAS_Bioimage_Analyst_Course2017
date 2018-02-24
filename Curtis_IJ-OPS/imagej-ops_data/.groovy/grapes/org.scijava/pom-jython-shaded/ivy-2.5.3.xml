@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.scijava"
+		module="pom-jython-shaded"
+		revision="2.5.3"
+		status="release"
+		publication="20150708005334"
+	>
+		<license name="Jython Software License" url="http://www.jython.org/Project/license.html" />
+		<description homepage="http://www.jython.org/">
+		Jython is an implementation of the high-level, dynamic, object-oriented language Python written in 100% Pure Java, and seamlessly integrated with the Java platform. It thus allows you to run Python on any Java platform.
+		</description>
+		<m:dependency.management__org.scijava__scijava-common__version>2.33.0</m:dependency.management__org.scijava__scijava-common__version>
+		<m:dependency.management__org.scijava__junit-benchmarks__scope>test</m:dependency.management__org.scijava__junit-benchmarks__scope>
+		<m:properties__junit.version>4.11</m:properties__junit.version>
+		<m:properties__minimaven.version>2.1.3</m:properties__minimaven.version>
+		<m:dependency.management__net.imglib2__imglib2-algorithms-legacy__version>2.0.0-beta-26</m:dependency.management__net.imglib2__imglib2-algorithms-legacy__version>
+		<m:dependency.management__org.scijava__swing-checkbox-tree__version>1.0.0</m:dependency.management__org.scijava__swing-checkbox-tree__version>
+		<m:dependency.management__ome__bio-formats_plugins__version>5.0.3</m:dependency.management__ome__bio-formats_plugins__version>
+		<m:properties__swing-checkbox-tree.version>1.0.0</m:properties__swing-checkbox-tree.version>
+		<m:dependency.management__org.scijava__scijava-plugins-text-markdown__version>0.1.1</m:dependency.management__org.scijava__scijava-plugins-text-markdown__version>
+		<m:properties__scijava-maven-plugin.version>0.2.0</m:properties__scijava-maven-plugin.version>
+		<m:dependency.management__net.imglib2__imglib2-algorithms__version>2.0.0-beta-26</m:dependency.management__net.imglib2__imglib2-algorithms__version>
+		<m:dependency.management__org.scijava__scijava-plugins-text-plain__version>0.1.1</m:dependency.management__org.scijava__scijava-plugins-text-plain__version>
+		<m:properties__miglayout.version>3.7.3.1</m:properties__miglayout.version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:properties__bio-formats.version>5.0.3</m:properties__bio-formats.version>
+		<m:properties__scripting-scala.version>0.1.0</m:properties__scripting-scala.version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:dependency.management__ome__ome-xml__version>5.0.3</m:dependency.management__ome__ome-xml__version>
+		<m:dependency.management__org.scijava__native-lib-loader__version>2.0.2</m:dependency.management__org.scijava__native-lib-loader__version>
+		<m:properties__scijava-ui-swing.version>0.3.0</m:properties__scijava-ui-swing.version>
+		<m:dependency.management__net.imglib2__imglib2-ops__version>2.0.0-beta-26</m:dependency.management__net.imglib2__imglib2-ops__version>
+		<m:dependency.management__org.scijava__scripting-r__version>0.1.0</m:dependency.management__org.scijava__scripting-r__version>
+		<m:properties__scripting-r.version>0.1.0</m:properties__scripting-r.version>
+		<m:dependency.management__com.miglayout__miglayout__version>3.7.3.1</m:dependency.management__com.miglayout__miglayout__version>
+		<m:dependency.management__org.scijava__scripting-jruby__version>0.1.5</m:dependency.management__org.scijava__scripting-jruby__version>
+		<m:properties__scripting-javascript.version>0.2.2</m:properties__scripting-javascript.version>
+		<m:dependency.management__org.scijava__scijava-plugins-platforms__version>0.1.2</m:dependency.management__org.scijava__scijava-plugins-platforms__version>
+		<m:properties__scijava-plugins-text-plain.version>0.1.1</m:properties__scijava-plugins-text-plain.version>
+		<m:properties__scijava-ui-awt.version>0.1.2</m:properties__scijava-ui-awt.version>
+		<m:properties__junit-benchmarks.version>0.7.3-scijava</m:properties__junit-benchmarks.version>
+		<m:dependency.management__org.scijava__minimaven__version>2.1.3</m:dependency.management__org.scijava__minimaven__version>
+		<m:properties__scripting-java.version>0.2.4</m:properties__scripting-java.version>
+		<m:properties__jfreechart.version>1.0.14</m:properties__jfreechart.version>
+		<m:dependency.management__net.imglib2__imglib2-scripting__version>2.0.0-beta-24</m:dependency.management__net.imglib2__imglib2-scripting__version>
+		<m:dependency.management__org.scijava__scripting-scala__version>0.1.0</m:dependency.management__org.scijava__scripting-scala__version>
+		<m:dependency.management__org.scijava__scijava-plugins-commands__version>0.1.7</m:dependency.management__org.scijava__scijava-plugins-commands__version>
+		<m:dependency.management__org.jfree__jfreechart__version>1.0.14</m:dependency.management__org.jfree__jfreechart__version>
+		<m:dependency.management__org.scijava__scripting-groovy__version>0.1.1</m:dependency.management__org.scijava__scripting-groovy__version>
+		<m:dependency.management__junit__junit__version>4.11</m:dependency.management__junit__junit__version>
+		<m:dependency.management__org.scijava__scripting-jython__version>0.1.3</m:dependency.management__org.scijava__scripting-jython__version>
+		<m:properties__maven.build.timestamp.format>yyyy-MM-dd&apos;T&apos;HH:mm:ssZ</m:properties__maven.build.timestamp.format>
+		<m:properties__scijava-plugins-text-markdown.version>0.1.1</m:properties__scijava-plugins-text-markdown.version>
+		<m:properties__imglib2-ij.version>2.0.0-beta-26</m:properties__imglib2-ij.version>
+		<m:dependency.management__org.scijava__scripting-java__version>0.2.4</m:dependency.management__org.scijava__scripting-java__version>
+		<m:properties__scripting-beanshell.version>0.1.3</m:properties__scripting-beanshell.version>
+		<m:properties__scijava-common.version>2.33.0</m:properties__scijava-common.version>
+		<m:properties__nar.version>3.1.0</m:properties__nar.version>
+		<m:dependency.management__net.imglib2__imglib2-meta__version>2.0.0-beta-26</m:dependency.management__net.imglib2__imglib2-meta__version>
+		<m:dependency.management__org.scijava__junit-benchmarks__version>0.7.3-scijava</m:dependency.management__org.scijava__junit-benchmarks__version>
+		<m:dependency.management__org.scijava__scripting-javascript__version>0.2.2</m:dependency.management__org.scijava__scripting-javascript__version>
+		<m:properties__scripting-groovy.version>0.1.1</m:properties__scripting-groovy.version>
+		<m:properties__scripting-matlab.version>0.2.1</m:properties__scripting-matlab.version>
+		<m:dependency.management__ome__formats-gpl__version>5.0.3</m:dependency.management__ome__formats-gpl__version>
+		<m:properties__native-lib-loader.version>2.0.2</m:properties__native-lib-loader.version>
+		<m:properties__jetty.version>8.0.0.M1</m:properties__jetty.version>
+		<m:properties__scijava-log-slf4j.version>1.0.1</m:properties__scijava-log-slf4j.version>
+		<m:dependency.management__org.scijava__scijava-ui-swing__version>0.3.0</m:dependency.management__org.scijava__scijava-ui-swing__version>
+		<m:maven.plugins>null__maven-source-plugin__null|null__maven-surefire-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.codehaus.mojo__license-maven-plugin__null|org.fusesource.mvnplugins__maven-graph-plugin__null|null__maven-source-plugin__null|null__maven-surefire-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.codehaus.mojo__license-maven-plugin__null|org.fusesource.mvnplugins__maven-graph-plugin__null</m:maven.plugins>
+		<m:properties__scijava-plugins-platforms.version>0.1.2</m:properties__scijava-plugins-platforms.version>
+		<m:properties__jython.version>2.5.3</m:properties__jython.version>
+		<m:dependency.management__org.scijava__scijava-ui-awt__version>0.1.2</m:dependency.management__org.scijava__scijava-ui-awt__version>
+		<m:properties__scripting-clojure.version>0.1.1</m:properties__scripting-clojure.version>
+		<m:dependency.management__org.scijava__scijava-log-slf4j__version>1.0.1</m:dependency.management__org.scijava__scijava-log-slf4j__version>
+		<m:dependency.management__ome__formats-common__version>5.0.3</m:dependency.management__ome__formats-common__version>
+		<m:properties__scijava-plugins-commands.version>0.1.7</m:properties__scijava-plugins-commands.version>
+		<m:dependency.management__net.imglib2__imglib2-ij__version>2.0.0-beta-26</m:dependency.management__net.imglib2__imglib2-ij__version>
+		<m:properties__scripting-jython.version>0.1.3</m:properties__scripting-jython.version>
+		<m:properties__scripting-jruby.version>0.1.5</m:properties__scripting-jruby.version>
+		<m:dependency.management__net.imglib2__imglib2__version>2.0.0-beta-26</m:dependency.management__net.imglib2__imglib2__version>
+		<m:dependency.management__net.imglib2__imglib2-ui__version>2.0.0-beta-26</m:dependency.management__net.imglib2__imglib2-ui__version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:dependency.management__org.scijava__scripting-beanshell__version>0.1.3</m:dependency.management__org.scijava__scripting-beanshell__version>
+		<m:dependency.management__org.scijava__scripting-clojure__version>0.1.1</m:dependency.management__org.scijava__scripting-clojure__version>
+		<m:dependency.management__net.imglib2__imglib2-algorithms-gpl__version>2.0.0-beta-26</m:dependency.management__net.imglib2__imglib2-algorithms-gpl__version>
+		<m:dependency.management__ome__formats-api__version>5.0.3</m:dependency.management__ome__formats-api__version>
+		<m:properties__imglib2.version>2.0.0-beta-26</m:properties__imglib2.version>
+		<m:dependency.management__org.scijava__scripting-matlab__version>0.2.1</m:dependency.management__org.scijava__scripting-matlab__version>
+		<m:properties__imglib2-scripting.version>2.0.0-beta-24</m:properties__imglib2-scripting.version>
+		<m:dependency.management__ome__formats-bsd__version>5.0.3</m:dependency.management__ome__formats-bsd__version>
+		<m:dependency.management__net.imglib2__imglib2-realtransform__version>2.0.0-beta-26</m:dependency.management__net.imglib2__imglib2-realtransform__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<groupId>org.netlib</groupId>
+<artifactId>netlib-java</artifactId>
+<version>0.9.3-renjin-patched-2</version>
+
+<dependencies>
+
+	<dependency>
+	<groupId>org.netlib</groupId>
+	<artifactId>lapack</artifactId>
+	<version>0.8</version>
+	</dependency>
+
+
+	<dependency>
+	<groupId>org.netlib</groupId>
+	<artifactId>f2jutil</artifactId>
+	<version>0.8</version>
+	</dependency>
+
+	<dependency>
+	<groupId>org.netlib</groupId>
+	<artifactId>xerbla</artifactId>
+	<version>0.8</version>
+	</dependency>
+
+	<dependency>
+	<groupId>org.netlib</groupId>
+	<artifactId>blas</artifactId>
+	<version>0.8</version>
+	</dependency>
+
+</dependencies>
+
+</project>

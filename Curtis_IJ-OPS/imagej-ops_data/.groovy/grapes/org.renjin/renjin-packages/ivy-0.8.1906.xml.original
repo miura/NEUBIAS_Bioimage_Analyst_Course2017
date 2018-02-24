@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>parent</artifactId>
+    <groupId>org.renjin</groupId>
+    <version>0.8.1906</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>renjin-packages</artifactId>
+  <packaging>pom</packaging>
+  <name>Renjin Packages Parent</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <modules>
+    <module>stats</module>
+    <module>stats4</module>
+	  <module>hamcrest</module>
+	  <module>graphics</module>
+	  <module>grDevices</module>
+	  <module>datasets</module>
+	  <module>methods</module>
+	  <module>splines</module>
+	  <module>utils</module>
+	  <module>grid</module>
+    <module>parallel</module>
+    <module>tools</module>
+  </modules>
+  
+  <dependencies>
+   
+  </dependencies>
+
+  <build>
+    
+  </build>
+</project>

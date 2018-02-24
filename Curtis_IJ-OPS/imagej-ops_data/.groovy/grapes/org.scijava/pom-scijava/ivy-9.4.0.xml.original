@@ -1,0 +1,2001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.scijava</groupId>
+	<artifactId>pom-scijava</artifactId>
+	<version>9.4.0</version>
+	<packaging>pom</packaging>
+
+	<name>SciJava Projects</name>
+	<description>SciJava aims to provide an overview of available Java libraries for scientific computing. This POM provides a parent from which participating projects can declare their build configurations. It ensures that projects all use a compatible build environment, including Java version, as well as versions of dependencies and plugins.
+
+Projects wishing to use pom-scijava as a parent project need to override the &lt;name&gt;, &lt;description&gt;, &lt;url&gt;, &lt;inceptionYear&gt;, &lt;organization&gt;, &lt;licenses&gt;, &lt;developers&gt;, &lt;contributors&gt;, &lt;mailingLists&gt;, &lt;scm&gt;, &lt;issueManagement&gt; and &lt;ciManagement&gt; sections.</description>
+	<url>http://www.scijava.org/</url>
+	<inceptionYear>2011</inceptionYear>
+	<organization>
+		<name>SciJava</name>
+		<url>http://www.scijava.org/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>CC0 1.0 Universal License</name>
+			<url>http://creativecommons.org/publicdomain/zero/1.0/</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>ctrueden</id>
+			<name>Curtis Rueden</name>
+			<email>ctrueden@wisc.edu</email>
+			<url>http://loci.wisc.edu/people/curtis-rueden</url>
+			<organization>UW-Madison LOCI</organization>
+			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+			<timezone>-6</timezone>
+		</developer>
+		<developer>
+			<id>hinerm</id>
+			<name>Mark Hiner</name>
+			<email>hiner@wisc.edu</email>
+			<url>http://loci.wisc.edu/people/mark-hiner</url>
+			<organization>UW-Madison LOCI</organization>
+			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
+			<roles>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+			<timezone>-6</timezone>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Johannes Schindelin</name>
+			<url>http://imagej.net/User:Schindelin</url>
+			<properties><id>dscho</id></properties>
+		</contributor>
+		<contributor>
+			<name>Barry DeZonia</name>
+			<url>http://imagej.net/User:Bdezonia</url>
+			<properties><id>bdezonia</id></properties>
+		</contributor>
+		<contributor>
+			<name>Jean-Yves Tinevez</name>
+			<url>http://imagej.net/User:JeanYvesTinevez</url>
+			<properties><id>tinevez</id></properties>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>SciJava</name>
+			<subscribe>https://groups.google.com/group/scijava</subscribe>
+			<unsubscribe>https://groups.google.com/group/scijava</unsubscribe>
+			<post>scijava@googlegroups.com</post>
+			<archive>https://groups.google.com/group/scijava</archive>
+		</mailingList>
+	</mailingLists>
+
+	<prerequisites>
+		<maven>${scijava.mvn.version}</maven>
+	</prerequisites>
+
+	<scm>
+		<connection>scm:git:git://github.com/scijava/pom-scijava</connection>
+		<developerConnection>scm:git:git@github.com:scijava/pom-scijava</developerConnection>
+		<tag>pom-scijava-9.4.0</tag>
+		<url>https://github.com/scijava/pom-scijava</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/scijava/pom-scijava/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://jenkins.imagej.net/job/pom-scijava/</url>
+	</ciManagement>
+
+	<properties>
+		<!--
+		If two artifacts on the classpath use two different versions of the same
+		dependency, behavior is inconsistent at best, and often broken. The
+		following properties facilitate consistency of dependency versions between
+		various projects in the SciJava software stack.
+
+		When possible, we advise declaring your SciJava dependencies without a
+		<version> since the versions of core SciJava components are managed in this
+		POM's <dependencyManagement> section.
+
+		If you need to override the version of a particular component, then simply
+		override that component's version property in your POM's <properties>
+		section, rather than hardcoding them.
+		-->
+
+		<!-- SciJava - https://github.com/scijava -->
+
+		<!-- SciJava Cache - https://github.com/scijava/scijava-cache -->
+		<scijava-cache.version>0.1.1</scijava-cache.version>
+
+		<!-- SciJava Common - https://github.com/scijava/scijava-common -->
+		<scijava-common.version>2.51.0</scijava-common.version>
+
+		<!-- SciJava Config - https://github.com/scijava/scijava-config -->
+		<scijava-config.version>2.0.1</scijava-config.version>
+
+		<!-- SciJava Expression Parser - https://github.com/scijava/scijava-expression-parser -->
+		<scijava-expression-parser.version>2.1.1</scijava-expression-parser.version>
+
+		<!-- SciJava Common: SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
+		<scijava-log-slf4j.version>1.0.3</scijava-log-slf4j.version>
+
+		<!-- SciJava Maven Plugin - https://github.com/scijava/scijava-maven-plugin -->
+		<scijava-maven-plugin.version>0.5.1</scijava-maven-plugin.version>
+
+		<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
+		<scijava-plugins-commands.version>0.2.2</scijava-plugins-commands.version>
+
+		<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
+		<scijava-plugins-platforms.version>0.2.0</scijava-plugins-platforms.version>
+
+		<!-- SciJava Plugins: Text: Markdown - https://github.com/scijava/scijava-plugins-text-markdown -->
+		<scijava-plugins-text-markdown.version>0.1.2</scijava-plugins-text-markdown.version>
+
+		<!-- SciJava Plugins: Text: Plain - https://github.com/scijava/scijava-plugins-text-plain -->
+		<scijava-plugins-text-plain.version>0.1.2</scijava-plugins-text-plain.version>
+
+		<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
+		<scijava-ui-awt.version>0.1.4</scijava-ui-awt.version>
+
+		<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
+		<scijava-ui-swing.version>0.7.1</scijava-ui-swing.version>
+
+		<!-- Scripting: Beanshell - https://github.com/scijava/scripting-beanshell -->
+		<scripting-beanshell.version>0.2.4</scripting-beanshell.version>
+
+		<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
+		<scripting-clojure.version>0.1.4</scripting-clojure.version>
+
+		<!-- Scripting: Groovy - https://github.com/scijava/scripting-groovy -->
+		<scripting-groovy.version>0.2.4</scripting-groovy.version>
+
+		<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
+		<scripting-java.version>0.3.5</scripting-java.version>
+
+		<!-- Scripting: Javascript - https://github.com/scijava/scripting-javascript -->
+		<scripting-javascript.version>0.4.3</scripting-javascript.version>
+
+		<!-- Scripting: JRuby - https://github.com/scijava/scripting-jruby -->
+		<scripting-jruby.version>0.2.4</scripting-jruby.version>
+
+		<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
+		<scripting-jython.version>0.2.5</scripting-jython.version>
+
+		<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
+		<scripting-matlab.version>0.4.1</scripting-matlab.version>
+
+		<!-- Scripting: Renjin - https://github.com/scijava/scripting-renjin -->
+		<scripting-renjin.version>0.1.0</scripting-renjin.version>
+
+		<!-- Scripting: Scala - https://github.com/scijava/scripting-scala -->
+		<scripting-scala.version>0.1.0</scripting-scala.version>
+
+		<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
+		<swing-checkbox-tree.version>1.0.1</swing-checkbox-tree.version>
+
+		<!-- MiniMaven - https://github.com/scijava/minimaven -->
+		<minimaven.version>2.2.0</minimaven.version>
+
+		<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
+		<native-lib-loader.version>2.1.3</native-lib-loader.version>
+
+		<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
+		<junit-benchmarks.version>0.7.3-scijava</junit-benchmarks.version>
+
+		<!--
+		BEGIN MANUALLY MANAGED VERSIONS
+
+		The SciJava project uses tools in https://github.com/scijava/scijava-scripts
+		and https://github.com/scijava/scijava-maven-plugin to manage the properties
+		above.
+		-->
+
+		<!-- Open Microscopy Environment - https://github.com/openmicroscopy -->
+
+		<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
+		<bio-formats.version>5.1.7</bio-formats.version>
+		<bio-formats_plugins.version>${bio-formats.version}</bio-formats_plugins.version>
+		<formats-api.version>${bio-formats.version}</formats-api.version>
+		<formats-bsd.version>${bio-formats.version}</formats-bsd.version>
+		<formats-common.version>${bio-formats.version}</formats-common.version>
+		<formats-gpl.version>${bio-formats.version}</formats-gpl.version>
+		<ome-xml.version>${bio-formats.version}</ome-xml.version>
+
+		<!-- NAR Maven plugin - https://github.com/maven-nar -->
+
+		<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
+		<nar-maven-plugin.version>3.2.0</nar-maven-plugin.version>
+
+		<!-- Other managed components -->
+
+		<!-- Java 3D - https://github.com/scijava/java3d-core -->
+		<java3d.version>1.6.0-scijava-2</java3d.version>
+
+		<!-- JOGL - https://jogamp.org/jogl/ -->
+		<jogl.version>2.3.2</jogl.version>
+
+		<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
+		<rsyntaxtextarea.version>2.5.8</rsyntaxtextarea.version>
+
+		<!-- Gson - https://code.google.com/p/google-gson/ -->
+		<gson.version>2.2.4</gson.version>
+
+		<!-- Guava - https://github.com/google/guava -->
+		<guava.version>18.0</guava.version>
+
+		<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
+		<jama.version>1.0.3</jama.version>
+
+		<!-- Javassist - http://www.javassist.org/ -->
+		<javassist.version>3.19.0-GA</javassist.version>
+
+		<!-- JCommon - http://www.jfree.org/jcommon/ -->
+		<jcommon.version>1.0.23</jcommon.version>
+
+		<!-- JDOM - http://www.jdom.org/ -->
+		<jdom2.version>2.0.6</jdom2.version>
+
+		<!-- Jetty - http://eclipse.org/jetty/ -->
+		<jetty.version>9.1.3.v20140225</jetty.version>
+		<jetty-annotations.version>${jetty.version}</jetty-annotations.version>
+		<jetty-ant.version>${jetty.version}</jetty-ant.version>
+		<jetty-clien.version>${jetty.version}</jetty-clien.version>
+		<jetty-continuation.version>${jetty.version}</jetty-continuation.version>
+		<jetty-deploy.version>${jetty.version}</jetty-deploy.version>
+		<jetty-http.version>${jetty.version}</jetty-http.version>
+		<jetty-http-spi.version>${jetty.version}</jetty-http-spi.version>
+		<jetty-io.version>${jetty.version}</jetty-io.version>
+		<jetty-jaas.version>${jetty.version}</jetty-jaas.version>
+		<jetty-jaspi.version>${jetty.version}</jetty-jaspi.version>
+		<jetty-jmx.version>${jetty.version}</jetty-jmx.version>
+		<jetty-jndi.version>${jetty.version}</jetty-jndi.version>
+		<jetty-jsp.version>${jetty.version}</jetty-jsp.version>
+		<jetty-jspc-maven-plugin.version>${jetty.version}</jetty-jspc-maven-plugin.version>
+		<jetty-maven-plugin.version>${jetty.version}</jetty-maven-plugin.version>
+		<jetty-monitor.version>${jetty.version}</jetty-monitor.version>
+		<jetty-nosql.version>${jetty.version}</jetty-nosql.version>
+		<jetty-plus.version>${jetty.version}</jetty-plus.version>
+		<jetty-proxy.version>${jetty.version}</jetty-proxy.version>
+		<jetty-rewrite.version>${jetty.version}</jetty-rewrite.version>
+		<jetty-runner.version>${jetty.version}</jetty-runner.version>
+		<jetty-security.version>${jetty.version}</jetty-security.version>
+		<jetty-server.version>${jetty.version}</jetty-server.version>
+		<jetty-servlet.version>${jetty.version}</jetty-servlet.version>
+		<jetty-servlets.version>${jetty.version}</jetty-servlets.version>
+		<jetty-spring.version>${jetty.version}</jetty-spring.version>
+		<jetty-start.version>${jetty.version}</jetty-start.version>
+		<jetty-util.version>${jetty.version}</jetty-util.version>
+		<jetty-util-ajax.version>${jetty.version}</jetty-util-ajax.version>
+		<jetty-webapp.version>${jetty.version}</jetty-webapp.version>
+		<jetty-xml.version>${jetty.version}</jetty-xml.version>
+
+		<!-- JFreeChart - http://www.jfree.org/jfreechart/ -->
+		<jfreechart.version>1.0.19</jfreechart.version>
+
+		<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
+		<jhdf5.version>14.12.0</jhdf5.version>
+
+		<!-- JNA - https://github.com/twall/jna -->
+		<jna.version>3.2.7</jna.version>
+
+		<!-- Joda-Time - http://www.joda.org/joda-time/ -->
+		<joda-time.version>2.3</joda-time.version>
+
+		<!-- JUnit - http://junit.org/ -->
+		<junit.version>4.11</junit.version>
+
+		<!-- Logback - http://logback.qos.ch/ -->
+		<logback.version>1.1.1</logback.version>
+		<logback-classic.version>${logback.version}</logback-classic.version>
+		<logback-core.version>${logback.version}</logback-core.version>
+
+		<!-- MigLayout - http://www.miglayout.com/ -->
+		<miglayout.version>3.7.4</miglayout.version>
+
+		<!-- Additional configuration -->
+
+		<!-- NB: Avoid platform encoding warning when copying resources. -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<!-- NB: Specify formatting of the maven.build.timestamp property. -->
+		<maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ssZ</maven.build.timestamp.format>
+
+		<!-- NB: Override argLine property for extra maven-surefire-plugin args. -->
+		<argLine />
+
+		<!-- NB: Override argLineDebug property via debug-port profile. -->
+		<argLineDebug />
+
+		<scijava.jvm.version>1.6</scijava.jvm.version>
+		<scijava.jvm.test.version>${scijava.jvm.version}</scijava.jvm.test.version>
+		<scijava.mvn.version>3.0.4</scijava.mvn.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+
+			<!-- SciJava Cache - https://github.com/scijava/scijava-cache -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-cache</artifactId>
+				<version>${scijava-cache.version}</version>
+			</dependency>
+
+			<!-- SciJava Common - https://github.com/scijava/scijava-common -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-common</artifactId>
+				<version>${scijava-common.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-common</artifactId>
+				<version>${scijava-common.version}</version>
+				<classifier>tests</classifier>
+			</dependency>
+
+			<!-- SciJava Config - https://github.com/scijava/scijava-config -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-config</artifactId>
+				<version>${scijava-config.version}</version>
+			</dependency>
+
+			<!-- SciJava Expression Parser - https://github.com/scijava/scijava-expression-parser -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-expression-parser</artifactId>
+				<version>${scijava-expression-parser.version}</version>
+			</dependency>
+
+			<!-- SciJava Common: SLF4J Logging - https://github.com/scijava/scijava-log-slf4j -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-log-slf4j</artifactId>
+				<version>${scijava-log-slf4j.version}</version>
+			</dependency>
+
+			<!-- SciJava Plugins: Commands - https://github.com/scijava/scijava-plugins-commands -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-plugins-commands</artifactId>
+				<version>${scijava-plugins-commands.version}</version>
+			</dependency>
+
+			<!-- SciJava Plugins: Platforms - https://github.com/scijava/scijava-plugins-platforms -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-plugins-platforms</artifactId>
+				<version>${scijava-plugins-platforms.version}</version>
+			</dependency>
+
+			<!-- SciJava Plugins: Text: Markdown - https://github.com/scijava/scijava-plugins-text-markdown -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-plugins-text-markdown</artifactId>
+				<version>${scijava-plugins-text-markdown.version}</version>
+			</dependency>
+
+			<!-- SciJava Plugins: Text: Plain - https://github.com/scijava/scijava-plugins-text-plain -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-plugins-text-plain</artifactId>
+				<version>${scijava-plugins-text-plain.version}</version>
+			</dependency>
+
+			<!-- SciJava UI: AWT - https://github.com/scijava/scijava-ui-awt -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-ui-awt</artifactId>
+				<version>${scijava-ui-awt.version}</version>
+			</dependency>
+
+			<!-- SciJava UI: Swing - https://github.com/scijava/scijava-ui-swing -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-ui-swing</artifactId>
+				<version>${scijava-ui-swing.version}</version>
+			</dependency>
+
+			<!-- Scripting: Beanshell - https://github.com/scijava/scripting-beanshell -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-beanshell</artifactId>
+				<version>${scripting-beanshell.version}</version>
+			</dependency>
+
+			<!-- Scripting: Clojure - https://github.com/scijava/scripting-clojure -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-clojure</artifactId>
+				<version>${scripting-clojure.version}</version>
+			</dependency>
+
+			<!-- Scripting: Groovy - https://github.com/scijava/scripting-groovy -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-groovy</artifactId>
+				<version>${scripting-groovy.version}</version>
+			</dependency>
+
+			<!-- Scripting: Java - https://github.com/scijava/scripting-java -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-java</artifactId>
+				<version>${scripting-java.version}</version>
+			</dependency>
+
+			<!-- Scripting: Javascript - https://github.com/scijava/scripting-javascript -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-javascript</artifactId>
+				<version>${scripting-javascript.version}</version>
+			</dependency>
+
+			<!-- Scripting: JRuby - https://github.com/scijava/scripting-jruby -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-jruby</artifactId>
+				<version>${scripting-jruby.version}</version>
+			</dependency>
+
+			<!-- Scripting: Jython - https://github.com/scijava/scripting-jython -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-jython</artifactId>
+				<version>${scripting-jython.version}</version>
+			</dependency>
+
+			<!-- Scripting: MATLAB - https://github.com/scijava/scripting-matlab -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-matlab</artifactId>
+				<version>${scripting-matlab.version}</version>
+			</dependency>
+
+			<!-- Scripting: Renjin - https://github.com/scijava/scripting-renjin -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-renjin</artifactId>
+				<version>${scripting-renjin.version}</version>
+			</dependency>
+
+			<!-- Scripting: Scala - https://github.com/scijava/scripting-scala -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scripting-scala</artifactId>
+				<version>${scripting-scala.version}</version>
+			</dependency>
+
+			<!-- Swing Checkbox Tree - https://github.com/scijava/swing-checkbox-tree -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>swing-checkbox-tree</artifactId>
+				<version>${swing-checkbox-tree.version}</version>
+			</dependency>
+
+			<!-- MiniMaven - https://github.com/scijava/minimaven -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>minimaven</artifactId>
+				<version>${minimaven.version}</version>
+			</dependency>
+
+			<!-- Native Lib Loader - https://github.com/scijava/native-lib-loader -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>native-lib-loader</artifactId>
+				<version>${native-lib-loader.version}</version>
+			</dependency>
+
+			<!-- Bio-Formats - https://github.com/openmicroscopy/bioformats -->
+			<dependency>
+				<groupId>ome</groupId>
+				<artifactId>bio-formats_plugins</artifactId>
+				<version>${bio-formats_plugins.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ome</groupId>
+				<artifactId>formats-api</artifactId>
+				<version>${formats-api.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>serializer</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>xalan</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>ome</groupId>
+				<artifactId>formats-bsd</artifactId>
+				<version>${formats-bsd.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>serializer</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>xalan</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>ome</groupId>
+				<artifactId>formats-common</artifactId>
+				<version>${formats-common.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>serializer</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>xalan</groupId>
+						<artifactId>xalan</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>ome</groupId>
+				<artifactId>formats-gpl</artifactId>
+				<version>${formats-gpl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ome</groupId>
+				<artifactId>ome-xml</artifactId>
+				<version>${ome-xml.version}</version>
+			</dependency>
+
+			<!-- Java 3D - https://github.com/scijava/java3d-core -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>j3dcore</artifactId>
+				<version>${java3d.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>j3dutils</artifactId>
+				<version>${java3d.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>vecmath</artifactId>
+				<version>${java3d.version}</version>
+			</dependency>
+
+			<!-- JOGL - https://jogamp.org/jogl/ -->
+			<dependency>
+				<groupId>org.jogamp.gluegen</groupId>
+				<artifactId>gluegen-rt-main</artifactId>
+				<version>${jogl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jogamp.joal</groupId>
+				<artifactId>joal-main</artifactId>
+				<version>${jogl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jogamp.jocl</groupId>
+				<artifactId>jocl-main</artifactId>
+				<version>${jogl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jogamp.jogl</groupId>
+				<artifactId>jogl-all-main</artifactId>
+				<version>${jogl.version}</version>
+			</dependency>
+
+			<!-- RSyntaxTextArea - http://bobbylight.github.io/RSyntaxTextArea/ -->
+			<dependency>
+				<groupId>com.fifesoft</groupId>
+				<artifactId>rsyntaxtextarea</artifactId>
+				<version>${rsyntaxtextarea.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fifesoft</groupId>
+				<artifactId>autocomplete</artifactId>
+				<version>${rsyntaxtextarea.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fifesoft</groupId>
+				<artifactId>languagesupport</artifactId>
+				<version>${rsyntaxtextarea.version}</version>
+			</dependency>
+
+			<!-- Gson - https://code.google.com/p/google-gson/ -->
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>${gson.version}</version>
+			</dependency>
+
+			<!-- Guava - https://github.com/google/guava -->
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>${guava.version}</version>
+			</dependency>
+
+			<!-- JAMA - http://math.nist.gov/javanumerics/jama/ -->
+			<dependency>
+				<groupId>gov.nist.math</groupId>
+				<artifactId>jama</artifactId>
+				<version>${jama.version}</version>
+			</dependency>
+
+			<!-- Javassist - http://www.javassist.org/ -->
+			<dependency>
+				<groupId>org.javassist</groupId>
+				<artifactId>javassist</artifactId>
+				<version>${javassist.version}</version>
+			</dependency>
+
+			<!-- JCommon - http://www.jfree.org/jcommon/ -->
+			<dependency>
+				<groupId>org.jfree</groupId>
+				<artifactId>jcommon</artifactId>
+				<version>${jcommon.version}</version>
+			</dependency>
+
+			<!-- JDOM - http://www.jdom.org/ -->
+			<dependency>
+				<groupId>org.jdom</groupId>
+				<artifactId>jdom2</artifactId>
+				<version>${jdom2.version}</version>
+			</dependency>
+
+			<!-- Jetty - http://eclipse.org/jetty/ -->
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-annotations</artifactId>
+				<version>${jetty-annotations.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-ant</artifactId>
+				<version>${jetty-ant.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-clien</artifactId>
+				<version>${jetty-clien.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-continuation</artifactId>
+				<version>${jetty-continuation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-deploy</artifactId>
+				<version>${jetty-deploy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-http</artifactId>
+				<version>${jetty-http.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-http-spi</artifactId>
+				<version>${jetty-http-spi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-io</artifactId>
+				<version>${jetty-io.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-jaas</artifactId>
+				<version>${jetty-jaas.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-jaspi</artifactId>
+				<version>${jetty-jaspi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-jmx</artifactId>
+				<version>${jetty-jmx.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-jndi</artifactId>
+				<version>${jetty-jndi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-jsp</artifactId>
+				<version>${jetty-jsp.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-jspc-maven-plugin</artifactId>
+				<version>${jetty-jspc-maven-plugin.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>${jetty-maven-plugin.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-monitor</artifactId>
+				<version>${jetty-monitor.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-nosql</artifactId>
+				<version>${jetty-nosql.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-plus</artifactId>
+				<version>${jetty-plus.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-proxy</artifactId>
+				<version>${jetty-proxy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-rewrite</artifactId>
+				<version>${jetty-rewrite.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-runner</artifactId>
+				<version>${jetty-runner.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-security</artifactId>
+				<version>${jetty-security.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-server</artifactId>
+				<version>${jetty-server.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-servlet</artifactId>
+				<version>${jetty-servlet.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-servlets</artifactId>
+				<version>${jetty-servlets.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-spring</artifactId>
+				<version>${jetty-spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-start</artifactId>
+				<version>${jetty-start.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-util</artifactId>
+				<version>${jetty-util.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-util-ajax</artifactId>
+				<version>${jetty-util-ajax.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-webapp</artifactId>
+				<version>${jetty-webapp.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-xml</artifactId>
+				<version>${jetty-xml.version}</version>
+			</dependency>
+
+			<!-- JFreeChart - http://www.jfree.org/jfreechart/ -->
+			<dependency>
+				<groupId>org.jfree</groupId>
+				<artifactId>jfreechart</artifactId>
+				<version>${jfreechart.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<!-- JHDF5 - https://wiki-bsse.ethz.ch/label/JHDF5/hdf5 -->
+			<dependency>
+				<groupId>cisd</groupId>
+				<artifactId>jhdf5</artifactId>
+				<version>${jhdf5.version}</version>
+			</dependency>
+
+			<!-- JNA - https://github.com/twall/jna -->
+			<dependency>
+				<groupId>net.java.dev.jna</groupId>
+				<artifactId>jna</artifactId>
+				<version>${jna.version}</version>
+			</dependency>
+
+			<!-- Joda-Time - http://www.joda.org/joda-time/ -->
+			<dependency>
+				<groupId>joda-time</groupId>
+				<artifactId>joda-time</artifactId>
+				<version>${joda-time.version}</version>
+			</dependency>
+
+			<!-- Logback - http://logback.qos.ch/ -->
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>${logback-classic.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-core</artifactId>
+				<version>${logback-core.version}</version>
+			</dependency>
+
+			<!-- MigLayout - http://www.miglayout.com/ -->
+			<dependency>
+				<groupId>com.miglayout</groupId>
+				<artifactId>miglayout</artifactId>
+				<version>${miglayout.version}</version>
+				<classifier>swing</classifier>
+			</dependency>
+
+			<!-- Test scope dependencies -->
+
+			<!-- JUnit - http://junit.org/ -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- JUnit Benchmarks - https://github.com/scijava/junit-benchmarks -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>junit-benchmarks</artifactId>
+				<version>${junit-benchmarks.version}</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<!-- It is nice for "mvn" with no arguments to do something reasonable. -->
+		<defaultGoal>install</defaultGoal>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>2.4</version>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>2.5</version>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.1</version>
+					<!-- Require the Java 6 platform. -->
+					<configuration>
+						<source>${scijava.jvm.version}</source>
+						<target>${scijava.jvm.version}</target>
+						<testSource>${scijava.jvm.test.version}</testSource>
+						<testTarget>${scijava.jvm.test.version}</testTarget>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<version>2.8</version>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>2.8.1</version>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-enforcer-plugin</artifactId>
+					<version>1.3.1</version>
+					<dependencies>
+						<dependency>
+							<groupId>org.codehaus.mojo</groupId>
+							<artifactId>extra-enforcer-rules</artifactId>
+							<version>1.0-beta-3</version>
+						</dependency>
+						<dependency>
+							<groupId>org.scijava</groupId>
+							<artifactId>scijava-maven-plugin</artifactId>
+							<version>${scijava-maven-plugin.version}</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-install-plugin</artifactId>
+					<version>2.5.1</version>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>2.5</version>
+					<!-- Always add classpath to JAR manifests. -->
+					<configuration>
+						<archive>
+							<manifest>
+								<addClasspath>true</addClasspath>
+								<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+								<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+							</manifest>
+							<manifestEntries>
+								<!-- Add SCM revision from buildnumber plugin, if available. -->
+								<Implementation-Build>${buildNumber}</Implementation-Build>
+								<!-- Add a formatted timestamp for the build. -->
+								<Implementation-Date>${maven.build.timestamp}</Implementation-Date>
+							</manifestEntries>
+						</archive>
+						<skipIfEmpty>true</skipIfEmpty>
+					</configuration>
+					<executions>
+						<execution>
+							<goals>
+								<goal>test-jar</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<!--
+					NB: The same version declaration and configuration block also appears
+					in the <reporting> section, and must be kept in sync.
+					-->
+					<version>2.9.1</version>
+					<configuration>
+						<maxmemory>1024m</maxmemory>
+						<!--
+						Workaround for javadoc bug when classes in the default
+						package access classes from non-default packages. See:
+						http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5101868
+						-->
+						<use>false</use>
+						<links>
+							<link>http://javadoc.imagej.net/Java/</link>
+							<link>http://javadoc.imagej.net/ImageJ/</link>
+							<link>http://javadoc.imagej.net/ImgLib2/</link>
+							<link>http://javadoc.imagej.net/SCIFIO/</link>
+							<link>http://javadoc.imagej.net/SciJava/</link>
+							<link>http://javadoc.imagej.net/Fiji/</link>
+							<link>http://javadoc.imagej.net/ImageJ1/</link>
+							<link>http://javadoc.imagej.net/Bio-Formats/</link>
+							<link>http://javadoc.imagej.net/MPI-CBG/</link>
+							<link>http://javadoc.imagej.net/Icy/</link>
+							<link>http://javadoc.imagej.net/KNIME/</link>
+							<link>http://javadoc.imagej.net/OMERO/</link>
+							<link>http://javadoc.imagej.net/MiToBo/</link>
+							<link>http://javadoc.imagej.net/Java3D/</link>
+							<link>http://javadoc.imagej.net/Pivot/</link>
+							<link>http://javadoc.imagej.net/Eclipse/</link>
+							<link>http://javadoc.imagej.net/Javassist/</link>
+							<link>http://javadoc.imagej.net/JHotDraw/</link>
+						</links>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-plugin-plugin</artifactId>
+					<version>3.3</version>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.5</version>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>2.6</version>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>3.4</version>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>2.3</version>
+					<!-- Build source artifact in addition to main artifact. -->
+					<executions>
+						<execution>
+							<goals>
+								<goal>jar-no-fork</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.17</version>
+					<!--
+					Make sure that:
+					A) unit tests run with sufficient RAM allocated;
+					B) unit tests do not pop a Java dock icon on OS X;
+					C) additional args can be given via argLine property;
+
+					Sometimes, one needs to pass JVM options to the JVM
+					running the unit tests, such as -verbose:class or
+					-Djava.awt.headless=true.
+
+					Unfortunately, maven-surefire does not expose a
+					command-line interface to do so, therefore let's
+					simulate it by re-using the property 'argLine' to
+					specify those options.
+					-->
+					<configuration>
+						<argLine>-Xms512m -Xmx512m -Dapple.awt.UIElement="true" ${argLine} ${argLineDebug}</argLine>
+					</configuration>
+				</plugin>
+
+				<!--
+				Build Helper Maven plugin -
+				http://www.mojohaus.org/build-helper-maven-plugin/
+				-->
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>build-helper-maven-plugin</artifactId>
+					<version>1.9.1</version>
+					<!--
+					Create a version string which conforms to Java packaging requirements.
+					https://docs.oracle.com/javase/8/docs/technotes/guides/versioning/spec/versioning2.html#wp89936
+
+					In particular, the standard Java packaging tool will fail unless the
+					version string conforms to Java packaging rules. Further reading:
+					https://docs.oracle.com/javase/8/docs/technotes/guides/deploy/packaging.html#
+					-->
+					<executions>
+						<execution>
+							<id>sanitize-version</id>
+							<goals>
+								<goal>regex-property</goal>
+							</goals>
+							<configuration>
+								<name>sanitizedVersion</name>
+								<value>${project.version}</value>
+								<regex>^([0-9]+)\.([0-9]+)\.([0-9]+).*$</regex>
+								<replacement>$1.$2.$3</replacement>
+								<failIfNoMatch>false</failIfNoMatch>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+
+				<!--
+				Build Number Maven plugin -
+				http://www.mojohaus.org/buildnumber-maven-plugin/
+				This plugin embeds a build number in the JAR manifest.
+				-->
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>buildnumber-maven-plugin</artifactId>
+					<version>1.3</version>
+					<!-- Record SCM revision in manifest. -->
+					<executions>
+						<execution>
+							<phase>validate</phase>
+							<goals>
+								<goal>create</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<getRevisionOnlyOnce>true</getRevisionOnlyOnce>
+						<revisionOnScmFailure>UNKNOWN</revisionOnScmFailure>
+					</configuration>
+				</plugin>
+
+				<!-- Exec Maven plugin -
+				http://www.mojohaus.org/exec-maven-plugin/
+				This plugin launches a Java class using Maven. -->
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>exec-maven-plugin</artifactId>
+					<version>1.3.1</version>
+				</plugin>
+
+				<!--
+				License Maven plugin -
+				http://www.mojohaus.org/license-maven-plugin/
+				This plugin manages project licenses and source file headers.
+				-->
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>license-maven-plugin</artifactId>
+					<version>1.6</version>
+					<configuration>
+						<projectName>${project.description}</projectName>
+						<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
+						<canUpdateDescription>true</canUpdateDescription>
+						<canUpdateCopyright>true</canUpdateCopyright>
+						<extraExtensions>
+							<bsh>java</bsh>
+							<config>properties</config>
+							<ijm>java</ijm>
+						</extraExtensions>
+					</configuration>
+				</plugin>
+
+				<!--
+				Versions Maven plugin -
+				http://www.mojohaus.org/versions-maven-plugin/
+				Check for new plugin versions using
+				"mvn versions:display-plugin-updates"
+				-->
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>versions-maven-plugin</artifactId>
+					<version>2.1</version>
+				</plugin>
+
+				<!--
+				Maven Graph Plugin -
+				http://mvnplugins.fusesource.org/maven/1.10/maven-graph-plugin/
+				Generate a dependency graph using "mvn graph:reactor"
+				-->
+				<plugin>
+					<groupId>org.fusesource.mvnplugins</groupId>
+					<artifactId>maven-graph-plugin</artifactId>
+					<version>1.30</version>
+					<configuration>
+						<hideScopes>provided,runtime,system,test</hideScopes>
+						<hideTransitive>true</hideTransitive>
+						<label>Dependency Graph for ${project.name}</label>
+						<target>${project.build.directory}/dependency-graph.dot</target>
+					</configuration>
+				</plugin>
+
+				<!--
+				JavaFX Maven plugin -
+				https://github.com/javafx-maven-plugin/javafx-maven-plugin
+				Generate platform-specific application bundles using "mvn jfx:native"
+				-->
+				<plugin>
+					<groupId>com.zenjava</groupId>
+					<artifactId>javafx-maven-plugin</artifactId>
+					<version>8.1.2</version>
+					<configuration>
+						<appName>${project.name}</appName>
+						<identifier>${project.name}</identifier>
+						<jfxMainAppJarName>${project.name}.jar</jfxMainAppJarName>
+						<mainClass>${main-class}</mainClass>
+						<nativeReleaseVersion>${sanitizedVersion}</nativeReleaseVersion>
+						<verbose>true</verbose>
+					</configuration>
+				</plugin>
+
+				<!-- NAR Maven plugin - https://github.com/maven-nar/nar-maven-plugin -->
+				<plugin>
+					<groupId>com.github.maven-nar</groupId>
+					<artifactId>nar-maven-plugin</artifactId>
+					<version>${nar-maven-plugin.version}</version>
+				</plugin>
+
+				<!-- SciJava Maven plugin - https://github.com/scijava/scijava-maven-plugin -->
+				<plugin>
+					<groupId>org.scijava</groupId>
+					<artifactId>scijava-maven-plugin</artifactId>
+					<version>${scijava-maven-plugin.version}</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<!-- Create -sources.jar when building. -->
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+			</plugin>
+
+			<!-- Check desired rules during maven lifecycle. -->
+			<plugin>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>enforce-rules</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<rules>
+						<banClasses implementation="org.scijava.maven.plugin.enforcer.BanDuplicateClasses">
+							<message>No Duplicate Classes Allowed! For duplicate transitive dependencies, add dependency exclusions. For duplications between direct dependencies, resolve or add ignored classes to this rule's configuration.</message>
+							<dependencies>
+								<!-- JRuby/JRuby clashes -->
+								<dependency>
+									<artifactId>jcodings</artifactId>
+									<ignoreClasses>
+										<ignoreClass>org/jcodings/*</ignoreClass>
+									</ignoreClasses>
+								</dependency>
+								<dependency>
+									<artifactId>jnr-constants</artifactId>
+									<ignoreClasses>
+										<ignoreClass>com/kenai/constantine/*</ignoreClass>
+										<ignoreClass>jnr/constants/*</ignoreClass>
+									</ignoreClasses>
+								</dependency>
+								<dependency>
+									<artifactId>jnr-ffi</artifactId>
+									<ignoreClasses>
+										<ignoreClass>jnr/ffi/*</ignoreClass>
+									</ignoreClasses>
+								</dependency>
+
+								<!-- Fiji dependency clashes -->
+								<dependency>
+									<artifactId>joda-time</artifactId>
+									<ignoreClasses>
+										<ignoreClass>*</ignoreClass>
+									</ignoreClasses>
+								</dependency>
+								<dependency>
+									<artifactId>slf4j-log4j12</artifactId>
+									<ignoreClasses>
+										<ignoreClass>org/slf4j/impl/*</ignoreClass>
+									</ignoreClasses>
+								</dependency>
+								<dependency>
+									<groupId>batik</groupId>
+									<artifactId>batik</artifactId>
+									<ignoreClasses>
+										<ignoreClass>*</ignoreClass>
+									</ignoreClasses>
+								</dependency>
+								<dependency>
+									<groupId>jama</groupId>
+									<artifactId>jama</artifactId>
+									<ignoreClasses>
+										<ignoreClass>Jama/*</ignoreClass>
+									</ignoreClasses>
+								</dependency>
+								<dependency>
+									<groupId>com.sun</groupId>
+									<artifactId>tools</artifactId>
+									<ignoreClasses>
+										<ignoreClass>*</ignoreClass>
+									</ignoreClasses>
+								</dependency>
+							</dependencies>
+							<findAllDuplicates>true</findAllDuplicates>
+						</banClasses>
+						<requireMavenVersion>
+							<version>${scijava.mvn.version}</version>
+						</requireMavenVersion>
+						<requirePluginVersions>
+							<message>Plugins need to be versioned!</message>
+						</requirePluginVersions>
+						<requirePrerequisites />
+						<requireReproducibleBuilds implementation="org.scijava.maven.plugin.RequireReproducibleBuilds">
+							<groupIds>org.scijava</groupIds>
+						</requireReproducibleBuilds>
+						<enforceBytecodeVersion>
+							<maxJdkVersion>${scijava.jvm.version}</maxJdkVersion>
+							<excludes>
+								<exclude>com.headius:invokebinder</exclude>
+								<exclude>com.sun:tools</exclude>
+							</excludes>
+						</enforceBytecodeVersion>
+						<banCircularDependencies />
+					</rules>
+				</configuration>
+			</plugin>
+
+			<!-- Generate a package-friendly version property. -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+			</plugin>
+
+			<!-- Add Implementation-Build entry to JAR manifest. -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>buildnumber-maven-plugin</artifactId>
+			</plugin>
+
+			<!-- Enable 'graph:' goals. -->
+			<plugin>
+				<groupId>org.fusesource.mvnplugins</groupId>
+				<artifactId>maven-graph-plugin</artifactId>
+			</plugin>
+
+			<!-- Enable 'jfx:' goals. -->
+			<plugin>
+				<groupId>com.zenjava</groupId>
+				<artifactId>javafx-maven-plugin</artifactId>
+			</plugin>
+
+			<!-- Enable 'nar:' goals. -->
+			<plugin>
+				<groupId>com.github.maven-nar</groupId>
+				<artifactId>nar-maven-plugin</artifactId>
+			</plugin>
+
+			<!-- Enable 'scijava:' goals. -->
+			<plugin>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+		<!--
+		We use wagon-webdav-jackrabbit 1.0 for deploys, since it is
+		compatible with both Maven 2.2.x and Maven 3.0.x cross-platform.
+		-->
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-webdav-jackrabbit</artifactId>
+				<version>1.0</version>
+			</extension>
+		</extensions>
+	</build>
+
+	<reporting>
+		<plugins>
+			<!-- Generate javadocs as part of site generation. -->
+			<plugin>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<!--
+				NB: The following version declaration and configuration block are fully
+				replicated from the pluginManagement section. This is necessary because
+				many versions of maven-site-plugin (including 3.3) do not respect the
+				pluginManagement values.
+				See: https://issues.apache.org/jira/browse/MSITE-443
+				While the maven-site-plugin documentation states that it "search[es]
+				the same groupId/artifactId in the build.pluginManagement.plugins
+				section", this claim unfortunately does not seem to reflect reality.
+				-->
+				<version>2.9.1</version>
+				<configuration>
+					<maxmemory>1024m</maxmemory>
+					<!--
+					Workaround for javadoc bug when classes in the default
+					package access classes from non-default packages.
+					See: http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5101868
+					-->
+					<use>false</use>
+					<links>
+						<link>http://javadoc.imagej.net/Java/</link>
+						<link>http://javadoc.imagej.net/ImageJ/</link>
+						<link>http://javadoc.imagej.net/ImgLib2/</link>
+						<link>http://javadoc.imagej.net/SCIFIO/</link>
+						<link>http://javadoc.imagej.net/SciJava/</link>
+						<link>http://javadoc.imagej.net/Fiji/</link>
+						<link>http://javadoc.imagej.net/ImageJ1/</link>
+						<link>http://javadoc.imagej.net/Bio-Formats/</link>
+						<link>http://javadoc.imagej.net/MPI-CBG/</link>
+						<link>http://javadoc.imagej.net/Icy/</link>
+						<link>http://javadoc.imagej.net/KNIME/</link>
+						<link>http://javadoc.imagej.net/OMERO/</link>
+						<link>http://javadoc.imagej.net/MiToBo/</link>
+						<link>http://javadoc.imagej.net/Java3D/</link>
+						<link>http://javadoc.imagej.net/Pivot/</link>
+						<link>http://javadoc.imagej.net/Eclipse/</link>
+						<link>http://javadoc.imagej.net/Javassist/</link>
+						<link>http://javadoc.imagej.net/JHotDraw/</link>
+					</links>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+
+	<profiles>
+		<!--
+		The exec profile provides an easy way to execute a defined ${main-class}
+		for manual testing purposes. It is declared in a profile to avoid clashing
+		with other potential uses of exec-maven-plugin during the main build.
+		-->
+		<profile>
+			<id>exec</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>${main-class}</argument>
+							</arguments>
+						</configuration>
+						<executions>
+							<execution>
+								<phase>test</phase>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<!--
+		The dist profile augments the package phase to produce self-contained
+		Java application bundles, using the standard Java packaging mechanism.
+		Exactly which bundles are produced depends on the underlying platform
+		configuration. But this configuration will always produce two sets of
+		bundles: one with JRE included (in target/jfx/native) and
+		another without a bundled JRE (in target/jfx/native-nojre).
+		-->
+		<profile>
+			<id>dist</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.zenjava</groupId>
+						<artifactId>javafx-maven-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>dist-with-jre</id>
+								<phase>package</phase>
+								<goals>
+									<goal>native</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>dist-no-jre</id>
+								<phase>package</phase>
+								<goals>
+									<goal>native</goal>
+								</goals>
+								<configuration>
+									<bundleArguments>
+										<runtime />
+									</bundleArguments>
+									<nativeOutputDir>${project.build.directory}/jfx/native-nojre</nativeOutputDir>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<!--
+		The jdb profile launches the defined ${main-class} in the jdb debugger.
+		Launch it using: mvn -Pjdb exec:exec
+		-->
+		<profile>
+			<id>jdb</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<configuration>
+							<executable>jdb</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>${main-class}</argument>
+							</arguments>
+						</configuration>
+						<executions>
+							<execution>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<!--
+		These developer profiles make it easy to pin to SNAPSHOT versions.
+		Add an empty dev.<organization> file in your ~/.scijava directory, and
+		dependencies will automatically update! You may also need to refresh
+		your IDE; e.g., in Eclipse: right click, Maven > Update Project...
+		-->
+		<profile>
+			<id>dev.ome</id>
+			<activation>
+				<file>
+					<exists>${user.home}/.scijava/dev.ome</exists>
+				</file>
+			</activation>
+			<properties>
+				<bio-formats.version>LATEST</bio-formats.version>
+			</properties>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+		<profile>
+			<id>dev.scijava</id>
+			<activation>
+				<file>
+					<exists>${user.home}/.scijava/dev.scijava</exists>
+				</file>
+			</activation>
+			<properties>
+				<minimaven.version>LATEST</minimaven.version>
+				<native-lib-loader.version>LATEST</native-lib-loader.version>
+				<scijava-cache.version>LATEST</scijava-cache.version>
+				<scijava-config.version>LATEST</scijava-config.version>
+				<scijava-expression-parser.version>LATEST</scijava-expression-parser.version>
+				<scijava-log-slf4j.version>LATEST</scijava-log-slf4j.version>
+				<scijava-plugins-commands.version>LATEST</scijava-plugins-commands.version>
+				<scijava-plugins-platforms.version>LATEST</scijava-plugins-platforms.version>
+				<scijava-plugins-text-markdown.version>LATEST</scijava-plugins-text-markdown.version>
+				<scijava-plugins-text-plain.version>LATEST</scijava-plugins-text-plain.version>
+				<scijava-ui-awt.version>LATEST</scijava-ui-awt.version>
+				<scijava-ui-swing.version>LATEST</scijava-ui-swing.version>
+				<scripting-beanshell.version>LATEST</scripting-beanshell.version>
+				<scripting-clojure.version>LATEST</scripting-clojure.version>
+				<scripting-groovy.version>LATEST</scripting-groovy.version>
+				<scripting-java.version>LATEST</scripting-java.version>
+				<scripting-javascript.version>LATEST</scripting-javascript.version>
+				<scripting-jruby.version>LATEST</scripting-jruby.version>
+				<scripting-jython.version>LATEST</scripting-jython.version>
+				<scripting-matlab.version>LATEST</scripting-matlab.version>
+				<scripting-renjin.version>LATEST</scripting-renjin.version>
+				<scripting-scala.version>LATEST</scripting-scala.version>
+				<swing-checkbox-tree.version>LATEST</swing-checkbox-tree.version>
+			</properties>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+
+		<!--
+		For debugging. E.g. for Eclipse, pass -DdebugPort=8000,suspend=y
+		and add a Debug Configuration for a Remote Java Application.
+		-->
+		<profile>
+			<id>debug-port</id>
+			<activation>
+				<property><name>debugPort</name></property>
+			</activation>
+			<properties>
+				<argLineDebug>-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=localhost:${debugPort}</argLineDebug>
+			</properties>
+		</profile>
+
+		<!--
+		Run integration tests when "-Prun-its" is passed.
+		This works using the maven-invoker-plugin.
+		-->
+		<profile>
+			<id>run-its</id>
+			<build>
+				<defaultGoal>integration-test</defaultGoal>
+				<plugins>
+					<plugin>
+						<artifactId>maven-invoker-plugin</artifactId>
+						<version>1.9</version>
+						<configuration>
+							<debug>${invoker.debug}</debug>
+							<showErrors>true</showErrors>
+							<streamLogs>true</streamLogs>
+							<projectsDirectory>src/it</projectsDirectory>
+							<cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
+							<pomIncludes>
+								<pomInclude>*/pom.xml</pomInclude>
+							</pomIncludes>
+							<settingsFile>src/it/settings.xml</settingsFile>
+							<localRepositoryPath>${project.build.directory}/local-repo</localRepositoryPath>
+							<preBuildHookScript>setup.bsh</preBuildHookScript>
+							<postBuildHookScript>verify.bsh</postBuildHookScript>
+						</configuration>
+						<executions>
+							<execution>
+								<id>integration-test</id>
+								<goals>
+									<goal>install</goal>
+									<goal>run</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<!-- This profile enables deployment to the ImageJ Maven repository. -->
+		<profile>
+			<id>deploy-to-imagej</id>
+			<distributionManagement>
+				<repository>
+					<id>imagej.releases</id>
+					<name>ImageJ Releases Repository</name>
+					<url>dav:http://maven.imagej.net/content/repositories/releases</url>
+				</repository>
+				<snapshotRepository>
+					<id>imagej.snapshots</id>
+					<name>ImageJ Snapshots Repository</name>
+					<url>dav:http://maven.imagej.net/content/repositories/snapshots</url>
+				</snapshotRepository>
+			</distributionManagement>
+		</profile>
+
+		<!-- This profile enables releasing to the OSS Sonatype repository. -->
+		<profile>
+			<id>sonatype-oss-release</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.sonatype.plugins</groupId>
+						<artifactId>nexus-staging-maven-plugin</artifactId>
+						<version>1.6.2</version>
+						<extensions>true</extensions>
+						<configuration>
+							<serverId>sonatype-nexus-releases</serverId>
+							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+							<autoReleaseAfterClose>true</autoReleaseAfterClose>
+							<stagingProgressTimeoutMinutes>15</stagingProgressTimeoutMinutes>
+							<stagingProgressPauseDurationSeconds>12</stagingProgressPauseDurationSeconds>
+							<!--
+							By having no explicit stagingProfileId, we use
+							Staging V2 in "auto" mode, profile will be
+							matched server side
+							-->
+						</configuration>
+					</plugin>
+					<plugin>
+						<inherited>true</inherited>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-deploy-plugin</artifactId>
+						<configuration>
+							<skip>true</skip>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>1.5</version>
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<useAgent>true</useAgent>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-source-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>attach-sources</id>
+								<goals>
+									<goal>jar-no-fork</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>attach-javadocs</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+
+			<repositories>
+				<repository>
+					<id>sonatype-nexus-snapshots</id>
+					<name>Sonatype Nexus Snapshots</name>
+					<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+				<repository>
+					<id>sonatype-nexus-releases</id>
+					<name>Sonatype Nexus Releases</name>
+					<url>https://oss.sonatype.org/content/repositories/releases</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</repository>
+			</repositories>
+
+			<distributionManagement>
+				<snapshotRepository>
+					<id>sonatype-nexus-snapshots</id>
+					<name>Sonatype Nexus Snapshots</name>
+					<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+				</snapshotRepository>
+				<repository>
+					<id>sonatype-nexus-staging</id>
+					<name>Nexus Release Repository</name>
+					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+				</repository>
+			</distributionManagement>
+		</profile>
+
+		<!-- This profile helps Eclipse parse SciJava annotations of imported projects. -->
+		<profile>
+			<id>only-eclipse</id>
+			<activation>
+				<property>
+					<name>m2e.version</name>
+				</property>
+			</activation>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<!--
+						Configure the Eclipse m2e plugin to support needed plugins.
+						-->
+						<plugin>
+							<groupId>org.eclipse.m2e</groupId>
+							<artifactId>lifecycle-mapping</artifactId>
+							<version>1.0.0</version>
+							<configuration>
+								<lifecycleMappingMetadata>
+									<pluginExecutions>
+										<pluginExecution>
+											<pluginExecutionFilter>
+												<groupId>org.apache.maven.plugins</groupId>
+												<artifactId>maven-enforcer-plugin</artifactId>
+												<versionRange>[1.0.0,)</versionRange>
+												<goals>
+													<goal>enforce</goal>
+												</goals>
+											</pluginExecutionFilter>
+											<action>
+												<execute>
+													<runOnConfiguration>true</runOnConfiguration>
+												</execute>
+											</action>
+										</pluginExecution>
+										<pluginExecution>
+											<pluginExecutionFilter>
+												<groupId>org.apache.maven.plugins</groupId>
+												<artifactId>maven-jar-plugin</artifactId>
+												<versionRange>[2.0,)</versionRange>
+												<goals>
+													<goal>jar</goal>
+												</goals>
+											</pluginExecutionFilter>
+											<action>
+												<execute>
+													<runOnIncremental>true</runOnIncremental>
+													<runOnConfiguration>true</runOnConfiguration>
+												</execute>
+											</action>
+										</pluginExecution>
+										<pluginExecution>
+											<pluginExecutionFilter>
+												<groupId>org.codehaus.mojo</groupId>
+												<artifactId>build-helper-maven-plugin</artifactId>
+												<versionRange>[1.0.0,)</versionRange>
+												<goals>
+													<goal>regex-property</goal>
+												</goals>
+											</pluginExecutionFilter>
+											<action>
+												<execute>
+													<runOnIncremental>true</runOnIncremental>
+													<runOnConfiguration>true</runOnConfiguration>
+												</execute>
+											</action>
+										</pluginExecution>
+										<pluginExecution>
+											<pluginExecutionFilter>
+												<groupId>org.codehaus.mojo</groupId>
+												<artifactId>build-helper-maven-plugin</artifactId>
+												<versionRange>[1.0,)</versionRange>
+												<goals>
+													<goal>add-source</goal>
+													<goal>add-test-source</goal>
+												</goals>
+											</pluginExecutionFilter>
+											<action>
+												<execute>
+													<runOnIncremental>false</runOnIncremental>
+													<runOnConfiguration>true</runOnConfiguration>
+												</execute>
+											</action>
+										</pluginExecution>
+										<pluginExecution>
+											<pluginExecutionFilter>
+												<groupId>org.codehaus.mojo</groupId>
+												<artifactId>buildnumber-maven-plugin</artifactId>
+												<versionRange>[1.0,)</versionRange>
+												<goals>
+													<goal>create</goal>
+												</goals>
+											</pluginExecutionFilter>
+											<action>
+												<execute>
+													<runOnIncremental>true</runOnIncremental>
+													<runOnConfiguration>true</runOnConfiguration>
+												</execute>
+											</action>
+										</pluginExecution>
+										<pluginExecution>
+											<pluginExecutionFilter>
+												<groupId>org.codehaus.mojo</groupId>
+												<artifactId>exec-maven-plugin</artifactId>
+												<versionRange>[1.0,)</versionRange>
+												<goals>
+													<goal>java</goal>
+													<goal>exec</goal>
+												</goals>
+											</pluginExecutionFilter>
+											<action>
+												<ignore />
+											</action>
+										</pluginExecution>
+									</pluginExecutions>
+								</lifecycleMappingMetadata>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+				<plugins>
+					<!--
+					HACK - Tell Eclipse to use the TEST source and target JVM version.
+					This is necessary because the JVM version used for tests may be newer
+					than that used for the main artifact. Maven is OK with this, but
+					Eclipse wants only a single JVM version for both main and tests.
+					See: https://gist.github.com/aslakknutsen/9648594#gistcomment-1588906
+					-->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<configuration>
+							<source>${scijava.jvm.test.version}</source>
+							<target>${scijava.jvm.test.version}</target>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.scijava</groupId>
+						<artifactId>scijava-maven-plugin</artifactId>
+						<executions>
+							<execution>
+								<goals>
+									<goal>eclipse-helper</goal>
+								</goals>
+								<phase>process-classes</phase>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<!--
+		This profile aggregates javadocs for the project
+		and its direct dependencies.
+		-->
+		<profile>
+			<id>build-javadoc</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>attach-javadocs</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<!-- Include direct dependencies -->
+							<includeDependencySources>true</includeDependencySources>
+
+							<!-- Remove the "${project.version} API" from the default title -->
+							<doctitle>${project.name}</doctitle>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

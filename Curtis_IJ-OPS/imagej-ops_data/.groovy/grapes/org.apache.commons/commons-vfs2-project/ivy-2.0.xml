@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.commons"
+		module="commons-vfs2-project"
+		revision="2.0"
+		status="release"
+		publication="20160120071547"
+	>
+		<description homepage="http://commons.apache.org/vfs/">
+		VFS is a Virtual File System library.
+		</description>
+		<m:dependency.management__ant__ant__version>1.6.2</m:dependency.management__ant__ant__version>
+		<m:dependency.management__com.jcraft__jsch__version>0.1.42</m:dependency.management__com.jcraft__jsch__version>
+		<m:dependency.management__commons-collections__commons-collections__version>3.1</m:dependency.management__commons-collections__commons-collections__version>
+		<m:properties__vfs.parent.dir>${basedir}</m:properties__vfs.parent.dir>
+		<m:dependency.management__org.apache.commons__commons-compress__version>1.1</m:dependency.management__org.apache.commons__commons-compress__version>
+		<m:dependency.management__commons-logging__commons-logging__version>1.1.1</m:dependency.management__commons-logging__commons-logging__version>
+		<m:dependency.management__org.apache.commons__commons-vfs-sandbox__version>2.0</m:dependency.management__org.apache.commons__commons-vfs-sandbox__version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:properties__commons.encoding>iso-8859-1</m:properties__commons.encoding>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__commons.osgi.export>org.apache.commons.*;version=${project.version};-noimport:=true</m:properties__commons.osgi.export>
+		<m:properties__commons.release.version>2.0</m:properties__commons.release.version>
+		<m:properties__commons.manifestfile>target/osgi/MANIFEST.MF</m:properties__commons.manifestfile>
+		<m:properties__commons.osgi.symbolicName>org.apache.commons.${commons.componentid}</m:properties__commons.osgi.symbolicName>
+		<m:properties__maven.compile.source>1.5</m:properties__maven.compile.source>
+		<m:properties__commons.javadoc.java.link>http://download.oracle.com/javase/6/docs/api/</m:properties__commons.javadoc.java.link>
+		<m:properties__commons.rc.version>RC1</m:properties__commons.rc.version>
+		<m:properties__commons.docEncoding>${commons.encoding}</m:properties__commons.docEncoding>
+		<m:dependency.management__junit__junit__version>4.8.2</m:dependency.management__junit__junit__version>
+		<m:properties__maven.compile.target>1.5</m:properties__maven.compile.target>
+		<m:dependency.management__org.apache.commons__commons-vfs2__version>2.0</m:dependency.management__org.apache.commons__commons-vfs2__version>
+		<m:properties__organization.logo>http://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
+		<m:properties__commons.compiler.fork>false</m:properties__commons.compiler.fork>
+		<m:dependency.management__commons-httpclient__commons-httpclient__version>3.1</m:dependency.management__commons-httpclient__commons-httpclient__version>
+		<m:properties__commons.jira.pid>12310495</m:properties__commons.jira.pid>
+		<m:dependency.management__commons-net__commons-net__version>2.2</m:dependency.management__commons-net__commons-net__version>
+		<m:dependency.management__org.apache.commons__commons-vfs2__scope>test</m:dependency.management__org.apache.commons__commons-vfs2__scope>
+		<m:dependency.management__org.apache.jackrabbit__jackrabbit-webdav__version>1.5.2</m:dependency.management__org.apache.jackrabbit__jackrabbit-webdav__version>
+		<m:dependency.management__jcifs__jcifs__version>0.8.3</m:dependency.management__jcifs__jcifs__version>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|null__maven-compiler-plugin__null|null__maven-surefire-plugin__null|null__maven-jar-plugin__null|org.apache.felix__maven-bundle-plugin__null|null__maven-idea-plugin__null|org.apache.maven.plugins__maven-antrun-plugin__null|org.apache.commons__commons-build-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|null__maven-compiler-plugin__null|null__maven-surefire-plugin__null|null__maven-jar-plugin__null|org.apache.felix__maven-bundle-plugin__null|null__maven-idea-plugin__null|org.apache.maven.plugins__maven-antrun-plugin__null|org.apache.commons__commons-build-plugin__null|org.apache.maven.plugins__maven-antrun-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.apache.commons__commons-build-plugin__null</m:maven.plugins>
+		<m:properties__commons.jira.id>VFS</m:properties__commons.jira.id>
+		<m:properties__commons.javadoc.version>2.7</m:properties__commons.javadoc.version>
+		<m:dependency.management__org.apache.commons__commons-vfs-examples__version>2.0</m:dependency.management__org.apache.commons__commons-vfs-examples__version>
+		<m:properties__commons.release.2.binary.suffix>-bin</m:properties__commons.release.2.binary.suffix>
+		<m:properties__commons.release.2.name>${project.artifactId}-${commons.release.2.version}</m:properties__commons.release.2.name>
+		<m:dependency.management__org.jdom__jdom__version>1.1</m:dependency.management__org.jdom__jdom__version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__commons.deployment.protocol>scp</m:properties__commons.deployment.protocol>
+		<m:properties__commons.componentid>vfs</m:properties__commons.componentid>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__commons.osgi.import>*</m:properties__commons.osgi.import>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__commons.release.name>commons-vfs-${commons.release.version}</m:properties__commons.release.name>
+		<m:properties__commons.surefire.version>2.8.1</m:properties__commons.surefire.version>
+		<m:dependency.management__javax.mail__mail__version>1.4</m:dependency.management__javax.mail__mail__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="org.apache.maven.scm" name="maven-scm-api" rev="1.4" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.maven.scm" name="maven-scm-provider-svnexe" rev="1.4" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<override org="org.apache.commons" module="commons-vfs2" matcher="exact" rev="2.0"/>
+		<override org="org.apache.commons" module="commons-vfs2" matcher="exact" rev="2.0"/>
+		<override org="org.apache.commons" module="commons-vfs-sandbox" matcher="exact" rev="2.0"/>
+		<override org="org.apache.commons" module="commons-vfs-examples" matcher="exact" rev="2.0"/>
+		<override org="commons-logging" module="commons-logging" matcher="exact" rev="1.1.1"/>
+		<override org="commons-net" module="commons-net" matcher="exact" rev="2.2"/>
+		<override org="commons-collections" module="commons-collections" matcher="exact" rev="3.1"/>
+		<override org="commons-httpclient" module="commons-httpclient" matcher="exact" rev="3.1"/>
+		<override org="org.apache.commons" module="commons-compress" matcher="exact" rev="1.1"/>
+		<override org="org.apache.jackrabbit" module="jackrabbit-webdav" matcher="exact" rev="1.5.2"/>
+		<override org="ant" module="ant" matcher="exact" rev="1.6.2"/>
+		<override org="org.jdom" module="jdom" matcher="exact" rev="1.1"/>
+		<override org="com.jcraft" module="jsch" matcher="exact" rev="0.1.42"/>
+		<override org="jcifs" module="jcifs" matcher="exact" rev="0.8.3"/>
+		<override org="javax.mail" module="mail" matcher="exact" rev="1.4"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.8.2"/>
+	</dependencies>
+</ivy-module>

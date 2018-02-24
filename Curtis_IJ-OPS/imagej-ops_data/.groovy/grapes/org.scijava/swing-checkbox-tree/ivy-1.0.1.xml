@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.scijava"
+		module="swing-checkbox-tree"
+		revision="1.0.1"
+		status="release"
+		publication="20151119124559"
+	>
+		<license name="Simplified BSD License" />
+		<description homepage="http://scijava.org/">
+		A set of components for use with Swing JTrees that provide support for JCheckBox nodes.
+		</description>
+		<m:properties__jetty-start.version>${jetty.version}</m:properties__jetty-start.version>
+		<m:properties__ome-xml.version>${bio-formats.version}</m:properties__ome-xml.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jndi__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-jndi__version>
+		<m:dependency.management__org.scijava__junit-benchmarks__scope>test</m:dependency.management__org.scijava__junit-benchmarks__scope>
+		<m:properties__junit.version>4.11</m:properties__junit.version>
+		<m:properties__formats-common.version>${bio-formats.version}</m:properties__formats-common.version>
+		<m:dependency.management__ch.qos.logback__logback-classic__version>1.1.1</m:dependency.management__ch.qos.logback__logback-classic__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-clien__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-clien__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-spring__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-spring__version>
+		<m:dependency.management__org.scijava__swing-checkbox-tree__version>1.0.1</m:dependency.management__org.scijava__swing-checkbox-tree__version>
+		<m:dependency.management__ome__bio-formats_plugins__version>5.1.5</m:dependency.management__ome__bio-formats_plugins__version>
+		<m:properties__scijava-maven-plugin.version>0.5.0</m:properties__scijava-maven-plugin.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-io__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-io__version>
+		<m:properties__jetty-plus.version>${jetty.version}</m:properties__jetty-plus.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jaas__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-jaas__version>
+		<m:dependency.management__com.fifesoft__rsyntaxtextarea__version>2.5.8</m:dependency.management__com.fifesoft__rsyntaxtextarea__version>
+		<m:dependency.management__org.scijava__scijava-plugins-text-plain__version>0.1.2</m:dependency.management__org.scijava__scijava-plugins-text-plain__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-annotations__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-annotations__version>
+		<m:properties__miglayout.version>3.7.4</m:properties__miglayout.version>
+		<m:properties__jetty-maven-plugin.version>${jetty.version}</m:properties__jetty-maven-plugin.version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:properties__bio-formats.version>5.1.5</m:properties__bio-formats.version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__jogl.version>2.3.2</m:properties__jogl.version>
+		<m:dependency.management__org.jfree__jcommon__version>1.0.23</m:dependency.management__org.jfree__jcommon__version>
+		<m:properties__jetty-util.version>${jetty.version}</m:properties__jetty-util.version>
+		<m:dependency.management__org.scijava__scripting-r__version>0.1.0</m:dependency.management__org.scijava__scripting-r__version>
+		<m:properties__scripting-r.version>0.1.0</m:properties__scripting-r.version>
+		<m:dependency.management__org.javassist__javassist__version>3.19.0-GA</m:dependency.management__org.javassist__javassist__version>
+		<m:dependency.management__com.miglayout__miglayout__version>3.7.4</m:dependency.management__com.miglayout__miglayout__version>
+		<m:dependency.management__org.scijava__scripting-jruby__version>0.2.3</m:dependency.management__org.scijava__scripting-jruby__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-server__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-server__version>
+		<m:properties__formats-gpl.version>${bio-formats.version}</m:properties__formats-gpl.version>
+		<m:properties__jetty-jaspi.version>${jetty.version}</m:properties__jetty-jaspi.version>
+		<m:properties__scijava-plugins-text-plain.version>0.1.2</m:properties__scijava-plugins-text-plain.version>
+		<m:properties__scijava-ui-awt.version>0.1.4</m:properties__scijava-ui-awt.version>
+		<m:dependency.management__org.jogamp.jocl__jocl-main__version>2.3.2</m:dependency.management__org.jogamp.jocl__jocl-main__version>
+		<m:properties__jetty-runner.version>${jetty.version}</m:properties__jetty-runner.version>
+		<m:dependency.management__ome__formats-bsd__exclusion_1>xalan__serializer</m:dependency.management__ome__formats-bsd__exclusion_1>
+		<m:dependency.management__com.google.code.gson__gson__version>2.2.4</m:dependency.management__com.google.code.gson__gson__version>
+		<m:properties__scijava-config.version>2.0.1</m:properties__scijava-config.version>
+		<m:dependency.management__org.scijava__scripting-scala__version>0.1.0</m:dependency.management__org.scijava__scripting-scala__version>
+		<m:dependency.management__org.scijava__scijava-plugins-commands__version>0.2.1</m:dependency.management__org.scijava__scijava-plugins-commands__version>
+		<m:dependency.management__ome__formats-bsd__exclusion_0>xalan__xalan</m:dependency.management__ome__formats-bsd__exclusion_0>
+		<m:dependency.management__org.scijava__j3dutils__version>1.6.0-scijava-2</m:dependency.management__org.scijava__j3dutils__version>
+		<m:dependency.management__org.jogamp.gluegen__gluegen-rt-main__version>2.3.2</m:dependency.management__org.jogamp.gluegen__gluegen-rt-main__version>
+		<m:dependency.management__junit__junit__version>4.11</m:dependency.management__junit__junit__version>
+		<m:dependency.management__org.scijava__scripting-jython__version>0.2.3</m:dependency.management__org.scijava__scripting-jython__version>
+		<m:dependency.management__org.jogamp.jogl__jogl-all-main__version>2.3.2</m:dependency.management__org.jogamp.jogl__jogl-all-main__version>
+		<m:dependency.management__cisd__jhdf5__version>14.12.0</m:dependency.management__cisd__jhdf5__version>
+		<m:properties__jetty-annotations.version>${jetty.version}</m:properties__jetty-annotations.version>
+		<m:properties__maven.build.timestamp.format>yyyy-MM-dd&apos;T&apos;HH:mm:ssZ</m:properties__maven.build.timestamp.format>
+		<m:properties__scijava-plugins-text-markdown.version>0.1.2</m:properties__scijava-plugins-text-markdown.version>
+		<m:properties__formats-bsd.version>${bio-formats.version}</m:properties__formats-bsd.version>
+		<m:properties__scripting-beanshell.version>0.2.3</m:properties__scripting-beanshell.version>
+		<m:properties__logback.version>1.1.1</m:properties__logback.version>
+		<m:properties__jetty-spring.version>${jetty.version}</m:properties__jetty-spring.version>
+		<m:properties__logback-classic.version>${logback.version}</m:properties__logback-classic.version>
+		<m:dependency.management__org.scijava__vecmath__version>1.6.0-scijava-2</m:dependency.management__org.scijava__vecmath__version>
+		<m:properties__javassist.version>3.19.0-GA</m:properties__javassist.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-servlet__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-servlet__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-util__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-util__version>
+		<m:properties__native-lib-loader.version>2.1.2</m:properties__native-lib-loader.version>
+		<m:dependency.management__org.scijava__scijava-config__version>2.0.1</m:dependency.management__org.scijava__scijava-config__version>
+		<m:dependency.management__org.scijava__scijava-ui-swing__version>0.7.1</m:dependency.management__org.scijava__scijava-ui-swing__version>
+		<m:maven.plugins>null__maven-source-plugin__null|null__maven-surefire-plugin__null|null__maven-enforcer-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.fusesource.mvnplugins__maven-graph-plugin__null|com.zenjava__javafx-maven-plugin__null|com.github.maven-nar__nar-maven-plugin__null|org.scijava__scijava-maven-plugin__null|null__maven-source-plugin__null|null__maven-surefire-plugin__null|null__maven-enforcer-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.fusesource.mvnplugins__maven-graph-plugin__null|com.zenjava__javafx-maven-plugin__null|com.github.maven-nar__nar-maven-plugin__null|org.scijava__scijava-maven-plugin__null|null__maven-jar-plugin__null|org.codehaus.mojo__license-maven-plugin__null</m:maven.plugins>
+		<m:properties__scijava-plugins-platforms.version>0.2.0</m:properties__scijava-plugins-platforms.version>
+		<m:dependency.management__org.scijava__scijava-ui-awt__version>0.1.4</m:dependency.management__org.scijava__scijava-ui-awt__version>
+		<m:dependency.management__ome__formats-common__version>5.1.5</m:dependency.management__ome__formats-common__version>
+		<m:properties__gson.version>2.2.4</m:properties__gson.version>
+		<m:dependency.management__com.fifesoft__autocomplete__version>2.5.8</m:dependency.management__com.fifesoft__autocomplete__version>
+		<m:properties__jcommon.version>1.0.23</m:properties__jcommon.version>
+		<m:properties__scripting-jython.version>0.2.3</m:properties__scripting-jython.version>
+		<m:properties__scripting-jruby.version>0.2.3</m:properties__scripting-jruby.version>
+		<m:properties__jdom2.version>2.0.6</m:properties__jdom2.version>
+		<m:dependency.management__org.jogamp.joal__joal-main__version>2.3.2</m:dependency.management__org.jogamp.joal__joal-main__version>
+		<m:properties__jetty-proxy.version>${jetty.version}</m:properties__jetty-proxy.version>
+		<m:dependency.management__org.scijava__scripting-clojure__version>0.1.4</m:dependency.management__org.scijava__scripting-clojure__version>
+		<m:dependency.management__org.scijava__scijava-expression-parser__version>2.1.1</m:dependency.management__org.scijava__scijava-expression-parser__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jmx__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-jmx__version>
+		<m:dependency.management__ch.qos.logback__logback-core__version>1.1.1</m:dependency.management__ch.qos.logback__logback-core__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-proxy__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-proxy__version>
+		<m:properties__jhdf5.version>14.12.0</m:properties__jhdf5.version>
+		<m:properties__jetty-util-ajax.version>${jetty.version}</m:properties__jetty-util-ajax.version>
+		<m:dependency.management__ome__formats-api__version>5.1.5</m:dependency.management__ome__formats-api__version>
+		<m:dependency.management__org.jdom__jdom2__version>2.0.6</m:dependency.management__org.jdom__jdom2__version>
+		<m:dependency.management__org.scijava__j3dcore__version>1.6.0-scijava-2</m:dependency.management__org.scijava__j3dcore__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-xml__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-xml__version>
+		<m:dependency.management__org.scijava__scripting-matlab__version>0.4.1</m:dependency.management__org.scijava__scripting-matlab__version>
+		<m:properties__jetty-rewrite.version>${jetty.version}</m:properties__jetty-rewrite.version>
+		<m:properties__rsyntaxtextarea.version>2.5.8</m:properties__rsyntaxtextarea.version>
+		<m:properties__jetty-jsp.version>${jetty.version}</m:properties__jetty-jsp.version>
+		<m:dependency.management__ome__formats-bsd__version>5.1.5</m:dependency.management__ome__formats-bsd__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-util-ajax__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-util-ajax__version>
+		<m:dependency.management__org.scijava__scijava-cache__version>0.1.1</m:dependency.management__org.scijava__scijava-cache__version>
+		<m:properties__bio-formats_plugins.version>${bio-formats.version}</m:properties__bio-formats_plugins.version>
+		<m:properties__scijava.mvn.version>3.0.4</m:properties__scijava.mvn.version>
+		<m:dependency.management__org.scijava__scijava-common__version>2.49.1</m:dependency.management__org.scijava__scijava-common__version>
+		<m:properties__scijava-cache.version>0.1.1</m:properties__scijava-cache.version>
+		<m:properties__jetty-http.version>${jetty.version}</m:properties__jetty-http.version>
+		<m:properties__minimaven.version>2.1.4</m:properties__minimaven.version>
+		<m:dependency.management__org.jfree__jfreechart__exclusion_0>xml-apis__xml-apis</m:dependency.management__org.jfree__jfreechart__exclusion_0>
+		<m:dependency.management__gov.nist.math__jama__version>1.0.3</m:dependency.management__gov.nist.math__jama__version>
+		<m:properties__swing-checkbox-tree.version>1.0.1</m:properties__swing-checkbox-tree.version>
+		<m:dependency.management__org.scijava__scijava-plugins-text-markdown__version>0.1.2</m:dependency.management__org.scijava__scijava-plugins-text-markdown__version>
+		<m:properties__jetty-nosql.version>${jetty.version}</m:properties__jetty-nosql.version>
+		<m:properties__jetty-server.version>${jetty.version}</m:properties__jetty-server.version>
+		<m:dependency.management__com.fifesoft__languagesupport__version>2.5.8</m:dependency.management__com.fifesoft__languagesupport__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-plus__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-plus__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-servlets__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-servlets__version>
+		<m:properties__scripting-scala.version>0.1.0</m:properties__scripting-scala.version>
+		<m:dependency.management__ome__ome-xml__version>5.1.5</m:dependency.management__ome__ome-xml__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-monitor__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-monitor__version>
+		<m:properties__jetty-webapp.version>${jetty.version}</m:properties__jetty-webapp.version>
+		<m:dependency.management__org.scijava__native-lib-loader__version>2.1.2</m:dependency.management__org.scijava__native-lib-loader__version>
+		<m:dependency.management__net.java.dev.jna__jna__version>3.2.7</m:dependency.management__net.java.dev.jna__jna__version>
+		<m:properties__scijava-ui-swing.version>0.7.1</m:properties__scijava-ui-swing.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-http-spi__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-http-spi__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-deploy__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-deploy__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-continuation__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-continuation__version>
+		<m:properties__jama.version>1.0.3</m:properties__jama.version>
+		<m:properties__jetty-servlet.version>${jetty.version}</m:properties__jetty-servlet.version>
+		<m:properties__scripting-javascript.version>0.4.2</m:properties__scripting-javascript.version>
+		<m:properties__jetty-clien.version>${jetty.version}</m:properties__jetty-clien.version>
+		<m:properties__jetty-monitor.version>${jetty.version}</m:properties__jetty-monitor.version>
+		<m:properties__jetty-ant.version>${jetty.version}</m:properties__jetty-ant.version>
+		<m:dependency.management__org.scijava__scijava-plugins-platforms__version>0.2.0</m:dependency.management__org.scijava__scijava-plugins-platforms__version>
+		<m:properties__joda-time.version>2.3</m:properties__joda-time.version>
+		<m:properties__junit-benchmarks.version>0.7.3-scijava</m:properties__junit-benchmarks.version>
+		<m:dependency.management__org.scijava__minimaven__version>2.1.4</m:dependency.management__org.scijava__minimaven__version>
+		<m:properties__scripting-java.version>0.3.4</m:properties__scripting-java.version>
+		<m:properties__jetty-jmx.version>${jetty.version}</m:properties__jetty-jmx.version>
+		<m:properties__jfreechart.version>1.0.19</m:properties__jfreechart.version>
+		<m:dependency.management__org.jfree__jfreechart__version>1.0.19</m:dependency.management__org.jfree__jfreechart__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-maven-plugin__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-maven-plugin__version>
+		<m:dependency.management__org.scijava__scripting-groovy__version>0.2.3</m:dependency.management__org.scijava__scripting-groovy__version>
+		<m:dependency.management__ome__formats-common__exclusion_1>xalan__serializer</m:dependency.management__ome__formats-common__exclusion_1>
+		<m:dependency.management__org.eclipse.jetty__jetty-start__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-start__version>
+		<m:properties__jetty-servlets.version>${jetty.version}</m:properties__jetty-servlets.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-ant__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-ant__version>
+		<m:dependency.management__ome__formats-common__exclusion_0>xalan__xalan</m:dependency.management__ome__formats-common__exclusion_0>
+		<m:properties__jetty-continuation.version>${jetty.version}</m:properties__jetty-continuation.version>
+		<m:properties__nar-maven-plugin.version>3.2.0</m:properties__nar-maven-plugin.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-webapp__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-webapp__version>
+		<m:properties__jetty-io.version>${jetty.version}</m:properties__jetty-io.version>
+		<m:dependency.management__org.scijava__scripting-java__version>0.3.4</m:dependency.management__org.scijava__scripting-java__version>
+		<m:properties__scijava-common.version>2.49.1</m:properties__scijava-common.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-runner__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-runner__version>
+		<m:dependency.management__org.scijava__junit-benchmarks__version>0.7.3-scijava</m:dependency.management__org.scijava__junit-benchmarks__version>
+		<m:properties__scijava-expression-parser.version>2.1.1</m:properties__scijava-expression-parser.version>
+		<m:dependency.management__org.scijava__scripting-javascript__version>0.4.2</m:dependency.management__org.scijava__scripting-javascript__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jsp__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-jsp__version>
+		<m:properties__scripting-groovy.version>0.2.3</m:properties__scripting-groovy.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-http__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-http__version>
+		<m:properties__jna.version>3.2.7</m:properties__jna.version>
+		<m:properties__scripting-matlab.version>0.4.1</m:properties__scripting-matlab.version>
+		<m:dependency.management__ome__formats-gpl__version>5.1.5</m:dependency.management__ome__formats-gpl__version>
+		<m:properties__scijava-log-slf4j.version>1.0.3</m:properties__scijava-log-slf4j.version>
+		<m:properties__jetty.version>9.1.3.v20140225</m:properties__jetty.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jspc-maven-plugin__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-jspc-maven-plugin__version>
+		<m:properties__jetty-jndi.version>${jetty.version}</m:properties__jetty-jndi.version>
+		<m:properties__jetty-http-spi.version>${jetty.version}</m:properties__jetty-http-spi.version>
+		<m:dependency.management__ome__formats-api__exclusion_0>xalan__serializer</m:dependency.management__ome__formats-api__exclusion_0>
+		<m:properties__scripting-clojure.version>0.1.4</m:properties__scripting-clojure.version>
+		<m:dependency.management__org.scijava__scijava-log-slf4j__version>1.0.3</m:dependency.management__org.scijava__scijava-log-slf4j__version>
+		<m:dependency.management__ome__formats-api__exclusion_1>xalan__xalan</m:dependency.management__ome__formats-api__exclusion_1>
+		<m:properties__jetty-security.version>${jetty.version}</m:properties__jetty-security.version>
+		<m:properties__scijava-plugins-commands.version>0.2.1</m:properties__scijava-plugins-commands.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jaspi__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-jaspi__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-rewrite__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-rewrite__version>
+		<m:properties__jetty-xml.version>${jetty.version}</m:properties__jetty-xml.version>
+		<m:properties__jetty-jspc-maven-plugin.version>${jetty.version}</m:properties__jetty-jspc-maven-plugin.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-security__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-security__version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__jetty-jaas.version>${jetty.version}</m:properties__jetty-jaas.version>
+		<m:properties__formats-api.version>${bio-formats.version}</m:properties__formats-api.version>
+		<m:dependency.management__org.scijava__scripting-beanshell__version>0.2.3</m:dependency.management__org.scijava__scripting-beanshell__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-nosql__version>9.1.3.v20140225</m:dependency.management__org.eclipse.jetty__jetty-nosql__version>
+		<m:properties__scijava.jvm.version>1.6</m:properties__scijava.jvm.version>
+		<m:properties__jetty-deploy.version>${jetty.version}</m:properties__jetty-deploy.version>
+		<m:properties__logback-core.version>${logback.version}</m:properties__logback-core.version>
+		<m:dependency.management__joda-time__joda-time__version>2.3</m:dependency.management__joda-time__joda-time__version>
+		<m:properties__java3d.version>1.6.0-scijava-2</m:properties__java3d.version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="swing-checkbox-tree" type="jar" ext="jar" conf="master"/>
+		<artifact name="swing-checkbox-tree" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="swing-checkbox-tree" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+</ivy-module>

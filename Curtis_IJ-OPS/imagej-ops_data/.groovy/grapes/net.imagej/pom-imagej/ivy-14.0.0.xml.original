@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>9.0.0</version>
+		<relativePath />
+	</parent>
+
+	<groupId>net.imagej</groupId>
+	<artifactId>pom-imagej</artifactId>
+	<version>14.0.0</version>
+	<packaging>pom</packaging>
+
+	<name>ImageJ Projects</name>
+	<description>Parent POM for ImageJ-based projects. It ensures that projects all use a compatible build environment, including Java version, as well as versions of dependencies and plugins.
+
+Projects wishing to use pom-imagej as a parent project need to override the &lt;name&gt;, &lt;description&gt;, &lt;url&gt;, &lt;inceptionYear&gt;, &lt;organization&gt;, &lt;licenses&gt;, &lt;developers&gt;, &lt;contributors&gt;, &lt;mailingLists&gt;, &lt;scm&gt;, &lt;issueManagement&gt; and &lt;ciManagement&gt; sections.</description>
+	<url>http://imagej.net/</url>
+	<inceptionYear>2009</inceptionYear>
+	<organization>
+		<name>ImageJ</name>
+		<url>http://imagej.net/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>ctrueden</id>
+			<name>Curtis Rueden</name>
+			<email>ctrueden@wisc.edu</email>
+			<url>http://loci.wisc.edu/people/curtis-rueden</url>
+			<organization>UW-Madison LOCI</organization>
+			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+			<timezone>-6</timezone>
+		</developer>
+		<developer>
+			<id>hinerm</id>
+			<name>Mark Hiner</name>
+			<email>hiner@wisc.edu</email>
+			<url>http://loci.wisc.edu/people/mark-hiner</url>
+			<organization>UW-Madison LOCI</organization>
+			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+			<timezone>-6</timezone>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Johannes Schindelin</name>
+			<url>http://imagej.net/User:Schindelin</url>
+			<roles><role>founder</role></roles>
+			<properties><id>dscho</id></properties>
+		</contributor>
+		<contributor>
+			<name>Tobias Pietzsch</name>
+			<url>http://imagej.net/User:Pietzsch</url>
+			<properties><id>tpietzsch</id></properties>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>ImageJ Forum</name>
+			<archive>http://forum.imagej.net/</archive>
+		</mailingList>
+		<mailingList>
+			<name>ImageJ</name>
+			<subscribe>http://imagej.net/list.html</subscribe>
+			<unsubscribe>http://imagej.net/list.html</unsubscribe>
+			<post>imagej@list.nih.gov</post>
+			<archive>http://list.nih.gov/archives/imagej.html</archive>
+			<otherArchives>
+				<otherArchive>http://imagej.1557.x6.nabble.com/</otherArchive>
+			</otherArchives>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/imagej/pom-imagej</connection>
+		<developerConnection>scm:git:git@github.com:imagej/pom-imagej</developerConnection>
+		<tag>pom-imagej-14.0.0</tag>
+		<url>https://github.com/imagej/pom-imagej</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/imagej/pom-imagej/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://jenkins.imagej.net/job/pom-imagej/</url>
+	</ciManagement>
+
+	<properties>
+		<!--
+		If two artifacts on the classpath use two different versions of the
+		same dependency, behavior is inconsistent at best, and often broken.
+		The following properties facilitate consistency of dependency
+		versions between various projects in the ImageJ software stack.
+
+		When possible, we advise declaring your ImageJ dependencies without a
+		<version> since the versions of core ImageJ components are managed in
+		this POM's <dependencyManagement> section.
+
+		If you need to override the version of a particular component, then
+		simply override that component's version property in your POM's
+		<properties> section, rather than hardcoding them.
+		-->
+
+		<!-- ImageJ - https://github.com/imagej -->
+
+		<!-- ImageJ - https://github.com/imagej/imagej -->
+		<imagej.version>2.0.0-rc-43</imagej.version>
+
+		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
+		<imagej1.version>1.50e</imagej1.version>
+
+		<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
+		<ij1-patcher.version>0.12.3</ij1-patcher.version>
+
+		<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
+		<imagej-common.version>0.18.1</imagej-common.version>
+
+		<!-- ImageJ Deprecated - https://github.com/imagej/imagej-deprecated -->
+		<imagej-deprecated.version>0.1.1</imagej-deprecated.version>
+
+		<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
+		<imagej-launcher.version>4.0.0</imagej-launcher.version>
+
+		<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
+		<imagej-legacy.version>0.17.5</imagej-legacy.version>
+
+		<!-- ImageJ MATLAB - https://github.com/imagej/imagej-matlab -->
+		<imagej-matlab.version>0.6.1</imagej-matlab.version>
+
+		<!-- ImageJ Maven Plugin - https://github.com/imagej/imagej-maven-plugin -->
+		<imagej-maven-plugin.version>0.6.0</imagej-maven-plugin.version>
+
+		<!-- ImageJ OMERO - https://github.com/imagej/imagej-omero -->
+		<imagej-omero.version>0.3.3</imagej-omero.version>
+
+		<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
+		<imagej-ops.version>0.23.0</imagej-ops.version>
+
+		<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
+		<imagej-plugins-commands.version>0.6.0</imagej-plugins-commands.version>
+
+		<!-- ImageJ Plugins: Tools - https://github.com/imagej/imagej-plugins-commands -->
+		<imagej-plugins-tools.version>0.3.0</imagej-plugins-tools.version>
+
+		<!-- ImageJ Plugins: Uploader: SSH - https://github.com/imagej/imagej-plugins-uploader-ssh -->
+		<imagej-plugins-uploader-ssh.version>0.3.0</imagej-plugins-uploader-ssh.version>
+
+		<!-- ImageJ Plugins: Uploader: WebDAV - https://github.com/imagej/imagej-plugins-uploader-webdav -->
+		<imagej-plugins-uploader-webdav.version>0.2.0</imagej-plugins-uploader-webdav.version>
+
+		<!-- ImageJ Scripting - https://github.com/imagej/imagej-scripting -->
+		<imagej-scripting.version>0.2.2</imagej-scripting.version>
+
+		<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
+		<imagej-ui-awt.version>0.3.0</imagej-ui-awt.version>
+
+		<!-- ImageJ UI: Swing - https://github.com/imagej/imagej-ui-swing -->
+		<imagej-ui-swing.version>0.16.0</imagej-ui-swing.version>
+
+		<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
+		<imagej-updater.version>0.7.7</imagej-updater.version>
+
+		<!-- ImageJ Usage - https://github.com/imagej/imagej-usage -->
+		<imagej-usage.version>0.4.0</imagej-usage.version>
+
+		<!-- ImgLib2 - https://github.com/imglib -->
+
+		<!-- ImgLib2 - https://github.com/imglib/imglib2 -->
+		<imglib2.version>2.4.1</imglib2.version>
+
+		<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
+		<imglib2-algorithm.version>0.3.3</imglib2-algorithm.version>
+
+		<!-- ImgLib2 Algorithms FFT - https://github.com/imglib/imglib2-algorithm-fft -->
+		<imglib2-algorithm-fft.version>0.1.2</imglib2-algorithm-fft.version>
+
+		<!-- ImgLib2 Algorithms GPL - https://github.com/imglib/imglib2-algorithm-gpl -->
+		<imglib2-algorithm-gpl.version>0.1.5</imglib2-algorithm-gpl.version>
+
+		<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
+		<imglib2-ij.version>2.0.0-beta-31</imglib2-ij.version>
+
+		<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
+		<imglib2-realtransform.version>2.0.0-beta-29</imglib2-realtransform.version>
+
+		<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
+		<imglib2-roi.version>0.4.2</imglib2-roi.version>
+
+		<!-- ImgLib2 Scripting - https://github.com/imglib/imglib2-script -->
+		<imglib2-script.version>0.2.0</imglib2-script.version>
+
+		<!-- ImgLib2 UI - https://github.com/imglib/imglib2-ui -->
+		<imglib2-ui.version>2.0.0-beta-29</imglib2-ui.version>
+
+		<!-- SCIFIO - https://github.com/scifio -->
+
+		<!-- SCIFIO - https://github.com/scifio/scifio -->
+		<scifio.version>0.25.2</scifio.version>
+
+		<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
+		<scifio-bf-compat.version>2.0.0</scifio-bf-compat.version>
+
+		<!-- SCIFIO Command Line Tools - https://github.com/scifio/scifio-cli -->
+		<scifio-cli.version>0.3.2</scifio-cli.version>
+
+		<!-- SCIFIO HDF5 - https://github.com/scifio/scifio-hdf5 -->
+		<scifio-hdf5.version>0.1.1</scifio-hdf5.version>
+
+		<!-- SCIFIO JAI Image I/O - https://github.com/scifio/scifio-jai-imageio -->
+		<scifio-jai-imageio.version>1.1.0</scifio-jai-imageio.version>
+
+		<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
+		<scifio-lifesci.version>0.7.0</scifio-lifesci.version>
+
+		<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
+		<scifio-ome-xml.version>0.13.0</scifio-ome-xml.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- ImageJ - https://github.com/imagej -->
+
+			<!-- ImageJ - https://github.com/imagej/imagej -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej</artifactId>
+				<version>${imagej.version}</version>
+			</dependency>
+
+			<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>ij</artifactId>
+				<version>${imagej1.version}</version>
+			</dependency>
+
+			<!-- ImageJ 1.x patcher - https://github.com/imagej/ij1-patcher -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>ij1-patcher</artifactId>
+				<version>${ij1-patcher.version}</version>
+			</dependency>
+
+			<!-- ImageJ Common - https://github.com/imagej/imagej-common -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-common</artifactId>
+				<version>${imagej-common.version}</version>
+			</dependency>
+
+			<!-- ImageJ Deprecated - https://github.com/imagej/imagej-deprecated -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-deprecated</artifactId>
+				<version>${imagej-deprecated.version}</version>
+			</dependency>
+
+			<!-- ImageJ Launcher - https://github.com/imagej/imagej-launcher -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-launcher</artifactId>
+				<version>${imagej-launcher.version}</version>
+				<type>nar</type>
+			</dependency>
+
+			<!-- ImageJ Legacy - https://github.com/imagej/imagej-legacy -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-legacy</artifactId>
+				<version>${imagej-legacy.version}</version>
+			</dependency>
+
+			<!-- ImageJ OMERO - https://github.com/imagej/imagej-omero -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-omero</artifactId>
+				<version>${imagej-omero.version}</version>
+			</dependency>
+
+			<!-- ImageJ Ops - https://github.com/imagej/imagej-ops -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-ops</artifactId>
+				<version>${imagej-ops.version}</version>
+			</dependency>
+
+			<!-- ImageJ Plugins: Commands - https://github.com/imagej/imagej-plugins-commands -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-plugins-commands</artifactId>
+				<version>${imagej-plugins-commands.version}</version>
+			</dependency>
+
+			<!-- ImageJ Plugins: Tools - https://github.com/imagej/imagej-plugins-commands -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-plugins-tools</artifactId>
+				<version>${imagej-plugins-tools.version}</version>
+			</dependency>
+
+			<!-- ImageJ Plugins: Uploader: SSH - https://github.com/imagej/imagej-plugins-uploader-ssh -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-plugins-uploader-ssh</artifactId>
+				<version>${imagej-plugins-uploader-ssh.version}</version>
+			</dependency>
+
+			<!-- ImageJ Plugins: Uploader: WebDAV - https://github.com/imagej/imagej-plugins-uploader-webdav -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-plugins-uploader-webdav</artifactId>
+				<version>${imagej-plugins-uploader-webdav.version}</version>
+			</dependency>
+
+			<!-- ImageJ Scripting - https://github.com/imagej/imagej-scripting -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-scripting</artifactId>
+				<version>${imagej-scripting.version}</version>
+			</dependency>
+
+			<!-- ImageJ UI: AWT - https://github.com/imagej/imagej-ui-awt -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-ui-awt</artifactId>
+				<version>${imagej-ui-awt.version}</version>
+			</dependency>
+
+			<!-- ImageJ UI: Swing - https://github.com/imagej/imagej-ui-swing -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-ui-swing</artifactId>
+				<version>${imagej-ui-swing.version}</version>
+			</dependency>
+
+			<!-- ImageJ Updater - https://github.com/imagej/imagej-updater -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-updater</artifactId>
+				<version>${imagej-updater.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-updater</artifactId>
+				<version>${imagej-updater.version}</version>
+				<classifier>tests</classifier>
+			</dependency>
+
+			<!-- ImageJ Usage - https://github.com/imagej/imagej-usage -->
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-usage</artifactId>
+				<version>${imagej-usage.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 - https://github.com/imglib -->
+
+			<!-- ImgLib2 - https://github.com/imglib/imglib2 -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2</artifactId>
+				<version>${imglib2.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 Algorithms - https://github.com/imglib/imglib2-algorithm -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-algorithm</artifactId>
+				<version>${imglib2-algorithm.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 Algorithms FFT - https://github.com/imglib/imglib2-algorithm-fft -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-algorithm-fft</artifactId>
+				<version>${imglib2-algorithm-fft.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 Algorithms GPL - https://github.com/imglib/imglib2-algorithm-gpl -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-algorithm-gpl</artifactId>
+				<version>${imglib2-algorithm-gpl.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 IJ - https://github.com/imglib/imglib2-ij -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-ij</artifactId>
+				<version>${imglib2-ij.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 RealTransform - https://github.com/imglib/imglib2-realtransform -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-realtransform</artifactId>
+				<version>${imglib2-realtransform.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 ROI - https://github.com/imglib/imglib2-roi -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-roi</artifactId>
+				<version>${imglib2-roi.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 Scripting - https://github.com/imglib/imglib2-script -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-script</artifactId>
+				<version>${imglib2-script.version}</version>
+			</dependency>
+
+			<!-- ImgLib2 UI - https://github.com/imglib/imglib2-ui -->
+			<dependency>
+				<groupId>net.imglib2</groupId>
+				<artifactId>imglib2-ui</artifactId>
+				<version>${imglib2-ui.version}</version>
+			</dependency>
+
+			<!-- SCIFIO - https://github.com/scifio -->
+
+			<!-- SCIFIO - https://github.com/scifio/scifio -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio</artifactId>
+				<version>${scifio.version}</version>
+			</dependency>
+
+			<!-- SCIFIO-BF-compat - https://github.com/scifio/scifio-bf-compat -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio-bf-compat</artifactId>
+				<version>${scifio-bf-compat.version}</version>
+			</dependency>
+
+			<!-- SCIFIO Command Line Tools - https://github.com/scifio/scifio-cli -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio-cli</artifactId>
+				<version>${scifio-cli.version}</version>
+			</dependency>
+
+			<!-- SCIFIO HDF5 - https://github.com/scifio/scifio-hdf5 -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio-hdf5</artifactId>
+				<version>${scifio-hdf5.version}</version>
+			</dependency>
+
+			<!-- SCIFIO JAI Image I/O - https://github.com/scifio/scifio-jai-imageio -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio-jai-imageio</artifactId>
+				<version>${scifio-jai-imageio.version}</version>
+			</dependency>
+
+			<!-- SCIFIO-LifeSci - https://github.com/scifio/scifio-lifesci -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio-lifesci</artifactId>
+				<version>${scifio-lifesci.version}</version>
+			</dependency>
+
+			<!-- SCIFIO-OME-XML - https://github.com/scifio/scifio-ome-xml -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio-ome-xml</artifactId>
+				<version>${scifio-ome-xml.version}</version>
+			</dependency>
+
+			<!-- Other managed components -->
+
+			<!-- MPI-CBG -->
+			<dependency>
+				<groupId>mpicbg</groupId>
+				<artifactId>mpicbg</artifactId>
+				<version>0.6.1</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<configuration>
+					<rules>
+						<requireReproducibleBuilds implementation="org.scijava.maven.plugin.RequireReproducibleBuilds">
+							<groupIds>org.scijava,io.scif,net.imagej,net.imglib2</groupIds>
+						</requireReproducibleBuilds>
+					</rules>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<configuration>
+					<licenseName>bsd_2</licenseName>
+					<organizationName>Board of Regents of the University of
+Wisconsin-Madison, Broad Institute of MIT and Harvard, and Max Planck
+Institute of Molecular Cell Biology and Genetics.</organizationName>
+					<projectName>ImageJ software for multidimensional image processing and analysis.</projectName>
+				</configuration>
+			</plugin>
+
+			<!--
+			Enable copying the artifacts and dependencies by setting
+			the 'imagej.app.directory' property to a valid directory.
+			-->
+			<plugin>
+				<groupId>net.imagej</groupId>
+				<artifactId>imagej-maven-plugin</artifactId>
+				<version>${imagej-maven-plugin.version}</version>
+				<executions>
+					<execution>
+						<id>copy-jars</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-jars</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<!--
+		This developer profile enables pinning to imagej SNAPSHOT versions.
+		Add an empty dev.imagej file in your ~/.scijava directory, and imagej
+		dependencies will automatically update! You may also need to refresh
+		your IDE; e.g., in Eclipse: right click, Maven > Update Project...
+		-->
+		<profile>
+			<id>dev.imagej</id>
+			<activation>
+				<file>
+					<exists>${user.home}/.scijava/dev.imagej</exists>
+				</file>
+			</activation>
+			<properties>
+				<imagej.version>LATEST</imagej.version>
+				<ij1-patcher.version>LATEST</ij1-patcher.version>
+				<imagej-common.version>LATEST</imagej-common.version>
+				<imagej-deprecated.version>LATEST</imagej-deprecated.version>
+				<imagej-launcher.version>LATEST</imagej-launcher.version>
+				<imagej-legacy.version>LATEST</imagej-legacy.version>
+				<imagej-omero.version>LATEST</imagej-omero.version>
+				<imagej-ops.version>LATEST</imagej-ops.version>
+				<imagej-plugins-commands.version>LATEST</imagej-plugins-commands.version>
+				<imagej-plugins-tools.version>LATEST</imagej-plugins-tools.version>
+				<imagej-plugins-uploader-ssh.version>LATEST</imagej-plugins-uploader-ssh.version>
+				<imagej-plugins-uploader-webdav.version>LATEST</imagej-plugins-uploader-webdav.version>
+				<imagej-scripting.version>LATEST</imagej-scripting.version>
+				<imagej-ui-awt.version>LATEST</imagej-ui-awt.version>
+				<imagej-ui-swing.version>LATEST</imagej-ui-swing.version>
+				<imagej-updater.version>LATEST</imagej-updater.version>
+				<imagej-usage.version>LATEST</imagej-usage.version>
+			</properties>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+
+		<!--
+		This developer profile enables pinning to imglib2 SNAPSHOT versions.
+		Add an empty dev.imglib2 file in your ~/.scijava directory, and imglib2
+		dependencies will automatically update! You may also need to refresh
+		your IDE; e.g., in Eclipse: right click, Maven > Update Project...
+		-->
+		<profile>
+			<id>dev.imglib2</id>
+			<activation>
+				<file>
+					<exists>${user.home}/.scijava/dev.imglib2</exists>
+				</file>
+			</activation>
+			<properties>
+				<imglib2.version>LATEST</imglib2.version>
+				<imglib2-algorithm.version>LATEST</imglib2-algorithm.version>
+				<imglib2-algorithm-fft.version>LATEST</imglib2-algorithm-fft.version>
+				<imglib2-algorithm-gpl.version>LATEST</imglib2-algorithm-gpl.version>
+				<imglib2-ij.version>LATEST</imglib2-ij.version>
+				<imglib2-realtransform.version>LATEST</imglib2-realtransform.version>
+				<imglib2-roi.version>LATEST</imglib2-roi.version>
+				<imglib2-script.version>LATEST</imglib2-script.version>
+				<imglib2-ui.version>LATEST</imglib2-ui.version>
+			</properties>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+
+		<!--
+		This developer profile enables pinning to scifio SNAPSHOT versions.
+		Add an empty dev.scifio file in your ~/.scijava directory, and scifio
+		dependencies will automatically update! You may also need to refresh
+		your IDE; e.g., in Eclipse: right click, Maven > Update Project...
+		-->
+		<profile>
+			<id>dev.scifio</id>
+			<activation>
+				<file>
+					<exists>${user.home}/.scijava/dev.scifio</exists>
+				</file>
+			</activation>
+			<properties>
+				<scifio.version>LATEST</scifio.version>
+				<scifio-bf-compat.version>LATEST</scifio-bf-compat.version>
+				<scifio-cli.version>LATEST</scifio-cli.version>
+				<scifio-jai-imageio.version>LATEST</scifio-jai-imageio.version>
+				<scifio-lifesci.version>LATEST</scifio-lifesci.version>
+				<scifio-ome-xml.version>LATEST</scifio-ome-xml.version>
+			</properties>
+			<repositories>
+				<repository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>imagej.public</id>
+					<url>http://maven.imagej.net/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+</project>

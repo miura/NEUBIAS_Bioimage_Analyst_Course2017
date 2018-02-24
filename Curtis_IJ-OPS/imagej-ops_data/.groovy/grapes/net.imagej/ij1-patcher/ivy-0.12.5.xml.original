@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>net.imagej</groupId>
+		<artifactId>pom-imagej</artifactId>
+		<version>16.0.0</version>
+		<relativePath />
+	</parent>
+
+	<artifactId>ij1-patcher</artifactId>
+	<version>0.12.5</version>
+
+	<name>ImageJ 1.x Patcher</name>
+	<description>A runtime patcher to introduce extension points into ImageJ 1.x. This project offers extension points for use with ImageJ2 and it also offers (limited) support for headless operations.</description>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>ctrueden</id>
+			<name>Curtis Rueden</name>
+			<url>http://imagej.net/User:Rueden</url>
+			<roles>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Johannes Schindelin</name>
+			<url>http://imagej.net/User:Schindelin</url>
+			<roles><role>founder</role></roles>
+			<properties><id>dscho</id></properties>
+		</contributor>
+		<contributor>
+			<name>Mark Hiner</name>
+			<url>http://imagej.net/User:Hinerm</url>
+			<properties><id>hinerm</id></properties>
+		</contributor>
+		<contributor>
+			<name>Joe Hsiao</name>
+			<properties><id>JoeHsiao</id></properties>
+		</contributor>
+	</contributors>
+
+	<scm>
+		<connection>scm:git:git://github.com/imagej/ij1-patcher</connection>
+		<developerConnection>scm:git:git@github.com:imagej/ij1-patcher</developerConnection>
+		<tag>ij1-patcher-0.12.5</tag>
+		<url>https://github.com/imagej/ij1-patcher</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/imagej/ij1-patcher/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://jenkins.imagej.net/job/ImageJ1-patcher</url>
+	</ciManagement>
+
+	<properties>
+		<ij1-patcher.jar>${project.build.directory}/${project.build.finalName}.jar</ij1-patcher.jar>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.javassist</groupId>
+			<artifactId>javassist</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.scijava</groupId>
+			<artifactId>scijava-common</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<packageName>net.imagej.patcher</packageName>
+						</manifest>
+						<manifestEntries>
+							<Premain-Class>net.imagej.patcher.JavaAgent</Premain-Class>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<configuration>
+					<licenseName>bsd_2</licenseName>
+					<inceptionYear>2009</inceptionYear>
+					<organizationName>Board of Regents of the University of
+Wisconsin-Madison, Broad Institute of MIT and Harvard, and Max Planck
+Institute of Molecular Cell Biology and Genetics.</organizationName>
+					<projectName>ImageJ software for multidimensional image processing and analysis.</projectName>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>2.15</version>
+				<executions>
+					<execution>
+						<id>code-hacker</id>
+						<goals>
+							<goal>integration-test</goal>
+						</goals>
+						<configuration>
+							<argLine />
+							<includes>
+								<include>**/CodeHackerIT.java</include>
+							</includes>
+							<reportNameSuffix>code-hacker</reportNameSuffix>
+							<summaryFile>target/failsafe-reports/failsafe-summary-code-hacker.xml</summaryFile>
+						</configuration>
+					</execution>
+					<execution>
+						<id>debug</id>
+						<goals>
+							<goal>integration-test</goal>
+						</goals>
+						<configuration>
+							<argLine>-javaagent:${ij1-patcher.jar}=debug -Dij1-patcher.mode=debug</argLine>
+							<includes>
+								<include>**/JavaAgentIT.java</include>
+							</includes>
+							<reportNameSuffix>debug</reportNameSuffix>
+							<summaryFile>target/failsafe-reports/failsafe-summary-debug.xml</summaryFile>
+						</configuration>
+					</execution>
+					<execution>
+						<id>pre-init</id>
+						<goals>
+							<goal>integration-test</goal>
+						</goals>
+						<configuration>
+							<argLine>-javaagent:${ij1-patcher.jar}=init -Dij1-patcher.mode=init</argLine>
+							<includes>
+								<include>**/JavaAgentIT.java</include>
+							</includes>
+							<reportNameSuffix>pre-init</reportNameSuffix>
+							<summaryFile>target/failsafe-reports/failsafe-summary-pre-init.xml</summaryFile>
+						</configuration>
+					</execution>
+					<execution>
+						<id>verify</id>
+						<goals>
+							<goal>verify</goal>
+						</goals>
+						<configuration>
+							<summaryFiles>
+								<summaryFile>target/failsafe-reports/failsafe-summary-code-hacker.xml</summaryFile>
+								<summaryFile>target/failsafe-reports/failsafe-summary-debug.xml</summaryFile>
+								<summaryFile>target/failsafe-reports/failsafe-summary-pre-init.xml</summaryFile>
+							</summaryFiles>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<trimStackTrace>false</trimStackTrace>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

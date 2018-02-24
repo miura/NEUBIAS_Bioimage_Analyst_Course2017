@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="net.imagej"
+		module="ij"
+		revision="1.51h"
+		status="release"
+		publication="20161212103328"
+	>
+		<license name="Public domain" url="http://imagej.net/disclaimer.html" />
+		<description homepage="http://imagej.net/">
+		ImageJ is an open source Java image processing program inspired by NIH Image for the Macintosh.
+		</description>
+		<m:properties__jetty-start.version>${jetty.version}</m:properties__jetty-start.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jndi__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-jndi__version>
+		<m:dependency.management__org.scijava__junit-benchmarks__scope>test</m:dependency.management__org.scijava__junit-benchmarks__scope>
+		<m:properties__formats-common.version>${bio-formats.version}</m:properties__formats-common.version>
+		<m:dependency.management__ch.qos.logback__logback-classic__version>1.1.7</m:dependency.management__ch.qos.logback__logback-classic__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-spring__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-spring__version>
+		<m:properties__imagej-updater.version>0.8.1</m:properties__imagej-updater.version>
+		<m:properties__imagej-legacy.version>0.23.2</m:properties__imagej-legacy.version>
+		<m:properties__imglib2-ui.version>2.0.0-beta-30</m:properties__imglib2-ui.version>
+		<m:properties__scijava-maven-plugin.version>0.5.1</m:properties__scijava-maven-plugin.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-js__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-js__version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-js__exclusion_0>xml-apis__xml-apis</m:dependency.management__org.apache.xmlgraphics__batik-js__exclusion_0>
+		<m:properties__miglayout.version>3.7.4</m:properties__miglayout.version>
+		<m:properties__jetty-maven-plugin.version>${jetty.version}</m:properties__jetty-maven-plugin.version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:properties__batik-svgpp.version>${batik.version}</m:properties__batik-svgpp.version>
+		<m:properties__commons-math3.version>3.6.1</m:properties__commons-math3.version>
+		<m:dependency.management__net.imagej__imagej-ui-awt__version>0.3.0</m:dependency.management__net.imagej__imagej-ui-awt__version>
+		<m:dependency.management__org.jfree__jcommon__version>1.0.23</m:dependency.management__org.jfree__jcommon__version>
+		<m:properties__batik.version>1.8</m:properties__batik.version>
+		<m:dependency.management__net.imglib2__imglib2-roi__version>0.4.3</m:dependency.management__net.imglib2__imglib2-roi__version>
+		<m:dependency.management__net.imagej__imagej-legacy__version>0.23.2</m:dependency.management__net.imagej__imagej-legacy__version>
+		<m:properties__batik-svg-dom.version>${batik.version}</m:properties__batik-svg-dom.version>
+		<m:properties__batik-script.version>${batik.version}</m:properties__batik-script.version>
+		<m:properties__formats-gpl.version>${bio-formats.version}</m:properties__formats-gpl.version>
+		<m:properties__jetty-jaspi.version>${jetty.version}</m:properties__jetty-jaspi.version>
+		<m:properties__scijava-ui-awt.version>0.1.4</m:properties__scijava-ui-awt.version>
+		<m:dependency.management__org.jogamp.jocl__jocl-main__version>2.3.2</m:dependency.management__org.jogamp.jocl__jocl-main__version>
+		<m:dependency.management__ome__formats-bsd__exclusion_2>xml-apis__xml-apis</m:dependency.management__ome__formats-bsd__exclusion_2>
+		<m:dependency.management__org.apache.xmlgraphics__batik-bridge__exclusion_0>xalan__xalan</m:dependency.management__org.apache.xmlgraphics__batik-bridge__exclusion_0>
+		<m:dependency.management__ome__formats-bsd__exclusion_1>xalan__xalan</m:dependency.management__ome__formats-bsd__exclusion_1>
+		<m:dependency.management__com.google.code.gson__gson__version>2.7</m:dependency.management__com.google.code.gson__gson__version>
+		<m:properties__imagej-plugins-uploader-ssh.version>0.3.0</m:properties__imagej-plugins-uploader-ssh.version>
+		<m:dependency.management__org.scijava__scripting-scala__version>0.1.0</m:dependency.management__org.scijava__scripting-scala__version>
+		<m:properties__imagej-launcher.version>4.0.5</m:properties__imagej-launcher.version>
+		<m:properties__mines-jtk.version>20151125</m:properties__mines-jtk.version>
+		<m:dependency.management__ome__formats-bsd__exclusion_0>xalan__serializer</m:dependency.management__ome__formats-bsd__exclusion_0>
+		<m:dependency.management__org.apache.xmlgraphics__batik-ttf2svg__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-ttf2svg__version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-bridge__exclusion_1>xml-apis__xml-apis</m:dependency.management__org.apache.xmlgraphics__batik-bridge__exclusion_1>
+		<m:dependency.management__org.scijava__j3dutils__version>1.6.0-scijava-2</m:dependency.management__org.scijava__j3dutils__version>
+		<m:dependency.management__org.jogamp.gluegen__gluegen-rt-main__version>2.3.2</m:dependency.management__org.jogamp.gluegen__gluegen-rt-main__version>
+		<m:dependency.management__cisd__jhdf5__version>14.12.5</m:dependency.management__cisd__jhdf5__version>
+		<m:dependency.management__org.jogamp.jogl__jogl-all-main__version>2.3.2</m:dependency.management__org.jogamp.jogl__jogl-all-main__version>
+		<m:properties__jetty-annotations.version>${jetty.version}</m:properties__jetty-annotations.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-squiggle__exclusion_0>xml-apis__xml-apis</m:dependency.management__org.apache.xmlgraphics__batik-squiggle__exclusion_0>
+		<m:properties__maven.build.timestamp.format>yyyy-MM-dd&apos;T&apos;HH:mm:ssZ</m:properties__maven.build.timestamp.format>
+		<m:dependency.management__org.slf4j__slf4j-ext__version>1.7.21</m:dependency.management__org.slf4j__slf4j-ext__version>
+		<m:properties__scripting-beanshell.version>0.3.1</m:properties__scripting-beanshell.version>
+		<m:properties__batik-codec.version>${batik.version}</m:properties__batik-codec.version>
+		<m:properties__logback.version>1.1.7</m:properties__logback.version>
+		<m:properties__batik-js.version>${batik.version}</m:properties__batik-js.version>
+		<m:properties__jetty-spring.version>${jetty.version}</m:properties__jetty-spring.version>
+		<m:dependency.management__net.imglib2__imglib2-script__version>0.2.0</m:dependency.management__net.imglib2__imglib2-script__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-servlet__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-servlet__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-util__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-util__version>
+		<m:properties__native-lib-loader.version>2.1.4</m:properties__native-lib-loader.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-squiggle-ext__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-squiggle-ext__version>
+		<m:dependency.management__org.scijava__scijava-ui-swing__version>0.9.0</m:dependency.management__org.scijava__scijava-ui-swing__version>
+		<m:dependency.management__mpicbg__mpicbg___version>1.1.1</m:dependency.management__mpicbg__mpicbg___version>
+		<m:properties__license.licenseName>bsd_2</m:properties__license.licenseName>
+		<m:dependency.management__org.scijava__scijava-ui-awt__version>0.1.4</m:dependency.management__org.scijava__scijava-ui-awt__version>
+		<m:dependency.management__com.google.guava__guava__version>19.0</m:dependency.management__com.google.guava__guava__version>
+		<m:properties__slf4j-jdk14.version>${slf4j.version}</m:properties__slf4j-jdk14.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-svggen__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-svggen__version>
+		<m:properties__scripting-jython.version>0.4.0</m:properties__scripting-jython.version>
+		<m:properties__batik-svggen.version>${batik.version}</m:properties__batik-svggen.version>
+		<m:properties__scripting-jruby.version>0.2.4</m:properties__scripting-jruby.version>
+		<m:dependency.management__org.scijava__scijava-expression-parser__version>3.1.0</m:dependency.management__org.scijava__scijava-expression-parser__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jmx__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-jmx__version>
+		<m:dependency.management__ch.qos.logback__logback-core__version>1.1.7</m:dependency.management__ch.qos.logback__logback-core__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-proxy__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-proxy__version>
+		<m:properties__jhdf5.version>14.12.5</m:properties__jhdf5.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-codec__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-codec__version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-extension__exclusion_0>xml-apis__xml-apis</m:dependency.management__org.apache.xmlgraphics__batik-extension__exclusion_0>
+		<m:dependency.management__org.apache.xmlgraphics__batik-script__exclusion_0>xml-apis__xml-apis</m:dependency.management__org.apache.xmlgraphics__batik-script__exclusion_0>
+		<m:dependency.management__org.scijava__j3dcore__version>1.6.0-scijava-2</m:dependency.management__org.scijava__j3dcore__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-xml__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-xml__version>
+		<m:dependency.management__org.scijava__scripting-matlab__version>0.5.1</m:dependency.management__org.scijava__scripting-matlab__version>
+		<m:dependency.management__ome__formats-bsd__version>5.2.3</m:dependency.management__ome__formats-bsd__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-util-ajax__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-util-ajax__version>
+		<m:dependency.management__org.scijava__scijava-cache__version>0.1.1</m:dependency.management__org.scijava__scijava-cache__version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-slideshow__exclusion_0>xml-apis__xml-apis</m:dependency.management__org.apache.xmlgraphics__batik-slideshow__exclusion_0>
+		<m:properties__bio-formats_plugins.version>${bio-formats.version}</m:properties__bio-formats_plugins.version>
+		<m:dependency.management__io.scif__scifio-bf-compat__version>2.0.0</m:dependency.management__io.scif__scifio-bf-compat__version>
+		<m:properties__scijava.mvn.version>3.0.4</m:properties__scijava.mvn.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-css__exclusion_0>xml-apis__xml-apis</m:dependency.management__org.apache.xmlgraphics__batik-css__exclusion_0>
+		<m:properties__batik-parser.version>${batik.version}</m:properties__batik-parser.version>
+		<m:dependency.management__io.scif__scifio__version>0.29.0</m:dependency.management__io.scif__scifio__version>
+		<m:properties__scijava-cache.version>0.1.1</m:properties__scijava-cache.version>
+		<m:properties__imagej-ui-awt.version>0.3.0</m:properties__imagej-ui-awt.version>
+		<m:properties__jetty-http.version>${jetty.version}</m:properties__jetty-http.version>
+		<m:dependency.management__net.imagej__imagej-ops__version>0.33.0</m:dependency.management__net.imagej__imagej-ops__version>
+		<m:properties__imagej-common.version>0.24.1</m:properties__imagej-common.version>
+		<m:dependency.management__net.imagej__imagej-ui-swing__version>0.21.1</m:dependency.management__net.imagej__imagej-ui-swing__version>
+		<m:dependency.management__io.scif__scifio-hdf5__version>0.1.1</m:dependency.management__io.scif__scifio-hdf5__version>
+		<m:properties__batik-squiggle-ext.version>${batik.version}</m:properties__batik-squiggle-ext.version>
+		<m:dependency.management__org.jfree__jfreechart__exclusion_0>xml-apis__xml-apis</m:dependency.management__org.jfree__jfreechart__exclusion_0>
+		<m:dependency.management__org.apache.xmlgraphics__batik-util__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-util__version>
+		<m:dependency.management__net.imagej__op-finder__version>0.1.0</m:dependency.management__net.imagej__op-finder__version>
+		<m:properties__scifio-jai-imageio.version>1.1.0</m:properties__scifio-jai-imageio.version>
+		<m:properties__slf4j-api.version>${slf4j.version}</m:properties__slf4j-api.version>
+		<m:properties__batik-css.version>${batik.version}</m:properties__batik-css.version>
+		<m:properties__op-finder.version>0.1.0</m:properties__op-finder.version>
+		<m:properties__imagej-omero.version>0.4.0</m:properties__imagej-omero.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-slideshow__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-slideshow__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-plus__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-plus__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-servlets__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-servlets__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.21</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:properties__imagej-plugins-uploader-webdav.version>0.2.0</m:properties__imagej-plugins-uploader-webdav.version>
+		<m:dependency.management__io.scif__scifio-cli__version>0.3.2</m:dependency.management__io.scif__scifio-cli__version>
+		<m:properties__batik-awt-util.version>${batik.version}</m:properties__batik-awt-util.version>
+		<m:properties__scripting-scala.version>0.1.0</m:properties__scripting-scala.version>
+		<m:properties__jetty-webapp.version>${jetty.version}</m:properties__jetty-webapp.version>
+		<m:dependency.management__org.scijava__native-lib-loader__version>2.1.4</m:dependency.management__org.scijava__native-lib-loader__version>
+		<m:properties__scifio-lifesci.version>0.7.0</m:properties__scifio-lifesci.version>
+		<m:properties__script-editor.version>0.1.0</m:properties__script-editor.version>
+		<m:properties__imglib2-algorithm-fft.version>0.1.2</m:properties__imglib2-algorithm-fft.version>
+		<m:properties__imagej-ui-swing.version>0.21.1</m:properties__imagej-ui-swing.version>
+		<m:properties__slf4j.version>1.7.21</m:properties__slf4j.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-rasterizer__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-rasterizer__version>
+		<m:properties__batik-gui-util.version>${batik.version}</m:properties__batik-gui-util.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-http-spi__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-http-spi__version>
+		<m:properties__batik-ttf2svg.version>${batik.version}</m:properties__batik-ttf2svg.version>
+		<m:properties__scijava.jvm.test.version>${scijava.jvm.version}</m:properties__scijava.jvm.test.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-gui-util__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-gui-util__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-deploy__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-deploy__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-continuation__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-continuation__version>
+		<m:properties__jama.version>1.0.3</m:properties__jama.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-awt-util__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-awt-util__version>
+		<m:properties__imagej-deprecated.version>0.1.1</m:properties__imagej-deprecated.version>
+		<m:properties__jetty-clien.version>${jetty.version}</m:properties__jetty-clien.version>
+		<m:properties__jetty-monitor.version>${jetty.version}</m:properties__jetty-monitor.version>
+		<m:properties__joda-time.version>2.9.4</m:properties__joda-time.version>
+		<m:properties__junit-benchmarks.version>0.7.4-scijava</m:properties__junit-benchmarks.version>
+		<m:dependency.management__org.scijava__minimaven__version>2.2.0</m:dependency.management__org.scijava__minimaven__version>
+		<m:properties__jfreechart.version>1.0.19</m:properties__jfreechart.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-dom__exclusion_0>xalan__xalan</m:dependency.management__org.apache.xmlgraphics__batik-dom__exclusion_0>
+		<m:dependency.management__org.apache.xmlgraphics__batik-dom__exclusion_1>xml-apis__xml-apis</m:dependency.management__org.apache.xmlgraphics__batik-dom__exclusion_1>
+		<m:dependency.management__org.jfree__jfreechart__version>1.0.19</m:dependency.management__org.jfree__jfreechart__version>
+		<m:dependency.management__edu.mines__mines-jtk__version>20151125</m:dependency.management__edu.mines__mines-jtk__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-maven-plugin__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-maven-plugin__version>
+		<m:dependency.management__org.scijava__scripting-groovy__version>0.2.5</m:dependency.management__org.scijava__scripting-groovy__version>
+		<m:dependency.management__ome__formats-common__exclusion_1>xalan__xalan</m:dependency.management__ome__formats-common__exclusion_1>
+		<m:properties__jetty-servlets.version>${jetty.version}</m:properties__jetty-servlets.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-transcoder__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-transcoder__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-ant__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-ant__version>
+		<m:properties__license.copyrightOwners>Board of Regents of the University of
+Wisconsin-Madison, Broad Institute of MIT and Harvard, and Max Planck
+Institute of Molecular Cell Biology and Genetics.</m:properties__license.copyrightOwners>
+		<m:dependency.management__ome__formats-common__exclusion_0>xalan__serializer</m:dependency.management__ome__formats-common__exclusion_0>
+		<m:properties__nar-maven-plugin.version>3.5.0</m:properties__nar-maven-plugin.version>
+		<m:dependency.management__org.scijava__scripting-java__version>0.4.0</m:dependency.management__org.scijava__scripting-java__version>
+		<m:properties__scifio-hdf5.version>0.1.1</m:properties__scifio-hdf5.version>
+		<m:properties__batik-gvt.version>${batik.version}</m:properties__batik-gvt.version>
+		<m:properties__batik-rasterizer-ext.version>${batik.version}</m:properties__batik-rasterizer-ext.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jsp__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-jsp__version>
+		<m:properties__batik-extension.version>${batik.version}</m:properties__batik-extension.version>
+		<m:properties__batik-slideshow.version>${batik.version}</m:properties__batik-slideshow.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-http__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-http__version>
+		<m:properties__jna.version>4.2.2</m:properties__jna.version>
+		<m:properties__scripting-matlab.version>0.5.1</m:properties__scripting-matlab.version>
+		<m:dependency.management__io.scif__scifio-ome-xml__version>0.14.0</m:dependency.management__io.scif__scifio-ome-xml__version>
+		<m:dependency.management__ome__formats-gpl__version>5.2.3</m:dependency.management__ome__formats-gpl__version>
+		<m:dependency.management__net.imagej__imagej-launcher__version>4.0.5</m:dependency.management__net.imagej__imagej-launcher__version>
+		<m:properties__mpicbg.version>1.1.1</m:properties__mpicbg.version>
+		<m:properties__scijava-log-slf4j.version>1.0.3</m:properties__scijava-log-slf4j.version>
+		<m:properties__jetty.version>9.3.11.v20160721</m:properties__jetty.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jspc-maven-plugin__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-jspc-maven-plugin__version>
+		<m:properties__jetty-http-spi.version>${jetty.version}</m:properties__jetty-http-spi.version>
+		<m:properties__scripting-clojure.version>0.1.4</m:properties__scripting-clojure.version>
+		<m:dependency.management__org.scijava__scijava-log-slf4j__version>1.0.3</m:dependency.management__org.scijava__scijava-log-slf4j__version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-squiggle__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-squiggle__version>
+		<m:properties__scijava-plugins-commands.version>0.2.2</m:properties__scijava-plugins-commands.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-rewrite__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-rewrite__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-security__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-security__version>
+		<m:properties__jetty-jaas.version>${jetty.version}</m:properties__jetty-jaas.version>
+		<m:properties__formats-api.version>${bio-formats.version}</m:properties__formats-api.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-rasterizer-ext__exclusion_0>org.apache.xmlgraphics__batik-extensions</m:dependency.management__org.apache.xmlgraphics__batik-rasterizer-ext__exclusion_0>
+		<m:properties__scijava.jvm.version>1.6</m:properties__scijava.jvm.version>
+		<m:properties__scifio-ome-xml.version>0.14.0</m:properties__scifio-ome-xml.version>
+		<m:properties__slf4j-jcl.version>${slf4j.version}</m:properties__slf4j-jcl.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-rasterizer-ext__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-rasterizer-ext__version>
+		<m:dependency.management__org.slf4j__slf4j-jcl__version>1.7.21</m:dependency.management__org.slf4j__slf4j-jcl__version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-bridge__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-bridge__version>
+		<m:properties__ome-xml.version>${bio-formats.version}</m:properties__ome-xml.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-script__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-script__version>
+		<m:dependency.management__io.scif__scifio-lifesci__version>0.7.0</m:dependency.management__io.scif__scifio-lifesci__version>
+		<m:properties__javac.path>${java.home}/../lib/tools.jar</m:properties__javac.path>
+		<m:properties__junit.version>4.12</m:properties__junit.version>
+		<m:dependency.management__net.imagej__imagej-common__version>0.24.1</m:dependency.management__net.imagej__imagej-common__version>
+		<m:dependency.management__io.scif__scifio-jai-imageio__version>1.1.0</m:dependency.management__io.scif__scifio-jai-imageio__version>
+		<m:properties__slf4j-nop.version>${slf4j.version}</m:properties__slf4j-nop.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-clien__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-clien__version>
+		<m:dependency.management__org.scijava__scripting-renjin__version>0.2.1</m:dependency.management__org.scijava__scripting-renjin__version>
+		<m:dependency.management__org.scijava__swing-checkbox-tree__version>1.0.1</m:dependency.management__org.scijava__swing-checkbox-tree__version>
+		<m:dependency.management__ome__bio-formats_plugins__version>5.2.3</m:dependency.management__ome__bio-formats_plugins__version>
+		<m:dependency.management__org.apache.commons__commons-math3__version>3.6.1</m:dependency.management__org.apache.commons__commons-math3__version>
+		<m:properties__batik-bridge.version>${batik.version}</m:properties__batik-bridge.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-io__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-io__version>
+		<m:properties__license.projectName>ImageJ software for multidimensional image processing and analysis.</m:properties__license.projectName>
+		<m:properties__jetty-plus.version>${jetty.version}</m:properties__jetty-plus.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jaas__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-jaas__version>
+		<m:dependency.management__com.fifesoft__rsyntaxtextarea__version>2.5.8</m:dependency.management__com.fifesoft__rsyntaxtextarea__version>
+		<m:dependency.management__org.scijava__scijava-plugins-text-plain__version>0.1.2</m:dependency.management__org.scijava__scijava-plugins-text-plain__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-annotations__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-annotations__version>
+		<m:dependency.management__net.imagej__imagej-deprecated__version>0.1.1</m:dependency.management__net.imagej__imagej-deprecated__version>
+		<m:properties__bio-formats.version>5.2.3</m:properties__bio-formats.version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__scifio-cli.version>0.3.2</m:properties__scifio-cli.version>
+		<m:dependency.management__net.imglib2__imglib2-algorithm-gpl__version>0.1.5</m:dependency.management__net.imglib2__imglib2-algorithm-gpl__version>
+		<m:properties__jogl.version>2.3.2</m:properties__jogl.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-svggen__exclusion_0>xml-apis__xml-apis</m:dependency.management__org.apache.xmlgraphics__batik-svggen__exclusion_0>
+		<m:properties__scifio.version>0.29.0</m:properties__scifio.version>
+		<m:properties__jetty-util.version>${jetty.version}</m:properties__jetty-util.version>
+		<m:dependency.management__org.javassist__javassist__version>3.20.0-GA</m:dependency.management__org.javassist__javassist__version>
+		<m:dependency.management__org.slf4j__slf4j-simple__version>1.7.21</m:dependency.management__org.slf4j__slf4j-simple__version>
+		<m:dependency.management__com.miglayout__miglayout__version>3.7.4</m:dependency.management__com.miglayout__miglayout__version>
+		<m:dependency.management__org.scijava__scripting-jruby__version>0.2.4</m:dependency.management__org.scijava__scripting-jruby__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-server__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-server__version>
+		<m:properties__scijava-plugins-text-plain.version>0.1.2</m:properties__scijava-plugins-text-plain.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-ext__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-ext__version>
+		<m:properties__imagej-plugins-commands.version>0.7.0</m:properties__imagej-plugins-commands.version>
+		<m:properties__jetty-runner.version>${jetty.version}</m:properties__jetty-runner.version>
+		<m:properties__scijava-config.version>2.0.1</m:properties__scijava-config.version>
+		<m:properties__main-class>ij.ImageJ</m:properties__main-class>
+		<m:dependency.management__org.scijava__scijava-plugins-commands__version>0.2.2</m:dependency.management__org.scijava__scijava-plugins-commands__version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-swing__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-swing__version>
+		<m:dependency.management__net.imagej__imagej__version>2.0.0-rc-55</m:dependency.management__net.imagej__imagej__version>
+		<m:dependency.management__net.imagej__imagej-plugins-commands__version>0.7.0</m:dependency.management__net.imagej__imagej-plugins-commands__version>
+		<m:properties__imagej.version>2.0.0-rc-55</m:properties__imagej.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-svg-dom__exclusion_0>xml-apis__xml-apis</m:dependency.management__org.apache.xmlgraphics__batik-svg-dom__exclusion_0>
+		<m:dependency.management__junit__junit__version>4.12</m:dependency.management__junit__junit__version>
+		<m:dependency.management__org.scijava__scripting-jython__version>0.4.0</m:dependency.management__org.scijava__scripting-jython__version>
+		<m:properties__formats-bsd.version>${bio-formats.version}</m:properties__formats-bsd.version>
+		<m:properties__scijava-plugins-text-markdown.version>0.1.2</m:properties__scijava-plugins-text-markdown.version>
+		<m:dependency.management__net.imagej__imagej-omero__version>0.4.0</m:dependency.management__net.imagej__imagej-omero__version>
+		<m:properties__imglib2-ij.version>2.0.0-beta-34</m:properties__imglib2-ij.version>
+		<m:properties__batik-swing.version>${batik.version}</m:properties__batik-swing.version>
+		<m:properties__batik-ext.version>${batik.version}</m:properties__batik-ext.version>
+		<m:dependency.management__org.slf4j__slf4j-nop__version>1.7.21</m:dependency.management__org.slf4j__slf4j-nop__version>
+		<m:properties__imglib2-script.version>0.2.0</m:properties__imglib2-script.version>
+		<m:properties__logback-classic.version>${logback.version}</m:properties__logback-classic.version>
+		<m:dependency.management__org.scijava__vecmath__version>1.6.0-scijava-2</m:dependency.management__org.scijava__vecmath__version>
+		<m:properties__javassist.version>3.20.0-GA</m:properties__javassist.version>
+		<m:properties__imagej-plugins-tools.version>0.3.0</m:properties__imagej-plugins-tools.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-transcoder__exclusion_0>xml-apis__xml-apis</m:dependency.management__org.apache.xmlgraphics__batik-transcoder__exclusion_0>
+		<m:dependency.management__org.scijava__scijava-config__version>2.0.1</m:dependency.management__org.scijava__scijava-config__version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-svg-dom__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-svg-dom__version>
+		<m:maven.plugins>null__maven-source-plugin__null|null__maven-surefire-plugin__null|null__maven-enforcer-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.fusesource.mvnplugins__maven-graph-plugin__null|com.zenjava__javafx-maven-plugin__null|com.github.maven-nar__nar-maven-plugin__null|org.scijava__scijava-maven-plugin__null|null__maven-source-plugin__null|null__maven-surefire-plugin__null|null__maven-enforcer-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.fusesource.mvnplugins__maven-graph-plugin__null|com.zenjava__javafx-maven-plugin__null|com.github.maven-nar__nar-maven-plugin__null|org.scijava__scijava-maven-plugin__null|null__maven-enforcer-plugin__null|net.imagej__imagej-maven-plugin__0.6.0|null__maven-source-plugin__null|null__maven-surefire-plugin__null|null__maven-enforcer-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.fusesource.mvnplugins__maven-graph-plugin__null|com.zenjava__javafx-maven-plugin__null|com.github.maven-nar__nar-maven-plugin__null|org.scijava__scijava-maven-plugin__null|null__maven-source-plugin__null|null__maven-surefire-plugin__null|null__maven-enforcer-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.fusesource.mvnplugins__maven-graph-plugin__null|com.zenjava__javafx-maven-plugin__null|com.github.maven-nar__nar-maven-plugin__null|org.scijava__scijava-maven-plugin__null|null__maven-enforcer-plugin__null|net.imagej__imagej-maven-plugin__0.6.0|null__maven-javadoc-plugin__null|null__maven-jar-plugin__null|org.codehaus.mojo__exec-maven-plugin__null</m:maven.plugins>
+		<m:properties__scijava-plugins-platforms.version>0.2.0</m:properties__scijava-plugins-platforms.version>
+		<m:properties__batik-squiggle.version>${batik.version}</m:properties__batik-squiggle.version>
+		<m:dependency.management__ome__formats-common__version>5.2.3</m:dependency.management__ome__formats-common__version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-ext__exclusion_0>xml-apis__xml-apis</m:dependency.management__org.apache.xmlgraphics__batik-ext__exclusion_0>
+		<m:properties__gson.version>2.7</m:properties__gson.version>
+		<m:dependency.management__com.fifesoft__autocomplete__version>2.5.8</m:dependency.management__com.fifesoft__autocomplete__version>
+		<m:dependency.management__net.imagej__imagej-plugins-tools__version>0.3.0</m:dependency.management__net.imagej__imagej-plugins-tools__version>
+		<m:properties__jcommon.version>1.0.23</m:properties__jcommon.version>
+		<m:properties__jdom2.version>2.0.6</m:properties__jdom2.version>
+		<m:dependency.management__org.jogamp.joal__joal-main__version>2.3.2</m:dependency.management__org.jogamp.joal__joal-main__version>
+		<m:dependency.management__net.imagej__imagej-plugins-uploader-webdav__version>0.2.0</m:dependency.management__net.imagej__imagej-plugins-uploader-webdav__version>
+		<m:dependency.management__net.imglib2__imglib2__version>3.2.0</m:dependency.management__net.imglib2__imglib2__version>
+		<m:dependency.management__net.imglib2__imglib2-ui__version>2.0.0-beta-30</m:dependency.management__net.imglib2__imglib2-ui__version>
+		<m:properties__jetty-proxy.version>${jetty.version}</m:properties__jetty-proxy.version>
+		<m:dependency.management__org.scijava__scripting-clojure__version>0.1.4</m:dependency.management__org.scijava__scripting-clojure__version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-parser__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-parser__version>
+		<m:properties__batik-dom.version>${batik.version}</m:properties__batik-dom.version>
+		<m:properties__imglib2-realtransform.version>2.0.0-beta-32</m:properties__imglib2-realtransform.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-css__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-css__version>
+		<m:properties__jetty-util-ajax.version>${jetty.version}</m:properties__jetty-util-ajax.version>
+		<m:dependency.management__ome__formats-api__version>5.2.3</m:dependency.management__ome__formats-api__version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-extension__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-extension__version>
+		<m:dependency.management__org.jdom__jdom2__version>2.0.6</m:dependency.management__org.jdom__jdom2__version>
+		<m:dependency.management__org.slf4j__slf4j-jdk14__version>1.7.21</m:dependency.management__org.slf4j__slf4j-jdk14__version>
+		<m:properties__scripting-renjin.version>0.2.1</m:properties__scripting-renjin.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-dom__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-dom__version>
+		<m:properties__rsyntaxtextarea.version>2.5.8</m:properties__rsyntaxtextarea.version>
+		<m:properties__jetty-rewrite.version>${jetty.version}</m:properties__jetty-rewrite.version>
+		<m:properties__slf4j-ext.version>${slf4j.version}</m:properties__slf4j-ext.version>
+		<m:properties__jetty-jsp.version>${jetty.version}</m:properties__jetty-jsp.version>
+		<m:dependency.management__net.imglib2__imglib2-realtransform__version>2.0.0-beta-32</m:dependency.management__net.imglib2__imglib2-realtransform__version>
+		<m:properties__batik-rasterizer.version>${batik.version}</m:properties__batik-rasterizer.version>
+		<m:properties__slf4j-simple.version>${slf4j.version}</m:properties__slf4j-simple.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-anim__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-anim__version>
+		<m:dependency.management__org.scijava__scijava-common__version>2.60.2</m:dependency.management__org.scijava__scijava-common__version>
+		<m:dependency.management__net.imagej__imagej-plugins-uploader-ssh__version>0.3.0</m:dependency.management__net.imagej__imagej-plugins-uploader-ssh__version>
+		<m:properties__batik-xml.version>${batik.version}</m:properties__batik-xml.version>
+		<m:dependency.management__net.imagej__ij__exclusion_0>com.sun__tools</m:dependency.management__net.imagej__ij__exclusion_0>
+		<m:properties__batik-anim.version>${batik.version}</m:properties__batik-anim.version>
+		<m:properties__imagej-matlab.version>0.7.1</m:properties__imagej-matlab.version>
+		<m:properties__minimaven.version>2.2.0</m:properties__minimaven.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-gvt__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-gvt__version>
+		<m:properties__batik-util.version>${batik.version}</m:properties__batik-util.version>
+		<m:dependency.management__gov.nist.math__jama__version>1.0.3</m:dependency.management__gov.nist.math__jama__version>
+		<m:properties__swing-checkbox-tree.version>1.0.1</m:properties__swing-checkbox-tree.version>
+		<m:dependency.management__org.scijava__scijava-plugins-text-markdown__version>0.1.2</m:dependency.management__org.scijava__scijava-plugins-text-markdown__version>
+		<m:properties__jetty-nosql.version>${jetty.version}</m:properties__jetty-nosql.version>
+		<m:properties__imagej-maven-plugin.version>0.6.0</m:properties__imagej-maven-plugin.version>
+		<m:properties__jetty-server.version>${jetty.version}</m:properties__jetty-server.version>
+		<m:dependency.management__com.fifesoft__languagesupport__version>2.5.8</m:dependency.management__com.fifesoft__languagesupport__version>
+		<m:properties__imglib2-roi.version>0.4.3</m:properties__imglib2-roi.version>
+		<m:dependency.management__ome__ome-xml__version>5.2.3</m:dependency.management__ome__ome-xml__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-monitor__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-monitor__version>
+		<m:dependency.management__net.imglib2__imglib2-algorithm__version>0.6.0</m:dependency.management__net.imglib2__imglib2-algorithm__version>
+		<m:dependency.management__net.java.dev.jna__jna__version>4.2.2</m:dependency.management__net.java.dev.jna__jna__version>
+		<m:properties__scijava-ui-swing.version>0.9.0</m:properties__scijava-ui-swing.version>
+		<m:properties__ij1-patcher.version>0.12.5</m:properties__ij1-patcher.version>
+		<m:properties__imglib2-algorithm.version>0.6.0</m:properties__imglib2-algorithm.version>
+		<m:properties__jetty-servlet.version>${jetty.version}</m:properties__jetty-servlet.version>
+		<m:properties__imagej-usage.version>0.4.0</m:properties__imagej-usage.version>
+		<m:properties__scripting-javascript.version>0.4.3</m:properties__scripting-javascript.version>
+		<m:properties__jetty-ant.version>${jetty.version}</m:properties__jetty-ant.version>
+		<m:dependency.management__org.scijava__scijava-plugins-platforms__version>0.2.0</m:dependency.management__org.scijava__scijava-plugins-platforms__version>
+		<m:properties__imglib2-algorithm-gpl.version>0.1.5</m:properties__imglib2-algorithm-gpl.version>
+		<m:dependency.management__net.imagej__imagej-updater__version>0.8.1</m:dependency.management__net.imagej__imagej-updater__version>
+		<m:properties__imagej-scripting.version>0.4.0</m:properties__imagej-scripting.version>
+		<m:properties__scripting-java.version>0.4.0</m:properties__scripting-java.version>
+		<m:properties__jetty-jmx.version>${jetty.version}</m:properties__jetty-jmx.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-anim__exclusion_0>xml-apis__xml-apis</m:dependency.management__org.apache.xmlgraphics__batik-anim__exclusion_0>
+		<m:dependency.management__org.eclipse.jetty__jetty-start__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-start__version>
+		<m:properties__jetty-continuation.version>${jetty.version}</m:properties__jetty-continuation.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-webapp__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-webapp__version>
+		<m:dependency.management__net.imagej__imagej-scripting__version>0.4.0</m:dependency.management__net.imagej__imagej-scripting__version>
+		<m:properties__jetty-io.version>${jetty.version}</m:properties__jetty-io.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-swing__exclusion_0>xml-apis__xml-apis</m:dependency.management__org.apache.xmlgraphics__batik-swing__exclusion_0>
+		<m:properties__imagej-ops.version>0.33.0</m:properties__imagej-ops.version>
+		<m:properties__scijava-common.version>2.60.2</m:properties__scijava-common.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-runner__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-runner__version>
+		<m:dependency.management__net.imglib2__imglib2-algorithm-fft__version>0.1.2</m:dependency.management__net.imglib2__imglib2-algorithm-fft__version>
+		<m:dependency.management__net.imagej__ij__version>1.51f</m:dependency.management__net.imagej__ij__version>
+		<m:dependency.management__org.scijava__junit-benchmarks__version>0.7.4-scijava</m:dependency.management__org.scijava__junit-benchmarks__version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-svgpp__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-svgpp__version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-parser__exclusion_0>xml-apis__xml-apis</m:dependency.management__org.apache.xmlgraphics__batik-parser__exclusion_0>
+		<m:properties__scijava-expression-parser.version>3.1.0</m:properties__scijava-expression-parser.version>
+		<m:dependency.management__org.scijava__scripting-javascript__version>0.4.3</m:dependency.management__org.scijava__scripting-javascript__version>
+		<m:dependency.management__mpicbg__mpicbg__version>1.1.1</m:dependency.management__mpicbg__mpicbg__version>
+		<m:properties__scripting-groovy.version>0.2.5</m:properties__scripting-groovy.version>
+		<m:properties__guava.version>19.0</m:properties__guava.version>
+		<m:properties__jetty-jndi.version>${jetty.version}</m:properties__jetty-jndi.version>
+		<m:properties__scifio-bf-compat.version>2.0.0</m:properties__scifio-bf-compat.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-squiggle-ext__exclusion_0>org.apache.xmlgraphics__batik-extensions</m:dependency.management__org.apache.xmlgraphics__batik-squiggle-ext__exclusion_0>
+		<m:properties__imagej1.version>1.51f</m:properties__imagej1.version>
+		<m:dependency.management__ome__formats-api__exclusion_0>xalan__serializer</m:dependency.management__ome__formats-api__exclusion_0>
+		<m:dependency.management__ome__formats-api__exclusion_1>xalan__xalan</m:dependency.management__ome__formats-api__exclusion_1>
+		<m:properties__jetty-security.version>${jetty.version}</m:properties__jetty-security.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jaspi__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-jaspi__version>
+		<m:properties__jetty-xml.version>${jetty.version}</m:properties__jetty-xml.version>
+		<m:properties__jetty-jspc-maven-plugin.version>${jetty.version}</m:properties__jetty-jspc-maven-plugin.version>
+		<m:dependency.management__net.imglib2__imglib2-ij__version>2.0.0-beta-34</m:dependency.management__net.imglib2__imglib2-ij__version>
+		<m:properties__batik-transcoder.version>${batik.version}</m:properties__batik-transcoder.version>
+		<m:dependency.management__org.apache.xmlgraphics__batik-xml__version>1.8</m:dependency.management__org.apache.xmlgraphics__batik-xml__version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:dependency.management__org.scijava__scripting-beanshell__version>0.3.1</m:dependency.management__org.scijava__scripting-beanshell__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-nosql__version>9.3.11.v20160721</m:dependency.management__org.eclipse.jetty__jetty-nosql__version>
+		<m:dependency.management__net.imagej__ij1-patcher__version>0.12.5</m:dependency.management__net.imagej__ij1-patcher__version>
+		<m:dependency.management__net.imagej__imagej-usage__version>0.4.0</m:dependency.management__net.imagej__imagej-usage__version>
+		<m:properties__jetty-deploy.version>${jetty.version}</m:properties__jetty-deploy.version>
+		<m:dependency.management__org.scijava__script-editor__version>0.1.0</m:dependency.management__org.scijava__script-editor__version>
+		<m:properties__imglib2.version>3.2.0</m:properties__imglib2.version>
+		<m:properties__logback-core.version>${logback.version}</m:properties__logback-core.version>
+		<m:dependency.management__joda-time__joda-time__version>2.9.4</m:dependency.management__joda-time__joda-time__version>
+		<m:properties__package-name>net.imagej</m:properties__package-name>
+		<m:properties__java3d.version>1.6.0-scijava-2</m:properties__java3d.version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="ij" type="jar" ext="jar" conf="master"/>
+		<artifact name="ij" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="ij" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="com.yuvimasory" name="orange-extensions" rev="1.3.0" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<override org="org.eclipse.jetty" module="jetty-jndi" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.scijava" module="junit-benchmarks" matcher="exact" rev="0.7.4-scijava"/>
+		<override org="ch.qos.logback" module="logback-classic" matcher="exact" rev="1.1.7"/>
+		<override org="org.eclipse.jetty" module="jetty-spring" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.apache.xmlgraphics" module="batik-js" matcher="exact" rev="1.8"/>
+		<override org="org.apache.xmlgraphics" module="batik-js" matcher="exact" rev="1.8"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.12"/>
+		<override org="net.imagej" module="imagej-ui-awt" matcher="exact" rev="0.3.0"/>
+		<override org="org.jfree" module="jcommon" matcher="exact" rev="1.0.23"/>
+		<override org="net.imglib2" module="imglib2-roi" matcher="exact" rev="0.4.3"/>
+		<override org="net.imagej" module="imagej-legacy" matcher="exact" rev="0.23.2"/>
+		<override org="org.jogamp.jocl" module="jocl-main" matcher="exact" rev="2.3.2"/>
+		<override org="ome" module="formats-bsd" matcher="exact" rev="5.2.3"/>
+		<override org="org.apache.xmlgraphics" module="batik-bridge" matcher="exact" rev="1.8"/>
+		<override org="ome" module="formats-bsd" matcher="exact" rev="5.2.3"/>
+		<override org="com.google.code.gson" module="gson" matcher="exact" rev="2.7"/>
+		<override org="org.scijava" module="scripting-scala" matcher="exact" rev="0.1.0"/>
+		<override org="ome" module="formats-bsd" matcher="exact" rev="5.2.3"/>
+		<override org="org.apache.xmlgraphics" module="batik-ttf2svg" matcher="exact" rev="1.8"/>
+		<override org="org.apache.xmlgraphics" module="batik-bridge" matcher="exact" rev="1.8"/>
+		<override org="org.scijava" module="j3dutils" matcher="exact" rev="1.6.0-scijava-2"/>
+		<override org="org.jogamp.gluegen" module="gluegen-rt-main" matcher="exact" rev="2.3.2"/>
+		<override org="cisd" module="jhdf5" matcher="exact" rev="14.12.5"/>
+		<override org="org.jogamp.jogl" module="jogl-all-main" matcher="exact" rev="2.3.2"/>
+		<override org="org.apache.xmlgraphics" module="batik-squiggle" matcher="exact" rev="1.8"/>
+		<override org="org.slf4j" module="slf4j-ext" matcher="exact" rev="1.7.21"/>
+		<override org="net.imglib2" module="imglib2-script" matcher="exact" rev="0.2.0"/>
+		<override org="org.eclipse.jetty" module="jetty-servlet" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.eclipse.jetty" module="jetty-util" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.apache.xmlgraphics" module="batik-squiggle-ext" matcher="exact" rev="1.8"/>
+		<override org="org.scijava" module="scijava-ui-swing" matcher="exact" rev="0.9.0"/>
+		<override org="mpicbg" module="mpicbg" matcher="exact" rev="1.1.1"/>
+		<override org="org.scijava" module="scijava-ui-awt" matcher="exact" rev="0.1.4"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="19.0"/>
+		<override org="org.apache.xmlgraphics" module="batik-svggen" matcher="exact" rev="1.8"/>
+		<override org="org.scijava" module="scijava-expression-parser" matcher="exact" rev="3.1.0"/>
+		<override org="org.eclipse.jetty" module="jetty-jmx" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="ch.qos.logback" module="logback-core" matcher="exact" rev="1.1.7"/>
+		<override org="org.eclipse.jetty" module="jetty-proxy" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.apache.xmlgraphics" module="batik-codec" matcher="exact" rev="1.8"/>
+		<override org="org.apache.xmlgraphics" module="batik-extension" matcher="exact" rev="1.8"/>
+		<override org="org.apache.xmlgraphics" module="batik-script" matcher="exact" rev="1.8"/>
+		<override org="org.scijava" module="j3dcore" matcher="exact" rev="1.6.0-scijava-2"/>
+		<override org="org.eclipse.jetty" module="jetty-xml" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.scijava" module="scripting-matlab" matcher="exact" rev="0.5.1"/>
+		<override org="ome" module="formats-bsd" matcher="exact" rev="5.2.3"/>
+		<override org="org.eclipse.jetty" module="jetty-util-ajax" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.scijava" module="scijava-cache" matcher="exact" rev="0.1.1"/>
+		<override org="org.apache.xmlgraphics" module="batik-slideshow" matcher="exact" rev="1.8"/>
+		<override org="io.scif" module="scifio-bf-compat" matcher="exact" rev="2.0.0"/>
+		<override org="org.apache.xmlgraphics" module="batik-css" matcher="exact" rev="1.8"/>
+		<override org="io.scif" module="scifio" matcher="exact" rev="0.29.0"/>
+		<override org="net.imagej" module="imagej-ops" matcher="exact" rev="0.33.0"/>
+		<override org="net.imagej" module="imagej-ui-swing" matcher="exact" rev="0.21.1"/>
+		<override org="io.scif" module="scifio-hdf5" matcher="exact" rev="0.1.1"/>
+		<override org="org.jfree" module="jfreechart" matcher="exact" rev="1.0.19"/>
+		<override org="org.apache.xmlgraphics" module="batik-util" matcher="exact" rev="1.8"/>
+		<override org="net.imagej" module="op-finder" matcher="exact" rev="0.1.0"/>
+		<override org="org.apache.xmlgraphics" module="batik-slideshow" matcher="exact" rev="1.8"/>
+		<override org="org.eclipse.jetty" module="jetty-plus" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.eclipse.jetty" module="jetty-servlets" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.21"/>
+		<override org="io.scif" module="scifio-cli" matcher="exact" rev="0.3.2"/>
+		<override org="org.scijava" module="native-lib-loader" matcher="exact" rev="2.1.4"/>
+		<override org="org.apache.xmlgraphics" module="batik-rasterizer" matcher="exact" rev="1.8"/>
+		<override org="org.eclipse.jetty" module="jetty-http-spi" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.apache.xmlgraphics" module="batik-gui-util" matcher="exact" rev="1.8"/>
+		<override org="org.eclipse.jetty" module="jetty-deploy" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.eclipse.jetty" module="jetty-continuation" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.apache.xmlgraphics" module="batik-awt-util" matcher="exact" rev="1.8"/>
+		<override org="org.scijava" module="minimaven" matcher="exact" rev="2.2.0"/>
+		<override org="org.apache.xmlgraphics" module="batik-dom" matcher="exact" rev="1.8"/>
+		<override org="org.apache.xmlgraphics" module="batik-dom" matcher="exact" rev="1.8"/>
+		<override org="org.jfree" module="jfreechart" matcher="exact" rev="1.0.19"/>
+		<override org="edu.mines" module="mines-jtk" matcher="exact" rev="20151125"/>
+		<override org="org.eclipse.jetty" module="jetty-maven-plugin" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.scijava" module="scripting-groovy" matcher="exact" rev="0.2.5"/>
+		<override org="ome" module="formats-common" matcher="exact" rev="5.2.3"/>
+		<override org="org.apache.xmlgraphics" module="batik-transcoder" matcher="exact" rev="1.8"/>
+		<override org="org.eclipse.jetty" module="jetty-ant" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="ome" module="formats-common" matcher="exact" rev="5.2.3"/>
+		<override org="org.scijava" module="scripting-java" matcher="exact" rev="0.4.0"/>
+		<override org="org.eclipse.jetty" module="jetty-jsp" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.eclipse.jetty" module="jetty-http" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="io.scif" module="scifio-ome-xml" matcher="exact" rev="0.14.0"/>
+		<override org="ome" module="formats-gpl" matcher="exact" rev="5.2.3"/>
+		<override org="net.imagej" module="imagej-launcher" matcher="exact" rev="4.0.5"/>
+		<override org="org.eclipse.jetty" module="jetty-jspc-maven-plugin" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.scijava" module="scijava-log-slf4j" matcher="exact" rev="1.0.3"/>
+		<override org="org.apache.xmlgraphics" module="batik-squiggle" matcher="exact" rev="1.8"/>
+		<override org="org.eclipse.jetty" module="jetty-rewrite" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.eclipse.jetty" module="jetty-security" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.apache.xmlgraphics" module="batik-rasterizer-ext" matcher="exact" rev="1.8"/>
+		<override org="org.apache.xmlgraphics" module="batik-rasterizer-ext" matcher="exact" rev="1.8"/>
+		<override org="org.slf4j" module="slf4j-jcl" matcher="exact" rev="1.7.21"/>
+		<override org="org.apache.xmlgraphics" module="batik-bridge" matcher="exact" rev="1.8"/>
+		<override org="org.apache.xmlgraphics" module="batik-script" matcher="exact" rev="1.8"/>
+		<override org="io.scif" module="scifio-lifesci" matcher="exact" rev="0.7.0"/>
+		<override org="net.imagej" module="imagej-common" matcher="exact" rev="0.24.1"/>
+		<override org="io.scif" module="scifio-jai-imageio" matcher="exact" rev="1.1.0"/>
+		<override org="org.eclipse.jetty" module="jetty-clien" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.scijava" module="scripting-renjin" matcher="exact" rev="0.2.1"/>
+		<override org="org.scijava" module="swing-checkbox-tree" matcher="exact" rev="1.0.1"/>
+		<override org="ome" module="bio-formats_plugins" matcher="exact" rev="5.2.3"/>
+		<override org="org.apache.commons" module="commons-math3" matcher="exact" rev="3.6.1"/>
+		<override org="org.eclipse.jetty" module="jetty-io" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.eclipse.jetty" module="jetty-jaas" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="com.fifesoft" module="rsyntaxtextarea" matcher="exact" rev="2.5.8"/>
+		<override org="org.scijava" module="scijava-plugins-text-plain" matcher="exact" rev="0.1.2"/>
+		<override org="org.eclipse.jetty" module="jetty-annotations" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="net.imagej" module="imagej-deprecated" matcher="exact" rev="0.1.1"/>
+		<override org="net.imglib2" module="imglib2-algorithm-gpl" matcher="exact" rev="0.1.5"/>
+		<override org="org.apache.xmlgraphics" module="batik-svggen" matcher="exact" rev="1.8"/>
+		<override org="org.javassist" module="javassist" matcher="exact" rev="3.20.0-GA"/>
+		<override org="org.slf4j" module="slf4j-simple" matcher="exact" rev="1.7.21"/>
+		<override org="com.miglayout" module="miglayout" matcher="exact" rev="3.7.4"/>
+		<override org="org.scijava" module="scripting-jruby" matcher="exact" rev="0.2.4"/>
+		<override org="org.eclipse.jetty" module="jetty-server" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.apache.xmlgraphics" module="batik-ext" matcher="exact" rev="1.8"/>
+		<override org="org.scijava" module="scijava-plugins-commands" matcher="exact" rev="0.2.2"/>
+		<override org="org.apache.xmlgraphics" module="batik-swing" matcher="exact" rev="1.8"/>
+		<override org="net.imagej" module="imagej" matcher="exact" rev="2.0.0-rc-55"/>
+		<override org="net.imagej" module="imagej-plugins-commands" matcher="exact" rev="0.7.0"/>
+		<override org="org.apache.xmlgraphics" module="batik-svg-dom" matcher="exact" rev="1.8"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.12"/>
+		<override org="org.scijava" module="scripting-jython" matcher="exact" rev="0.4.0"/>
+		<override org="net.imagej" module="imagej-omero" matcher="exact" rev="0.4.0"/>
+		<override org="org.slf4j" module="slf4j-nop" matcher="exact" rev="1.7.21"/>
+		<override org="org.scijava" module="vecmath" matcher="exact" rev="1.6.0-scijava-2"/>
+		<override org="org.apache.xmlgraphics" module="batik-transcoder" matcher="exact" rev="1.8"/>
+		<override org="org.scijava" module="scijava-config" matcher="exact" rev="2.0.1"/>
+		<override org="org.apache.xmlgraphics" module="batik-svg-dom" matcher="exact" rev="1.8"/>
+		<override org="ome" module="formats-common" matcher="exact" rev="5.2.3"/>
+		<override org="org.apache.xmlgraphics" module="batik-ext" matcher="exact" rev="1.8"/>
+		<override org="com.fifesoft" module="autocomplete" matcher="exact" rev="2.5.8"/>
+		<override org="net.imagej" module="imagej-plugins-tools" matcher="exact" rev="0.3.0"/>
+		<override org="org.jogamp.joal" module="joal-main" matcher="exact" rev="2.3.2"/>
+		<override org="net.imagej" module="imagej-plugins-uploader-webdav" matcher="exact" rev="0.2.0"/>
+		<override org="net.imglib2" module="imglib2" matcher="exact" rev="3.2.0"/>
+		<override org="net.imglib2" module="imglib2-ui" matcher="exact" rev="2.0.0-beta-30"/>
+		<override org="org.scijava" module="scripting-clojure" matcher="exact" rev="0.1.4"/>
+		<override org="org.apache.xmlgraphics" module="batik-parser" matcher="exact" rev="1.8"/>
+		<override org="org.apache.xmlgraphics" module="batik-css" matcher="exact" rev="1.8"/>
+		<override org="ome" module="formats-api" matcher="exact" rev="5.2.3"/>
+		<override org="org.apache.xmlgraphics" module="batik-extension" matcher="exact" rev="1.8"/>
+		<override org="org.jdom" module="jdom2" matcher="exact" rev="2.0.6"/>
+		<override org="org.slf4j" module="slf4j-jdk14" matcher="exact" rev="1.7.21"/>
+		<override org="org.apache.xmlgraphics" module="batik-dom" matcher="exact" rev="1.8"/>
+		<override org="net.imglib2" module="imglib2-realtransform" matcher="exact" rev="2.0.0-beta-32"/>
+		<override org="org.apache.xmlgraphics" module="batik-anim" matcher="exact" rev="1.8"/>
+		<override org="org.scijava" module="scijava-common" matcher="exact" rev="2.60.2"/>
+		<override org="net.imagej" module="imagej-plugins-uploader-ssh" matcher="exact" rev="0.3.0"/>
+		<override org="net.imagej" module="ij" matcher="exact" rev="1.51f"/>
+		<override org="org.apache.xmlgraphics" module="batik-gvt" matcher="exact" rev="1.8"/>
+		<override org="gov.nist.math" module="jama" matcher="exact" rev="1.0.3"/>
+		<override org="org.scijava" module="scijava-plugins-text-markdown" matcher="exact" rev="0.1.2"/>
+		<override org="com.fifesoft" module="languagesupport" matcher="exact" rev="2.5.8"/>
+		<override org="ome" module="ome-xml" matcher="exact" rev="5.2.3"/>
+		<override org="org.eclipse.jetty" module="jetty-monitor" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="net.imglib2" module="imglib2-algorithm" matcher="exact" rev="0.6.0"/>
+		<override org="net.java.dev.jna" module="jna" matcher="exact" rev="4.2.2"/>
+		<override org="org.scijava" module="scijava-plugins-platforms" matcher="exact" rev="0.2.0"/>
+		<override org="net.imagej" module="imagej-updater" matcher="exact" rev="0.8.1"/>
+		<override org="org.apache.xmlgraphics" module="batik-anim" matcher="exact" rev="1.8"/>
+		<override org="org.eclipse.jetty" module="jetty-start" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="org.eclipse.jetty" module="jetty-webapp" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="net.imagej" module="imagej-scripting" matcher="exact" rev="0.4.0"/>
+		<override org="org.apache.xmlgraphics" module="batik-swing" matcher="exact" rev="1.8"/>
+		<override org="org.eclipse.jetty" module="jetty-runner" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="net.imglib2" module="imglib2-algorithm-fft" matcher="exact" rev="0.1.2"/>
+		<override org="net.imagej" module="ij" matcher="exact" rev="1.51f"/>
+		<override org="org.scijava" module="junit-benchmarks" matcher="exact" rev="0.7.4-scijava"/>
+		<override org="org.apache.xmlgraphics" module="batik-svgpp" matcher="exact" rev="1.8"/>
+		<override org="org.apache.xmlgraphics" module="batik-parser" matcher="exact" rev="1.8"/>
+		<override org="org.scijava" module="scripting-javascript" matcher="exact" rev="0.4.3"/>
+		<override org="mpicbg" module="mpicbg" matcher="exact" rev="1.1.1"/>
+		<override org="org.apache.xmlgraphics" module="batik-squiggle-ext" matcher="exact" rev="1.8"/>
+		<override org="ome" module="formats-api" matcher="exact" rev="5.2.3"/>
+		<override org="ome" module="formats-api" matcher="exact" rev="5.2.3"/>
+		<override org="org.eclipse.jetty" module="jetty-jaspi" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="net.imglib2" module="imglib2-ij" matcher="exact" rev="2.0.0-beta-34"/>
+		<override org="org.apache.xmlgraphics" module="batik-xml" matcher="exact" rev="1.8"/>
+		<override org="org.scijava" module="scripting-beanshell" matcher="exact" rev="0.3.1"/>
+		<override org="org.eclipse.jetty" module="jetty-nosql" matcher="exact" rev="9.3.11.v20160721"/>
+		<override org="net.imagej" module="ij1-patcher" matcher="exact" rev="0.12.5"/>
+		<override org="net.imagej" module="imagej-usage" matcher="exact" rev="0.4.0"/>
+		<override org="org.scijava" module="script-editor" matcher="exact" rev="0.1.0"/>
+		<override org="joda-time" module="joda-time" matcher="exact" rev="2.9.4"/>
+	</dependencies>
+</ivy-module>

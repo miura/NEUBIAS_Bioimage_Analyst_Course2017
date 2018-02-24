@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>gov.nist.math</groupId>
+  <artifactId>jama</artifactId>
+  <version>1.0.3</version>
+  <packaging>jar</packaging>
+
+  <name>JAMA</name>
+  <description>JAMA is a basic linear algebra package for Java. It provides
+  user-level classes for constructing and manipulating real, dense matrices.
+  It is meant to provide sufficient functionality for routine problems,
+  packaged in a way that is natural and understandable to
+  non-experts.</description>
+  <url>http://math.nist.gov/javanumerics/jama/</url>
+
+  <organization>
+    <name>Java Numerics Working Group, National Institute of Standards and Technology (NIST)</name>
+    <url>http://math.nist.gov/javanumerics/</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>Public Domain</name>
+      <url>http://creativecommons.org/licenses/publicdomain/</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>jhicklin</id>
+      <name>Joe Hicklin</name>
+      <organization>The MathWorks</organization>
+      <organizationUrl>http://www.mathworks.com/</organizationUrl>
+    </developer>
+    <developer>
+      <id>cmoler</id>
+      <name>Cleve Moler</name>
+      <url>http://www.mathworks.com/company/cleve_bio.shtml</url>
+      <organization>The MathWorks</organization>
+      <organizationUrl>http://www.mathworks.com/</organizationUrl>
+    </developer>
+    <developer>
+      <id>pwebb</id>
+      <name>Peter Webb</name>
+      <organization>The MathWorks</organization>
+      <organizationUrl>http://www.mathworks.com/</organizationUrl>
+    </developer>
+    <developer>
+      <id>rboisvert</id>
+      <name>Ronald F. Boisvert</name>
+      <url>http://math.nist.gov/~RBoisvert/</url>
+      <organization>National Institute of Standards and Technology (NIST)</organization>
+      <organizationUrl>http://www.nist.gov/</organizationUrl>
+    </developer>
+    <developer>
+      <id>bmiller</id>
+      <name>Bruce Miller</name>
+      <url>http://math.nist.gov/~BMiller/</url>
+      <organization>National Institute of Standards and Technology (NIST)</organization>
+      <organizationUrl>http://www.nist.gov/</organizationUrl>
+    </developer>
+    <developer>
+      <id>rpozo</id>
+      <name>Roldan Pozo</name>
+      <url>http://math.nist.gov/~RPozo/</url>
+      <organization>National Institute of Standards and Technology (NIST)</organization>
+      <organizationUrl>http://www.nist.gov/</organizationUrl>
+    </developer>
+    <developer>
+      <id>kremington</id>
+      <name>Karin Remington</name>
+      <url>http://math.nist.gov/~KRemington/</url>
+      <organization>National Institute of Standards and Technology (NIST)</organization>
+      <organizationUrl>http://www.nist.gov/</organizationUrl>
+    </developer>
+  </developers>
+
+  <mailingLists>
+    <mailingList>
+      <name>jama</name>
+      <subscribe>http://cio.nist.gov/esd/emaildir/lists/jama/maillist.html</subscribe>
+      <unsubscribe>http://cio.nist.gov/esd/emaildir/lists/jama/maillist.html</unsubscribe>
+      <archive>http://cio.nist.gov/esd/emaildir/lists/jama/maillist.html</archive>
+    </mailingList>
+  </mailingLists>
+
+  <scm>
+    <connection>not available</connection>
+    <url>http://math.nist.gov/javanumerics/jama/Jama-1.0.3.tar.gz</url>
+  </scm>
+</project>

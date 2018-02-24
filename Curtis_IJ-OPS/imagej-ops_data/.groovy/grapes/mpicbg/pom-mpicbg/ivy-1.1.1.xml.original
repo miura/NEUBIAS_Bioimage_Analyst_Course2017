@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>sc.fiji</groupId>
+		<artifactId>pom-fiji</artifactId>
+		<version>17.0.0</version>
+		<relativePath />
+	</parent>
+
+	<properties>
+		<mpicbg.version>1.1.1</mpicbg.version>
+	</properties>
+
+	<groupId>mpicbg</groupId>
+	<artifactId>pom-mpicbg</artifactId>
+	<version>1.1.1</version>
+	<packaging>pom</packaging>
+
+	<name>Aggregator project for Stephan Saalfeld's mpicbg library and plugin collection</name>
+	<description></description>
+
+	<modules>
+		<module>mpicbg</module>
+		<module>mpicbg_</module>
+	</modules>
+
+	<scm>
+		<connection>scm:git:git://github.com/axtimwalde/mpicbg</connection>
+		<developerConnection>scm:git:git@github.com:axtimwalde/mpicbg</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/axtimwalde/mpicbg</url>
+	</scm>
+
+	<repositories>
+		<!-- NB: for project parent -->
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<profiles>
+		<profile>
+			<id>all</id>
+			<modules>
+				<module>clahe_</module>
+				<module>integral_image</module>
+			</modules>
+		</profile>
+	</profiles>
+
+</project>

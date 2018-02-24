@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>oss-parent</artifactId>
+    <groupId>org.sonatype.oss</groupId>
+    <version>7</version>
+    <relativePath/>
+  </parent>
+  <groupId>com.fifesoft</groupId>
+  <artifactId>autocomplete</artifactId>
+  <version>2.5.8</version>
+  <name>autocomplete</name>
+  <description>AutoComplete is a library allowing you to add IDE-like auto-completion (aka "code completion" or "Intellisense") to any Swing JTextComponent. Special integration is added for RSyntaxTextArea, since this feature is commonly needed when editing source code. Features include: Drop-down completion choice list. Optional companion "description" window, complete with full HTML support and navigable with hyperlinks. Optional parameter completion assistance for functions and methods, ala Eclipse and NetBeans. Completion information is typically specified in an XML file, but can even be dynamic.</description>
+  <url>http://www.fifesoft.com/rsyntaxtextarea/</url>
+  <inceptionYear>2003</inceptionYear>
+  <licenses>
+    <license>
+      <name>Modified BSD License</name>
+      <url>http://fifesoft.com/rsyntaxtextarea/RSyntaxTextArea.License.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Robert Futrell</name>
+      <url>http://www.fifesoft.com</url>
+      <organization>Fifesoft</organization>
+      <organizationUrl>http://www.fifesoft.com/</organizationUrl>
+      <roles>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+      <timezone>0</timezone>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/bobbylight/AutoComplete</connection>
+    <developerConnection>scm:git:git@github.com:bobbylight/AutoComplete</developerConnection>
+    <tag>2.5.8</tag>
+    <url>https://github.com/bobbylight/AutoComplete</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>com.fifesoft</groupId>
+      <artifactId>rsyntaxtextarea</artifactId>
+      <version>2.5.8</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <executions>
+          <execution>
+            <id>default-compile</id>
+            <configuration>
+              <source>1.5</source>
+              <target>1.5</target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

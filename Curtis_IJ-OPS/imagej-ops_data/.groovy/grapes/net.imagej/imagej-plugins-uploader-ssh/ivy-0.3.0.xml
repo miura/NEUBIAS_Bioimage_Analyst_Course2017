@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="net.imagej"
+		module="imagej-plugins-uploader-ssh"
+		revision="0.3.0"
+		status="release"
+		publication="20150924154300"
+	>
+		<description homepage="">
+		ImageJ Updater support for uploading via SSH.
+		</description>
+		<m:dependency.management__io.scif__scifio-lifesci__version>0.6.0</m:dependency.management__io.scif__scifio-lifesci__version>
+		<m:dependency.management__org.scijava__junit-benchmarks__scope>test</m:dependency.management__org.scijava__junit-benchmarks__scope>
+		<m:properties__junit.version>4.11</m:properties__junit.version>
+		<m:dependency.management__net.imagej__imagej-common__version>0.10.1</m:dependency.management__net.imagej__imagej-common__version>
+		<m:dependency.management__io.scif__scifio-jai-imageio__version>1.1.0</m:dependency.management__io.scif__scifio-jai-imageio__version>
+		<m:properties__imagej-updater.version>0.7.0</m:properties__imagej-updater.version>
+		<m:dependency.management__org.scijava__swing-checkbox-tree__version>1.0.0</m:dependency.management__org.scijava__swing-checkbox-tree__version>
+		<m:dependency.management__ome__bio-formats_plugins__version>5.0.3</m:dependency.management__ome__bio-formats_plugins__version>
+		<m:properties__imagej-legacy.version>0.9.1</m:properties__imagej-legacy.version>
+		<m:properties__imglib2-ui.version>2.0.0-beta-28</m:properties__imglib2-ui.version>
+		<m:properties__scijava-maven-plugin.version>0.2.0</m:properties__scijava-maven-plugin.version>
+		<m:dependency.management__org.scijava__scijava-plugins-text-plain__version>0.1.1</m:dependency.management__org.scijava__scijava-plugins-text-plain__version>
+		<m:properties__miglayout.version>3.7.4</m:properties__miglayout.version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:properties__bio-formats.version>5.0.3</m:properties__bio-formats.version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__scifio-cli.version>0.2.0</m:properties__scifio-cli.version>
+		<m:dependency.management__net.imglib2__imglib2-algorithm-gpl__version>0.1.1</m:dependency.management__net.imglib2__imglib2-algorithm-gpl__version>
+		<m:dependency.management__net.imagej__imagej-ui-awt__version>0.2.1</m:dependency.management__net.imagej__imagej-ui-awt__version>
+		<m:properties__scifio.version>0.17.1</m:properties__scifio.version>
+		<m:dependency.management__org.scijava__scripting-r__version>0.1.0</m:dependency.management__org.scijava__scripting-r__version>
+		<m:properties__scripting-r.version>0.1.0</m:properties__scripting-r.version>
+		<m:dependency.management__com.miglayout__miglayout__version>3.7.4</m:dependency.management__com.miglayout__miglayout__version>
+		<m:dependency.management__net.imglib2__imglib2-roi__version>0.2.0</m:dependency.management__net.imglib2__imglib2-roi__version>
+		<m:dependency.management__org.scijava__scripting-jruby__version>0.1.5</m:dependency.management__org.scijava__scripting-jruby__version>
+		<m:dependency.management__net.imagej__imagej-legacy__version>0.9.1</m:dependency.management__net.imagej__imagej-legacy__version>
+		<m:properties__scijava-plugins-text-plain.version>0.1.1</m:properties__scijava-plugins-text-plain.version>
+		<m:properties__imagej-plugins-commands.version>0.3.1</m:properties__imagej-plugins-commands.version>
+		<m:properties__scijava-ui-awt.version>0.1.2</m:properties__scijava-ui-awt.version>
+		<m:properties__imagej-plugins-uploader-ssh.version>0.2.0</m:properties__imagej-plugins-uploader-ssh.version>
+		<m:dependency.management__org.scijava__scripting-scala__version>0.1.0</m:dependency.management__org.scijava__scripting-scala__version>
+		<m:dependency.management__org.scijava__scijava-plugins-commands__version>0.1.7</m:dependency.management__org.scijava__scijava-plugins-commands__version>
+		<m:dependency.management__net.imagej__imagej__version>2.0.0-rc-17</m:dependency.management__net.imagej__imagej__version>
+		<m:properties__imagej-launcher.version>3.2.0</m:properties__imagej-launcher.version>
+		<m:dependency.management__net.imagej__imagej-plugins-commands__version>0.3.1</m:dependency.management__net.imagej__imagej-plugins-commands__version>
+		<m:properties__imagej.version>2.0.0-rc-17</m:properties__imagej.version>
+		<m:dependency.management__junit__junit__version>4.11</m:dependency.management__junit__junit__version>
+		<m:dependency.management__org.scijava__scripting-jython__version>0.1.4</m:dependency.management__org.scijava__scripting-jython__version>
+		<m:properties__maven.build.timestamp.format>yyyy-MM-dd&apos;T&apos;HH:mm:ssZ</m:properties__maven.build.timestamp.format>
+		<m:properties__scijava-plugins-text-markdown.version>0.1.1</m:properties__scijava-plugins-text-markdown.version>
+		<m:dependency.management__net.imagej__imagej-omero__version>0.2.0</m:dependency.management__net.imagej__imagej-omero__version>
+		<m:properties__imglib2-ij.version>2.0.0-beta-28</m:properties__imglib2-ij.version>
+		<m:properties__scripting-beanshell.version>0.1.3</m:properties__scripting-beanshell.version>
+		<m:properties__imglib2-script.version>0.1.0</m:properties__imglib2-script.version>
+		<m:dependency.management__net.imglib2__imglib2-script__version>0.1.0</m:dependency.management__net.imglib2__imglib2-script__version>
+		<m:properties__imagej-plugins-tools.version>0.2.1</m:properties__imagej-plugins-tools.version>
+		<m:properties__native-lib-loader.version>2.0.2</m:properties__native-lib-loader.version>
+		<m:dependency.management__org.scijava__scijava-ui-swing__version>0.3.0</m:dependency.management__org.scijava__scijava-ui-swing__version>
+		<m:maven.plugins>null__maven-source-plugin__null|null__maven-surefire-plugin__null|null__maven-enforcer-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.fusesource.mvnplugins__maven-graph-plugin__null|com.github.maven-nar__nar-maven-plugin__null|org.scijava__scijava-maven-plugin__null|null__maven-source-plugin__null|null__maven-surefire-plugin__null|null__maven-enforcer-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.fusesource.mvnplugins__maven-graph-plugin__null|com.github.maven-nar__nar-maven-plugin__null|org.scijava__scijava-maven-plugin__null|org.codehaus.mojo__license-maven-plugin__null|net.imagej__imagej-maven-plugin__0.5.4|null__maven-source-plugin__null|null__maven-surefire-plugin__null|null__maven-enforcer-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.fusesource.mvnplugins__maven-graph-plugin__null|com.github.maven-nar__nar-maven-plugin__null|org.scijava__scijava-maven-plugin__null|null__maven-source-plugin__null|null__maven-surefire-plugin__null|null__maven-enforcer-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.fusesource.mvnplugins__maven-graph-plugin__null|com.github.maven-nar__nar-maven-plugin__null|org.scijava__scijava-maven-plugin__null|org.codehaus.mojo__license-maven-plugin__null|net.imagej__imagej-maven-plugin__0.5.4|null__maven-jar-plugin__null|org.apache.maven.plugins__maven-failsafe-plugin__2.14</m:maven.plugins>
+		<m:properties__scifio-omero.version>0.6.0</m:properties__scifio-omero.version>
+		<m:properties__scijava-plugins-platforms.version>0.1.2</m:properties__scijava-plugins-platforms.version>
+		<m:dependency.management__org.scijava__scijava-ui-awt__version>0.1.2</m:dependency.management__org.scijava__scijava-ui-awt__version>
+		<m:dependency.management__ome__formats-common__version>5.0.3</m:dependency.management__ome__formats-common__version>
+		<m:dependency.management__net.imagej__imagej-plugins-tools__version>0.2.1</m:dependency.management__net.imagej__imagej-plugins-tools__version>
+		<m:properties__scripting-jython.version>0.1.4</m:properties__scripting-jython.version>
+		<m:properties__scripting-jruby.version>0.1.5</m:properties__scripting-jruby.version>
+		<m:dependency.management__net.imagej__imagej-plugins-uploader-webdav__version>0.2.0</m:dependency.management__net.imagej__imagej-plugins-uploader-webdav__version>
+		<m:dependency.management__net.imglib2__imglib2__version>2.1.0</m:dependency.management__net.imglib2__imglib2__version>
+		<m:dependency.management__net.imglib2__imglib2-ui__version>2.0.0-beta-28</m:dependency.management__net.imglib2__imglib2-ui__version>
+		<m:dependency.management__org.scijava__scripting-clojure__version>0.1.1</m:dependency.management__org.scijava__scripting-clojure__version>
+		<m:properties__imglib2-realtransform.version>2.0.0-beta-28</m:properties__imglib2-realtransform.version>
+		<m:dependency.management__ome__formats-api__version>5.0.3</m:dependency.management__ome__formats-api__version>
+		<m:dependency.management__org.scijava__scripting-matlab__version>0.2.1</m:dependency.management__org.scijava__scripting-matlab__version>
+		<m:dependency.management__ome__formats-bsd__version>5.0.3</m:dependency.management__ome__formats-bsd__version>
+		<m:dependency.management__net.imglib2__imglib2-realtransform__version>2.0.0-beta-28</m:dependency.management__net.imglib2__imglib2-realtransform__version>
+		<m:dependency.management__io.scif__scifio-bf-compat__version>1.9.0</m:dependency.management__io.scif__scifio-bf-compat__version>
+		<m:properties__scijava.mvn.version>3.0.4</m:properties__scijava.mvn.version>
+		<m:dependency.management__org.scijava__scijava-common__version>2.35.0</m:dependency.management__org.scijava__scijava-common__version>
+		<m:dependency.management__net.imagej__imagej-plugins-uploader-ssh__version>0.2.0</m:dependency.management__net.imagej__imagej-plugins-uploader-ssh__version>
+		<m:dependency.management__io.scif__scifio__version>0.17.1</m:dependency.management__io.scif__scifio__version>
+		<m:properties__imagej-ui-awt.version>0.2.1</m:properties__imagej-ui-awt.version>
+		<m:properties__imagej-matlab.version>0.3.0</m:properties__imagej-matlab.version>
+		<m:dependency.management__net.imagej__imagej-ops__version>0.6.1</m:dependency.management__net.imagej__imagej-ops__version>
+		<m:properties__minimaven.version>2.1.3</m:properties__minimaven.version>
+		<m:properties__imagej-common.version>0.10.1</m:properties__imagej-common.version>
+		<m:dependency.management__net.imagej__imagej-ui-swing__version>0.8.1</m:dependency.management__net.imagej__imagej-ui-swing__version>
+		<m:dependency.management__gov.nist.math__jama__version>1.0.3</m:dependency.management__gov.nist.math__jama__version>
+		<m:properties__scifio-jai-imageio.version>1.1.0</m:properties__scifio-jai-imageio.version>
+		<m:properties__swing-checkbox-tree.version>1.0.0</m:properties__swing-checkbox-tree.version>
+		<m:dependency.management__org.scijava__scijava-plugins-text-markdown__version>0.1.1</m:dependency.management__org.scijava__scijava-plugins-text-markdown__version>
+		<m:properties__imagej-maven-plugin.version>0.5.4</m:properties__imagej-maven-plugin.version>
+		<m:properties__imagej-omero.version>0.2.0</m:properties__imagej-omero.version>
+		<m:properties__imglib2-roi.version>0.2.0</m:properties__imglib2-roi.version>
+		<m:properties__imagej-plugins-uploader-webdav.version>0.2.0</m:properties__imagej-plugins-uploader-webdav.version>
+		<m:dependency.management__io.scif__scifio-cli__version>0.2.0</m:dependency.management__io.scif__scifio-cli__version>
+		<m:properties__scripting-scala.version>0.1.0</m:properties__scripting-scala.version>
+		<m:dependency.management__ome__ome-xml__version>5.0.3</m:dependency.management__ome__ome-xml__version>
+		<m:dependency.management__net.imglib2__imglib2-algorithm__version>0.1.1</m:dependency.management__net.imglib2__imglib2-algorithm__version>
+		<m:dependency.management__org.scijava__native-lib-loader__version>2.0.2</m:dependency.management__org.scijava__native-lib-loader__version>
+		<m:properties__scifio-lifesci.version>0.6.0</m:properties__scifio-lifesci.version>
+		<m:properties__imglib2-algorithm-fft.version>0.1.1</m:properties__imglib2-algorithm-fft.version>
+		<m:properties__imagej-ui-swing.version>0.8.1</m:properties__imagej-ui-swing.version>
+		<m:properties__scijava-ui-swing.version>0.3.0</m:properties__scijava-ui-swing.version>
+		<m:properties__ij1-patcher.version>0.11.0</m:properties__ij1-patcher.version>
+		<m:properties__imglib2-algorithm.version>0.1.1</m:properties__imglib2-algorithm.version>
+		<m:properties__jama.version>1.0.3</m:properties__jama.version>
+		<m:properties__imagej-usage.version>0.4.0</m:properties__imagej-usage.version>
+		<m:properties__scripting-javascript.version>0.2.2</m:properties__scripting-javascript.version>
+		<m:dependency.management__org.scijava__scijava-plugins-platforms__version>0.1.2</m:dependency.management__org.scijava__scijava-plugins-platforms__version>
+		<m:properties__imglib2-algorithm-gpl.version>0.1.1</m:properties__imglib2-algorithm-gpl.version>
+		<m:properties__junit-benchmarks.version>0.7.3-scijava</m:properties__junit-benchmarks.version>
+		<m:dependency.management__org.scijava__minimaven__version>2.1.3</m:dependency.management__org.scijava__minimaven__version>
+		<m:dependency.management__net.imagej__imagej-updater__version>0.7.0</m:dependency.management__net.imagej__imagej-updater__version>
+		<m:properties__scripting-java.version>0.2.5</m:properties__scripting-java.version>
+		<m:properties__jfreechart.version>1.0.19</m:properties__jfreechart.version>
+		<m:dependency.management__org.jfree__jfreechart__version>1.0.19</m:dependency.management__org.jfree__jfreechart__version>
+		<m:dependency.management__org.scijava__scripting-groovy__version>0.1.1</m:dependency.management__org.scijava__scripting-groovy__version>
+		<m:dependency.management__org.scijava__scripting-java__version>0.2.5</m:dependency.management__org.scijava__scripting-java__version>
+		<m:properties__imagej-ops.version>0.6.1</m:properties__imagej-ops.version>
+		<m:properties__scijava-common.version>2.35.0</m:properties__scijava-common.version>
+		<m:properties__nar.version>3.2.0</m:properties__nar.version>
+		<m:dependency.management__net.imglib2__imglib2-algorithm-fft__version>0.1.1</m:dependency.management__net.imglib2__imglib2-algorithm-fft__version>
+		<m:dependency.management__net.imagej__ij__version>1.49j</m:dependency.management__net.imagej__ij__version>
+		<m:dependency.management__org.scijava__junit-benchmarks__version>0.7.3-scijava</m:dependency.management__org.scijava__junit-benchmarks__version>
+		<m:dependency.management__org.scijava__scripting-javascript__version>0.2.2</m:dependency.management__org.scijava__scripting-javascript__version>
+		<m:properties__scripting-groovy.version>0.1.1</m:properties__scripting-groovy.version>
+		<m:properties__scripting-matlab.version>0.2.1</m:properties__scripting-matlab.version>
+		<m:dependency.management__io.scif__scifio-ome-xml__version>0.10.0</m:dependency.management__io.scif__scifio-ome-xml__version>
+		<m:dependency.management__io.scif__scifio-omero__version>0.6.0</m:dependency.management__io.scif__scifio-omero__version>
+		<m:dependency.management__ome__formats-gpl__version>5.0.3</m:dependency.management__ome__formats-gpl__version>
+		<m:dependency.management__net.imagej__imagej-launcher__version>3.2.0</m:dependency.management__net.imagej__imagej-launcher__version>
+		<m:properties__jetty.version>8.0.0.M1</m:properties__jetty.version>
+		<m:properties__scijava-log-slf4j.version>1.0.1</m:properties__scijava-log-slf4j.version>
+		<m:properties__scifio-bf-compat.version>1.9.0</m:properties__scifio-bf-compat.version>
+		<m:properties__imagej1.version>1.49j</m:properties__imagej1.version>
+		<m:properties__scripting-clojure.version>0.1.1</m:properties__scripting-clojure.version>
+		<m:dependency.management__org.scijava__scijava-log-slf4j__version>1.0.1</m:dependency.management__org.scijava__scijava-log-slf4j__version>
+		<m:properties__scijava-plugins-commands.version>0.1.7</m:properties__scijava-plugins-commands.version>
+		<m:dependency.management__net.imglib2__imglib2-ij__version>2.0.0-beta-28</m:dependency.management__net.imglib2__imglib2-ij__version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:dependency.management__org.scijava__scripting-beanshell__version>0.1.3</m:dependency.management__org.scijava__scripting-beanshell__version>
+		<m:properties__scijava.jvm.version>1.6</m:properties__scijava.jvm.version>
+		<m:dependency.management__net.imagej__ij1-patcher__version>0.11.0</m:dependency.management__net.imagej__ij1-patcher__version>
+		<m:properties__scifio-ome-xml.version>0.10.0</m:properties__scifio-ome-xml.version>
+		<m:dependency.management__net.imagej__imagej-usage__version>0.4.0</m:dependency.management__net.imagej__imagej-usage__version>
+		<m:properties__imglib2.version>2.1.0</m:properties__imglib2.version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="imagej-plugins-uploader-ssh" type="jar" ext="jar" conf="master"/>
+		<artifact name="imagej-plugins-uploader-ssh" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="imagej-plugins-uploader-ssh" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="net.imagej" name="imagej-updater" rev="0.7.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.scijava" name="scijava-common" rev="2.35.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="com.jcraft" name="jsch" rev="0.1.49" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="junit" name="junit" rev="4.11" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="net.imagej" name="imagej-updater" rev="0.7.0" force="true" conf="test->runtime(*),master(*)">
+			<artifact name="imagej-updater" type="jar" ext="jar" conf="" m:classifier="tests"/>
+		</dependency>
+		<dependency org="org.scijava" name="scijava-common" rev="2.35.0" force="true" conf="test->runtime(*),master(*)">
+			<artifact name="scijava-common" type="jar" ext="jar" conf="" m:classifier="tests"/>
+		</dependency>
+		<override org="io.scif" module="scifio-lifesci" matcher="exact" rev="0.6.0"/>
+		<override org="org.scijava" module="junit-benchmarks" matcher="exact" rev="0.7.3-scijava"/>
+		<override org="net.imagej" module="imagej-common" matcher="exact" rev="0.10.1"/>
+		<override org="io.scif" module="scifio-jai-imageio" matcher="exact" rev="1.1.0"/>
+		<override org="org.scijava" module="swing-checkbox-tree" matcher="exact" rev="1.0.0"/>
+		<override org="ome" module="bio-formats_plugins" matcher="exact" rev="5.0.3"/>
+		<override org="org.scijava" module="scijava-plugins-text-plain" matcher="exact" rev="0.1.1"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.11"/>
+		<override org="net.imglib2" module="imglib2-algorithm-gpl" matcher="exact" rev="0.1.1"/>
+		<override org="net.imagej" module="imagej-ui-awt" matcher="exact" rev="0.2.1"/>
+		<override org="org.scijava" module="scripting-r" matcher="exact" rev="0.1.0"/>
+		<override org="com.miglayout" module="miglayout" matcher="exact" rev="3.7.4"/>
+		<override org="net.imglib2" module="imglib2-roi" matcher="exact" rev="0.2.0"/>
+		<override org="org.scijava" module="scripting-jruby" matcher="exact" rev="0.1.5"/>
+		<override org="net.imagej" module="imagej-legacy" matcher="exact" rev="0.9.1"/>
+		<override org="org.scijava" module="scripting-scala" matcher="exact" rev="0.1.0"/>
+		<override org="org.scijava" module="scijava-plugins-commands" matcher="exact" rev="0.1.7"/>
+		<override org="net.imagej" module="imagej" matcher="exact" rev="2.0.0-rc-17"/>
+		<override org="net.imagej" module="imagej-plugins-commands" matcher="exact" rev="0.3.1"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.11"/>
+		<override org="org.scijava" module="scripting-jython" matcher="exact" rev="0.1.4"/>
+		<override org="net.imagej" module="imagej-omero" matcher="exact" rev="0.2.0"/>
+		<override org="net.imglib2" module="imglib2-script" matcher="exact" rev="0.1.0"/>
+		<override org="org.scijava" module="scijava-ui-swing" matcher="exact" rev="0.3.0"/>
+		<override org="org.scijava" module="scijava-ui-awt" matcher="exact" rev="0.1.2"/>
+		<override org="ome" module="formats-common" matcher="exact" rev="5.0.3"/>
+		<override org="net.imagej" module="imagej-plugins-tools" matcher="exact" rev="0.2.1"/>
+		<override org="net.imagej" module="imagej-plugins-uploader-webdav" matcher="exact" rev="0.2.0"/>
+		<override org="net.imglib2" module="imglib2" matcher="exact" rev="2.1.0"/>
+		<override org="net.imglib2" module="imglib2-ui" matcher="exact" rev="2.0.0-beta-28"/>
+		<override org="org.scijava" module="scripting-clojure" matcher="exact" rev="0.1.1"/>
+		<override org="ome" module="formats-api" matcher="exact" rev="5.0.3"/>
+		<override org="org.scijava" module="scripting-matlab" matcher="exact" rev="0.2.1"/>
+		<override org="ome" module="formats-bsd" matcher="exact" rev="5.0.3"/>
+		<override org="net.imglib2" module="imglib2-realtransform" matcher="exact" rev="2.0.0-beta-28"/>
+		<override org="io.scif" module="scifio-bf-compat" matcher="exact" rev="1.9.0"/>
+		<override org="org.scijava" module="scijava-common" matcher="exact" rev="2.35.0"/>
+		<override org="net.imagej" module="imagej-plugins-uploader-ssh" matcher="exact" rev="0.2.0"/>
+		<override org="io.scif" module="scifio" matcher="exact" rev="0.17.1"/>
+		<override org="net.imagej" module="imagej-ops" matcher="exact" rev="0.6.1"/>
+		<override org="net.imagej" module="imagej-ui-swing" matcher="exact" rev="0.8.1"/>
+		<override org="gov.nist.math" module="jama" matcher="exact" rev="1.0.3"/>
+		<override org="org.scijava" module="scijava-plugins-text-markdown" matcher="exact" rev="0.1.1"/>
+		<override org="io.scif" module="scifio-cli" matcher="exact" rev="0.2.0"/>
+		<override org="ome" module="ome-xml" matcher="exact" rev="5.0.3"/>
+		<override org="net.imglib2" module="imglib2-algorithm" matcher="exact" rev="0.1.1"/>
+		<override org="org.scijava" module="native-lib-loader" matcher="exact" rev="2.0.2"/>
+		<override org="org.scijava" module="scijava-plugins-platforms" matcher="exact" rev="0.1.2"/>
+		<override org="org.scijava" module="minimaven" matcher="exact" rev="2.1.3"/>
+		<override org="net.imagej" module="imagej-updater" matcher="exact" rev="0.7.0"/>
+		<override org="org.jfree" module="jfreechart" matcher="exact" rev="1.0.19"/>
+		<override org="org.scijava" module="scripting-groovy" matcher="exact" rev="0.1.1"/>
+		<override org="org.scijava" module="scripting-java" matcher="exact" rev="0.2.5"/>
+		<override org="net.imglib2" module="imglib2-algorithm-fft" matcher="exact" rev="0.1.1"/>
+		<override org="net.imagej" module="ij" matcher="exact" rev="1.49j"/>
+		<override org="org.scijava" module="junit-benchmarks" matcher="exact" rev="0.7.3-scijava"/>
+		<override org="org.scijava" module="scripting-javascript" matcher="exact" rev="0.2.2"/>
+		<override org="io.scif" module="scifio-ome-xml" matcher="exact" rev="0.10.0"/>
+		<override org="io.scif" module="scifio-omero" matcher="exact" rev="0.6.0"/>
+		<override org="ome" module="formats-gpl" matcher="exact" rev="5.0.3"/>
+		<override org="net.imagej" module="imagej-launcher" matcher="exact" rev="3.2.0"/>
+		<override org="org.scijava" module="scijava-log-slf4j" matcher="exact" rev="1.0.1"/>
+		<override org="net.imglib2" module="imglib2-ij" matcher="exact" rev="2.0.0-beta-28"/>
+		<override org="org.scijava" module="scripting-beanshell" matcher="exact" rev="0.1.3"/>
+		<override org="net.imagej" module="ij1-patcher" matcher="exact" rev="0.11.0"/>
+		<override org="net.imagej" module="imagej-usage" matcher="exact" rev="0.4.0"/>
+	</dependencies>
+</ivy-module>

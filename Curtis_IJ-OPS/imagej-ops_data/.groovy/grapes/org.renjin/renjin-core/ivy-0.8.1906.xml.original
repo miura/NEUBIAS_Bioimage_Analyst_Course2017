@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ~ R : A Computer Language for Statistical Data Analysis ~ Copyright 
+  (C) 1995, 1996 Robert Gentleman and Ross Ihaka ~ Copyright (C) 1997-2008 
+  The R Development Core Team ~ Copyright (C) 2003, 2004 The R Foundation ~ 
+  Copyright (C) 2010 bedatadriven ~ ~ This program is free software: you can 
+  redistribute it and/or modify ~ it under the terms of the GNU General Public 
+  License as published by ~ the Free Software Foundation, either version 3 
+  of the License, or ~ (at your option) any later version. ~ ~ This program 
+  is distributed in the hope that it will be useful, ~ but WITHOUT ANY WARRANTY; 
+  without even the implied warranty of ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR 
+  PURPOSE. See the ~ GNU General Public License for more details. ~ ~ You should 
+  have received a copy of the GNU General Public License ~ along with this 
+  program. If not, see <http://www.gnu.org/licenses />. -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.renjin</groupId>
+    <artifactId>parent</artifactId>
+    <version>0.8.1906</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>renjin-core</artifactId>
+  <name>Renjin Core</name>
+  <description>Java-based implementation of the R language for
+    statistical computing</description>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-math</artifactId>
+      <version>2.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.renjin</groupId>
+      <artifactId>gcc-runtime</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.netlib</groupId>
+      <artifactId>netlib-java</artifactId>
+      <version>0.9.3-renjin-patched-2</version>
+    </dependency>
+
+    <!-- Abstraction on file system -->
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-vfs2</artifactId>
+        <version>2.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-compress</artifactId>
+      <version>1.4.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+      <version>2.0</version>
+    </dependency>
+    
+    <!-- FFT transforms -->
+    <dependency>
+   	  <groupId>edu.emory.mathcs</groupId>
+      <artifactId>jtransforms</artifactId>
+      <version>2.4</version>
+    </dependency>
+
+    <!-- Graph library for control flow graphs -->
+    <dependency>
+      <groupId>net.sf.jung</groupId>
+      <artifactId>jung-api</artifactId>
+      <version>2.0.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>net.sf.jung</groupId>
+      <artifactId>jung-graph-impl</artifactId>
+      <version>2.0.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>net.sf.jung</groupId>
+      <artifactId>jung-visualization</artifactId>
+      <version>2.0.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.ow2.asm</groupId>
+      <artifactId>asm</artifactId>
+      <version>${asm.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.ow2.asm</groupId>
+      <artifactId>asm-util</artifactId>
+      <version>${asm.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.ow2.asm</groupId>
+      <artifactId>asm-commons</artifactId>
+      <version>${asm.version}</version>
+    </dependency>
+
+    <!-- Collections framework -->
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+    </dependency>
+
+    <!-- unit test framework -->
+    <dependency>
+      <groupId>org.concordion</groupId>
+      <artifactId>concordion</artifactId>
+      <version>1.4.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- This library is used during compile-time code generation but is
+         not necessary when using renjin-->
+    <dependency>
+      <groupId>com.sun.codemodel</groupId>
+      <artifactId>codemodel</artifactId>
+      <version>2.6</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <testResources>
+      <testResource>
+        <directory>src/test/resources</directory>
+      </testResource>
+      <testResource>
+        <directory>src/spec/resources</directory>
+      </testResource>
+    </testResources>
+
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+          <filtering>true</filtering>
+        </resource>
+    </resources>
+
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.2</version>
+        <executions>
+
+          <!-- Generate wrapper for the primitives in the base package -->
+          <execution>
+            <id>generate-primitive-wrappers</id>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <phase>process-classes</phase>
+            <configuration>
+              <executable>java</executable>
+              <classpathScope>compile</classpathScope>
+              <arguments>
+                <argument>-classpath</argument>
+                <classpath />
+                <argument>org.renjin.invoke.codegen.WrapperGenerator2</argument>
+              </arguments>
+            </configuration>
+          </execution>
+          <execution>
+            <id>compile-packages</id>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <phase>process-classes</phase>
+            <configuration>
+              <executable>java</executable>
+              <classpathScope>compile</classpathScope>
+              <arguments>
+                <argument>-classpath</argument>
+                <classpath />
+                <argument>org.renjin.base.BasePackageCompiler</argument>
+              </arguments>
+            </configuration>
+          </execution>
+          <execution>
+            <id>compile-base-package</id>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <!--  <phase>process-classes</phase> -->
+            <configuration>
+              <executable>java</executable>
+              <skip>true</skip>
+              <arguments>
+                <argument>-classpath</argument>
+                <classpath />
+                <argument>r.compiler.PackageCompiler</argument>
+                <argument>src/main/r/base</argument>
+                <argument>target/classes</argument>
+              </arguments>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <redirectTestOutputToFile>true</redirectTestOutputToFile>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>1.1</version>
+        <executions>
+          <execution>
+            <id>add-test-source</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>add-test-source</goal>
+            </goals>
+            <configuration>
+              <sources>
+                <source>src/spec/java</source>
+              </sources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+
+    </plugins>
+    <pluginManagement>
+      <plugins>
+        <!--This plugin's configuration is used to store Eclipse m2e settings 
+          only. It has no influence on the Maven build itself. -->
+        <plugin>
+          <groupId>org.eclipse.m2e</groupId>
+          <artifactId>lifecycle-mapping</artifactId>
+          <version>1.0.0</version>
+          <configuration>
+            <lifecycleMappingMetadata>
+              <pluginExecutions>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <versionRange>[1.2,)</versionRange>
+                    <goals>
+                      <goal>exec</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <ignore />
+                  </action>
+                </pluginExecution>
+                <pluginExecution>
+                	<pluginExecutionFilter>
+                		<groupId>org.codehaus.mojo</groupId>
+                		<artifactId>
+                			build-helper-maven-plugin
+                		</artifactId>
+                		<versionRange>[1.1,)</versionRange>
+                		<goals>
+                			<goal>add-test-source</goal>
+                		</goals>
+                	</pluginExecutionFilter>
+                	<action>
+                		<ignore />
+                	</action>
+                </pluginExecution>
+              </pluginExecutions>
+            </lifecycleMappingMetadata>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
